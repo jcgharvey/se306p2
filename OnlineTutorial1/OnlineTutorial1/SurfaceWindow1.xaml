@@ -1,0 +1,87 @@
+﻿<s:SurfaceWindow x:Class="OnlineTutorial1.SurfaceWindow1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="http://schemas.microsoft.com/surface/2008"
+    Title="OnlineTutorial1"
+    >
+
+    <s:SurfaceWindow.Resources>
+
+        <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
+            <StackPanel Height="120" Width="190" Background="Gray">
+                <Label 
+                        Content="{Binding Name}" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"
+                        FontSize="20"/>
+
+                <Label 
+                        Content="{Binding CanDrop}"
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"
+                        FontSize="18"/>
+            </StackPanel>
+        </DataTemplate>
+
+
+        <Style x:Key="CursorStyle" TargetType="{x:Type ContentControl}">
+            <Setter Property="ContentTemplate" Value="{StaticResource SurfaceListBoxItemDataTemplate}" />
+            <Setter Property="BorderThickness" Value="9"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource {x:Static s:SurfaceColors.Accent1BrushKey}}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ContentControl}">
+                        <Border 
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter Margin="0"
+                                Content="{TemplateBinding Content}" 
+                                ContentTemplate="{TemplateBinding ContentTemplate}">
+                            </ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="Tag" Value="CanDrop">
+                    <Setter Property="BorderBrush" Value="{DynamicResource {x:Static s:SurfaceColors.Accent4BrushKey}}" />
+                </Trigger>
+                <Trigger Property="Tag" Value="CannotDrop">
+                    <Setter Property="BorderBrush" Value="{DynamicResource {x:Static s:SurfaceColors.Accent3BrushKey}}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        
+    </s:SurfaceWindow.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <s:SurfaceListBox 
+            Name="DragSource" 
+            Grid.Column="0"
+            Width="250"
+            BorderBrush="{DynamicResource {x:Static s:SurfaceColors.ListBoxItemBackgroundBrushKey}}"
+            ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
+            ItemsSource="{Binding Path=SourceItems}"
+            PreviewTouchDown="OnDragSourcePreviewTouchDown"
+            s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+
+        <s:SurfaceListBox 
+            Name="DropTarget" 
+            Grid.Column="1"
+            AllowDrop="True"
+            Width="250"
+            BorderBrush="{DynamicResource {x:Static s:SurfaceColors.ListBoxItemBackgroundBrushKey}}"
+            ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
+            ItemsSource="{Binding Path=TargetItems}"
+            s:SurfaceDragDrop.DragEnter="OnDropTargetDragEnter"
+            s:SurfaceDragDrop.DragLeave="OnDropTargetDragLeave"
+            s:SurfaceDragDrop.Drop="OnDropTargetDrop"/>
+
+
+    </Grid>
+</s:SurfaceWindow>
