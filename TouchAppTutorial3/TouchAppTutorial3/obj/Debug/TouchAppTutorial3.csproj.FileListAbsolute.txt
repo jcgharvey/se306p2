@@ -1,0 +1,16 @@
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\TouchAppTutorial3.csprojResolveAssemblyReference.cache
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\SurfaceWindow1.baml
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\App.baml
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\SurfaceWindow1.g.cs
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\App.g.cs
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\TouchAppTutorial3_Content.g.cs
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\TouchAppTutorial3_MarkupCompile.cache
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\TouchAppTutorial3.g.resources
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\TouchAppTutorial3.Properties.Resources.resources
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\TouchAppTutorial3.csproj.GenerateResource.Cache
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\bin\Debug\Resources\icon.png
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\bin\Debug\TouchAppTutorial3.xml
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\bin\Debug\TouchAppTutorial3.exe
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\bin\Debug\TouchAppTutorial3.pdb
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\TouchAppTutorial3.exe
+c:\users\brett\documents\visual studio 2010\Projects\TouchAppTutorial3\TouchAppTutorial3\obj\Debug\TouchAppTutorial3.pdb
