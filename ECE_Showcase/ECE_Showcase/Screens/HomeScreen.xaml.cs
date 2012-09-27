@@ -19,19 +19,35 @@ namespace ECE_Showcase.Screens
     /// </summary>
     public partial class HomeScreen : UserControl
     {
+        private InfoScreen infoScreen;
+        private HODWelcomeScreen hodWelcomeScreen;
+
         public HomeScreen()
         {
             InitializeComponent();
+
+            infoScreen = null;
+            hodWelcomeScreen = null;
         }
 
         private void InfoButton_Click(object sender, RoutedEventArgs e)
         {
-            ((SurfaceWindow1)(this.Parent)).Content = new InfoScreen();
+            if (infoScreen == null)
+            {
+                infoScreen = new InfoScreen();
+            }
+
+            ((SurfaceWindow1)(this.Parent)).Content = infoScreen;
+            
         }
 
         private void HODButton_Click(object sender, RoutedEventArgs e)
         {
-            ((SurfaceWindow1)(this.Parent)).Content = new HODWelcome();
+            if (hodWelcomeScreen == null)
+            {
+                hodWelcomeScreen = new HODWelcomeScreen();
+            }
+            ((SurfaceWindow1)(this.Parent)).Content = hodWelcomeScreen;
         }
     }
 }

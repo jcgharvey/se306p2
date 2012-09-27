@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-c:\users\michael\documents\visual studio 2010\Projects\ECE_Showcase\ECE_Showcase\obj\Debug\
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\
 ECE_Showcase
 none
 false
 DEBUG;TRACE
-c:\users\michael\documents\visual studio 2010\Projects\ECE_Showcase\ECE_Showcase\App.xaml
-41165852254
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\App.xaml
+4-1019179901
 2917366953
-91800681774
+9253517833
 152103913890
-Screens\HODWelcome.xaml;Screens\HomeScreen.xaml;Screens\InfoScreen.xaml;SurfaceWindow1.xaml;
+Screens\HODWelcomeScreen.xaml;Screens\HomeScreen.xaml;Screens\InfoScreen.xaml;SurfaceWindow1.xaml;
 
 False
 

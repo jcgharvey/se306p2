@@ -56,7 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Screens\HODWelcome.xaml">
+    <Page Include="Screens\HODWelcomeScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -76,8 +76,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Screens\HODWelcome.xaml.cs">
-      <DependentUpon>HODWelcome.xaml</DependentUpon>
+    <Compile Include="Screens\HODWelcomeScreen.xaml.cs">
+      <DependentUpon>HODWelcomeScreen.xaml</DependentUpon>
     </Compile>
     <Compile Include="Screens\HomeScreen.xaml.cs">
       <DependentUpon>HomeScreen.xaml</DependentUpon>

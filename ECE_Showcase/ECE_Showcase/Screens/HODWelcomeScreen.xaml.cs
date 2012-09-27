@@ -17,9 +17,9 @@ namespace ECE_Showcase.Screens
     /// <summary>
     /// Interaction logic for HODWelcome.xaml
     /// </summary>
-    public partial class HODWelcome : UserControl
+    public partial class HODWelcomeScreen : UserControl
     {
-        public HODWelcome()
+        public HODWelcomeScreen()
         {
             InitializeComponent();
         }

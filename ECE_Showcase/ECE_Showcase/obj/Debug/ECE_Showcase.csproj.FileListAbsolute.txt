@@ -20,3 +20,25 @@ c:\users\michael\documents\visual studio 2010\Projects\ECE_Showcase\ECE_Showcase
 c:\users\michael\documents\visual studio 2010\Projects\ECE_Showcase\ECE_Showcase\obj\Debug\Screens\HODWelcome.g.cs
 c:\users\michael\documents\visual studio 2010\Projects\ECE_Showcase\ECE_Showcase\obj\Debug\Screens\HomeScreen.g.cs
 c:\users\michael\documents\visual studio 2010\Projects\ECE_Showcase\ECE_Showcase\obj\Debug\Screens\InfoScreen.g.cs
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\ECE_Showcase.exe
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\ECE_Showcase.pdb
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\ECE_Showcase.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\Screens\HODWelcomeScreen.baml
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\Screens\HomeScreen.baml
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\Screens\InfoScreen.baml
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\SurfaceWindow1.baml
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\App.baml
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\Screens\HODWelcomeScreen.g.cs
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\Screens\HomeScreen.g.cs
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\Screens\InfoScreen.g.cs
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\SurfaceWindow1.g.cs
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\App.g.cs
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\ECE_Showcase_Content.g.cs
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\ECE_Showcase_MarkupCompile.cache
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\ECE_Showcase.g.resources
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\ECE_Showcase.Properties.Resources.resources
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\obj\Debug\ECE_Showcase.csproj.GenerateResource.Cache
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\bin\Debug\Resources\icon.png
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\bin\Debug\ECE_Showcase.xml
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\bin\Debug\ECE_Showcase.exe
+C:\Users\Michael\Documents\GitHub\se306p2\ECE_Showcase\ECE_Showcase\bin\Debug\ECE_Showcase.pdb
