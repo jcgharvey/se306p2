@@ -76,6 +76,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Screen.cs" />
     <Compile Include="Screens\HODWelcomeScreen.xaml.cs">
       <DependentUpon>HODWelcomeScreen.xaml</DependentUpon>
     </Compile>
