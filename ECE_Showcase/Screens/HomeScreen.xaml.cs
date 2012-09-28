@@ -17,12 +17,12 @@ namespace ECE_Showcase.Screens
     /// <summary>
     /// Interaction logic for HomeScreen.xaml
     /// </summary>
-    public partial class HomeScreen : UserControl
+    public partial class HomeScreen : Screen
     {
         private InfoScreen infoScreen;
         private HODWelcomeScreen hodWelcomeScreen;
 
-        public HomeScreen()
+        public HomeScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
         {
             InitializeComponent();
 
@@ -34,10 +34,10 @@ namespace ECE_Showcase.Screens
         {
             if (infoScreen == null)
             {
-                infoScreen = new InfoScreen(this);
+                infoScreen = new InfoScreen(ParentWindow);
             }
 
-            ((SurfaceWindow1)(this.Parent)).Content = infoScreen;
+            ParentWindow.pushScreen(infoScreen);
             
         }
 
@@ -45,9 +45,14 @@ namespace ECE_Showcase.Screens
         {
             if (hodWelcomeScreen == null)
             {
-                hodWelcomeScreen = new HODWelcomeScreen();
+                hodWelcomeScreen = new HODWelcomeScreen(ParentWindow);
             }
-            ((SurfaceWindow1)(this.Parent)).Content = hodWelcomeScreen;
+            ParentWindow.pushScreen(hodWelcomeScreen);
+        }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+            ParentWindow.popScreen();
         }
     }
 }
