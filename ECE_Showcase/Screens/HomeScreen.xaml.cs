@@ -34,7 +34,7 @@ namespace ECE_Showcase.Screens
         {
             if (infoScreen == null)
             {
-                infoScreen = new InfoScreen();
+                infoScreen = new InfoScreen(this);
             }
 
             ((SurfaceWindow1)(this.Parent)).Content = infoScreen;

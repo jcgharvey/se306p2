@@ -6,6 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+        <Button Width="60px" Height="60px" Click="Button_Click">HOME</Button>
         <Label>Got some of that sweet ECE info here</Label>
     </Grid>
 </UserControl>

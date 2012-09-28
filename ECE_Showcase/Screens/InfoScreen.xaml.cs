@@ -19,9 +19,16 @@ namespace ECE_Showcase.Screens
     /// </summary>
     public partial class InfoScreen : UserControl
     {
-        public InfoScreen()
+        private HomeScreen homeScreen;
+        public InfoScreen(HomeScreen homeScreen)
         {
+            this.homeScreen = homeScreen;
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ((SurfaceWindow1)(this.Parent)).Content = homeScreen;
         }
     }
 }
