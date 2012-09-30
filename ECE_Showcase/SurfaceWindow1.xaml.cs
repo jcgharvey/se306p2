@@ -115,12 +115,17 @@ namespace ECE_Showcase
             {
                 screenStack.Pop();
                 this.Content = screenStack.Peek();
+                this.WindowState = WindowState.Maximized;
+                this.WindowStyle = WindowStyle.None;
             }
         }
         public void pushScreen(Screen screen)
         {
             screenStack.Push(screen);
             this.Content = screenStack.Peek();
+            this.WindowState = WindowState.Maximized;
+            this.WindowStyle = WindowStyle.None;
+
         }
 
         public void popAll()
@@ -130,6 +135,8 @@ namespace ECE_Showcase
                 screenStack.Pop();           
             }
             this.Content = screenStack.Peek();
+            this.WindowState = WindowState.Maximized;
+            this.WindowStyle = WindowStyle.None;
         }
 
     }
