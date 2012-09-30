@@ -27,7 +27,7 @@ namespace ECE_Showcase.Screens
         {
             InitializeComponent();
 
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("/se306p2/ECE_Showcase/Resources/ece_info.xaml"));
+            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/ece_info.xaml"));
      
         }
 

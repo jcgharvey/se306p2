@@ -72,7 +72,8 @@
         <s:SurfaceButton Name="ProgrammesButton"
                          Grid.Row="2"
                          Grid.Column="0"
-                         Grid.ColumnSpan="1"></s:SurfaceButton>
+                         Grid.ColumnSpan="1"
+                         Click="courses_button_click"></s:SurfaceButton>
         <s:SurfaceButton Name="ContactButton"
                          Grid.Column="0"
                          Grid.Row="3"
