@@ -62,11 +62,11 @@ namespace ECE_Showcase.Screens
         {
             InitializeComponent();
             DataContext = this;
-            SourceItems.Add(new DataItem("Software Engineering", ""));
-            SourceItems.Add(new DataItem("Electrical and Electronic Engineering", ""));
-            SourceItems.Add(new DataItem("Computer Systems Engineering", ""));
+            SourceItems.Add(new DataItem("Software Engineering", "Resources/software.xaml"));
+            SourceItems.Add(new DataItem("Electrical and Electronic Engineering", "Resources/eee.xaml"));
+            SourceItems.Add(new DataItem("Computer Systems Engineering", "Resources/computersystems.xaml"));
 
-            DropTargetFlowocumentViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("/se306p2/OnlineTutorial1/Resources/ece_info.xaml"));
+            DropTargetFlowocumentViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/software.xaml"));
             
         }
 

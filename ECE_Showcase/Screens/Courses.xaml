@@ -7,6 +7,48 @@
              xmlns:view="clr-namespace:ECE_Showcase"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1000">
+    
+    <view:Screen.Resources>
+        <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
+            <Label 
+                        Content="{Binding Name}" 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center"
+                Foreground="Black"
+                
+                        FontSize="20"/>
+        </DataTemplate>
+
+
+        <Style x:Key="CursorStyle" TargetType="{x:Type ContentControl}">
+            <Setter Property="ContentTemplate" Value="{StaticResource SurfaceListBoxItemDataTemplate}" />
+            <Setter Property="BorderThickness" Value="9"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource {x:Static s:SurfaceColors.Accent1BrushKey}}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ContentControl}">
+                        <Border 
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter Margin="0"
+                                Content="{TemplateBinding Content}" 
+                                ContentTemplate="{TemplateBinding ContentTemplate}">
+                            </ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="Tag" Value="CanDrop">
+                    <Setter Property="BorderBrush" Value="{DynamicResource {x:Static s:SurfaceColors.Accent4BrushKey}}" />
+                </Trigger>
+                <Trigger Property="Tag" Value="CannotDrop">
+                    <Setter Property="BorderBrush" Value="{DynamicResource {x:Static s:SurfaceColors.Accent3BrushKey}}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </view:Screen.Resources>
+    
     <Grid Background="White" Margin="40">
 
         <Grid.Resources>
@@ -26,9 +68,10 @@
                 <Setter Property="Foreground"
                         Value="White" />
             </Style>
-            <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
-                
-            </DataTemplate>
+           
+
+            
+
         </Grid.Resources>
 
         <Grid.RowDefinitions>
@@ -74,6 +117,7 @@
         
         <FlowDocumentScrollViewer
             Name="DropTargetFlowocumentViewer"
+            Foreground="Black"
             Grid.Column="2"
             Grid.Row="1"
             AllowDrop="True"
