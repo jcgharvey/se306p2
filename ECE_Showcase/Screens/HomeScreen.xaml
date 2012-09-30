@@ -6,96 +6,82 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:view="clr-namespace:ECE_Showcase"
              mc:Ignorable="d" 
-             d:DesignHeight="920" d:DesignWidth="1080">
+             d:DesignHeight="1080" d:DesignWidth="1920">
 
-    <Grid Background="White" Margin="40">
+    <Grid Background="White" Margin="200 150">
         <Grid.Resources>
             <Style TargetType="s:SurfaceButton">
-                <Setter Property="Effect">
+                <!--<Setter Property="Effect">
                     <Setter.Value>
                         <DropShadowEffect Direction="270"
-                                          ShadowDepth="1.5"/>
+                                          ShadowDepth="1.0"/>
                     </Setter.Value>
-                </Setter>
-                <Setter Property="Margin" Value="10px" />
-                <Setter Property="Background" Value="#8e4ead" />
+                </Setter>-->
+                <Setter Property="Margin" Value="5px" />
+                <Setter Property="Background" Value="Transparent" />
                 <Setter Property="HorizontalContentAlignment" Value="Left" />
                 <Setter Property="VerticalContentAlignment" Value="Bottom" />
                 <Setter Property="FontSize" Value="25" />
-                <Setter Property="FontWeight" Value="Bold" />
-                <Setter Property="Foreground"
-                        Value="White" />
+                <Setter Property="FontFamily" Value="Segoe UI Light" />
+                <Setter Property="Foreground" Value="White" />
+
             </Style>
         </Grid.Resources>
         
         <Grid.RowDefinitions>
-            <RowDefinition Height="90" />
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="195px"/>
+            <RowDefinition Height="195px"/>
+            <RowDefinition Height="195px"/>
+            <RowDefinition Height="195px"/>
         </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="90" />
-            <ColumnDefinition Width="90" />
-            <ColumnDefinition Width="523"/>
-            <ColumnDefinition Width="434"/>
-            <ColumnDefinition Width="703"/>
+            <ColumnDefinition Width="745px"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="155"/>
+            <ColumnDefinition Width="590" />
         </Grid.ColumnDefinitions>
-        <s:SurfaceButton Name="HomeButton" 
-                         Grid.Row="0" 
-                         Grid.Column="0"
-                         HorizontalContentAlignment="Center"
-                         VerticalContentAlignment="Center">
-            <Image Source="/ECE_Showcase;component/Resources/home.png" />
-        </s:SurfaceButton>
-        <s:SurfaceButton Name="backButton"
-                         Grid.Row="0"
-                         Grid.Column="1"
-                         Click="backButton_Click">
-            Back
+
+
+        <s:SurfaceButton Name="Title"
+            Margin="-205,-170,-203,0" Grid.ColumnSpan="4"
+            Background ="White"
+            Foreground ="#BCBCBC"
+            FontSize = "115"
+            VerticalContentAlignment ="Top" >
+            electrical and computer engineering
         </s:SurfaceButton>
 
+        <Image Source="/ECE_Showcase;component/Resources/info.png" Width="735px" Height="185px" Margin="5"></Image>
+        <Image Source="/ECE_Showcase;component/Resources/HOD.png" Width="735px" Height="185px" Margin="5,6" Grid.Row="1"></Image>
+        <Image Source="/ECE_Showcase;component/Resources/programmes.png" Width="735px" Height="185px" Margin="5" Grid.Row="2"></Image>
+        <Image Source="/ECE_Showcase;component/Resources/contact.png" Width="735px" Height="185px" Margin="5" Grid.Row="3"></Image>
+        <Image Source="/ECE_Showcase;component/Resources/rnd.png" Width="735px" Height="380px" Grid.Column="2" Grid.ColumnSpan="2" Margin="5" Grid.RowSpan="2"></Image>
         <s:SurfaceButton Name="InfoButton"
             Click="InfoButton_Click"
-            Grid.Row="1"
+            Grid.Row="0"
             Grid.Column="0"
-            Grid.ColumnSpan="3">
-            Info
-        </s:SurfaceButton>
+            Grid.ColumnSpan="1"></s:SurfaceButton>
         
         <s:SurfaceButton Name="HODButton"
             Click="HODButton_Click"
-            Grid.Row="2"
+            Grid.Row="1"
             Grid.Column="0" 
-                         Grid.ColumnSpan="3">
-            
-                HOD's Welcome
-        </s:SurfaceButton>
+            Grid.ColumnSpan="1"></s:SurfaceButton>
+        
         <s:SurfaceButton Name="ProgrammesButton"
-                         Grid.Row="3"
+                         Grid.Row="2"
                          Grid.Column="0"
-                         Grid.ColumnSpan="3"
-                         Click="ProgrammesButton_Click">
-            Progammes
-        </s:SurfaceButton>
+                         Grid.ColumnSpan="1"></s:SurfaceButton>
         <s:SurfaceButton Name="ContactButton"
                          Grid.Column="0"
-                         Grid.Row="4"
-                         Grid.ColumnSpan="3"
-                         >
-           Contact Us
-        </s:SurfaceButton>
-        <s:SurfaceButton Grid.Row="1" Grid.RowSpan="2" Grid.Column="3">
-           Research n Stuff
-        </s:SurfaceButton>
-        <s:SurfaceButton Grid.Column="4" Grid.Row="1" Grid.RowSpan="2" >
+                         Grid.Row="3"
+                         Grid.ColumnSpan="1"
+                         ></s:SurfaceButton>
+        <s:SurfaceButton Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" Margin="5" Click="SurfaceButton_Click"></s:SurfaceButton>
+        <s:SurfaceButton Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="5" Background = "#633678">
             News Feed
         </s:SurfaceButton>
-        
-        <s:SurfaceButton Grid.Row="3" Grid.RowSpan="2" Grid.Column="3" Grid.ColumnSpan="2">
-            <Image Source="/ECE_Showcase;component/Resources/fyeah.jpg"></Image>
-        </s:SurfaceButton>
+
     </Grid>
 </view:Screen>

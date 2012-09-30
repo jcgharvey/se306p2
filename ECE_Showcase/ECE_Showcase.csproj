@@ -66,16 +66,21 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\contact.png" />
     <Content Include="Resources\eee.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\HOD.png" />
     <Content Include="Resources\hod_welcome.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\info.png" />
+    <Resource Include="Resources\programmes.png" />
+    <Resource Include="Resources\rnd.png" />
     <Content Include="Resources\software.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -101,6 +106,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Screens\ProgrammesOfferedScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="SurfaceWindow1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -122,6 +131,9 @@
     </Compile>
     <Compile Include="Screens\InfoScreen.xaml.cs">
       <DependentUpon>InfoScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ProgrammesOfferedScreen.xaml.cs">
+      <DependentUpon>ProgrammesOfferedScreen.xaml</DependentUpon>
     </Compile>
     <Compile Include="SurfaceWindow1.xaml.cs">
       <DependentUpon>SurfaceWindow1.xaml</DependentUpon>

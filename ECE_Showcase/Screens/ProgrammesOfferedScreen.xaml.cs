@@ -17,7 +17,7 @@ namespace ECE_Showcase.Screens
     /// <summary>
     /// Interaction logic for ProgrammesOfferedScreen.xaml
     /// </summary>
-    public partial class ProgrammesOfferedScreen : UserControl
+    public partial class ProgrammesOfferedScreen : Screen
     {
         public ProgrammesOfferedScreen()
         {
