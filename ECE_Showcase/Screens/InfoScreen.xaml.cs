@@ -19,19 +19,15 @@ namespace ECE_Showcase.Screens
     /// </summary>
     public partial class InfoScreen : Screen
     {
+        private HomeScreen homeScreen;
         public InfoScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
         {
             InitializeComponent();
         }
 
-        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             ParentWindow.popAll();
-        }
-
-        private void BackButton_Click(object sender, RoutedEventArgs e)
-        {
-            ParentWindow.popScreen();
         }
     }
 }
