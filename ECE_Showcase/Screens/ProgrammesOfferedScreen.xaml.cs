@@ -15,23 +15,13 @@ using System.Windows.Shapes;
 namespace ECE_Showcase.Screens
 {
     /// <summary>
-    /// Interaction logic for InfoScreen.xaml
+    /// Interaction logic for ProgrammesOfferedScreen.xaml
     /// </summary>
-    public partial class InfoScreen : Screen
+    public partial class ProgrammesOfferedScreen : UserControl
     {
-        public InfoScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
+        public ProgrammesOfferedScreen()
         {
             InitializeComponent();
-        }
-
-        private void HomeButton_Click(object sender, RoutedEventArgs e)
-        {
-            ParentWindow.popAll();
-        }
-
-        private void BackButton_Click(object sender, RoutedEventArgs e)
-        {
-            ParentWindow.popScreen();
         }
     }
 }
