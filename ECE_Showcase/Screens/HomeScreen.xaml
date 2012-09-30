@@ -76,7 +76,8 @@
         <s:SurfaceButton Name="ProgrammesButton"
                          Grid.Row="3"
                          Grid.Column="0"
-                         Grid.ColumnSpan="3">
+                         Grid.ColumnSpan="3"
+                         Click="ProgrammesButton_Click">
             Progammes
         </s:SurfaceButton>
         <s:SurfaceButton Name="ContactButton"
