@@ -45,8 +45,10 @@
         </Grid.ColumnDefinitions>
         <s:SurfaceButton Name="HomeButton" 
                          Grid.Row="0" 
-                         Grid.Column="0" >
-            Home
+                         Grid.Column="0"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center">
+            <Image Source="/ECE_Showcase;component/Resources/home.png" />
         </s:SurfaceButton>
         <s:SurfaceButton Name="backButton"
                          Grid.Row="0"
@@ -74,7 +76,8 @@
         <s:SurfaceButton Name="ProgrammesButton"
                          Grid.Row="3"
                          Grid.Column="0"
-                         Grid.ColumnSpan="3">
+                         Grid.ColumnSpan="3"
+                         Click="ProgrammesButton_Click">
             Progammes
         </s:SurfaceButton>
         <s:SurfaceButton Name="ContactButton"

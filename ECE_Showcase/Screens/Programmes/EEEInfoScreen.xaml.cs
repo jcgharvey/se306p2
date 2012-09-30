@@ -12,26 +12,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ECE_Showcase.Screens
+namespace ECE_Showcase.Screens.Programmes
 {
     /// <summary>
-    /// Interaction logic for InfoScreen.xaml
+    /// Interaction logic for EEEInfo.xaml
     /// </summary>
-    public partial class InfoScreen : Screen
+    public partial class EEEInfo : UserControl
     {
-        public InfoScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
+        public EEEInfo()
         {
             InitializeComponent();
-        }
-
-        private void HomeButton_Click(object sender, RoutedEventArgs e)
-        {
-            ParentWindow.popAll();
-        }
-
-        private void BackButton_Click(object sender, RoutedEventArgs e)
-        {
-            ParentWindow.popScreen();
         }
     }
 }
