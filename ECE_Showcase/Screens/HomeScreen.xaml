@@ -6,7 +6,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:view="clr-namespace:ECE_Showcase"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="920" d:DesignWidth="1080">
 
     <Grid Background="White" Margin="40">
         <Grid.Resources>
@@ -71,7 +71,7 @@
             Grid.Column="0" 
                          Grid.ColumnSpan="3">
             
-                >HOD's Welcome
+                HOD's Welcome
         </s:SurfaceButton>
         <s:SurfaceButton Name="ProgrammesButton"
                          Grid.Row="3"
