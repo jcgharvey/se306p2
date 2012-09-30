@@ -7,7 +7,14 @@
              xmlns:view="clr-namespace:ECE_Showcase"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1000" xmlns:my="http://schemas.microsoft.com/surface/2008">
-    
+
+
+
+
+
+
+
+
     <Grid Background="White" Margin="40">
 
         <Grid.Resources>
@@ -28,7 +35,7 @@
                         Value="White" />
             </Style>
         </Grid.Resources>
-        
+
         <Grid.RowDefinitions>
             <RowDefinition Height="90" />
             <RowDefinition />
@@ -49,7 +56,7 @@
                          Click="HomeButton_Click">
             <Image Source="/ECE_Showcase;component/Resources/home.png" />
         </s:SurfaceButton>
-        
+
         <s:SurfaceButton Name="BackButton"
                          Grid.Row="2"
                          Grid.Column="0"
@@ -58,9 +65,19 @@
                          Click="BackButton_Click">
             <Image Source="/ECE_Showcase;component/Resources/back3.png" />
         </s:SurfaceButton>
-        
-        <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" FontSize="48" Foreground="#FF633678">Basic Info</Label>
-        <Image Grid.Column="1" Grid.Row="1" Source="/ECE_Showcase;component/Resources/back3.png"/>
+
+
+        <FlowDocumentScrollViewer
+            Name="infoViewer"
+            Grid.Column="2"
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Foreground="Black">
+
+
+        </FlowDocumentScrollViewer>
+
+
     </Grid>
-    
+
 </view:Screen>

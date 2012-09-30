@@ -11,6 +11,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Markup;
+using System.IO;
+using System.Windows.Resources;
+using System.Reflection;
 
 namespace ECE_Showcase.Screens
 {
@@ -22,6 +26,9 @@ namespace ECE_Showcase.Screens
         public InfoScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
         {
             InitializeComponent();
+            // H:\ECE_Showcase\Resources\eee_info.xaml
+            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("/ECE_Showcase/Resources/eee_info.xaml"));
+     
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
@@ -33,5 +40,9 @@ namespace ECE_Showcase.Screens
         {
             ParentWindow.popScreen();
         }
+
+        
+
+       
     }
 }
