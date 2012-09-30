@@ -23,15 +23,5 @@ namespace ECE_Showcase.Screens
         {
             InitializeComponent();
         }
-
-        private void HomeButton_Click(object sender, RoutedEventArgs e)
-        {
-            ParentWindow.popAll();
-        }
-
-        private void BackButton_Click(object sender, RoutedEventArgs e)
-        {
-            ParentWindow.popScreen();
-        }
     }
 }

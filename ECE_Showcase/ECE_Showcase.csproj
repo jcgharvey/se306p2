@@ -56,10 +56,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Screens\Courses.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Screens\HODWelcomeScreen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -81,9 +77,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Screen.cs" />
-    <Compile Include="Screens\Courses.xaml.cs">
-      <DependentUpon>Courses.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Screens\HODWelcomeScreen.xaml.cs">
       <DependentUpon>HODWelcomeScreen.xaml</DependentUpon>
     </Compile>
@@ -123,19 +116,20 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Resources\rnd.png" />
+    <Resource Include="Resources\info.png" />
+    <Resource Include="Resources\programmes.png" />
     <Resource Include="Resources\fyeah.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\home.png" />
-    <Resource Include="Resources\back1.png" />
-    <Resource Include="Resources\back2.png" />
-    <Resource Include="Resources\back3.png" />
+    <Resource Include="Resources\contact.png" />
+    <Resource Include="Resources\HOD.png" />
     <Content Include="Resources\icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="ECE_Showcase.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
