@@ -24,6 +24,9 @@ namespace ECE_Showcase.Screens
             : base(parentWindow)
         {
             InitializeComponent();
+
+            DataContext = this;
+            
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
