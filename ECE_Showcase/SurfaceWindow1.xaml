@@ -3,6 +3,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:s="http://schemas.microsoft.com/surface/2008"
     Title="ECE_Showcase" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="329" d:DesignWidth="559" SizeToContent="WidthAndHeight"
-    Background="White">
+    Background="White" WindowState="Maximized" WindowStyle="None">
     
 </s:SurfaceWindow>
