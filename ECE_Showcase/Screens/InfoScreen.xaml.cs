@@ -17,18 +17,17 @@ namespace ECE_Showcase.Screens
     /// <summary>
     /// Interaction logic for InfoScreen.xaml
     /// </summary>
-    public partial class InfoScreen : UserControl
+    public partial class InfoScreen : Screen
     {
         private HomeScreen homeScreen;
-        public InfoScreen(HomeScreen homeScreen)
+        public InfoScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
         {
-            this.homeScreen = homeScreen;
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ((SurfaceWindow1)(this.Parent)).Content = homeScreen;
+            ParentWindow.popAll();
         }
     }
 }
