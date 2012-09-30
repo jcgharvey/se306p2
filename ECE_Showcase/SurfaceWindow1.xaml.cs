@@ -23,9 +23,14 @@ namespace ECE_Showcase
     /// </summary>
     public partial class SurfaceWindow1 : SurfaceWindow
     {
+
+        private Stack<Screen> screenStack; 
+
         /// <summary>
         /// Default constructor.
         /// </summary>
+        
+
         public SurfaceWindow1()
         {
             InitializeComponent();
@@ -33,9 +38,9 @@ namespace ECE_Showcase
             // Add handlers for window availability events
             AddWindowAvailabilityHandlers();
 
+            screenStack = new Stack<Screen>();
             //Setting starting Screen here, maybe should be in one of the other OnXXX methods of this class
-            this.Content = new Screens.HomeScreen();
-
+            pushScreen(new Screens.HomeScreen(this));
 
         }
 
@@ -103,6 +108,28 @@ namespace ECE_Showcase
         private void OnWindowUnavailable(object sender, EventArgs e)
         {
             //TODO: disable audio, animations here
+        }
+        public void popScreen()
+        {
+            if (screenStack.Count > 1)
+            {
+                screenStack.Pop();
+                this.Content = screenStack.Peek();
+            }
+        }
+        public void pushScreen(Screen screen)
+        {
+            screenStack.Push(screen);
+            this.Content = screenStack.Peek();
+        }
+
+        public void popAll()
+        {
+            while (screenStack.Count > 1)
+            {
+                screenStack.Pop();           
+            }
+            this.Content = screenStack.Peek();
         }
 
     }
