@@ -11,6 +11,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Markup;
+using System.IO;
 
 namespace ECE_Showcase.Screens
 {
@@ -22,6 +24,9 @@ namespace ECE_Showcase.Screens
         public HODWelcomeScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
         {
             InitializeComponent();
+            // H:\ECE_Showcase\Resources\eee_info.xaml
+            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("/ECE_Showcase/Resources/hod_welcome.xaml"));
+     
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
