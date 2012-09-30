@@ -84,6 +84,7 @@
     <Compile Include="Screens\Courses.xaml.cs">
       <DependentUpon>Courses.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Screens\DataItem.cs" />
     <Compile Include="Screens\HODWelcomeScreen.xaml.cs">
       <DependentUpon>HODWelcomeScreen.xaml</DependentUpon>
     </Compile>
