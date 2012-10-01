@@ -31,6 +31,7 @@
                 <Setter Property="Foreground"
                         Value="White" />
             </Style>
+            
         </Grid.Resources>
 
         <Grid.RowDefinitions>
@@ -45,14 +46,15 @@
             <ColumnDefinition Width="745" />
         </Grid.ColumnDefinitions>
 
-        <s:SurfaceButton Name="Title"
+        <Label Name="Title"
                          Margin="-205,-170,-203,0"
                          Grid.ColumnSpan="4"
                          Background="White"
                          Foreground="#BCBCBC"
                          FontSize="115"
+                         FontFamily="Segoe UI Light"
                          VerticalContentAlignment="Top">
-            electrical and computer engineering</s:SurfaceButton>
+            electrical and computer engineering</Label>
 
         <s:SurfaceButton Name="InfoButton"
                          Click="InfoButton_Click"
