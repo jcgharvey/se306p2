@@ -53,7 +53,7 @@
                          Grid.Column="0"
                          HorizontalContentAlignment="Center"
                          VerticalContentAlignment="Center"
-                         Click="HomeButton_Click">
+                         Click="HomeButton_Click" Background="#00000000">
             <Image Source="/ECE_Showcase;component/Resources/home.png" />
         </s:SurfaceButton>
 
@@ -62,7 +62,7 @@
                          Grid.Column="0"
                          HorizontalContentAlignment="Center"
                          VerticalContentAlignment="Center"
-                         Click="BackButton_Click">
+                         Click="BackButton_Click" Background="#00000000">
             <Image Source="/ECE_Showcase;component/Resources/back3.png" />
         </s:SurfaceButton>
 
