@@ -45,7 +45,7 @@
                          Grid.Column="0"
                          HorizontalContentAlignment="Center"
                          VerticalContentAlignment="Center"
-                         Click="HomeButton_Click">
+                         Click="HomeButton_Click" Background="#00000000">
             <Image Source="/ECE_Showcase;component/Resources/home.png" />
         </s:SurfaceButton>
 
@@ -54,7 +54,7 @@
                          Grid.Column="0"
                          HorizontalContentAlignment="Center"
                          VerticalContentAlignment="Center"
-                         Click="BackButton_Click">
+                         Click="BackButton_Click" Background="#00000000">
             <Image Source="/ECE_Showcase;component/Resources/back3.png" />
         </s:SurfaceButton>
 
@@ -68,8 +68,7 @@
 
 
         </FlowDocumentScrollViewer>
-
-
+        <Border BorderBrush="Silver" BorderThickness="1" Grid.Row="2" Height="100" HorizontalAlignment="Left" Margin="-100,55,0,0" Name="border1" VerticalAlignment="Top" Width="200" />
     </Grid>
 
 </view:Screen>
