@@ -11,6 +11,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
+using Microsoft.Surface.Presentation.Controls;
 
 namespace ECE_Showcase.Screens
 {
@@ -60,13 +62,33 @@ namespace ECE_Showcase.Screens
             ParentWindow.pushScreen(coursesScreen);
         }
 
-        private void backButton_Click(object sender, RoutedEventArgs e)
+
+       
+
+        private void RNDButton_Click(object sender, RoutedEventArgs e)
         {
-            ParentWindow.popScreen();
+
         }
 
-        private void SurfaceButton_Click(object sender, RoutedEventArgs e)
+        private void HODButton_TouchUp(object sender, TouchEventArgs e)
         {
+            if (hodWelcomeScreen == null)
+            {
+                hodWelcomeScreen = new HODWelcomeScreen(ParentWindow);
+            }
+            ParentWindow.pushScreen(hodWelcomeScreen);
+        }
+
+        private void HODButton_PreviewTouchMove(object sender, TouchEventArgs e)
+        {
+            
+        }
+
+        private void HODButton_PreviewTouchDown(object sender, TouchEventArgs e)
+        {
+           TouchPoint touchPoint = e.GetTouchPoint(sender as SurfaceButton);
+            Debug.WriteLine(touchPoint.Position.X + " " + touchPoint.Position.Y);
+
 
         }
     }

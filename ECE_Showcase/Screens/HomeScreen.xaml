@@ -71,14 +71,18 @@
         </s:SurfaceButton>
 
         <s:SurfaceButton Name="HODButton"
-                         Click="HODButton_Click"
+                         PreviewTouchUp="HODButton_TouchUp"
                          Grid.Row="1"
                          Grid.Column="0"
                          Grid.ColumnSpan="1"
                          Margin="0"
                          VerticalContentAlignment="Stretch"
                          HorizontalContentAlignment="Stretch"
-                         Padding="0" >
+                         Padding="0"
+                         Stylus.IsPressAndHoldEnabled="False"
+                         PreviewTouchDown="HODButton_PreviewTouchDown"
+                         PreviewTouchMove="HODButton_PreviewTouchMove">
+            
             <Image Source="/ECE_Showcase;component/Resources/HOD.png"
                    VerticalAlignment="Stretch"
                    HorizontalAlignment="Stretch" />
@@ -115,7 +119,7 @@
                           Grid.RowSpan="2"
                           Grid.Column="2"
                           Grid.ColumnSpan="2"
-                          Click="SurfaceButton_Click"
+                          Click="RNDButton_Click"
                           Margin="0"
                           VerticalContentAlignment="Stretch"
                           HorizontalContentAlignment="Stretch"
