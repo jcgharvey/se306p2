@@ -57,21 +57,24 @@
             electrical and computer engineering</Label>
 
         <s:SurfaceButton Name="InfoButton"
-                         Click="InfoButton_Click"
                          Grid.Row="0"
                          Grid.Column="0"
                          Grid.ColumnSpan="1"
+                         Stylus.IsPressAndHoldEnabled="False"
                          Margin="0"
                          VerticalContentAlignment="Stretch"
                          HorizontalContentAlignment="Stretch"
-                         Padding="0">
+                         Padding="0"
+                         PreviewTouchDown="Button_PreviewTouchDown"
+                         PreviewTouchUp="Button_TouchUp"
+                         PreviewTouchMove="Button_PreviewTouchMove">
+            
             <Image Source="/ECE_Showcase;component/Resources/info.png"
                    VerticalAlignment="Stretch"
                    HorizontalAlignment="Stretch" />
         </s:SurfaceButton>
 
         <s:SurfaceButton Name="HODButton"
-                         PreviewTouchUp="HODButton_TouchUp"
                          Grid.Row="1"
                          Grid.Column="0"
                          Grid.ColumnSpan="1"
@@ -80,8 +83,9 @@
                          HorizontalContentAlignment="Stretch"
                          Padding="0"
                          Stylus.IsPressAndHoldEnabled="False"
-                         PreviewTouchDown="HODButton_PreviewTouchDown"
-                         PreviewTouchMove="HODButton_PreviewTouchMove">
+                          PreviewTouchDown="Button_PreviewTouchDown"
+                         PreviewTouchUp="Button_TouchUp"
+                         PreviewTouchMove="Button_PreviewTouchMove">
             
             <Image Source="/ECE_Showcase;component/Resources/HOD.png"
                    VerticalAlignment="Stretch"
@@ -92,11 +96,14 @@
                          Grid.Row="2"
                          Grid.Column="0"
                          Grid.ColumnSpan="1"
-                         Click="courses_button_click"
+                         Stylus.IsPressAndHoldEnabled="False"
                          Margin="0"
                          VerticalContentAlignment="Stretch"
                          HorizontalContentAlignment="Stretch"
-                         Padding="0">
+                         Padding="0"
+                          PreviewTouchDown="Button_PreviewTouchDown"
+                         PreviewTouchUp="Button_TouchUp"
+                         PreviewTouchMove="Button_PreviewTouchMove">
             <Image Source="/ECE_Showcase;component/Resources/programmes.png"
                    VerticalAlignment="Stretch"
                    HorizontalAlignment="Stretch" />
@@ -109,7 +116,11 @@
                          Margin="0"
                          VerticalContentAlignment="Stretch"
                          HorizontalContentAlignment="Stretch"
-                         Padding="0">
+                         Padding="0"
+                         Stylus.IsPressAndHoldEnabled="False"
+                          PreviewTouchDown="Button_PreviewTouchDown"
+                         PreviewTouchUp="Button_TouchUp"
+                         PreviewTouchMove="Button_PreviewTouchMove">
             <Image Source="/ECE_Showcase;component/Resources/contact.png"
                    VerticalAlignment="Stretch"
                    HorizontalAlignment="Stretch" />
