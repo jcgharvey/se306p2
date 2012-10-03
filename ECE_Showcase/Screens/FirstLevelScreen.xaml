@@ -1,0 +1,75 @@
+﻿<view:Screen x:Class="ECE_Showcase.Screens.FirstLevelScreen"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:s="http://schemas.microsoft.com/surface/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:ECE_Showcase"
+	mc:Ignorable="d"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+    <Grid Background="White" Margin="40">
+
+        <Grid.Resources>
+            <Style TargetType="s:SurfaceButton">
+                <Setter Property="Effect">
+                    <Setter.Value>
+                        <DropShadowEffect Direction="270"
+                                          ShadowDepth="1.5"/>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="Margin" Value="10px" />
+                <Setter Property="Background" Value="#8e4ead" />
+                <Setter Property="HorizontalContentAlignment" Value="Left" />
+                <Setter Property="VerticalContentAlignment" Value="Bottom" />
+                <Setter Property="FontSize" Value="25" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Foreground"
+                        Value="White" />
+            </Style>
+        </Grid.Resources>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90" />
+            <RowDefinition />
+            <RowDefinition Height="90" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="600"/>
+        </Grid.ColumnDefinitions>
+
+        <s:SurfaceButton Name="HomeButton" 
+                         Grid.Row="0" 
+                         Grid.Column="0"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Click="HomeButton_Click" Background="#00000000">
+            <Image Source="/ECE_Showcase;component/Resources/home.png" />
+        </s:SurfaceButton>
+
+        <s:SurfaceButton Name="BackButton"
+                         Grid.Row="2"
+                         Grid.Column="0"
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Center"
+                         Click="BackButton_Click" Background="#00000000">
+            <Image Source="/ECE_Showcase;component/Resources/back3.png" />
+        </s:SurfaceButton>
+
+
+        <FlowDocumentScrollViewer
+            Name="infoViewer"
+            Grid.Column="2"
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Foreground="Black">
+
+
+        </FlowDocumentScrollViewer>
+        <Border BorderBrush="Silver" BorderThickness="1" Grid.Row="2" Height="100" HorizontalAlignment="Left" Margin="-100,55,0,0" Name="border1" VerticalAlignment="Top" Width="200" />
+    </Grid>
+    
+</view:Screen>

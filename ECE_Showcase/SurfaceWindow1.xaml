@@ -13,6 +13,4 @@
                  Topmost="True"
                  Background="White" 
                  WindowState="Maximized" 
-                 WindowStyle="None">
-    
-</s:SurfaceWindow>
+                 WindowStyle="None"/>

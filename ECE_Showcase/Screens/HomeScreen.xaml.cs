@@ -19,8 +19,8 @@ namespace ECE_Showcase.Screens
     /// </summary>
     public partial class HomeScreen : Screen
     {
-        private InfoScreen infoScreen;
-        private HODWelcomeScreen hodWelcomeScreen;
+        private FirstLevelScreen infoScreen;
+        private FirstLevelScreen hodWelcomeScreen;
         private Courses coursesScreen;
 
         public HomeScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
@@ -35,7 +35,7 @@ namespace ECE_Showcase.Screens
         {
             if (infoScreen == null)
             {
-                infoScreen = new InfoScreen(ParentWindow);
+                infoScreen = new FirstLevelScreen(ParentWindow, "Resources/ece_info.xaml");
             }
 
             ParentWindow.pushScreen(infoScreen);
@@ -46,7 +46,7 @@ namespace ECE_Showcase.Screens
         {
             if (hodWelcomeScreen == null)
             {
-                hodWelcomeScreen = new HODWelcomeScreen(ParentWindow);
+                hodWelcomeScreen = new FirstLevelScreen(ParentWindow, "Resources/hod_welcome.xaml");
             }
             ParentWindow.pushScreen(hodWelcomeScreen);
         }
