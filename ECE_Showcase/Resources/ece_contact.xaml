@@ -1,0 +1,121 @@
+<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="24">
+        Department of Electrical and Computer Engineering
+    </Paragraph>
+
+    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="20">     
+        Contact us
+    </Paragraph>
+
+    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="18">
+        Street Address
+    </Paragraph>
+
+    <Paragraph>
+        Building 303, Room 240
+    </Paragraph>
+    
+    <Paragraph>
+        Level 2, Science Centre
+    </Paragraph>
+
+    <Paragraph>
+        38 Princes Street
+    </Paragraph>
+
+    <Paragraph>
+        Auckland
+    </Paragraph>
+
+    <Paragraph>
+       
+    </Paragraph>
+
+
+    <Paragraph>
+        Phone: +64 9 373 7599 ext 88158
+    </Paragraph>
+
+    <Paragraph>
+        Fax: +64 9 373 7461
+    </Paragraph>
+    
+    <Paragraph>
+        Email: ece-info@aucklanduni.ac.nz
+    </Paragraph>
+
+    <Paragraph>
+ 
+    </Paragraph>
+    
+    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="18">
+        Postal address
+    </Paragraph>
+
+    <Paragraph>
+        Department of Electrical and Computer Engineering
+    </Paragraph>
+
+    <Paragraph>
+        The University of Auckland
+    </Paragraph>
+
+    <Paragraph>
+        Private Bag 92019
+    </Paragraph>
+    
+    <Paragraph>
+        Auckland Mail Centre
+    </Paragraph>
+
+    <Paragraph>
+        Auckland 1142
+    </Paragraph>
+
+    <Paragraph>
+        New Zealand
+    </Paragraph>
+
+    <Paragraph>
+        
+    </Paragraph>
+
+
+    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="18">
+        Courier deliveries
+    </Paragraph>
+   
+
+    <Paragraph>
+        Department of Electrical and Computer Engineering
+    </Paragraph>
+
+    <Paragraph>
+        Faculty of Engineering
+    </Paragraph>
+
+    <Paragraph>
+        The University of Auckland
+    </Paragraph>
+
+    <Paragraph>
+        3 Grafton Road
+    </Paragraph>
+
+    <Paragraph>
+        Auckland
+    </Paragraph>
+
+    <Paragraph>
+        New Zealand
+    </Paragraph>
+
+    <Paragraph>
+        For urgent hand deliveries please phone: +64 9 373 7599 ext 87017
+    </Paragraph>
+
+
+
+</FlowDocument>

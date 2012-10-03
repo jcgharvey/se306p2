@@ -99,6 +99,7 @@
         </s:SurfaceButton>
         
         <s:SurfaceButton Name="ContactButton"
+                         Click="Contact_Click"
                          Grid.Column="0"
                          Grid.Row="3"
                          Grid.ColumnSpan="1"

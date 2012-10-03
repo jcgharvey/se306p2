@@ -22,6 +22,7 @@ namespace ECE_Showcase.Screens
         private InfoScreen infoScreen;
         private HODWelcomeScreen hodWelcomeScreen;
         private Courses coursesScreen;
+        private ContactScreen contactScreen;
 
         public HomeScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
         {
@@ -60,6 +61,17 @@ namespace ECE_Showcase.Screens
             ParentWindow.pushScreen(coursesScreen);
         }
 
+        private void Contact_Click(object sender, RoutedEventArgs e)
+        {
+            if (contactScreen == null)
+            {
+                contactScreen = new ContactScreen(ParentWindow);
+            }
+
+            ParentWindow.pushScreen(contactScreen);
+
+        }
+
         private void backButton_Click(object sender, RoutedEventArgs e)
         {
             ParentWindow.popScreen();
@@ -69,5 +81,6 @@ namespace ECE_Showcase.Screens
         {
 
         }
+
     }
 }
