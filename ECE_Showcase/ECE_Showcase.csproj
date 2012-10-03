@@ -56,6 +56,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Resource Include="Resources\background.jpg" />
+    <Resource Include="Resources\bg.png" />
     <Content Include="Resources\computersystems.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
