@@ -13,23 +13,19 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Markup;
 using System.IO;
-using System.Windows.Resources;
-using System.Reflection;
 
 namespace ECE_Showcase.Screens
 {
-    /// <summary>
-    /// Interaction logic for InfoScreen.xaml
-    /// </summary>
-    public partial class InfoScreen : Screen
-    {
-        public InfoScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
-        {
-            InitializeComponent();
-
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/ece_info.xaml"));
-     
-        }
+	/// <summary>
+	/// Interaction logic for UserControl1.xaml
+	/// </summary>
+	public partial class FirstLevelScreen : Screen
+	{
+		public FirstLevelScreen(SurfaceWindow1 parentWindow, String flowdoc) : base(parentWindow)
+		{
+			InitializeComponent();
+            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead(flowdoc));
+		}
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
         {
@@ -40,9 +36,5 @@ namespace ECE_Showcase.Screens
         {
             ParentWindow.popScreen();
         }
-
-        
-
-       
-    }
+	}
 }

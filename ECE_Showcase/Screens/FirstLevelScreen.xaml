@@ -1,12 +1,13 @@
-﻿<view:Screen x:Class="ECE_Showcase.Screens.HODWelcomeScreen"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:s="http://schemas.microsoft.com/surface/2008"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:view="clr-namespace:ECE_Showcase"
-             mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="1000">
+﻿<view:Screen x:Class="ECE_Showcase.Screens.FirstLevelScreen"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:s="http://schemas.microsoft.com/surface/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:ECE_Showcase"
+	mc:Ignorable="d"
+	d:DesignWidth="640" d:DesignHeight="480" Width="1920" Height="1080">
+
     <Grid Background="White" Margin="40">
 
         <Grid.Resources>
@@ -35,9 +36,9 @@
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100" />
-            <ColumnDefinition Width="300"/>
-            <ColumnDefinition Width="600"/>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="50"/>
         </Grid.ColumnDefinitions>
 
         <s:SurfaceButton Name="HomeButton" 
@@ -48,6 +49,7 @@
                          Click="HomeButton_Click" Background="#00000000">
             <Image Source="/ECE_Showcase;component/Resources/home.png" />
         </s:SurfaceButton>
+        <Label Content="welcome from the head of department" Grid.Column="2" FontSize="96" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="191,8,-294,-8"/>
 
         <s:SurfaceButton Name="BackButton"
                          Grid.Row="2"
@@ -59,16 +61,18 @@
         </s:SurfaceButton>
 
 
-        <FlowDocumentScrollViewer
-            Name="infoViewer"
+        <s:SurfaceScrollViewer
+            Name="ScrollViewer"
             Grid.Column="2"
             Grid.Row="1"
             Grid.RowSpan="2"
-            Foreground="Black">
-
-
-        </FlowDocumentScrollViewer>
-        <Border BorderBrush="Silver" BorderThickness="1" Grid.Row="2" Height="100" HorizontalAlignment="Left" Margin="-100,55,0,0" Name="border1" VerticalAlignment="Top" Width="200" />
+            Foreground="Black" Margin="-103,228,-690,0">
+            <RichTextBox
+                Width="{Binding ViewportWidth, ElementName=ScrollViewer, Mode=Default}"
+                Name="infoViewer">
+                
+            </RichTextBox>
+        </s:SurfaceScrollViewer>
     </Grid>
-
+    
 </view:Screen>
