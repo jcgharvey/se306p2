@@ -80,7 +80,7 @@
                          Grid.Row="0"
                          Grid.Column="1"
                          Grid.ColumnSpan="3"
-                         Margin = "20 -30 0 0"
+                         Margin = "30 -30 0 0"
                          Background="{x:Null}"
                          Foreground="#BCBCBC"
                          FontSize="115"

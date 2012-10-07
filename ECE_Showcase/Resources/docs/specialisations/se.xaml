@@ -38,4 +38,30 @@
 		There are new and exciting jobs to choose from, in large multinational 
 		companies, government departments, consultancies, and start up companies.
 	</Paragraph>
+
+    <Paragraph FontFamily="Comic Sans MS" FontSize="18">
+        Course Advisor - Catherine Watson
+    </Paragraph>
+    
+    <Paragraph>
+        <Bold>Contact details</Bold>
+        <LineBreak />
+        <LineBreak />
+        Room 303.149
+        <LineBreak />
+        City Campus
+        <LineBreak />
+        38 Princes Street
+        <LineBreak />
+        Auckland
+        <LineBreak />
+        <LineBreak />
+        Phone: +64 9 373 7599 ext 85979
+        <LineBreak />
+        Email: c.watson@auckland.ac.nz
+        <LineBreak />
+        Website: http://www.ece.auckland.ac.nz/~cwat057/
+        <LineBreak />
+    </Paragraph>
+    
 </FlowDocument>

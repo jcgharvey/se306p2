@@ -115,16 +115,40 @@
             PreviewMouseDown="OnDragSourcePreviewTouchDown"
             s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
         
-        <FlowDocumentScrollViewer
+        <!--<FlowDocumentScrollViewer
             Name="DropTargetFlowocumentViewer"
             Foreground="Black"
             Grid.Column="2"
             Grid.Row="1"
             AllowDrop="True"
-            s:SurfaceDragDrop.DragEnter="OnDropTargetDragEnter"
-            s:SurfaceDragDrop.DragLeave="OnDropTargetDragLeave"
-            s:SurfaceDragDrop.Drop="DropTargetFlowocumentViewer_Drop"/>
-        
+            />-->
+
+        <s:SurfaceScrollViewer
+            Name="ScrollViewer"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Grid.Column="2"
+            Grid.Row="1"
+            Foreground="Black">
+
+
+        <RichTextBox
+                Width="{Binding ViewportWidth, ElementName=ScrollViewer, Mode=Default}"
+                FontSize="20"
+                Name="infoViewer"
+                BorderThickness="0"
+                IsReadOnly="True"
+                IsDocumentEnabled="False"
+                Foreground="Purple"
+                s:SurfaceDragDrop.DragEnter="OnDropTargetDragEnter"
+                s:SurfaceDragDrop.DragLeave="OnDropTargetDragLeave"
+                s:SurfaceDragDrop.Drop="DropTargetRichTextBox_Drop"
+                >
+
+        </RichTextBox>
+
+        </s:SurfaceScrollViewer>
+
         <Label Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" FontSize="48" Foreground="#FF633678">Courses</Label>
     </Grid>
 

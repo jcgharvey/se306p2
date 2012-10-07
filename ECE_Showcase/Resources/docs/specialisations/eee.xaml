@@ -1,72 +1,57 @@
 <FlowDocument 
   xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
   xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
-    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="24">
-        BE (Hons) Electrical and Electronic Engineering
-    </Paragraph>
 
-    <Paragraph>
-        Electrical and electronic engineering encompasses exciting and diverse fields such as power systems, communications and digital signal processing. This four-year course is an ideal first step for undergraduates seeking a degree with broad applications.
-    </Paragraph>
- 
-    <Paragraph>
-        The degree is obtained by successfully completing courses over four parts (years), covering:
-    </Paragraph>
-
-    <List>
-        <ListItem>
-            <Paragraph>power systems</Paragraph>
-        </ListItem>
-        <ListItem>
-            <Paragraph>power electronics</Paragraph>
-        </ListItem>
-        <ListItem>
-            <Paragraph>communications</Paragraph>
-        </ListItem>
-        <ListItem>
-            <Paragraph>radio systems</Paragraph>
-        </ListItem>
-        <ListItem>
-            <Paragraph>digital signal processing</Paragraph>
-        </ListItem>
-        <ListItem>
-            <Paragraph>computer systems.</Paragraph>
-        </ListItem>
-    </List>
-
-    <Paragraph>
-        The pace of change in this field is so rapid that it is not advantageous to attempt covering all aspects of current technology in a four-year course. Instead the degree provides a broad foundation of basic science, engineering science, electrical engineering, and selected fields of current technology, which the professional engineer can build on throughout his or her career.
-    </Paragraph>
-
-    <Paragraph>
-        In Part II (second year) fundamental strands of electrical and electronic engineering are introduced, including:
-    </Paragraph>
-
-    <List>
-        <ListItem>
-            <Paragraph>electrical materials and electronic devices</Paragraph>
-        </ListItem>
-        <ListItem>
-            <Paragraph>circuit theory</Paragraph>
-        </ListItem>
-        <ListItem>
-            <Paragraph>software design</Paragraph>
-        </ListItem>
-        <ListItem>
-            <Paragraph>mathematical modelling tools.</Paragraph>
-        </ListItem>
-    </List>
-
-    <Paragraph>
-        An introduction to engineering electromagnetics and computer systems is also provided, and the course’s present-day relevance is strengthened by investigating how engineering fits into the wider context of human social and cultural development. In the second semester students take part in practical design exercises.
-    </Paragraph>
-
-    <Paragraph>
-        Part II strands are dovetailed into the core programme at Part III so that those completing Part III have been exposed to all modern electrical and electronic engineering concepts in the final year.
-    </Paragraph>
-
-    <Paragraph>
-        Part IV (final year) is essentially elective, with a choice of subjects allowing students to go with their preferences and skills. A final-year project is due, which has the weighting of 25% of the year’s work and represents the culmination of the engineering design strand.
+    <Paragraph FontFamily="Comic Sans MS" FontSize="30">
+        Electrical and Electronic Engineering
     </Paragraph>
     
+    <Paragraph>
+        Our modern society is highly dependent on reliable power, communications and electronic systems. Electrical 
+        and electronic engineers design the equipment and systems that provide these essential services.
+    </Paragraph>
+    
+    <Paragraph>
+        Electrical and electronic engineering involves communications and information technology, the applications of 
+        microprocessors and computers, electric power generation and the application of modern instrumentation and high-power 
+        electronics. This degree covers power systems, power electronics, radio systems, control systems, electronics, 
+        telecommunications, digital signal processing and computer systems.
+    </Paragraph>
+
+    <Paragraph FontFamily="Comic Sans MS" FontSize="18">
+        What are the career opportunities?
+    </Paragraph>
+    
+    <Paragraph>
+        Electrical and electronic engineering encompasses diverse fields providing a range of employment opportunities and a 
+        worldwide shortage of engineers in this field means graduates are in high demand. Graduates are employed in roles 
+        related to communications, wireless computing technologies, electronics, instrumentation, power electronics and motor-control. 
+        Opportunities are also available in the processing industries such as timber, pulp and paper, steel, aluminium, meat and dairy.
+    </Paragraph>
+
+    <Paragraph FontFamily="Comic Sans MS" FontSize="18">
+        Course Advisor - Stevan Berber
+    </Paragraph>
+    
+    <Paragraph>
+        <Bold>Contact details</Bold>
+        <LineBreak />
+        <LineBreak />
+        Room 303.250
+        <LineBreak />
+        City Campus
+        <LineBreak />
+        38 Princes Street
+        <LineBreak />
+        Auckland
+        <LineBreak />
+        <LineBreak />
+        Phone: +64 9 373 7599 ext 88966
+        <LineBreak />
+        Email: s.berber@auckland.ac.nz
+        <LineBreak />
+    </Paragraph>
+    
+    
+
 </FlowDocument>
