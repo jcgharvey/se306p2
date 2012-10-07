@@ -30,11 +30,6 @@
     </Paragraph>
 
     <Paragraph>
-       
-    </Paragraph>
-
-
-    <Paragraph>
         Phone: +64 9 373 7599 ext 88158
     </Paragraph>
 
@@ -44,10 +39,6 @@
     
     <Paragraph>
         Email: ece-info@aucklanduni.ac.nz
-    </Paragraph>
-
-    <Paragraph>
- 
     </Paragraph>
     
     <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="18">
@@ -78,15 +69,9 @@
         New Zealand
     </Paragraph>
 
-    <Paragraph>
-        
-    </Paragraph>
-
-
     <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="18">
         Courier deliveries
     </Paragraph>
-   
 
     <Paragraph>
         Department of Electrical and Computer Engineering
@@ -115,7 +100,4 @@
     <Paragraph>
         For urgent hand deliveries please phone: +64 9 373 7599 ext 87017
     </Paragraph>
-
-
-
 </FlowDocument>

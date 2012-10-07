@@ -22,7 +22,7 @@ namespace ECE_Showcase.Screens
         private FirstLevelScreen infoScreen;
         private FirstLevelScreen hodWelcomeScreen;
         private Courses coursesScreen;
-        private ContactScreen contactScreen;
+        private FirstLevelScreen contactScreen;
 
         public HomeScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
         {
@@ -30,6 +30,7 @@ namespace ECE_Showcase.Screens
 
             infoScreen = null;
             hodWelcomeScreen = null;
+            contactScreen = null;
         }
 
         private void InfoButton_Click(object sender, RoutedEventArgs e)
@@ -61,15 +62,13 @@ namespace ECE_Showcase.Screens
             ParentWindow.pushScreen(coursesScreen);
         }
 
-        private void Contact_Click(object sender, RoutedEventArgs e)
+        private void Contact_Click (object sender, RoutedEventArgs e)
         {
             if (contactScreen == null)
             {
-                contactScreen = new ContactScreen(ParentWindow);
+                contactScreen = new FirstLevelScreen(ParentWindow, "Resources/hod_welcome.xaml");
             }
-
             ParentWindow.pushScreen(contactScreen);
-
         }
 
         private void backButton_Click(object sender, RoutedEventArgs e)

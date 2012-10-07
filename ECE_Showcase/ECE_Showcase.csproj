@@ -97,10 +97,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Screens\ContactScreen.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="Screens\Courses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -126,9 +122,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Screen.cs" />
-    <Compile Include="Screens\ContactScreen.xaml.cs">
-      <DependentUpon>ContactScreen.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Screens\Courses.xaml.cs">
       <DependentUpon>Courses.xaml</DependentUpon>
     </Compile>
