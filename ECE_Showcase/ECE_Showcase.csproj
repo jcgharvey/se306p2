@@ -66,8 +66,8 @@
     <Resource Include="Resources\img\software.png" />
     <Resource Include="Resources\img\zoran.png" />
     <Resource Include="Resources\img\bg.png" />
-	</ItemGroup>
-	<ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Resources\docs\specialisations\cse.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,7 +109,6 @@
     </Page>
     <Page Include="Controls\ImageControl.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Controls\MapControl.xaml">
       <SubType>Designer</SubType>
@@ -148,6 +147,7 @@
     <Compile Include="Controls\MapControl.xaml.cs">
       <DependentUpon>MapControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GridLengthAnimation.cs" />
     <Compile Include="Screen.cs" />
     <Compile Include="Screens\Courses.xaml.cs">
       <DependentUpon>Courses.xaml</DependentUpon>
