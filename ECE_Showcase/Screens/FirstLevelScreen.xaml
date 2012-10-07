@@ -6,9 +6,9 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:view="clr-namespace:ECE_Showcase"
 	mc:Ignorable="d"
-	d:DesignWidth="640" d:DesignHeight="480" Width="1920" Height="1080">
+	d:DesignWidth="640" d:DesignHeight="480" >
 
-    <Grid Background="White" Margin="40">
+    <Grid Background="White">
 
         <Grid.Resources>
             <Style TargetType="s:SurfaceButton">
@@ -27,52 +27,93 @@
                 <Setter Property="Foreground"
                         Value="White" />
             </Style>
+            
         </Grid.Resources>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="90" />
+            <RowDefinition Height="150" />
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="150"/>
             <RowDefinition />
-            <RowDefinition Height="90" />
+            <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="400"/>
-            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
 
-        <s:SurfaceButton Name="HomeButton" 
-                         Grid.Row="0" 
+        <Image Source="/ECE_Showcase;component/Resources/bg.png"
+        		         Grid.Row="0"
+                         Grid.RowSpan="6"
                          Grid.Column="0"
-                         HorizontalContentAlignment="Center"
+                         Grid.ColumnSpan="5"	
+                    VerticalAlignment="Center"
+        			HorizontalAlignment="Center" Height="1080" Width="1920" />
+
+        <Label Content="welcome from the head of department" Grid.Column="2" FontSize="96" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="191,8,-294,-8"/>
+
+        <s:SurfaceButton Name="HomeButton" 
+                         Grid.Row="1" 
+                         Grid.Column="0"
+                         HorizontalContentAlignment="Left"
                          VerticalContentAlignment="Center"
                          Click="HomeButton_Click" Background="#00000000">
             <Image Source="/ECE_Showcase;component/Resources/home.png" />
         </s:SurfaceButton>
-        <Label Content="welcome from the head of department" Grid.Column="2" FontSize="96" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="191,8,-294,-8"/>
-
+        
         <s:SurfaceButton Name="BackButton"
                          Grid.Row="2"
                          Grid.Column="0"
-                         HorizontalContentAlignment="Center"
+                         HorizontalContentAlignment="Left"
                          VerticalContentAlignment="Center"
                          Click="BackButton_Click" Background="#00000000">
             <Image Source="/ECE_Showcase;component/Resources/back3.png" />
         </s:SurfaceButton>
 
 
+        <Label Name="Title"
+                         Grid.Row="0"
+                         Grid.Column="0"
+                         Grid.ColumnSpan="3"
+                         Margin = "0 -30 0 0"
+                         Background="{x:Null}"
+                         Foreground="#BCBCBC"
+                         FontSize="115"
+                         FontFamily="Segoe UI Light"
+                         VerticalContentAlignment="Top"
+                        Content="">
+           
+        </Label>
+
         <s:SurfaceScrollViewer
             Name="ScrollViewer"
-            Grid.Column="2"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            Grid.Column="1"
+            Grid.ColumnSpan="1"
             Grid.Row="1"
-            Grid.RowSpan="2"
-            Foreground="Black" Margin="-103,228,-690,0">
-            <RichTextBox
+            Grid.RowSpan="3"
+            Foreground="Black">
+            
+            
+        <RichTextBox
                 Width="{Binding ViewportWidth, ElementName=ScrollViewer, Mode=Default}"
-                Name="infoViewer">
+                FontSize="20"
+                Name="infoViewer"
+                BorderThickness="0"
+                IsReadOnly="True"
+                
+                IsDocumentEnabled="False"
+                Foreground="Purple"
+                Background="#FFFFEC"
+                >
                 
             </RichTextBox>
+       
         </s:SurfaceScrollViewer>
+        
     </Grid>
     
 </view:Screen>
