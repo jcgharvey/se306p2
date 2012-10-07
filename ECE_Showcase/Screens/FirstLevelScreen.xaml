@@ -42,7 +42,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200" />
             <ColumnDefinition />
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
         <Image Source="/ECE_Showcase;component/Resources/img/bg.png"
@@ -94,7 +94,7 @@
             Name="ScrollViewer"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch"
-            Grid.Column="1"
+            Grid.Column="2"
             Grid.ColumnSpan="1"
             Grid.Row="1"
             Grid.RowSpan="3"

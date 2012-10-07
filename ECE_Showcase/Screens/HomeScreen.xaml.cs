@@ -41,7 +41,6 @@ namespace ECE_Showcase.Screens
             }
 
             ParentWindow.pushScreen(infoScreen);
-            
         }
 
         private void HODButton_Click(object sender, RoutedEventArgs e)
