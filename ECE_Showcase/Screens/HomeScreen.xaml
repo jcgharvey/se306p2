@@ -9,8 +9,21 @@
              d:DesignHeight="1080"
              d:DesignWidth="1920">
 
+    <view:Screen.Resources>
+        <Storyboard x:Key="gridin">
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row1" From="195" To="390" />
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row2" From="195" To="48.75" />
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row3" From="195" To="48.75" />
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row4" From="195" To="48.75" />
+        </Storyboard>
+        <Storyboard x:Key="gridout">
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Height" From="0" To="100" />
+        </Storyboard>
+    </view:Screen.Resources>
+    
     <Grid Background="White"
-          Margin="200 150">
+          Margin="200 150" 
+          Name="containerGrid">
         
         <Grid.Resources>
             <Style TargetType="s:SurfaceButton">
@@ -35,10 +48,10 @@
         </Grid.Resources>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="195px" />
-            <RowDefinition Height="195px" />
-            <RowDefinition Height="195px" />
-            <RowDefinition Height="195px" />
+            <RowDefinition Name="Row1"  Height="195px" />
+            <RowDefinition Name="Row2" Height="195px" />
+            <RowDefinition Name="Row3" Height="195px" />
+            <RowDefinition Name="Row4" Height="195px" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -121,6 +134,7 @@
                           PreviewTouchDown="Button_PreviewTouchDown"
                          PreviewTouchUp="Button_TouchUp"
                          PreviewTouchMove="Button_PreviewTouchMove">
+            
             <Image Source="/ECE_Showcase;component/Resources/contact.png"
                    VerticalAlignment="Stretch"
                    HorizontalAlignment="Stretch" />
@@ -130,7 +144,6 @@
                           Grid.RowSpan="2"
                           Grid.Column="2"
                           Grid.ColumnSpan="2"
-                          Click="RNDButton_Click"
                           Margin="0"
                           VerticalContentAlignment="Stretch"
                           HorizontalContentAlignment="Stretch"

@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Diagnostics;
 using Microsoft.Surface.Presentation.Controls;
+using System.Windows.Media.Animation;
 
 namespace ECE_Showcase.Screens
 {
@@ -23,7 +24,7 @@ namespace ECE_Showcase.Screens
     {
         private InfoScreen infoScreen;
         private HODWelcomeScreen hodWelcomeScreen;
-        private Courses coursesScreen;
+        private ProgrammesScreen programmesScreen;
         private TouchPoint touch1;
         private TouchPoint touch2;
         private double initialDist;
@@ -41,50 +42,49 @@ namespace ECE_Showcase.Screens
             triggered = false;
         }
 
-        private void InfoButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (infoScreen == null)
-            {
-                infoScreen = new InfoScreen(ParentWindow);
-            }
-
-            ParentWindow.pushScreen(infoScreen);
-            
-        }
-
-        private void HODButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (hodWelcomeScreen == null)
-            {
-                hodWelcomeScreen = new HODWelcomeScreen(ParentWindow);
-            }
-            ParentWindow.pushScreen(hodWelcomeScreen);
-        }
-
-        private void courses_button_click(object sender, RoutedEventArgs e)
-        {
-            if (coursesScreen == null)
-            {
-                coursesScreen = new Courses(ParentWindow);
-            }
-            ParentWindow.pushScreen(coursesScreen);
-        }
-
-
-        private void RNDButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void Button_TouchUp(object sender, TouchEventArgs e)
         {
             if (touch1 == null ^ touch2 == null)
             {
-                if (hodWelcomeScreen == null)
+                Screen screenToPush;
+                switch ((sender as SurfaceButton).Name)
                 {
-                    hodWelcomeScreen = new HODWelcomeScreen(ParentWindow);
+                    case "InfoButton":
+                        if (infoScreen == null)
+                        {
+                            infoScreen = new InfoScreen(ParentWindow);
+                        }
+                        screenToPush = infoScreen;
+                        break;
+                    case "HODButton":
+                        if (hodWelcomeScreen == null)
+                        {
+                            hodWelcomeScreen = new HODWelcomeScreen(ParentWindow);
+                        }
+                        screenToPush = hodWelcomeScreen;
+                        break;
+                    case "ProgrammesButton":
+                        if (programmesScreen == null)
+                        {
+                            programmesScreen = new ProgrammesScreen(ParentWindow);
+                        }
+                        screenToPush = programmesScreen;
+                        break;
+                    case "ContactButton":
+                        if (hodWelcomeScreen == null)
+                        {
+                            hodWelcomeScreen = new HODWelcomeScreen(ParentWindow);
+                        }
+                        screenToPush = hodWelcomeScreen;
+                        break;
+                    default:
+                        //This shouldn't ever happen.
+                        screenToPush = null;
+                        break;
                 }
-                ParentWindow.pushScreen(hodWelcomeScreen);
+                
+                ParentWindow.pushScreen(screenToPush);
             }
 
             touch1 = null;
@@ -111,7 +111,14 @@ namespace ECE_Showcase.Screens
                 if (touchDist(touch1, touch2) - initialDist > 75 && !triggered)
                 {
                     triggered = false;
-                    MessageBox.Show((sender as SurfaceButton).Name);
+                    
+
+                    //Animate the grid control
+                    Storyboard sb;
+                 
+                   sb = this.FindResource("gridin") as Storyboard;
+                   sb.Begin(this);
+
                 }
 
             }
