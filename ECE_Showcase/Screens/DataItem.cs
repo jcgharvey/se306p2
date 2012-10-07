@@ -9,6 +9,7 @@ namespace ECE_Showcase.Screens
     {
         private string name;
         public string filePath;
+        public string imagePath;
 
         public string Name
         {
@@ -20,10 +21,16 @@ namespace ECE_Showcase.Screens
             get { return filePath; }
         }
 
-        public DataItem(string name, string filePath)
+        public string ImagePath
+        {
+            get { return imagePath; }
+        }
+
+        public DataItem(string name, string filePath, string imagePath)
         {
             this.name = name;
             this.filePath = filePath;
+            this.imagePath = imagePath;
         }
     }
 }

@@ -58,6 +58,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Resource Include="Resources\img\compsys.png" />
+    <Resource Include="Resources\img\electrical.png" />
+    <Resource Include="Resources\img\software.png" />
     <Resource Include="Resources\img\bg.png" />
     <Content Include="Resources\docs\specialisations\cse.xaml">
       <Generator>MSBuild:Compile</Generator>

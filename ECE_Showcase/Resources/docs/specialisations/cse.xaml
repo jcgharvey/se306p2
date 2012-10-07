@@ -1,7 +1,7 @@
 <FlowDocument 
   xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
   xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
-	<Paragraph FontFamily="Comic Sans MS" FontSize="30">
+	<Paragraph FontFamily="Calibri" FontSize="30">
 		Computer Systems Engineering
 	</Paragraph>
 
@@ -21,7 +21,7 @@
 		world, and general problem-solving skills required in design and building systems.
 	</Paragraph>
 
-	<Paragraph FontFamily="Comic Sans MS" FontSize="18">
+    <Paragraph FontFamily="Calibri" FontSize="30">
 		What are the career opportunities? 
 	</Paragraph>
 
@@ -33,7 +33,7 @@
 		systems, manufacturing and resource industries.
 	</Paragraph>
 
-    <Paragraph FontFamily="Comic Sans MS" FontSize="18">
+    <Paragraph FontFamily="Calibri" FontSize="30">
         Course Advisor - Partha Roop
     </Paragraph>
 

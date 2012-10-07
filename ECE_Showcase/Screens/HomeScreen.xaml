@@ -13,12 +13,7 @@
         
         <Grid.Resources>
             <Style TargetType="s:SurfaceButton">
-                <!--<Setter Property="Effect">
-                    <Setter.Value>
-                        <DropShadowEffect Direction="270"
-                                          ShadowDepth="1.0"/>
-                    </Setter.Value>
-                </Setter>-->
+
                 <Setter Property="Padding"
                         Value="4px" />
                 <Setter Property="Background"
