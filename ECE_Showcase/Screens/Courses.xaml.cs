@@ -66,7 +66,7 @@ namespace ECE_Showcase.Screens
             SourceItems.Add(new DataItem("Electrical and Electronic Engineering", "Resources/docs/specialisations/eee.xaml"));
             SourceItems.Add(new DataItem("Computer Systems Engineering", "Resources/docs/specialisations/cse.xaml"));
 
-            DropTargetFlowocumentViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/specialisations/se.xaml"));
+            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/specialisations/se.xaml"));
             
         }
 
@@ -179,9 +179,9 @@ namespace ECE_Showcase.Screens
         }
 
 
-        private void DropTargetFlowocumentViewer_Drop(object sender, Microsoft.Surface.Presentation.SurfaceDragDropEventArgs e)
+        private void DropTargetRichTextBox_Drop(object sender, Microsoft.Surface.Presentation.SurfaceDragDropEventArgs e)
         {
-            DropTargetFlowocumentViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead((e.Cursor.Data as DataItem).FilePath));
+            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead((e.Cursor.Data as DataItem).FilePath));
         }
 
 
