@@ -9,32 +9,28 @@
              d:DesignHeight="1080"
              d:DesignWidth="1920">
 
+
     <view:Screen.Resources>
         <Storyboard x:Key="gridin">
-            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row1" From="195" To="390" />
-            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row2" From="195" To="48.75" />
-            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row3" From="195" To="48.75" />
-            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row4" From="195" To="48.75" />
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row1" From="195" To="390" />
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row2" From="195" To="130" />
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row3" From="195" To="130" />
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Row4" From="195" To="130" />
         </Storyboard>
+        
         <Storyboard x:Key="gridout">
             <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Height" From="0" To="100" />
         </Storyboard>
     </view:Screen.Resources>
     
     <Grid Background="White"
-          Margin="200 150" 
           Name="containerGrid">
+
         
         <Grid.Resources>
             <Style TargetType="s:SurfaceButton">
-                <!--<Setter Property="Effect">
-                    <Setter.Value>
-                        <DropShadowEffect Direction="270"
-                                          ShadowDepth="1.0"/>
-                    </Setter.Value>
-                </Setter>-->
-                <Setter Property="Margin"
-                        Value="5px" />
+                <Setter Property="Padding"
+                        Value="4px" />
                 <Setter Property="Background"
                         Value="Transparent" />
                 <Setter Property="FontSize"
@@ -46,121 +42,158 @@
             </Style>
             
         </Grid.Resources>
-
+        
         <Grid.RowDefinitions>
+            
+            <RowDefinition Height="150px" />
             <RowDefinition Name="Row1"  Height="195px" />
             <RowDefinition Name="Row2" Height="195px" />
             <RowDefinition Name="Row3" Height="195px" />
             <RowDefinition Name="Row4" Height="195px" />
+            <RowDefinition Height="150px" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200px" />
             <ColumnDefinition Width="745px" />
-            <ColumnDefinition Width="745" />
+            <ColumnDefinition/>
+            <ColumnDefinition Width="745px" />
+            <ColumnDefinition Width="200px" />
+            
         </Grid.ColumnDefinitions>
-
+        <Image Source="/ECE_Showcase;component/Resources/bg.png"
+        		         Grid.Row="0"
+                         Grid.RowSpan="6"
+                         Grid.Column="0"
+                         Grid.ColumnSpan="5"	
+                    VerticalAlignment="Center"
+        			HorizontalAlignment="Center" Height="1080" Width="1920" />
+        
         <Label Name="Title"
-                         Margin="-205,-170,-203,0"
-                         Grid.ColumnSpan="4"
-                         Background="White"
+                         Grid.Row="0"
+                         Grid.Column="0"
+                         Grid.ColumnSpan="5"
+                         Margin = "0 -30 0 0"
+                         Background="{x:Null}"
                          Foreground="#BCBCBC"
                          FontSize="115"
                          FontFamily="Segoe UI Light"
                          VerticalContentAlignment="Top">
-            electrical and computer engineering</Label>
+            electrical and computer engineering
+        </Label>
 
         <s:SurfaceButton Name="InfoButton"
-                         Grid.Row="0"
-                         Grid.Column="0"
+                         Grid.Row="1"
+                         Grid.Column="1"
                          Grid.ColumnSpan="1"
                          Stylus.IsPressAndHoldEnabled="False"
-                         Margin="0"
+                         Background="#633678" Margin="0" Padding="0" Width="735" Height="185" BorderThickness="0" ClipToBounds="True"
                          VerticalContentAlignment="Stretch"
                          HorizontalContentAlignment="Stretch"
-                         Padding="0"
                          PreviewTouchDown="Button_PreviewTouchDown"
                          PreviewTouchUp="Button_TouchUp"
-                         PreviewTouchMove="Button_PreviewTouchMove">
-            
-            <Image Source="/ECE_Showcase;component/Resources/info.png"
-                   VerticalAlignment="Stretch"
-                   HorizontalAlignment="Stretch" />
+                         PreviewTouchMove="Button_PreviewTouchMove" >
+
+            <StackPanel>
+                <Image Source="/ECE_Showcase;component/Resources/info.png"
+        			VerticalAlignment="Center"
+        			HorizontalAlignment="Center" Height="185" Width="735" />
+                <TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="information" HorizontalAlignment="Right" Width="159"/>
+            </StackPanel>
         </s:SurfaceButton>
 
         <s:SurfaceButton Name="HODButton"
-                         Grid.Row="1"
-                         Grid.Column="0"
+                         Grid.Row="2"
+                         Grid.Column="1"
                          Grid.ColumnSpan="1"
-                         Margin="0"
                          VerticalContentAlignment="Stretch"
                          HorizontalContentAlignment="Stretch"
-                         Padding="0"
+                         Background="#633678" Margin="0" Padding="0" Width="735" Height="185" BorderThickness="0" ClipToBounds="True"
                          Stylus.IsPressAndHoldEnabled="False"
-                          PreviewTouchDown="Button_PreviewTouchDown"
+                         PreviewTouchDown="Button_PreviewTouchDown"
                          PreviewTouchUp="Button_TouchUp"
                          PreviewTouchMove="Button_PreviewTouchMove">
-            
-            <Image Source="/ECE_Showcase;component/Resources/HOD.png"
-                   VerticalAlignment="Stretch"
-                   HorizontalAlignment="Stretch" />
+       
+            <StackPanel>
+        		<Image Source="/ECE_Showcase;component/Resources/HOD.png"
+        			VerticalAlignment="Center"
+        			HorizontalAlignment="Center" Width="735" Height="185" />
+        		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="313,-45,0,0" FontSize="32"><Run Language="en-nz" Text="head of department's welcome"/></TextBlock>
+        	</StackPanel>
         </s:SurfaceButton>
 
         <s:SurfaceButton Name="ProgrammesButton"
-                         Grid.Row="2"
-                         Grid.Column="0"
+                         Grid.Row="3"
+                         Grid.Column="1"
                          Grid.ColumnSpan="1"
                          Stylus.IsPressAndHoldEnabled="False"
                          Margin="0"
+                         Padding="0"
+                         PreviewTouchDown="Button_PreviewTouchDown"
+                         PreviewTouchUp="Button_TouchUp"
+                         PreviewTouchMove="Button_PreviewTouchMove"
                          VerticalContentAlignment="Stretch"
                          HorizontalContentAlignment="Stretch"
-                         Padding="0"
-                          PreviewTouchDown="Button_PreviewTouchDown"
-                         PreviewTouchUp="Button_TouchUp"
-                         PreviewTouchMove="Button_PreviewTouchMove">
-            <Image Source="/ECE_Showcase;component/Resources/programmes.png"
-                   VerticalAlignment="Stretch"
-                   HorizontalAlignment="Stretch" />
+                         Width="735"
+                         Height="185"
+                          Background="#633678" >
+            <StackPanel>
+                <Image Source="/ECE_Showcase;component/Resources/programmes.png"
+        			VerticalAlignment="Center"
+        			HorizontalAlignment="Center" Height="185" Width="735" />
+                <TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-45,0,0" FontSize="32" Text="programmes" HorizontalAlignment="Right" Width="177"/>
+            </StackPanel>
         </s:SurfaceButton>
         
         <s:SurfaceButton Name="ContactButton"
-                         Grid.Column="0"
-                         Grid.Row="3"
+                         Grid.Row="4"
+                         Grid.Column="1"
                          Grid.ColumnSpan="1"
-                         Margin="0"
                          VerticalContentAlignment="Stretch"
                          HorizontalContentAlignment="Stretch"
-                         Padding="0"
                          Stylus.IsPressAndHoldEnabled="False"
-                          PreviewTouchDown="Button_PreviewTouchDown"
+                         PreviewTouchDown="Button_PreviewTouchDown"
                          PreviewTouchUp="Button_TouchUp"
-                         PreviewTouchMove="Button_PreviewTouchMove">
-            
-            <Image Source="/ECE_Showcase;component/Resources/contact.png"
-                   VerticalAlignment="Stretch"
-                   HorizontalAlignment="Stretch" />
+                         PreviewTouchMove="Button_PreviewTouchMove"
+                         Background="#633678" 
+                         Margin="0" 
+                         Padding="0" 
+                         Width="735" 
+                         Height="185">
+
+            <StackPanel>
+                <Image Source="/ECE_Showcase;component/Resources/contact.png"
+        			VerticalAlignment="Center"
+        			HorizontalAlignment="Center" Height="185" Width="735" />
+                <TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="contact us" HorizontalAlignment="Right" Width="141.5"/>
+            </StackPanel>
         </s:SurfaceButton>
         
         <s:SurfaceButton  Name="RNDButton"
+                          Grid.Row="1"
                           Grid.RowSpan="2"
-                          Grid.Column="2"
-                          Grid.ColumnSpan="2"
-                          Margin="0"
+                          Grid.Column="3"
+                          Grid.ColumnSpan="1"
                           VerticalContentAlignment="Stretch"
                           HorizontalContentAlignment="Stretch"
-                          Padding="0">
-            <Image Source="/ECE_Showcase;component/Resources/rnd.png"
-                   VerticalAlignment="Stretch"
-                   HorizontalAlignment="Stretch" />
+                          Background="#633678" Padding="0" Margin="0" Width="735" Height="380">
+            <StackPanel>
+        		<Image Source="/ECE_Showcase;component/Resources/rnd.png"
+        			VerticalAlignment="Center"
+        			HorizontalAlignment="Center" Height="380" Width="735" />
+        		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="projects and research" HorizontalAlignment="Right" Width="290"/>
+        	</StackPanel>
         </s:SurfaceButton>
         
-        <s:SurfaceButton Grid.Column="2"
-                         Grid.Row="2"
+        <s:SurfaceButton 
+                         Grid.Row="3"
                          Grid.RowSpan="2"
-                         Grid.ColumnSpan="2"
-                         Margin="0"
+                         Grid.Column="3"
+                         Grid.ColumnSpan="1"
+                         Width="735px"
+                         Height="380px"
                          VerticalContentAlignment="Stretch"
                          HorizontalContentAlignment="Stretch"
-                         Padding="0"
                          Background="#633678">
             News Feed
         </s:SurfaceButton>
@@ -173,6 +206,6 @@
                 Name="border1"
                 VerticalAlignment="Top"
                 Width="70" />
-        
+
     </Grid>
 </view:Screen>

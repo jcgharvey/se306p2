@@ -29,6 +29,8 @@ namespace ECE_Showcase.Screens
         private TouchPoint touch2;
         private double initialDist;
         private bool triggered;
+        private Courses coursesScreen;
+        private ContactScreen contactScreen;
 
         public HomeScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
         {
@@ -113,17 +115,19 @@ namespace ECE_Showcase.Screens
                     triggered = false;
                     
 
-                    //Animate the grid control
-                    Storyboard sb;
-                 
+                   //Animate the grid control
+                   Storyboard sb;
                    sb = this.FindResource("gridin") as Storyboard;
                    sb.Begin(this);
-
+                   (sender as SurfaceButton).Content = "SUP";
+                   
+                   (sender as SurfaceButton).Height = 370;
                 }
 
             }
            
         }
+
 
         private double touchDist(TouchPoint t1, TouchPoint t2)
         {
@@ -143,5 +147,6 @@ namespace ECE_Showcase.Screens
                 initialDist = touchDist(touch1, touch2);
             }
         }
+
     }
 }
