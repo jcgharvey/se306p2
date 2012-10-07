@@ -23,9 +23,12 @@ namespace ECE_Showcase.Screens
     
 
 	{
-		public FirstLevelScreen(SurfaceWindow1 parentWindow, String flowdoc) : base(parentWindow)
+		public FirstLevelScreen(SurfaceWindow1 parentWindow, String title, String flowdoc) : base(parentWindow)
 		{
 			InitializeComponent();
+
+            Title.Content = title;
+
             FlowDocument flowDocument = (FlowDocument)XamlReader.Load(File.OpenRead(flowdoc));
             
             infoViewer.Document = flowDocument;

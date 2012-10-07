@@ -36,7 +36,7 @@ namespace ECE_Showcase.Screens
         {
             if (infoScreen == null)
             {
-                infoScreen = new FirstLevelScreen(ParentWindow, "Resources/ece_info.xaml");
+                infoScreen = new FirstLevelScreen(ParentWindow, "information", "Resources/ece_info.xaml");
             }
 
             ParentWindow.pushScreen(infoScreen);
@@ -47,7 +47,7 @@ namespace ECE_Showcase.Screens
         {
             if (hodWelcomeScreen == null)
             {
-                hodWelcomeScreen = new FirstLevelScreen(ParentWindow, "Resources/hod_welcome.xaml");
+                hodWelcomeScreen = new FirstLevelScreen(ParentWindow, "hod welcome", "Resources/hod_welcome.xaml");
             }
             ParentWindow.pushScreen(hodWelcomeScreen);
         }

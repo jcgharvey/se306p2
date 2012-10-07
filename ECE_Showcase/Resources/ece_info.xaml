@@ -1,13 +1,6 @@
 <FlowDocument 
   xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
   xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
-    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="24">
-        Department of Electrical and Computer Engineering
-    </Paragraph>
-
-    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="20">     
-        About us
-    </Paragraph>
 
     <Paragraph>
         The Department of Electrical and Computer Engineering is committed to research and dedicated to the pursuit of excellence in teaching, innovation and knowledge.

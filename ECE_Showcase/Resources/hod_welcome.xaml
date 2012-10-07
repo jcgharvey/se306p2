@@ -1,13 +1,6 @@
 <FlowDocument 
   xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
   xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
-    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="24">
-         Welcome from the Head of Department
-    </Paragraph>
-
-    <Paragraph>
-        Professor Zoran Salcic, HoD, provides a brief overview of what's happening in the department and offers a warm greeting to all visitors.
-    </Paragraph>
 
     <Paragraph>
         Modern world infrastructure is largely based on the work of electrical, computer and software engineers; from generation and distribution of electricity to providing telecommunication and internet services, portable and embedded computers and numerous software applications. All modern systems used in everyday’s private or business life, such as mobile phones, vehicles, home and building automation or industrial control systems, will not exist if there are not electrical, computer and software engineers.
