@@ -20,11 +20,22 @@ namespace ECE_Showcase.Screens
 	/// Interaction logic for UserControl1.xaml
 	/// </summary>
 	public partial class FirstLevelScreen : Screen
+    
+
 	{
 		public FirstLevelScreen(SurfaceWindow1 parentWindow, String flowdoc) : base(parentWindow)
 		{
 			InitializeComponent();
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead(flowdoc));
+            FlowDocument flowDocument = (FlowDocument)XamlReader.Load(File.OpenRead(flowdoc));
+            
+            infoViewer.Document = flowDocument;
+            /*
+            flowDocument.ColumnWidth = ScrollViewer.Width;
+            flowDocument.PageWidth = ScrollViewer.Width;
+            ScrollViewer.Content = flowDocument;
+           */
+            
+
 		}
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)

@@ -6,7 +6,7 @@
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:view="clr-namespace:ECE_Showcase"
 	mc:Ignorable="d"
-	d:DesignWidth="640" d:DesignHeight="480" Width="1920" Height="1080">
+	d:DesignWidth="640" d:DesignHeight="480" >
 
     <Grid Background="White" Margin="40">
 
@@ -27,6 +27,7 @@
                 <Setter Property="Foreground"
                         Value="White" />
             </Style>
+            
         </Grid.Resources>
 
         <Grid.RowDefinitions>
@@ -37,7 +38,7 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="50" />
-            <ColumnDefinition Width="400"/>
+            <ColumnDefinition />
             <ColumnDefinition Width="50"/>
         </Grid.ColumnDefinitions>
 
@@ -63,16 +64,30 @@
 
         <s:SurfaceScrollViewer
             Name="ScrollViewer"
-            Grid.Column="2"
-            Grid.Row="1"
-            Grid.RowSpan="2"
-            Foreground="Black" Margin="-103,228,-690,0">
-            <RichTextBox
+            HorizontalAlignment="Stretch"
+            Width="800"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Grid.Row="0"
+            Grid.RowSpan="3"
+            Foreground="Black">
+            
+            
+        <RichTextBox
                 Width="{Binding ViewportWidth, ElementName=ScrollViewer, Mode=Default}"
-                Name="infoViewer">
+                Name="infoViewer"
+                BorderThickness="0"
+                IsReadOnly="True"
+                
+                IsDocumentEnabled="False"
+                Foreground="Black"
+                Background="White"
+                >
                 
             </RichTextBox>
+       
         </s:SurfaceScrollViewer>
+        
     </Grid>
     
 </view:Screen>
