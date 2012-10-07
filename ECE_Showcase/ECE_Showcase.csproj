@@ -58,42 +58,38 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Resource Include="Resources\bg.png" />
-    <Content Include="Resources\computersystems.xaml">
+    <Resource Include="Resources\img\bg.png" />
+    <Content Include="Resources\docs\specialisations\cse.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\ece_info.xaml">
+    <Content Include="Resources\docs\info.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Resources\contact.png" />
-    <Content Include="Resources\eee.xaml">
+    <Resource Include="Resources\img\contact_us_btn.png" />
+    <Content Include="Resources\docs\specialisations\eee.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Resources\HOD.png" />
-    <Content Include="Resources\hod_welcome.xaml">
+    <Resource Include="Resources\img\hod_btn.png" />
+    <Content Include="Resources\docs\hod_welcome.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Resource Include="Resources\info.png" />
-    <Resource Include="Resources\programmes.png" />
-    <Resource Include="Resources\rnd.png" />
-    <Content Include="Resources\software.xaml">
+    <Resource Include="Resources\img\info_btn.png" />
+    <Resource Include="Resources\img\programmes_btn.png" />
+    <Resource Include="Resources\img\rnd_btn.png" />
+    <Content Include="Resources\docs\specialisations\se.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\eee_info.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Content>
-    <Content Include="Resources\ece_contact.xaml">
+    <Content Include="Resources\docs\contact_us.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -167,16 +163,8 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\fyeah.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Resources\home.png" />
-    <Resource Include="Resources\back1.png" />
-    <Resource Include="Resources\back2.png" />
-    <Resource Include="Resources\back3.png" />
-    <Content Include="Resources\icon.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Resource Include="Resources\img\home_btn.png" />
+    <Resource Include="Resources\img\back_btn.png" />
     <Content Include="ECE_Showcase.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>

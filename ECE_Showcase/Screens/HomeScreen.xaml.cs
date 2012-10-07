@@ -37,7 +37,7 @@ namespace ECE_Showcase.Screens
         {
             if (infoScreen == null)
             {
-                infoScreen = new FirstLevelScreen(ParentWindow, "information", "Resources/ece_info.xaml");
+                infoScreen = new FirstLevelScreen(ParentWindow, "information", "Resources/docs/info.xaml");
             }
 
             ParentWindow.pushScreen(infoScreen);
@@ -48,7 +48,7 @@ namespace ECE_Showcase.Screens
         {
             if (hodWelcomeScreen == null)
             {
-                hodWelcomeScreen = new FirstLevelScreen(ParentWindow, "hod welcome", "Resources/hod_welcome.xaml");
+                hodWelcomeScreen = new FirstLevelScreen(ParentWindow, "hod welcome", "Resources/docs/hod_welcome.xaml");
             }
             ParentWindow.pushScreen(hodWelcomeScreen);
         }
@@ -66,7 +66,7 @@ namespace ECE_Showcase.Screens
         {
             if (contactScreen == null)
             {
-                contactScreen = new FirstLevelScreen(ParentWindow, "contact us", "Resources/ece_contact.xaml");
+                contactScreen = new FirstLevelScreen(ParentWindow, "contact us", "Resources/docs/contact_us.xaml");
             }
             ParentWindow.pushScreen(contactScreen);
         }

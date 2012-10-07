@@ -44,7 +44,7 @@
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
 
-        <Image Source="/ECE_Showcase;component/Resources/bg.png"
+        <Image Source="/ECE_Showcase;component/Resources/img/bg.png"
         		         Grid.Row="0"
                          Grid.RowSpan="6"
                          Grid.Column="0"
@@ -60,7 +60,7 @@
                          HorizontalContentAlignment="Left"
                          VerticalContentAlignment="Center"
                          Click="HomeButton_Click" Background="#00000000">
-            <Image Source="/ECE_Showcase;component/Resources/home.png" />
+            <Image Source="/ECE_Showcase;component/Resources/img/home_btn.png" />
         </s:SurfaceButton>
         
         <s:SurfaceButton Name="BackButton"
@@ -69,7 +69,7 @@
                          HorizontalContentAlignment="Left"
                          VerticalContentAlignment="Center"
                          Click="BackButton_Click" Background="#00000000">
-            <Image Source="/ECE_Showcase;component/Resources/back3.png" />
+            <Image Source="/ECE_Showcase;component/Resources/img/back_btn.png" />
         </s:SurfaceButton>
 
 

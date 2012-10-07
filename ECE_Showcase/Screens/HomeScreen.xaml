@@ -50,7 +50,7 @@
             <ColumnDefinition Width="200px" />
             
         </Grid.ColumnDefinitions>
-        <Image Source="/ECE_Showcase;component/Resources/bg.png"
+        <Image Source="/ECE_Showcase;component/Resources/img/bg.png"
         		         Grid.Row="0"
                          Grid.RowSpan="6"
                          Grid.Column="0"
@@ -79,7 +79,7 @@
                          HorizontalContentAlignment="Stretch"
                          Background="#633678" Padding="0" Margin="0" Width="735" Height="185">
             <StackPanel>
-        		<Image Source="/ECE_Showcase;component/Resources/info.png"
+        		<Image Source="/ECE_Showcase;component/Resources/img/info_btn.png"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="185" Width="735" />
         		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="information" HorizontalAlignment="Right" Width="159"/>
@@ -95,7 +95,7 @@
                          HorizontalContentAlignment="Stretch"
                          Background="#633678" Margin="0" Padding="0" Width="735" Height="185" BorderThickness="0" ClipToBounds="True">
             <StackPanel>
-        		<Image Source="/ECE_Showcase;component/Resources/HOD.png"
+        		<Image Source="/ECE_Showcase;component/Resources/img/hod_btn.png"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Width="735" Height="185" />
         		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="313,-45,0,0" FontSize="32"><Run Language="en-nz" Text="head of department's welcome"/></TextBlock>
@@ -111,7 +111,7 @@
                          HorizontalContentAlignment="Stretch"
                          Background="#633678" Padding="0" Margin="0" Width="735" Height="185">
             <StackPanel>
-        		<Image Source="/ECE_Showcase;component/Resources/programmes.png"
+        		<Image Source="/ECE_Showcase;component/Resources/img/programmes_btn.png"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="185" Width="735" />
         		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-45,0,0" FontSize="32" Text="programmes" HorizontalAlignment="Right" Width="177"/>
@@ -127,7 +127,7 @@
                          HorizontalContentAlignment="Stretch"
                          Background="#633678" Margin="0" Padding="0" Width="735" Height="185">
             <StackPanel>
-        		<Image Source="/ECE_Showcase;component/Resources/contact.png"
+        		<Image Source="/ECE_Showcase;component/Resources/img/contact_us_btn.png"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="185" Width="735" />
         		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="contact us" HorizontalAlignment="Right" Width="141.5"/>
@@ -144,7 +144,7 @@
                           HorizontalContentAlignment="Stretch"
                           Background="#633678" Padding="0" Margin="0" Width="735" Height="380">
             <StackPanel>
-        		<Image Source="/ECE_Showcase;component/Resources/rnd.png"
+        		<Image Source="/ECE_Showcase;component/Resources/img/rnd_btn.png"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="380" Width="735" />
         		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="projects and research" HorizontalAlignment="Right" Width="290"/>

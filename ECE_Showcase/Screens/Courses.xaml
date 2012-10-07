@@ -92,7 +92,7 @@
                          HorizontalContentAlignment="Center"
                          VerticalContentAlignment="Center"
                          Click="HomeButton_Click" Background="#00000000">
-            <Image Source="/ECE_Showcase;component/Resources/home.png" />
+            <Image Source="/ECE_Showcase;component/Resources/img/home_btn.png" />
         </s:SurfaceButton>
 
         <s:SurfaceButton Name="BackButton"
@@ -101,7 +101,7 @@
                          HorizontalContentAlignment="Center"
                          VerticalContentAlignment="Center"
                          Click="BackButton_Click" Background="#00000000">
-            <Image Source="/ECE_Showcase;component/Resources/back3.png" />
+            <Image Source="/ECE_Showcase;component/Resources/img/back_btn.png" />
         </s:SurfaceButton>
         
         <s:SurfaceListBox Name="CoursesListBox"
