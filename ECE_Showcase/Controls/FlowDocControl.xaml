@@ -445,10 +445,7 @@
     <s:SurfaceScrollViewer x:Name="ScrollViewer"
                            HorizontalAlignment="Stretch"
                            VerticalAlignment="Stretch"
-                           Grid.Column="2"
-                           Grid.ColumnSpan="1"
-                           Grid.Row="1"
-                           Grid.RowSpan="3"
+                           
                            Foreground="Black" Style="{DynamicResource SurfaceScrollViewerStyle1}">
 
 
