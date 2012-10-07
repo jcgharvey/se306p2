@@ -445,6 +445,7 @@
     <s:SurfaceScrollViewer x:Name="ScrollViewer"
                            HorizontalAlignment="Stretch"
                            VerticalAlignment="Stretch"
+                           Margin="20 0 0 0"
                            
                            Foreground="Black" Style="{DynamicResource SurfaceScrollViewerStyle1}">
 
