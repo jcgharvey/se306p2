@@ -29,9 +29,9 @@ namespace ECE_Showcase.Controls
 
             infoViewer.Document = flowDocument;
             
-            flowDocument.ColumnWidth = ScrollViewer.Width;
-            flowDocument.PageWidth = ScrollViewer.Width;
-            ScrollViewer.Content = flowDocument;
+            //flowDocument.ColumnWidth = ScrollViewer.Width;
+            //flowDocument.PageWidth = ScrollViewer.Width;
+            //ScrollViewer.Content = flowDocument;
            
         }
     }

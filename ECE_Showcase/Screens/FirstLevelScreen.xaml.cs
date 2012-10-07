@@ -31,6 +31,21 @@ namespace ECE_Showcase.Screens
 
 		}
 
+        public void setLeft(UIElement control)
+        {
+            Grid.SetColumn(control, 1);
+            Grid.SetRow(control, 1);
+            Grid.SetRowSpan(control, 3);
+            theGrid.Children.Add(control);
+        }
+        public void setRight(UIElement control)
+        {
+            Grid.SetColumn(control, 2);
+            Grid.SetRow(control, 1);
+            Grid.SetRowSpan(control, 3);
+            theGrid.Children.Add(control);
+        }
+
         private void HomeButton_Click(object sender, RoutedEventArgs e)
         {
             ParentWindow.popAll();

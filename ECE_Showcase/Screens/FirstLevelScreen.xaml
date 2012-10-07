@@ -9,7 +9,8 @@
              d:DesignWidth="640"
              d:DesignHeight="480">
 
-    <Grid Background="White">
+    <Grid Name="theGrid" 
+        Background="White">
 
         <Grid.Resources>
             <Style TargetType="s:SurfaceButton">
@@ -118,20 +119,7 @@
                VerticalAlignment="Top">
 
         </Label>
-        <Control Name="Left"
-                 Grid.Row="1"
-                 Grid.RowSpan="3"
-                 Grid.Column="2"
-                 Background="#FFAA00">
-            
-        </Control>
-        <Control Name="Right"
-                 Grid.Row="1"
-                 Grid.RowSpan="3"
-                 Grid.Column="3"
-                 Background="#FFFF00">
-
-        </Control>
+        
         
         <Image Grid.Column="1"
                Grid.Row="1"

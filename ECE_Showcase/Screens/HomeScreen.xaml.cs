@@ -37,7 +37,8 @@ namespace ECE_Showcase.Screens
         {
             if (infoScreen == null)
             {
-            //    infoScreen = new FirstLevelScreen(ParentWindow, "information", "Resources/docs/info.xaml");
+                infoScreen = new FirstLevelScreen(ParentWindow, "information");
+                infoScreen.setRight(new Controls.FlowDocControl("Resources/docs/info.xaml"));
             }
 
             ParentWindow.pushScreen(infoScreen);
@@ -47,7 +48,9 @@ namespace ECE_Showcase.Screens
         {
             if (hodWelcomeScreen == null)
             {
-              //  hodWelcomeScreen = new FirstLevelScreen(ParentWindow, "hod welcome", "Resources/docs/hod_welcome.xaml");
+                hodWelcomeScreen = new FirstLevelScreen(ParentWindow, "hod welcome");
+                hodWelcomeScreen.setLeft(new Controls.ImageControl("Resources/img/zoran.png"));
+                hodWelcomeScreen.setRight(new Controls.FlowDocControl("Resources/docs/hod_welcome.xaml"));
             }
             ParentWindow.pushScreen(hodWelcomeScreen);
         }
@@ -66,7 +69,9 @@ namespace ECE_Showcase.Screens
             if (contactScreen == null)
             {
                 contactScreen = new FirstLevelScreen(ParentWindow, "contact us");
-                contactScreen.Left = new Controls.FlowDocControl("Resources/docs/contact_us.xaml");
+                contactScreen.setLeft(new Controls.FlowDocControl("Resources/docs/contact_us.xaml"));
+                contactScreen.setRight(new Controls.MapControl());
+                
             }
             ParentWindow.pushScreen(contactScreen);
         }
