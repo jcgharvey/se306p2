@@ -5,99 +5,78 @@
         Department of Electrical and Computer Engineering
     </Paragraph>
 
-    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="20">     
-        Contact us
-    </Paragraph>
-
-    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="18">
+    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="22">
         Street Address
     </Paragraph>
 
     <Paragraph>
         Building 303, Room 240
-    </Paragraph>
-    
-    <Paragraph>
+        <LineBreak />
         Level 2, Science Centre
-    </Paragraph>
-
-    <Paragraph>
+        <LineBreak />
         38 Princes Street
-    </Paragraph>
-
-    <Paragraph>
+        <LineBreak />
         Auckland
-    </Paragraph>
-
-    <Paragraph>
+        <LineBreak />
+        <LineBreak />
         Phone: +64 9 373 7599 ext 88158
-    </Paragraph>
-
-    <Paragraph>
+        <LineBreak />
         Fax: +64 9 373 7461
-    </Paragraph>
-    
-    <Paragraph>
+        <LineBreak />
         Email: ece-info@aucklanduni.ac.nz
     </Paragraph>
     
-    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="18">
+    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="22">
         Postal address
     </Paragraph>
 
     <Paragraph>
         Department of Electrical and Computer Engineering
-    </Paragraph>
-
-    <Paragraph>
+        <LineBreak />
         The University of Auckland
+        <LineBreak />
+        Private Bag 92019
+        <LineBreak />
+        Auckland Mail Centre
+        <LineBreak />
+        Auckland 1142
+        <LineBreak />
+        New Zealand
     </Paragraph>
 
-    <Paragraph>
-        Private Bag 92019
+    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="22">
+        How to get here:
     </Paragraph>
     
     <Paragraph>
-        Auckland Mail Centre
+        <Bold>From the main Engineering Building</Bold>
+        <LineBreak />
+        <LineBreak />
+        Cross Symonds Street at the traffic lights outside of the Engineering building.
+        <LineBreak />
+        <LineBreak />
+        Turn right towards Kate Edgar and go up the stairs outside level two entrance to the Kate Edgar building.
+        <LineBreak />
+        <LineBreak />
+        At the top of the steps turn left and walk towards the main set of buildings ahead.
+        <LineBreak />
+        <LineBreak />
+        Go in the second set of doors to the right and up the stairs to the Department of Electrical and Computer Engineering.
     </Paragraph>
 
     <Paragraph>
-        Auckland 1142
-    </Paragraph>
-
-    <Paragraph>
-        New Zealand
-    </Paragraph>
-
-    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="18">
-        Courier deliveries
-    </Paragraph>
-
-    <Paragraph>
-        Department of Electrical and Computer Engineering
-    </Paragraph>
-
-    <Paragraph>
-        Faculty of Engineering
-    </Paragraph>
-
-    <Paragraph>
-        The University of Auckland
-    </Paragraph>
-
-    <Paragraph>
-        3 Grafton Road
-    </Paragraph>
-
-    <Paragraph>
-        Auckland
-    </Paragraph>
-
-    <Paragraph>
-        New Zealand
-    </Paragraph>
-
-    <Paragraph>
-        For urgent hand deliveries please phone: +64 9 373 7599 ext 87017
-    </Paragraph>
+        <Bold>From the Clocktower</Bold>
+        <LineBreak />
+        <LineBreak />
+        Walk down Princes St and turn down left down Alfred St
+        <LineBreak />
+        <LineBreak />
+        Turn right and walk up the steps into the Quad next to the Maidement Theatre
+        <LineBreak />
+        <LineBreak />
+        Continue walking straight through the quad, past Shadows to the main set of buildings ahead.
+        <LineBreak />
+        <LineBreak />
+        Go in the second set of doors to the right and up the stairs to the Department of Electrical and Computer Engineering.
+    </Paragraph> 
 </FlowDocument>
