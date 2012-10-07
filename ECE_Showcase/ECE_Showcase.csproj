@@ -59,6 +59,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Resource Include="Resources\bg.png" />
+    <Resource Include="Resources\back.png" />
     <Content Include="Resources\computersystems.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -84,6 +85,7 @@
     <Resource Include="Resources\info.png" />
     <Resource Include="Resources\programmes.png" />
     <Resource Include="Resources\rnd.png" />
+    <Resource Include="Resources\home.png" />
     <Content Include="Resources\software.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -175,7 +177,6 @@
     <Resource Include="Resources\fyeah.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\home.png" />
     <Resource Include="Resources\back1.png" />
     <Resource Include="Resources\back2.png" />
     <Resource Include="Resources\back3.png" />
