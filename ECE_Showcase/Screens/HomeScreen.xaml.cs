@@ -66,7 +66,7 @@ namespace ECE_Showcase.Screens
         {
             if (contactScreen == null)
             {
-                contactScreen = new FirstLevelScreen(ParentWindow, "Resources/ece_contact.xaml");
+                contactScreen = new FirstLevelScreen(ParentWindow, "contact us", "Resources/ece_contact.xaml");
             }
             ParentWindow.pushScreen(contactScreen);
         }
