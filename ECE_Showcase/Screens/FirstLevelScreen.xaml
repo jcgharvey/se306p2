@@ -51,7 +51,8 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200" />
             <ColumnDefinition Width="520" />
-            <ColumnDefinition Width="1200" />
+            <ColumnDefinition  />
+            <ColumnDefinition Width="200" />
         </Grid.ColumnDefinitions>
 
         <Image Source="/ECE_Showcase;component/Resources/img/bg.png"
@@ -60,13 +61,16 @@
                Grid.Column="0"
                Grid.ColumnSpan="3"
                Margin="-647,-239,-633,-241" />
-
+        
+        
+        <!-- What!
         <Label Content="welcome from the head of department"
                Grid.Column="2"
                FontSize="96"
                Grid.Row="1"
                ScrollViewer.HorizontalScrollBarVisibility="Auto"
                Margin="191,8,-294,-8" />
+        -->
 
         <s:SurfaceButton Name="HomeButton"
                          Grid.Row="0"

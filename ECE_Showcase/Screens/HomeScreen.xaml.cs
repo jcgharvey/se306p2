@@ -63,6 +63,7 @@ namespace ECE_Showcase.Screens
                         if (infoScreen == null)
                         {
                            infoScreen = new FirstLevelScreen(ParentWindow, "information");
+                           infoScreen.setLeft(new Controls.ImageControl("Resources/img/electrical.png"));
                             infoScreen.setRight(new Controls.FlowDocControl("Resources/docs/info.xaml"));
                         }
                         screenToPush = infoScreen;
