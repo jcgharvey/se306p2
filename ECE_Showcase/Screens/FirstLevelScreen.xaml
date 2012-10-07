@@ -12,13 +12,14 @@
 
         <Grid.Resources>
             <Style TargetType="s:SurfaceButton">
-                <Setter Property="Effect">
+                <!--<Setter Property="Effect">
                     <Setter.Value>
                         <DropShadowEffect Direction="270"
                                           ShadowDepth="1.5"/>
                     </Setter.Value>
-                </Setter>
-                <Setter Property="Margin" Value="10px" />
+                </Setter>-->
+                <Setter Property="Margin" Value="0px" />
+                <Setter Property="Padding" Value="0px" />
                 <Setter Property="Background" Value="#8e4ead" />
                 <Setter Property="HorizontalContentAlignment" Value="Left" />
                 <Setter Property="VerticalContentAlignment" Value="Bottom" />
@@ -46,44 +47,46 @@
 
         <Image Source="/ECE_Showcase;component/Resources/img/bg.png"
         		         Grid.Row="0"
-                         Grid.RowSpan="6"
+                         Grid.RowSpan="5"
                          Grid.Column="0"
-                         Grid.ColumnSpan="5"	
-                    VerticalAlignment="Center"
-        			HorizontalAlignment="Center" Height="1080" Width="1920" />
+                         Grid.ColumnSpan="3" Margin="-647,-239,-633,-241" />
 
         <Label Content="welcome from the head of department" Grid.Column="2" FontSize="96" Grid.Row="1" ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="191,8,-294,-8"/>
 
         <s:SurfaceButton Name="HomeButton" 
-                         Grid.Row="1" 
+                         Grid.Row="0" 
                          Grid.Column="0"
                          HorizontalContentAlignment="Left"
-                         VerticalContentAlignment="Center"
-                         Click="HomeButton_Click" Background="#00000000">
-            <Image Source="/ECE_Showcase;component/Resources/img/home_btn.png" />
+                         VerticalContentAlignment="Top"
+                         Width="200px"
+                         Height="100px"
+                         Click="HomeButton_Click" Background="#633678" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Image Source="/ECE_Showcase;component/Resources/img/home_btn.png" Width="200" Height="100" HorizontalAlignment="Left" VerticalAlignment="Top" />
         </s:SurfaceButton>
         
         <s:SurfaceButton Name="BackButton"
-                         Grid.Row="2"
+                         Grid.Row="4"
                          Grid.Column="0"
                          HorizontalContentAlignment="Left"
-                         VerticalContentAlignment="Center"
-                         Click="BackButton_Click" Background="#00000000">
-            <Image Source="/ECE_Showcase;component/Resources/img/back_btn.png" />
+                         VerticalContentAlignment="Bottom"
+                         Width="200px"
+                         Height="100px"
+                         Click="BackButton_Click" Background="#633678" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+            <Image Source="/ECE_Showcase;component/Resources/img/back_btn.png" Width="200" Height="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" />
         </s:SurfaceButton>
 
 
         <Label Name="Title"
                          Grid.Row="0"
-                         Grid.Column="0"
+                         Grid.Column="1"
                          Grid.ColumnSpan="3"
-                         Margin = "0 -30 0 0"
+                         Margin = "20 -30 0 0"
                          Background="{x:Null}"
                          Foreground="#BCBCBC"
                          FontSize="115"
                          FontFamily="Segoe UI Light"
                          VerticalContentAlignment="Top"
-                        Content="">
+                        Content="" VerticalAlignment="Top">
            
         </Label>
 
