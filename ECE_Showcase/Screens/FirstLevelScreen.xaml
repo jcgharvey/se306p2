@@ -41,7 +41,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200" />
             <ColumnDefinition />
-            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
 
         <Image Source="/ECE_Showcase;component/Resources/bg.png"
@@ -92,7 +92,7 @@
             HorizontalAlignment="Stretch"
             VerticalAlignment="Stretch"
             Grid.Column="1"
-            Grid.ColumnSpan="4"
+            Grid.ColumnSpan="1"
             Grid.Row="1"
             Grid.RowSpan="3"
             Foreground="Black">
