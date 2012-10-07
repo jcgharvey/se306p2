@@ -78,6 +78,7 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\img\salcic.jpg" />
     <Resource Include="Resources\img\contact_us_btn.png" />
     <Content Include="Resources\docs\specialisations\eee.xaml">
       <Generator>MSBuild:Compile</Generator>

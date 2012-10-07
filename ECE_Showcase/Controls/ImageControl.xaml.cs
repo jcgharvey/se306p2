@@ -20,11 +20,9 @@ namespace ECE_Showcase.Controls
     public partial class ImageControl : UserControl
     {
         public String Src { get; set; }
-
         public ImageControl(string filepath)
         {
             Src = filepath;
-
             InitializeComponent();
         }
     }
