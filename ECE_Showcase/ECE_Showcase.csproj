@@ -164,7 +164,6 @@
     <Compile Include="Screens\HomeScreen.xaml.cs">
       <DependentUpon>HomeScreen.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Screens\MultiplyConverter.cs" />
     <Compile Include="Screens\ProgrammesOfferedScreen.xaml.cs">
       <DependentUpon>ProgrammesOfferedScreen.xaml</DependentUpon>
     </Compile>

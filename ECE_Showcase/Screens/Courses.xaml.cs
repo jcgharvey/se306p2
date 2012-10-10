@@ -66,7 +66,7 @@ namespace ECE_Showcase.Screens
             SourceItems.Add(new DataItem("Electrical and Electronic Engineering", "Resources/docs/specialisations/eee.xaml", "../Resources/img/electrical.png"));
             SourceItems.Add(new DataItem("Computer Systems Engineering", "Resources/docs/specialisations/cse.xaml", "../Resources/img/compsys.png"));
             infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/specialisations/se.xaml"));
-            
+
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
@@ -140,7 +140,7 @@ namespace ECE_Showcase.Screens
 
         private void OnDropTargetDragEnter(object sender, SurfaceDragDropEventArgs e)
         {
-            
+
         }
 
         private void OnDropTargetDragLeave(object sender, SurfaceDragDropEventArgs e)
@@ -183,50 +183,56 @@ namespace ECE_Showcase.Screens
             infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead((e.Cursor.Data as DataItem).FilePath));
         }
 
-     
 
-    private void Expander_TouchUp(object sender, TouchEventArgs e)
 
-    {
-
-        Expander exp = sender as Expander;
-
-        if (exp == null)
-
-            return;
-
-     
-
-        TouchPoint tp = e.GetTouchPoint(exp);
-
-        Rect bounds = new Rect(new Point(0, 0), exp.RenderSize);
-
-        exp.IsExpanded = true;
-        acc.selectedExpander_Expanded(exp, e);
-
-        if (bounds.Contains(tp.Position))
+        private void Expander_TouchUp(object sender, TouchEventArgs e)
         {
 
+            Expander exp = sender as Expander;
+
+            if (exp == null)
+
+                return;
+
+
+
+            TouchPoint tp = e.GetTouchPoint(exp);
+
+            Rect bounds = new Rect(new Point(0, 0), exp.RenderSize);
+
+            if (exp.IsExpanded)
+            {
+                exp.IsExpanded = false;
+            }
+            else
+            {
+                exp.IsExpanded = true;
+            }
+            acc.selectedExpander_Expanded(exp, e);
+
+            if (bounds.Contains(tp.Position))
+            {
+
+            }
+            exp.ReleaseTouchCapture(e.TouchDevice);
+            e.Handled = true;
+
         }
-        exp.ReleaseTouchCapture(e.TouchDevice);
-        e.Handled = true;
 
-    }
+        private void Expander_TouchDown(object sender, TouchEventArgs e)
+        {
 
-    private void Expander_TouchDown(object sender, TouchEventArgs e)
-    {
+            Console.WriteLine("touch down");
+            Expander exp = sender as Expander;
 
-        Console.WriteLine("touch down");
-        Expander exp = sender as Expander;
+            if (exp == null)
 
-        if (exp == null)
+                return;
 
-            return;
-
-        acc.selectedExpander_Expanded(exp, e);
-        exp.CaptureTouch(e.TouchDevice);
-        e.Handled = true;
-    }
+            acc.selectedExpander_Expanded(exp, e);
+            exp.CaptureTouch(e.TouchDevice);
+            e.Handled = true;
+        }
 
 
     }
