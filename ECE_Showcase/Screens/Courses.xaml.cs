@@ -65,7 +65,6 @@ namespace ECE_Showcase.Screens
             SourceItems.Add(new DataItem("Software Engineering", "Resources/docs/specialisations/se.xaml", "../Resources/img/software.png"));
             SourceItems.Add(new DataItem("Electrical and Electronic Engineering", "Resources/docs/specialisations/eee.xaml", "../Resources/img/electrical.png"));
             SourceItems.Add(new DataItem("Computer Systems Engineering", "Resources/docs/specialisations/cse.xaml", "../Resources/img/compsys.png"));
-
             infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/specialisations/se.xaml"));
             
         }

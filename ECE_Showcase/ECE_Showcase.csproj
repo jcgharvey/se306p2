@@ -135,6 +135,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Screens\Accordion.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -157,6 +158,7 @@
     <Compile Include="Screens\HomeScreen.xaml.cs">
       <DependentUpon>HomeScreen.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Screens\MultiplyConverter.cs" />
     <Compile Include="Screens\ProgrammesOfferedScreen.xaml.cs">
       <DependentUpon>ProgrammesOfferedScreen.xaml</DependentUpon>
     </Compile>
