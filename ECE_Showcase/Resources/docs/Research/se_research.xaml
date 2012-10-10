@@ -1,0 +1,68 @@
+<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        Agile and Lean software development
+    </Paragraph>
+	
+	<Paragraph>
+        Agile and Lean software development has gained tremendous popularity in the Software Engineering industry as well as in the research community. Agile software development methods follow an iterative and incremental style of development where collaborative self-organizing teams dynamically adjust to changing customer requirements. The term 'Agile' is an umbrella term used to capture a set of values and principles of software development. There are various methods that implement these values and principles, including Scrum, eXtreme Programming (XP), Crystal, Feature Driven Development (FDD), Dynamic Software Development Method (DSDM), and Adaptive Software Development (ASD). Scrum and XP are considered to be the most widely adopted Agile methods in the world. XP focuses on developmental practices, while Scrum mainly covers project management.
+Lean principles of software development find their roots in the lean manufacturing systems, in particular the Toyota production system. A popular software development method that applies lean principles is Kanban. See Related Links on the right-hand column for more information.
+
+    </Paragraph>
+
+	<Paragraph>
+Projects based on the industrial study of Agile and Lean software development principles, roles, and practices typically involve qualitative research. Qualitative research focuses on the rich experiences and perspectives of human participants gathered through interviews, focus groups, or questionnaires and analysed via rigorous procedures. Some research methodologies best suited to qualitative studies of industrial Agile practice include: Grounded Theory, Ethnography, Case Studies, and Action Research.
+	</Paragraph>
+
+    <Paragraph>
+        Implementation-based projects on Agile and Lean methods will typically involve following an iterative and incremental approach to developing a software solution and conducting heuristic and/or user-based evaluations to assess its usability.
+    </Paragraph>
+    
+    <Paragraph>
+        We offer a range of research projects (Part 4/Summer projects/Masters/PhD) on the topic of Agile and Lean software development. Some of these focus on empirical studies of the industrial practice of Agile and Lean methods while others involve building a software application to support Agile and Lean software teams and evaluating its usability. Examples include, but are not limited to:
+    </Paragraph>
+    
+    <List>
+        <ListItem>
+            <Paragraph>
+                exploring challenges of self-organizing Agile teams
+            </Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>
+                exploring specific Agile and Lean practices (such as pair programming or test-driven development) and understanding challenges and strategies associated with them.
+            </Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>
+                implementing software tools and applications to support Agile and Lean software teams
+            </Paragraph>
+        </ListItem>
+        
+
+    </List>
+
+    <Paragraph>
+        <Bold>Contact details</Bold>
+        <LineBreak />
+        <LineBreak />
+        Room 303.149
+        <LineBreak />
+        City Campus
+        <LineBreak />
+        38 Princes Street
+        <LineBreak />
+        Auckland
+        <LineBreak />
+        <LineBreak />
+        Phone: +64 9 373 7599 ext 85979
+        <LineBreak />
+        Email: c.watson@auckland.ac.nz
+        <LineBreak />
+        Website: http://www.ece.auckland.ac.nz/~cwat057/
+        <LineBreak />
+    </Paragraph>
+    
+</FlowDocument>

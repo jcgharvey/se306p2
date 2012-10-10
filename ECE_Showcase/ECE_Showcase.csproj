@@ -115,6 +115,25 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resources\docs\Research\se_research.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Resources\docs\Research\eee_research.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Resources\docs\Research\cse_research.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Screens\Research.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Screens\Courses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -150,6 +169,9 @@
     </Compile>
     <Compile Include="GridLengthAnimation.cs" />
     <Compile Include="Screen.cs" />
+    <Compile Include="Screens\Research.xaml.cs">
+      <DependentUpon>Research.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Courses.xaml.cs">
       <DependentUpon>Courses.xaml</DependentUpon>
     </Compile>
