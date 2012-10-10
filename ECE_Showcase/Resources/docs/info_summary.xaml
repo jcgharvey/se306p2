@@ -1,0 +1,30 @@
+<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph>
+        The Department of Electrical and Computer Engineering is committed to research and dedicated to the pursuit of excellence in teaching, innovation and knowledge.
+    </Paragraph>
+
+    <List>
+        <ListItem>
+            <Paragraph>30 academic and 15 support staff</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Three undergraduate programmes with 600 students</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>10 specialist labs with state-of-the-art equipment</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Postgraduate degrees recognised as amongst the best in the world</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>200+ students in our final year classes</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Strong teaching links with related departments e.g. Department of Computer Science</Paragraph>
+        </ListItem>
+    </List>
+  
+</FlowDocument>

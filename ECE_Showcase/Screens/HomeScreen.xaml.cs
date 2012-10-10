@@ -127,21 +127,38 @@ namespace ECE_Showcase.Screens
 
                 if (touchDist(touch1, touch2) - initialDist > 75 && !triggered)
                 {
-                    triggered = false;
-                    
+                    triggered = false;        
 
                    //Animate the grid control
                    Storyboard sb;
                    sb = this.FindResource("gridin") as Storyboard;
-                   sb.Begin(this);
-                   (sender as SurfaceButton).Content = "SUP";
                    
-                   (sender as SurfaceButton).Height = 370;
+                   SurfaceButton sButton = sender as SurfaceButton;
+                   Object normalContent = sButton.Content;
+                   sb.Completed += delegate(object source, EventArgs eventArgs)
+                   {
+                       switch (sButton.Name)
+                       {
+                           case "InfoButton":
+                               sButton.Content = new Controls.FlowDocControl("Resources/docs/info_summary.xaml");
+                               sButton.Height = 370;
+                               break;
+                           case "HODButton":
+                               break;
+                           case "ProgrammesButton":
+                               break;
+                           case "ContactButton":
+                               break;
+                       }
+                   };
+                   
+                   sb.Begin(this);
                 }
 
             }
            
         }
+
 
 
         private double touchDist(TouchPoint t1, TouchPoint t2)
