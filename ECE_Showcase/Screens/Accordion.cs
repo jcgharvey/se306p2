@@ -60,7 +60,7 @@ namespace ECE_Showcase
                         totalExpanderHeight += otherExpander.ActualHeight;
                     }
                 }
-
+                /*
                 if (selectedExpander.IsExpanded)
                 {
                     Console.WriteLine("test");
@@ -68,6 +68,7 @@ namespace ECE_Showcase
                     if (contentPresenter != null)
                         contentPresenter.Height = this.ActualHeight - totalExpanderHeight - selectedExpander.ActualHeight;
                 }
+                 */
             }
         }
     }
