@@ -183,6 +183,51 @@ namespace ECE_Showcase.Screens
             infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead((e.Cursor.Data as DataItem).FilePath));
         }
 
+     
+
+    private void Expander_TouchUp(object sender, TouchEventArgs e)
+
+    {
+
+        Expander exp = sender as Expander;
+
+        if (exp == null)
+
+            return;
+
+     
+
+        TouchPoint tp = e.GetTouchPoint(exp);
+
+        Rect bounds = new Rect(new Point(0, 0), exp.RenderSize);
+
+        exp.IsExpanded = true;
+        acc.selectedExpander_Expanded(exp, e);
+
+        if (bounds.Contains(tp.Position))
+        {
+
+        }
+        exp.ReleaseTouchCapture(e.TouchDevice);
+        e.Handled = true;
+
+    }
+
+    private void Expander_TouchDown(object sender, TouchEventArgs e)
+    {
+
+        Console.WriteLine("touch down");
+        Expander exp = sender as Expander;
+
+        if (exp == null)
+
+            return;
+
+        acc.selectedExpander_Expanded(exp, e);
+        exp.CaptureTouch(e.TouchDevice);
+        e.Handled = true;
+    }
+
 
     }
 }

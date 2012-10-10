@@ -5,7 +5,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:view="clr-namespace:ECE_Showcase"
-       
              xmlns:System="clr-namespace:System;assembly=mscorlib" 
              x:Class="ECE_Showcase.Screens.Courses"
              mc:Ignorable="d" 
@@ -702,9 +701,7 @@
                 <Setter Property="Foreground"
                         Value="White" />
             </Style>
-           
 
-            
 
         </Grid.Resources>
 
@@ -756,6 +753,7 @@
             x:Name="acc"
             Grid.Row="1"
             Grid.Column="1"
+            
         
             >
             <Expander
@@ -764,6 +762,8 @@
                 UseLayoutRounding="False" 
                 Style="{DynamicResource ArrowlessExpanderTemplate}"
                 BorderThickness="0"
+                TouchDown="Expander_TouchDown"
+                TouchUp="Expander_TouchUp"
                 >
             	<Expander.Header>
             		<Image Source="/ECE_Showcase;component/Resources/img/software.png" Stretch="Fill" d:LayoutOverrides="HorizontalMargin"/>
@@ -776,6 +776,8 @@
                 UseLayoutRounding="False" 
                 Style="{DynamicResource ArrowlessExpanderTemplate}" 
                 BorderThickness="0"
+                TouchDown="Expander_TouchDown"
+                TouchUp="Expander_TouchUp"
                 >
             	<Expander.Header>
             		<Image Source="/ECE_Showcase;component/Resources/img/electrical.png" Stretch="Fill" d:LayoutOverrides="HorizontalMargin"/>
@@ -788,7 +790,8 @@
                 UseLayoutRounding="False" 
                 Style="{DynamicResource ArrowlessExpanderTemplate}" 
                 BorderThickness="0"
-                
+                TouchDown="Expander_TouchDown"
+                TouchUp="Expander_TouchUp"
                 >
             	<Expander.Header>
             		<Image Source="/ECE_Showcase;component/Resources/img/compsys.png" Stretch="Fill" d:LayoutOverrides="HorizontalMargin"/>

@@ -34,8 +34,9 @@ namespace ECE_Showcase
             }
         }
 
-        void selectedExpander_Expanded(object sender, RoutedEventArgs e)
+        public void selectedExpander_Expanded(object sender, RoutedEventArgs e)
         {
+            
             Expander selectedExpander = sender as Expander;
             Expander otherExpander = null;
             ContentPresenter contentPresenter = null;
@@ -43,6 +44,7 @@ namespace ECE_Showcase
 
             if (selectedExpander != null)
             {
+               
                 foreach (UIElement element in this.Children)
                 {
                     otherExpander = element as Expander;
@@ -61,6 +63,7 @@ namespace ECE_Showcase
 
                 if (selectedExpander.IsExpanded)
                 {
+                    Console.WriteLine("test");
                     contentPresenter = selectedExpander.Template.FindName("ExpandSite", selectedExpander) as ContentPresenter;
                     if (contentPresenter != null)
                         contentPresenter.Height = this.ActualHeight - totalExpanderHeight - selectedExpander.ActualHeight;
