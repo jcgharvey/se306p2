@@ -63,7 +63,7 @@ namespace ECE_Showcase.Screens
                         if (infoScreen == null)
                         {
                            infoScreen = new FirstLevelScreen(ParentWindow, "information");
-                           infoScreen.setLeft(new Controls.ImageControl("Resources/img/electrical.png"));
+                           infoScreen.setLeft(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/electrical.png"));
                             infoScreen.setRight(new Controls.FlowDocControl("Resources/docs/info.xaml"));
                         }
                         screenToPush = infoScreen;
@@ -71,8 +71,8 @@ namespace ECE_Showcase.Screens
                     case "HODButton":
                         if (hodWelcomeScreen == null)
                         {
-                           hodWelcomeScreen = new FirstLevelScreen(ParentWindow, "hod welcome");
-                            hodWelcomeScreen.setLeft(new Controls.ImageControl("Resources/img/zoran.png"));
+                            hodWelcomeScreen = new FirstLevelScreen(ParentWindow, "hod welcome");
+                            hodWelcomeScreen.setLeft(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/salcic.jpg"));
                             hodWelcomeScreen.setRight(new Controls.FlowDocControl("Resources/docs/hod_welcome.xaml"));
                         }
                         screenToPush = hodWelcomeScreen;
