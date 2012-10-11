@@ -240,19 +240,19 @@ namespace ECE_Showcase.Screens
 
             Rect bounds = new Rect(new Point(0, 0), exp.RenderSize);
 
-            if (exp.IsExpanded)
-            {
-                exp.IsExpanded = false;
-            }
-            else
-            {
-                exp.IsExpanded = true;
-            }
-            acc.selectedExpander_Expanded(exp, e);
+           
 
             if (bounds.Contains(tp.Position))
             {
-
+                if (exp.IsExpanded)
+                {
+                    exp.IsExpanded = false;
+                }
+                else
+                {
+                    exp.IsExpanded = true;
+                }
+                acc.selectedExpander_Expanded(exp, e);
             }
             exp.ReleaseTouchCapture(e.TouchDevice);
             e.Handled = true;
@@ -269,7 +269,7 @@ namespace ECE_Showcase.Screens
 
                 return;
 
-            acc.selectedExpander_Expanded(exp, e);
+            //acc.selectedExpander_Expanded(exp, e);
             exp.CaptureTouch(e.TouchDevice);
             e.Handled = true;
         }
