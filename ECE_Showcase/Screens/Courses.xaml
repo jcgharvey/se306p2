@@ -14,9 +14,15 @@
         <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
                   
             <s:SurfaceButton
-                         VerticalContentAlignment="Stretch"
-                         HorizontalContentAlignment="Stretch"
-                         Background="#633678" Margin="0" Padding="0" Width="450" Height="50" BorderThickness="0" ClipToBounds="True">
+                         VerticalContentAlignment="Center"
+                         HorizontalContentAlignment="Left"
+                         Background="#633678" 
+                Margin="0" 
+                Padding="0" 
+                Height="30" 
+                BorderThickness="0" 
+                ClipToBounds="True"
+                >
                          
                 <StackPanel>
                     <!--
@@ -27,7 +33,7 @@
                     <Label 
                         Content="{Binding Name}" 
                         HorizontalAlignment="Left" 
-                        VerticalAlignment="Top"
+                        VerticalAlignment="Center"
                         Foreground="#FFFFFF"
                         FontSize="20"
                         FontFamily="Segoe UI Light"/>
@@ -753,12 +759,14 @@
         <s:SurfaceScrollViewer
             Grid.Row="1"
             Grid.Column="1"
-            Background="BlueViolet"
+            Foreground="Black" 
+            BorderBrush="#633678" Style="{DynamicResource SurfaceScrollViewerStyle1}"
             >
         <view:Accordion
             
             x:Name="acc"
-            
+            Width="450"
+            HorizontalAlignment="Left"
             
         
             >
@@ -774,7 +782,17 @@
             	<Expander.Header>
             		<Image Source="/ECE_Showcase;component/Resources/img/software.png" Stretch="Fill" d:LayoutOverrides="HorizontalMargin"/>
             	</Expander.Header>
-            </Expander>
+                    <s:SurfaceListBox x:Name="systemsListBox"
+                          Grid.Row="1"
+                          Grid.Column="1"
+                                      Background="#633678"
+                          
+                          ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
+                          ItemsSource="{Binding SourceItems}"
+                            PreviewTouchDown="OnDragSourcePreviewTouchDown"
+                            PreviewMouseDown="OnDragSourcePreviewTouchDown"
+                            s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+                </Expander>
 
             <Expander
                 Background="#633678" 
@@ -788,7 +806,17 @@
             	<Expander.Header>
             		<Image Source="/ECE_Showcase;component/Resources/img/electrical.png" Stretch="Fill" d:LayoutOverrides="HorizontalMargin"/>
             	</Expander.Header>
-            </Expander>
+                    <s:SurfaceListBox x:Name="electricalListBox"
+                          Grid.Row="1"
+                          Grid.Column="1"
+                                      Background="#633678"
+                          
+                          ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
+                          ItemsSource="{Binding SourceItems}"
+                            PreviewTouchDown="OnDragSourcePreviewTouchDown"
+                            PreviewMouseDown="OnDragSourcePreviewTouchDown"
+                            s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+                </Expander>
 
             <Expander
                 Background="#633678" 
@@ -802,16 +830,17 @@
             	<Expander.Header>
             		<Image Source="/ECE_Showcase;component/Resources/img/compsys.png" Stretch="Fill" d:LayoutOverrides="HorizontalMargin"/>
             	</Expander.Header>
-                <s:SurfaceListBox x:Name="CoursesListBox"
+                    <s:SurfaceListBox x:Name="softwareListBox"
                           Grid.Row="1"
                           Grid.Column="1"
-                          BorderBrush="{DynamicResource {x:Static s:SurfaceColors.ListBoxItemBackgroundBrushKey}}"
+                                      Background="#633678"
+                          
                           ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                           ItemsSource="{Binding SourceItems}"
                             PreviewTouchDown="OnDragSourcePreviewTouchDown"
                             PreviewMouseDown="OnDragSourcePreviewTouchDown"
                             s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
-                  </Expander>
+                </Expander>
             
         </view:Accordion>
         </s:SurfaceScrollViewer>
