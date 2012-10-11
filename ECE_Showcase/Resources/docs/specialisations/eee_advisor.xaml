@@ -1,0 +1,29 @@
+<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        Course Advisor - Stevan Berber
+    </Paragraph>
+    
+    <Paragraph>
+        <Bold>Contact details</Bold>
+        <LineBreak />
+        <LineBreak />
+        Room 303.250
+        <LineBreak />
+        City Campus
+        <LineBreak />
+        38 Princes Street
+        <LineBreak />
+        Auckland
+        <LineBreak />
+        <LineBreak />
+        Phone: +64 9 373 7599 ext 88966
+        <LineBreak />
+        Email: s.berber@auckland.ac.nz
+        <LineBreak />
+    </Paragraph>
+    
+    
+
+</FlowDocument>

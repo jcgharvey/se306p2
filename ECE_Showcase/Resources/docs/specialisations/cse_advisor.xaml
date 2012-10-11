@@ -1,0 +1,30 @@
+<FlowDocument 
+    xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+    xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        Course Advisor - Partha Roop
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Contact details</Bold>
+        <LineBreak />
+        <LineBreak />
+        Room 303.152
+        <LineBreak />
+        City Campus
+        <LineBreak />
+        38 Princes Street
+        <LineBreak />
+        Auckland
+        <LineBreak />
+        <LineBreak />
+        Phone: +64 9 373 7599 ext 85583
+        <LineBreak />
+        Email: p.roop@auckland.ac.nz
+        <LineBreak />
+        Website: http://www.ece.auckland.ac.nz/~roop/
+        <LineBreak />
+    </Paragraph>
+
+</FlowDocument>

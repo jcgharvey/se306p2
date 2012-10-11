@@ -1,0 +1,16 @@
+<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        Career Opportunities
+    </Paragraph>
+    
+    <Paragraph>
+        Electrical and electronic engineering encompasses diverse fields providing a range of employment opportunities and a 
+        worldwide shortage of engineers in this field means graduates are in high demand. Graduates are employed in roles 
+        related to communications, wireless computing technologies, electronics, instrumentation, power electronics and motor-control. 
+        Opportunities are also available in the processing industries such as timber, pulp and paper, steel, aluminium, meat and dairy.
+    </Paragraph>
+
+</FlowDocument>
