@@ -11,35 +11,27 @@
              d:DesignHeight="600" d:DesignWidth="1000">
 
     <view:Screen.Resources>
+        
         <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
-
             <s:SurfaceButton
-	    	VerticalContentAlignment="Center"
-                HorizontalContentAlignment="Left"
-                Background="#633678" 
-                Margin="0" 
-                Padding="0" 
-                Height="30" 
-                BorderThickness="0" 
-                ClipToBounds="True"
-                >
-
-                <StackPanel>
-                    <!--
-        		    <Image Source="{Binding ImagePath}"
-			    	VerticalAlignment="Center"
-        			HorizontalAlignment="Center" Width="450" Height="150" />
-                    -->
-                    <Label 
+                Background="#633678">
+                <Label
                         Content="{Binding Name}" 
                         HorizontalAlignment="Left" 
                         VerticalAlignment="Center"
                         Foreground="#FFFFFF"
+                    Background="Transparent"
                         FontSize="20"
-                        FontFamily="Segoe UI Light"/>
-                </StackPanel>
+                        FontFamily="Segoe UI Light">
+                </Label>
+
             </s:SurfaceButton>
+
+
+
         </DataTemplate>
+
+
 
 
         <Style x:Key="CursorStyle" TargetType="{x:Type ContentControl}">
@@ -710,6 +702,15 @@
                         Value="White" />
             </Style>
 
+            <Style  x:Key="myLBStyle" TargetType="ListBoxItem">
+                <Setter Property="Background" Value="#633678" />
+                <Setter Property="Foreground" Value="DarkSlateGray" />
+                <Setter Property="Margin" Value="5" />
+                <Setter Property="FontStyle" Value="Italic" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="BorderBrush" Value="DarkGray" />
+            </Style>
+
 
         </Grid.Resources>
 
@@ -785,13 +786,18 @@
                     <s:SurfaceListBox
                           Grid.Row="1"
                           Grid.Column="1"
-                                      Background="#633678"
-                          
+                          Background="#633678"
                           ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                           ItemsSource="{Binding Se_items}"
-                            PreviewTouchDown="OnDragSourcePreviewTouchDown"
-                            PreviewMouseDown="OnDragSourcePreviewTouchDown"
-                            s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+                          PreviewTouchDown="OnDragSourcePreviewTouchDown"
+                          PreviewMouseDown="OnDragSourcePreviewTouchDown"
+                          s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
+                        <s:SurfaceListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="Background" Value="#633678" />
+                            </Style>
+                        </s:SurfaceListBox.ItemContainerStyle>
+                    </s:SurfaceListBox>
                 </Expander>
 
                 <Expander
@@ -810,11 +816,19 @@
                           Grid.Row="1"
                           Grid.Column="1"
                           Background="#633678"
+                          
                           ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                           ItemsSource="{Binding Eee_items}"
                           PreviewTouchDown="OnDragSourcePreviewTouchDown"
                           PreviewMouseDown="OnDragSourcePreviewTouchDown"
-                          s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+                          s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
+                        <s:SurfaceListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="Background" Value="#633678" />
+                            </Style>
+                        </s:SurfaceListBox.ItemContainerStyle>
+                    </s:SurfaceListBox>
+                    
                 </Expander>
 
                 <Expander
@@ -837,7 +851,15 @@
                         ItemsSource="{Binding Cse_items}"
                         PreviewTouchDown="OnDragSourcePreviewTouchDown"
                         PreviewMouseDown="OnDragSourcePreviewTouchDown"
-                        s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+                        s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
+                        <s:SurfaceListBox.ItemContainerStyle>
+                            <Style TargetType="ListBoxItem">
+                                <Setter Property="Background" Value="#633678" />
+                            </Style>
+                        </s:SurfaceListBox.ItemContainerStyle>
+                        
+                    </s:SurfaceListBox>
+                    
                 </Expander>
 
             </view:Accordion>
