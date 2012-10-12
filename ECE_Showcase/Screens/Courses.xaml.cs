@@ -234,8 +234,6 @@ namespace ECE_Showcase.Screens
 
                 return;
 
-
-
             TouchPoint tp = e.GetTouchPoint(exp);
 
             Rect bounds = new Rect(new Point(0, 0), exp.RenderSize);
@@ -269,7 +267,6 @@ namespace ECE_Showcase.Screens
 
                 return;
 
-            //acc.selectedExpander_Expanded(exp, e);
             exp.CaptureTouch(e.TouchDevice);
             e.Handled = true;
         }

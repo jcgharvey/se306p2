@@ -809,13 +809,12 @@
                     <s:SurfaceListBox
                           Grid.Row="1"
                           Grid.Column="1"
-                                      Background="#633678"
-                          
+                          Background="#633678"
                           ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                           ItemsSource="{Binding Eee_items}"
-                            PreviewTouchDown="OnDragSourcePreviewTouchDown"
-                            PreviewMouseDown="OnDragSourcePreviewTouchDown"
-                            s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+                          PreviewTouchDown="OnDragSourcePreviewTouchDown"
+                          PreviewMouseDown="OnDragSourcePreviewTouchDown"
+                          s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
                 </Expander>
 
                 <Expander
@@ -831,15 +830,14 @@
                         <Image Source="/ECE_Showcase;component/Resources/img/compsys.png" Stretch="Fill" d:LayoutOverrides="HorizontalMargin"/>
                     </Expander.Header>
                     <s:SurfaceListBox 
-                          Grid.Row="1"
-                          Grid.Column="1"
-                                      Background="#633678"
-                          
-                          ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
-                          ItemsSource="{Binding Cse_items}"
-                            PreviewTouchDown="OnDragSourcePreviewTouchDown"
-                            PreviewMouseDown="OnDragSourcePreviewTouchDown"
-                            s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Background="#633678"
+                        ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
+                        ItemsSource="{Binding Cse_items}"
+                        PreviewTouchDown="OnDragSourcePreviewTouchDown"
+                        PreviewMouseDown="OnDragSourcePreviewTouchDown"
+                        s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
                 </Expander>
 
             </view:Accordion>
@@ -896,7 +894,7 @@
                     Background="#FFFFEC"
                     IsReadOnly="True"
                     IsDocumentEnabled="False"
-                    Foreground="Purple"
+                    Foreground="#633678"
                     
                     s:SurfaceDragDrop.DragEnter="OnDropTargetDragEnter"
                     s:SurfaceDragDrop.DragLeave="OnDropTargetDragLeave"
