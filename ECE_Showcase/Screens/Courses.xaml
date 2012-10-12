@@ -31,6 +31,12 @@
 
         </DataTemplate>
 
+        <Style
+            x:Key="LBStyle"
+            TargetType="ListBoxItem">
+            <Setter Property="Background" Value="#633678"/>
+        </Style>
+
 
 
 
@@ -702,14 +708,7 @@
                         Value="White" />
             </Style>
 
-            <Style  x:Key="myLBStyle" TargetType="ListBoxItem">
-                <Setter Property="Background" Value="#633678" />
-                <Setter Property="Foreground" Value="DarkSlateGray" />
-                <Setter Property="Margin" Value="5" />
-                <Setter Property="FontStyle" Value="Italic" />
-                <Setter Property="FontSize" Value="14" />
-                <Setter Property="BorderBrush" Value="DarkGray" />
-            </Style>
+            
 
 
         </Grid.Resources>
@@ -787,16 +786,13 @@
                           Grid.Row="1"
                           Grid.Column="1"
                           Background="#633678"
+                          ItemContainerStyle="{StaticResource LBStyle}"
                           ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                           ItemsSource="{Binding Se_items}"
                           PreviewTouchDown="OnDragSourcePreviewTouchDown"
                           PreviewMouseDown="OnDragSourcePreviewTouchDown"
                           s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
-                        <s:SurfaceListBox.ItemContainerStyle>
-                            <Style TargetType="ListBoxItem">
-                                <Setter Property="Background" Value="#633678" />
-                            </Style>
-                        </s:SurfaceListBox.ItemContainerStyle>
+                        
                     </s:SurfaceListBox>
                 </Expander>
 
@@ -816,17 +812,13 @@
                           Grid.Row="1"
                           Grid.Column="1"
                           Background="#633678"
-                          
+                          ItemContainerStyle="{StaticResource LBStyle}"
                           ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                           ItemsSource="{Binding Eee_items}"
                           PreviewTouchDown="OnDragSourcePreviewTouchDown"
                           PreviewMouseDown="OnDragSourcePreviewTouchDown"
                           s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
-                        <s:SurfaceListBox.ItemContainerStyle>
-                            <Style TargetType="ListBoxItem">
-                                <Setter Property="Background" Value="#633678" />
-                            </Style>
-                        </s:SurfaceListBox.ItemContainerStyle>
+                       
                     </s:SurfaceListBox>
                     
                 </Expander>
@@ -847,16 +839,13 @@
                         Grid.Row="1"
                         Grid.Column="1"
                         Background="#633678"
+                        ItemContainerStyle="{StaticResource LBStyle}"
                         ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
                         ItemsSource="{Binding Cse_items}"
                         PreviewTouchDown="OnDragSourcePreviewTouchDown"
                         PreviewMouseDown="OnDragSourcePreviewTouchDown"
                         s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
-                        <s:SurfaceListBox.ItemContainerStyle>
-                            <Style TargetType="ListBoxItem">
-                                <Setter Property="Background" Value="#633678" />
-                            </Style>
-                        </s:SurfaceListBox.ItemContainerStyle>
+                       
                         
                     </s:SurfaceListBox>
                     
