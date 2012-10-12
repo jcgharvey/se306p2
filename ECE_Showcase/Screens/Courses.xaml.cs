@@ -104,9 +104,8 @@ namespace ECE_Showcase.Screens
             Eee_items.Add(new DataItem("Careers", "Resources/docs/specialisations/eee_careers.xaml", "../Resources/img/software.png"));
             Eee_items.Add(new DataItem("Courses", "Resources/docs/specialisations/eee_courses.xaml", "../Resources/img/software.png"));
             Eee_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/eee_advisor.xaml", "../Resources/img/software.png"));
-            
-           infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/drag_here.xaml"));
 
+            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
@@ -244,12 +243,16 @@ namespace ECE_Showcase.Screens
             {
                 if (exp.IsExpanded)
                 {
+                    
                     exp.IsExpanded = false;
+                    infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
                 }
                 else
                 {
                     exp.IsExpanded = true;
+                    infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/drag_here.xaml"));
                 }
+                
                 acc.selectedExpander_Expanded(exp, e);
             }
             exp.ReleaseTouchCapture(e.TouchDevice);
