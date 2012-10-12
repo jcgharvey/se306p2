@@ -1,0 +1,13 @@
+<FlowDocument 
+    xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+    xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        Career Opportunities 
+    </Paragraph>
+
+    <Paragraph>
+        Computer systems engineers work in the mainstream computer industry and in most other areas of electrical and other engineering disciplines. Job opportunities are available in multinational computer companies, consulting firms, the telecommunications industry, research and development of new intelligent systems, manufacturing and resource industries.
+    </Paragraph>
+
+</FlowDocument>
