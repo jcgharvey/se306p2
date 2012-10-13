@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    
+
+    <BitmapImage x:Key="bg">/Resources/img/bg.png</BitmapImage>
     <BitmapImage x:Key="back_btn">/Resources/img/back_btn.png</BitmapImage>
     <BitmapImage x:Key="home_btn">/Resources/img/home_btn.png</BitmapImage>
 
