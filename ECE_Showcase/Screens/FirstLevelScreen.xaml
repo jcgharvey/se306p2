@@ -101,7 +101,7 @@
                          Background="#633678"
                          HorizontalAlignment="Left"
                          VerticalAlignment="Bottom">
-            <Image Source="/ECE_Showcase;component/Resources/img/back_btn.png"
+            <Image Source= "{StaticResource back_btn}"
                    Width="200"
                    Height="100"
                    HorizontalAlignment="Left"
