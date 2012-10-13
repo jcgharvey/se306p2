@@ -55,7 +55,7 @@
             <ColumnDefinition Width="200" />
         </Grid.ColumnDefinitions>
 
-        <Image Source="/ECE_Showcase;component/Resources/img/bg.png"
+        <Image Source="{StaticResource bg}"
                Grid.Row="0"
                Grid.RowSpan="5"
                Grid.Column="0"
@@ -83,7 +83,7 @@
                          Background="#633678"
                          HorizontalAlignment="Left"
                          VerticalAlignment="Top">
-            <Image Source="/ECE_Showcase;component/Resources/img/home_btn.png"
+            <Image Source="{StaticResource home_btn}"
                    Width="200"
                    Height="100"
                    HorizontalAlignment="Left"
@@ -101,7 +101,7 @@
                          Background="#633678"
                          HorizontalAlignment="Left"
                          VerticalAlignment="Bottom">
-            <Image Source="/ECE_Showcase;component/Resources/img/back_btn.png"
+            <Image Source= "{StaticResource back_btn}"
                    Width="200"
                    Height="100"
                    HorizontalAlignment="Left"
