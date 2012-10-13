@@ -23,7 +23,6 @@ namespace ECE_Showcase
     /// </summary>
     public partial class SurfaceWindow1 : SurfaceWindow
     {
-
         private Stack<Screen> screenStack; 
 
         /// <summary>
@@ -121,6 +120,15 @@ namespace ECE_Showcase
         }
         public void pushScreen(Screen screen)
         {
+            MediaElement sound = new MediaElement();
+            sound.LoadedBehavior = MediaState.Manual;
+            sound.UnloadedBehavior = MediaState.Manual;
+            sound.LoadedBehavior = MediaState.Manual;
+            sound.Source = new Uri("Resources/snd/click.mp3", UriKind.Relative);
+            sound.Volume = 100.0;
+            sound.IsMuted = false;
+            sound.Play();
+
             screenStack.Push(screen);
             this.Content = screenStack.Peek();
             this.WindowState = WindowState.Maximized;
