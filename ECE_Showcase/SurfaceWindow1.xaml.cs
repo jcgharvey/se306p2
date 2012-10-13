@@ -23,7 +23,7 @@ namespace ECE_Showcase
     /// </summary>
     public partial class SurfaceWindow1 : SurfaceWindow
     {
-        private Stack<Screen> screenStack; 
+        private Stack<Screen> screenStack;
 
         /// <summary>
         /// Default constructor.
@@ -110,6 +110,15 @@ namespace ECE_Showcase
         }
         public void popScreen()
         {
+            MediaElement back = new MediaElement();
+            back.LoadedBehavior = MediaState.Manual;
+            back.UnloadedBehavior = MediaState.Manual;
+            back.LoadedBehavior = MediaState.Manual;
+            back.Volume = 100.0;
+            back.IsMuted = false;
+            back.Source = new Uri("Resources/sound/back.mp3", UriKind.Relative);
+            back.Play();
+
             if (screenStack.Count > 1)
             {
                 screenStack.Pop();
@@ -120,14 +129,14 @@ namespace ECE_Showcase
         }
         public void pushScreen(Screen screen)
         {
-            MediaElement sound = new MediaElement();
-            sound.LoadedBehavior = MediaState.Manual;
-            sound.UnloadedBehavior = MediaState.Manual;
-            sound.LoadedBehavior = MediaState.Manual;
-            sound.Source = new Uri("Resources/snd/click.mp3", UriKind.Relative);
-            sound.Volume = 100.0;
-            sound.IsMuted = false;
-            sound.Play();
+            MediaElement click = new MediaElement();
+            click.LoadedBehavior = MediaState.Manual;
+            click.UnloadedBehavior = MediaState.Manual;
+            click.LoadedBehavior = MediaState.Manual;
+            click.Volume = 100.0;
+            click.IsMuted = false;
+            click.Source = new Uri("Resources/sound/click.mp3", UriKind.Relative);
+            click.Play();
 
             screenStack.Push(screen);
             this.Content = screenStack.Peek();
@@ -138,6 +147,15 @@ namespace ECE_Showcase
 
         public void popAll()
         {
+            MediaElement home = new MediaElement();
+            home.LoadedBehavior = MediaState.Manual;
+            home.UnloadedBehavior = MediaState.Manual;
+            home.LoadedBehavior = MediaState.Manual;
+            home.Volume = 100.0;
+            home.IsMuted = false;
+            home.Source = new Uri("Resources/sound/back.mp3", UriKind.Relative);
+            home.Play();
+
             while (screenStack.Count > 1)
             {
                 screenStack.Pop();           

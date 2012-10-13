@@ -74,12 +74,15 @@
     <Resource Include="Resources\img\bg.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\snd\click.mp3">
+    <Content Include="Resources\sound\click.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resources\docs\info.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\sound\back.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Resources\img\info.jpg" />
