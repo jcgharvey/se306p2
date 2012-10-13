@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- general images -->
+    <BitmapImage x:Key="bg">/Resources/img/bg.png</BitmapImage>
+    <BitmapImage x:Key="back_btn">/Resources/img/back_btn.png</BitmapImage>
+    <BitmapImage x:Key="home_btn">/Resources/img/home_btn.png</BitmapImage>
+    
+    <!-- home screen images -->
+    <BitmapImage x:Key="hod_btn">/Resources/img/hod_btn.png</BitmapImage>
+    <BitmapImage x:Key="contact_us_btn">/Resources/img/contact_us_btn.png</BitmapImage>
+    <BitmapImage x:Key="info_btn">/Resources/img/info_btn.png</BitmapImage>
+    <BitmapImage x:Key="programmes_btn">/Resources/img/programmes_btn.png</BitmapImage>
+    <BitmapImage x:Key="rnd_btn">/Resources/img/rnd_btn.png</BitmapImage>
+    
+    <!-- programmes' images-->
+    <BitmapImage x:Key="compsys">/Resources/img/compsys.png</BitmapImage>
+    <BitmapImage x:Key="electrical">/Resources/img/electrical.png</BitmapImage>
+    <BitmapImage x:Key="software">/Resources/img/software.png</BitmapImage>
+
+</ResourceDictionary>

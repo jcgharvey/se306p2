@@ -1,0 +1,12 @@
+<FlowDocument 
+    xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+    xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        What are the career opportunities? 
+    </Paragraph>
+
+    <Paragraph>
+        Software engineers don't just write programs. They meet clients, discuss the client's needs, and design solutions. Software engineers work in many application areas, such as banking, health informatics, architecture, medicine, telecommunication and global positioning systems. Jobs for software engineers are available both within New Zealand and outside New Zealand.	There are new and exciting jobs to choose from, in large multinational companies, government departments, consultancies, and start up companies.
+    </Paragraph>
+
+</FlowDocument>

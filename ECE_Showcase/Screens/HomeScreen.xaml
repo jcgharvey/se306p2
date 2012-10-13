@@ -62,7 +62,7 @@
             <ColumnDefinition Width="200px" />
             
         </Grid.ColumnDefinitions>
-        <Image Source="/ECE_Showcase;component/Resources/img/bg.png"
+        <Image Source="{StaticResource bg}"
         		         Grid.Row="0"
                          Grid.RowSpan="6"
                          Grid.Column="0"
@@ -97,7 +97,7 @@
 
             <StackPanel>
 
-        		<Image Source="/ECE_Showcase;component/Resources/img/info_btn.png"
+        		<Image Source="{StaticResource info_btn}"
 
                
         			VerticalAlignment="Center"
@@ -119,7 +119,7 @@
                          PreviewTouchMove="Button_PreviewTouchMove">
        
             <StackPanel>
-        		<Image Source="/ECE_Showcase;component/Resources/img/hod_btn.png"
+                <Image Source="{StaticResource hod_btn}"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Width="735" Height="185" />
         		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="313,-45,0,0" FontSize="32"><Run Language="en-nz" Text="head of department's welcome"/></TextBlock>
@@ -143,7 +143,7 @@
                           Background="#633678" >
             <StackPanel>
 
-        		<Image Source="/ECE_Showcase;component/Resources/img/programmes_btn.png"
+        		<Image Source="{StaticResource programmes_btn}"
 
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="185" Width="735" />
@@ -169,7 +169,7 @@
 
             <StackPanel>
 
-        		<Image Source="/ECE_Showcase;component/Resources/img/contact_us_btn.png"
+        		<Image Source="{StaticResource contact_us_btn}"
 
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="185" Width="735" />
@@ -186,7 +186,7 @@
                           HorizontalContentAlignment="Stretch"
                           Background="#633678" Padding="0" Margin="0" Width="735" Height="380">
             <StackPanel>
-        		<Image Source="/ECE_Showcase;component/Resources/img/rnd_btn.png"
+        		<Image Source="{StaticResource rnd_btn}"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="380" Width="735" />
         		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="projects and research" HorizontalAlignment="Right" Width="290"/>

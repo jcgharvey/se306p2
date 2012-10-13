@@ -1,0 +1,16 @@
+<FlowDocument 
+    xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+    xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        Computer Systems Engineering
+    </Paragraph>
+
+    <Paragraph>
+        Computer systems pervade the industrial, domestic and business worlds. Increasingly, computers are used as the controllers and components of systems, such as wireless and other communication systems, home automation, appliances, automobiles, factory processes, mechatronics, instrumentation, embedded systems and nano-systems. Computer systems engineers who understand these technologies are in high demand. Computer systems engineering helps solve practical problems by creating computer-based systems and solutions.
+    </Paragraph>
+
+    <Paragraph>
+        You will learn a combination of fundamental computer systems knowledge, practical skills in hardware and software design, interfacing with the real world, and general problem-solving skills required in design and building systems.
+    </Paragraph>
+
+</FlowDocument>
