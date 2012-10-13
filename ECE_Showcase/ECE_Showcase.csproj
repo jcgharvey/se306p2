@@ -79,6 +79,7 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\img\info.jpg" />
     <Resource Include="Resources\img\salcic.jpg" />
     <Resource Include="Resources\img\contact_us_btn.png" />
     <Resource Include="Resources\img\hod_btn.png" />
