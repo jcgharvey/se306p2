@@ -60,38 +60,22 @@ namespace ECE_Showcase.Screens
                 switch ((sender as SurfaceButton).Name)
                 {
                     case "InfoButton":
-                        if (infoScreen == null)
-                        {
-                           infoScreen = new FirstLevelScreen(ParentWindow, "information");
-                           infoScreen.setLeft(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/electrical.png"));
-                            infoScreen.setRight(new Controls.FlowDocControl("Resources/docs/info.xaml"));
-                        }
-                        screenToPush = infoScreen;
+                           screenToPush = new FirstLevelScreen(ParentWindow, "information");
+                           ((FirstLevelScreen)screenToPush).setLeft(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/electrical.png"));
+                           ((FirstLevelScreen)screenToPush).setRight(new Controls.FlowDocControl("Resources/docs/info.xaml"));
                         break;
                     case "HODButton":
-                        if (hodWelcomeScreen == null)
-                        {
-                            hodWelcomeScreen = new FirstLevelScreen(ParentWindow, "hod welcome");
-                            hodWelcomeScreen.setLeft(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/salcic.jpg"));
-                            hodWelcomeScreen.setRight(new Controls.FlowDocControl("Resources/docs/hod_welcome.xaml"));
-                        }
-                        screenToPush = hodWelcomeScreen;
+                            screenToPush = new FirstLevelScreen(ParentWindow, "hod welcome");
+                            ((FirstLevelScreen)screenToPush).setLeft(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/salcic.jpg"));
+                            ((FirstLevelScreen)screenToPush).setRight(new Controls.FlowDocControl("Resources/docs/hod_welcome.xaml"));
                         break;
                     case "ProgrammesButton":
-                        if (coursesScreen == null)
-                        {
-                            coursesScreen = new Courses(ParentWindow);
-                        }
-                        screenToPush = coursesScreen;
+                            screenToPush = new Courses(ParentWindow);
                         break;
                     case "ContactButton":
-                        if (contactScreen == null)
-                        {
-                            contactScreen = new FirstLevelScreen(ParentWindow, "contact us");
-                            contactScreen.setLeft(new Controls.FlowDocControl("Resources/docs/contact_us.xaml"));
-                            contactScreen.setRight(new Controls.MapControl());
-                        }
-                        screenToPush = contactScreen;
+                            screenToPush = new FirstLevelScreen(ParentWindow, "contact us");
+                            ((FirstLevelScreen)screenToPush).setLeft(new Controls.FlowDocControl("Resources/docs/contact_us.xaml"));
+                            ((FirstLevelScreen)screenToPush).setRight(new Controls.MapControl());
                         break;
                     default:
                         //This shouldn't ever happen.
