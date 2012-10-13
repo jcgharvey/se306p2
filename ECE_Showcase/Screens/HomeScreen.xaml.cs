@@ -22,26 +22,14 @@ namespace ECE_Showcase.Screens
     /// </summary>
     public partial class HomeScreen : Screen
     {
-
-        private FirstLevelScreen infoScreen;
-        private FirstLevelScreen hodWelcomeScreen;
-
         private TouchPoint touch1;
         private TouchPoint touch2;
         private double initialDist;
         private bool triggered;
 
-        private Courses coursesScreen;
-        private FirstLevelScreen contactScreen;
-
         public HomeScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
         {
             InitializeComponent();
-
-            infoScreen = null;
-            hodWelcomeScreen = null;
-
-            contactScreen = null;
 
             touch1 = null;
             touch2 = null;
@@ -61,7 +49,7 @@ namespace ECE_Showcase.Screens
                 {
                     case "InfoButton":
                            screenToPush = new FirstLevelScreen(ParentWindow, "information");
-                           ((FirstLevelScreen)screenToPush).setLeft(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/electrical.png"));
+                           ((FirstLevelScreen)screenToPush).setLeft(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/info.jpg"));
                            ((FirstLevelScreen)screenToPush).setRight(new Controls.FlowDocControl("Resources/docs/info.xaml"));
 
                         break;
