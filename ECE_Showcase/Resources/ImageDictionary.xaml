@@ -12,6 +12,7 @@
     <BitmapImage x:Key="info_btn">/Resources/img/info_btn.png</BitmapImage>
     <BitmapImage x:Key="programmes_btn">/Resources/img/programmes_btn.png</BitmapImage>
     <BitmapImage x:Key="rnd_btn">/Resources/img/rnd_btn.png</BitmapImage>
+    <BitmapImage x:Key="ece_logo">/Resources/img/ece_logo.png</BitmapImage>
     
     <!-- programmes' images-->
     <BitmapImage x:Key="compsys">/Resources/img/compsys.png</BitmapImage>

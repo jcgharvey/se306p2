@@ -13,4 +13,4 @@
                  Topmost="True"
                  Background="White" 
                  WindowState="Maximized" 
-                 WindowStyle="None"/>
+                 WindowStyle="None" />

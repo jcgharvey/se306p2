@@ -31,6 +31,8 @@ namespace ECE_Showcase.Screens
 
         private ObservableCollection<DataItem> targetItems;
 
+        private MediaElement accordian_fx;
+
         public ObservableCollection<DataItem> Cse_items
         {
             get
@@ -102,6 +104,13 @@ namespace ECE_Showcase.Screens
         {
             InitializeComponent();
             DataContext = this;
+
+            accordian_fx = new MediaElement();
+            accordian_fx.LoadedBehavior = MediaState.Manual;
+            accordian_fx.UnloadedBehavior = MediaState.Manual;
+            accordian_fx.LoadedBehavior = MediaState.Manual;
+            accordian_fx.Volume = 1.0;
+            accordian_fx.IsMuted = false;
 
             Cse_items.Add(new DataItem("Description", "Resources/docs/specialisations/cse_info.xaml", "../Resources/img/software.png"));
             Cse_items.Add(new DataItem("Careers", "Resources/docs/specialisations/cse_careers.xaml", "../Resources/img/software.png"));
@@ -242,6 +251,8 @@ namespace ECE_Showcase.Screens
 
         private void Expander_TouchUp(object sender, TouchEventArgs e)
         {
+            accordian_fx.Source = new Uri("Resources/sounds/expand.mp3", UriKind.Relative);
+            accordian_fx.Play();
 
             Expander exp = sender as Expander;
 
@@ -278,6 +289,8 @@ namespace ECE_Showcase.Screens
 
         private void Expander_TouchDown(object sender, TouchEventArgs e)
         {
+            accordian_fx.Source = new Uri("Resources/sounds/collapse.wav", UriKind.Relative);
+            accordian_fx.Play();
 
             Console.WriteLine("touch down");
             Expander exp = sender as Expander;
@@ -289,7 +302,5 @@ namespace ECE_Showcase.Screens
             exp.CaptureTouch(e.TouchDevice);
             e.Handled = true;
         }
-
-
     }
 }
