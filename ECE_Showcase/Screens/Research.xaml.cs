@@ -25,48 +25,59 @@ namespace ECE_Showcase.Screens
     public partial class Research : Screen
     {
         private UserControl Current_control { get; set; }
-        private ObservableCollection<DataItem> sourceItems;
-        private ObservableCollection<DataItem> targetItems;
-        /// <summary>
-        /// Items that bind with the drag source list box.
-        /// </summary>
-        public ObservableCollection<DataItem> SourceItems
+        public ObservableCollection<DataItem> cseResearchItems;
+        public ObservableCollection<DataItem> seResearchItems;
+        public ObservableCollection<DataItem> eeeResearchItems;
+        
+        public ObservableCollection<DataItem> EeeResearchItems
         {
             get
             {
-                if (sourceItems == null)
+                if (eeeResearchItems == null)
                 {
-                    sourceItems = new ObservableCollection<DataItem>();
+
+                    eeeResearchItems = new ObservableCollection<DataItem>();
                 }
 
-                return sourceItems;
+                return eeeResearchItems;
             }
         }
-
-        /// <summary>
-        /// Items that bind with the drop target list box.
-        /// </summary>
-        public ObservableCollection<DataItem> TargetItems
+        public ObservableCollection<DataItem> SeResearchItems
         {
             get
             {
-                if (targetItems == null)
+                if (seResearchItems == null)
                 {
-                    targetItems = new ObservableCollection<DataItem>();
+
+                    seResearchItems = new ObservableCollection<DataItem>();
                 }
 
-                return targetItems;
+                return seResearchItems;
             }
         }
+
+        public ObservableCollection<DataItem> CseResearchItems
+        {
+            get
+            {
+                if (cseResearchItems == null)
+                {
+                    cseResearchItems = new ObservableCollection<DataItem>();
+                }
+
+                return cseResearchItems;
+            }
+        }
+
+       
         public Research(SurfaceWindow1 parentWindow)
             : base(parentWindow)
         {
             InitializeComponent();
             DataContext = this;
-            
-            SourceItems.Add(new DataItem("Agile Software Development", new Controls.FlowDocControl("Resources/docs/research/se_research.xaml")));
-            SourceItems.Add(new DataItem("Power Electronics", new Controls.FlowDocControl("Resources/docs/research/eee_research.xaml")));
-            SourceItems.Add(new DataItem("Radio Systems", new Controls.FlowDocControl("Resources/docs/research/cse_research.xaml")));
+            SeResearchItems.Add(new DataItem("Agile Software Development", new Controls.FlowDocControl("Resources/docs/research/se_research.xaml")));
+            EeeResearchItems.Add(new DataItem("Power Electronics", new Controls.FlowDocControl("Resources/docs/research/eee_research.xaml")));
+            CseResearchItems.Add(new DataItem("Radio Systems", new Controls.FlowDocControl("Resources/docs/research/cse_research.xaml")));
             
             setControl(new Controls.FlowDocControl("Resources/docs/drag_here.xaml"));
             
@@ -74,12 +85,12 @@ namespace ECE_Showcase.Screens
 
         private void setControl(UserControl new_control)
         {
-            theGrid.Children.Remove(Current_control);
+            researchGrid.Children.Remove(Current_control);
             new_control.AllowDrop = true;
             Grid.SetColumn(new_control, 3);
             Grid.SetRow(new_control, 1);
             Current_control = new_control;
-            theGrid.Children.Add(Current_control);
+            researchGrid.Children.Add(Current_control);
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
@@ -172,6 +183,56 @@ namespace ECE_Showcase.Screens
             {
                 setControl((e.Cursor.Data as DataItem).ItemControl);
             }
+        }
+
+        private void Expander_TouchDown(object sender, TouchEventArgs e)
+        {
+
+            Console.WriteLine("touch down");
+            Expander exp = sender as Expander;
+
+            if (exp == null)
+
+                return;
+
+            exp.CaptureTouch(e.TouchDevice);
+            e.Handled = true;
+
+        }
+
+        private void Expander_TouchUp(object sender, TouchEventArgs e)
+        {
+
+            Expander exp = sender as Expander;
+
+            if (exp == null)
+
+                return;
+
+            TouchPoint tp = e.GetTouchPoint(exp);
+
+            Rect bounds = new Rect(new Point(0, 0), exp.RenderSize);
+
+
+
+            if (bounds.Contains(tp.Position))
+            {
+                if (exp.IsExpanded)
+                {
+
+                    exp.IsExpanded = false;
+                    setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
+                }
+                else
+                {
+                    exp.IsExpanded = true;
+                    setControl(new Controls.FlowDocControl("Resources/docs/drag_here.xaml"));
+                }
+
+                acc.selectedExpander_Expanded(exp, e);
+            }
+            exp.ReleaseTouchCapture(e.TouchDevice);
+            e.Handled = true;
         }
     }
 }
