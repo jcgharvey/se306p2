@@ -266,14 +266,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-
     <Compile Include="Controls\ContactsControl.xaml.cs">
       <DependentUpon>ContactsControl.xaml</DependentUpon>
     </Compile>
-
     <Compile Include="Controls\CoursesControl.xaml.cs">
       <DependentUpon>CoursesControl.xaml</DependentUpon>
-
     </Compile>
     <Compile Include="Screens\Accordion.cs" />
     <Compile Include="App.xaml.cs">

@@ -2,35 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Controls;
 
 namespace ECE_Showcase.Screens
 {
     public class DataItem
     {
-        private string name;
-        public string filePath;
-        public string imagePath;
+        public string Name { get; private set; }
+        public UserControl ItemControl { get; private set;}
+        public Image ItemImage { get; private set; }
 
-        public string Name
+        public DataItem(string name, UserControl control)
         {
-            get { return name; }
+            Name = name;
+            ItemControl = control;
         }
 
-        public string FilePath
+        public DataItem(string name, UserControl control, Image image)
         {
-            get { return filePath; }
-        }
-
-        public string ImagePath
-        {
-            get { return imagePath; }
-        }
-
-        public DataItem(string name, string filePath, string imagePath)
-        {
-            this.name = name;
-            this.filePath = filePath;
-            this.imagePath = imagePath;
+            Name = name;
+            ItemControl = control;
+            ItemImage = image;
         }
     }
 }

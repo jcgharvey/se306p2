@@ -49,10 +49,12 @@ namespace ECE_Showcase.Controls
             infoViewer.Document = flowDocument;
 
             locations = new ObservableCollection<DataItem>();
+            /*
             locations.Add(new DataItem("From the Engineering Building", "Resources/docs/specialisations/cse_info.xaml", "/ECE_Showcase;component/Resources/img/map_from_engineering.png"));
             locations.Add(new DataItem("From the Clocktower", "Resources/docs/specialisations/cse_info.xaml", "/ECE_Showcase;component/Resources/img/map_from_clocktower.png"));
             locations.Add(new DataItem("From 38 Princes St", "Resources/docs/specialisations/cse_info.xaml", "/ECE_Showcase;component/Resources/img/map_from_38princes.png"));
-        }
+            */
+             }
 
 
         private void Expander_TouchUp(object sender, TouchEventArgs e)
