@@ -19,5 +19,11 @@
     <BitmapImage x:Key="electrical">/Resources/img/electrical.png</BitmapImage>
     <BitmapImage x:Key="software">/Resources/img/software.png</BitmapImage>
     <BitmapImage x:Key="part1">/Resources/img/part1.png</BitmapImage>
+    
+    <!-- research images -->
+    <BitmapImage x:Key="se_research">/Resources/img/softwareResearch.png"</BitmapImage>
+    <BitmapImage x:Key="cse_research">/Resources/img/compsysResearch.png"</BitmapImage>
+    <BitmapImage x:Key="eee_research">/Resources/img/electricalResearch.png"</BitmapImage>
+    
 
 </ResourceDictionary>

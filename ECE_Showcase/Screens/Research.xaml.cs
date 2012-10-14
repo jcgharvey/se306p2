@@ -24,6 +24,7 @@ namespace ECE_Showcase.Screens
     /// </summary>
     public partial class Research : Screen
     {
+        private UserControl Current_control { get; set; }
         private ObservableCollection<DataItem> sourceItems;
         private ObservableCollection<DataItem> targetItems;
         /// <summary>
@@ -62,12 +63,23 @@ namespace ECE_Showcase.Screens
         {
             InitializeComponent();
             DataContext = this;
-            SourceItems.Add(new DataItem("Agile Software Development", "Resources/docs/research/se_research.xaml", "../Resources/img/softwareResearch.png"));
-            SourceItems.Add(new DataItem("Power Electronics", "Resources/docs/research/eee_research.xaml", "../Resources/img/electricalResearch.png"));
-            SourceItems.Add(new DataItem("Radio Systems", "Resources/docs/research/cse_research.xaml", "../Resources/img/compsysResearch.png"));
-
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/drag_here.xaml"));
             
+            SourceItems.Add(new DataItem("Agile Software Development", new Controls.FlowDocControl("Resources/docs/research/se_research.xaml")));
+            SourceItems.Add(new DataItem("Power Electronics", new Controls.FlowDocControl("Resources/docs/research/eee_research.xaml")));
+            SourceItems.Add(new DataItem("Radio Systems", new Controls.FlowDocControl("Resources/docs/research/cse_research.xaml")));
+            
+            setControl(new Controls.FlowDocControl("Resources/docs/drag_here.xaml"));
+            
+        }
+
+        private void setControl(UserControl new_control)
+        {
+            theGrid.Children.Remove(Current_control);
+            new_control.AllowDrop = true;
+            Grid.SetColumn(new_control, 3);
+            Grid.SetRow(new_control, 1);
+            Current_control = new_control;
+            theGrid.Children.Add(Current_control);
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
@@ -139,16 +151,6 @@ namespace ECE_Showcase.Screens
             e.Handled = (startDragOkay != null);
         }
 
-        private void OnDropTargetDragEnter(object sender, SurfaceDragDropEventArgs e)
-        {
-            
-        }
-
-        private void OnDropTargetDragLeave(object sender, SurfaceDragDropEventArgs e)
-        {
-            // Reset the effects.
-            e.Effects = e.Cursor.AllowedEffects;
-        }
 
         private void OnTargetChanged(object sender, TargetChangedEventArgs e)
         {
@@ -163,29 +165,13 @@ namespace ECE_Showcase.Screens
             }
         }
 
-        private void OnDropTargetDrop(object sender, SurfaceDragDropEventArgs e)
-        {
-            TargetItems.Clear();
-            TargetItems.Add(e.Cursor.Data as DataItem);
-        }
-
         private void OnDragCompleted(object sender, SurfaceDragCompletedEventArgs e)
         {
-            // If the operation is Move, remove the data from drag source.
-            //if (e.Cursor.Effects == DragDropEffects.Move)
-            //{
-            //    SourceItems.Remove(e.Cursor.Data as DataItem);
-            //}
+
+            if (e.Cursor.Effects == DragDropEffects.Move)
+            {
+                setControl((e.Cursor.Data as DataItem).ItemControl);
+            }
         }
-
-
-        private void DropTargetRichTextBox_Drop(object sender, Microsoft.Surface.Presentation.SurfaceDragDropEventArgs e)
-        {
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead((e.Cursor.Data as DataItem).FilePath));
-            ScrollViewer.ScrollToTop();
-
-        }
-
-
     }
 }

@@ -693,7 +693,8 @@
 
     </view:Screen.Resources>
 
-    <Grid Background="#FFFFEC">
+    <Grid Background="#FFFFEC"
+          Name="theGrid">
 
         <Grid.Resources>
             <Style TargetType="{x:Type s:SurfaceButton}">
@@ -865,20 +866,20 @@
                     
                 </Expander>
 
-                <Expander
-                Background="#633678" 
-                ScrollViewer.VerticalScrollBarVisibility="Hidden" 
-                UseLayoutRounding="False" 
-                Style="{DynamicResource ArrowlessExpanderTemplate}" 
-                BorderThickness="0"
-                TouchDown="Expander_TouchDown"
-                TouchUp="Expander_TouchUp"
-                >
+                <Expander Background="#633678"
+                          ScrollViewer.VerticalScrollBarVisibility="Hidden" 
+                          UseLayoutRounding="False" 
+                          Style="{DynamicResource ArrowlessExpanderTemplate}" 
+                          BorderThickness="0"
+                          TouchDown="Expander_TouchDown"
+                          TouchUp="Expander_TouchUp">
+                    
                     <Expander.Header>
                         <Image Source="{StaticResource compsys}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
                     </Expander.Header>
+                    
                     <s:SurfaceListBox 
                         Grid.Row="1"
                         Grid.Column="1"
@@ -889,41 +890,12 @@
                         PreviewTouchDown="OnDragSourcePreviewTouchDown"
                         PreviewMouseDown="OnDragSourcePreviewTouchDown"
                         s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
-                       
-                        
                     </s:SurfaceListBox>
-                    
                 </Expander>
 
             </view:Accordion>
         </s:SurfaceScrollViewer>
 
-        <s:SurfaceScrollViewer
-            x:Name="ScrollViewer"
-            HorizontalAlignment="Stretch"
-            VerticalAlignment="Stretch"
-            Grid.Column="3"
-            Grid.Row="1"
-            Foreground="Black" 
-            BorderBrush="#633678" 
-            Style="{DynamicResource SurfaceScrollViewerStyle1}">
-            
-            <RichTextBox
-                    Width="{Binding ViewportWidth, ElementName=ScrollViewer, Mode=Default}"
-                    FontSize="20"
-                    x:Name="infoViewer"
-                    BorderThickness="0"
-                    Background="#FFFFEC"
-                    IsReadOnly="True"
-                    IsDocumentEnabled="False"
-                    Foreground="#633678"
-                    
-                    s:SurfaceDragDrop.DragEnter="OnDropTargetDragEnter"
-                    s:SurfaceDragDrop.DragLeave="OnDropTargetDragLeave"
-                    s:SurfaceDragDrop.Drop="DropTargetRichTextBox_Drop"
-                    />
-
-        </s:SurfaceScrollViewer>
 
         <Label x:Name="Title"
                          Grid.Row="0"

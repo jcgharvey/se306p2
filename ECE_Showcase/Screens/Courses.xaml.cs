@@ -30,6 +30,7 @@ namespace ECE_Showcase.Screens
         private ObservableCollection<DataItem> p1_items;
 
         private ObservableCollection<DataItem> targetItems;
+        private UserControl Current_control { get; set; }
 
         private MediaElement accordian_fx;
 
@@ -112,25 +113,35 @@ namespace ECE_Showcase.Screens
             accordian_fx.Volume = 1.0;
             accordian_fx.IsMuted = false;
 
-            Cse_items.Add(new DataItem("Description", "Resources/docs/specialisations/cse_info.xaml", "../Resources/img/software.png"));
-            Cse_items.Add(new DataItem("Careers", "Resources/docs/specialisations/cse_careers.xaml", "../Resources/img/software.png"));
-            Cse_items.Add(new DataItem("Courses", "Resources/docs/specialisations/cse_courses.xaml", "../Resources/img/software.png"));
-            Cse_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/cse_advisor.xaml", "../Resources/img/software.png"));
+            Cse_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/cse_info.xaml")));
+            Cse_items.Add(new DataItem("Careers", new Controls.FlowDocControl("Resources/docs/specialisations/cse_careers.xaml")));
+            Cse_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
+            Cse_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/cse_advisor.xaml")));
+
+            Se_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/se_info.xaml")));
+            Se_items.Add(new DataItem("Careers", new Controls.FlowDocControl("Resources/docs/specialisations/se_careers.xaml")));
+            Se_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
+            Se_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/se_advisor.xaml")));
+
+            Eee_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/eee_info.xaml")));
+            Eee_items.Add(new DataItem("Careers", new Controls.FlowDocControl("Resources/docs/specialisations/eee_careers.xaml")));
+            Eee_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
+            Eee_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/eee_advisor.xaml")));
             
-            Se_items.Add(new DataItem("Description", "Resources/docs/specialisations/se_info.xaml", "../Resources/img/software.png"));
-            Se_items.Add(new DataItem("Careers", "Resources/docs/specialisations/se_careers.xaml", "../Resources/img/software.png"));
-            Se_items.Add(new DataItem("Courses", "Resources/docs/specialisations/se_courses.xaml", "../Resources/img/software.png"));
-            Se_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/se_advisor.xaml", "../Resources/img/software.png"));
+            P1_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/p1_info.xaml")));
+            P1_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
 
-            Eee_items.Add(new DataItem("Description", "Resources/docs/specialisations/eee_info.xaml", "../Resources/img/software.png"));
-            Eee_items.Add(new DataItem("Careers", "Resources/docs/specialisations/eee_careers.xaml", "../Resources/img/software.png"));
-            Eee_items.Add(new DataItem("Courses", "Resources/docs/specialisations/eee_courses.xaml", "../Resources/img/software.png"));
-            Eee_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/eee_advisor.xaml", "../Resources/img/software.png"));
+            setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
+        }
 
-            P1_items.Add(new DataItem("Description", "Resources/docs/specialisations/p1_info.xaml", "../Resources/img/part1.png"));
-            P1_items.Add(new DataItem("Courses", "Resources/docs/specialisations/p1_courses.xaml", "../Resources/img/part1.png"));
-
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
+        private void setControl(UserControl new_control)
+        {
+            theGrid.Children.Remove(Current_control);
+            new_control.AllowDrop = true;
+            Grid.SetColumn(new_control, 3);
+            Grid.SetRow(new_control, 1);
+            Current_control = new_control;
+            theGrid.Children.Add(Current_control);
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
@@ -142,6 +153,7 @@ namespace ECE_Showcase.Screens
         {
             ParentWindow.popScreen();
         }
+
         private void OnDragSourcePreviewTouchDown(object sender, InputEventArgs e)
         {
             FrameworkElement findSource = e.OriginalSource as FrameworkElement;
@@ -202,30 +214,19 @@ namespace ECE_Showcase.Screens
             e.Handled = (startDragOkay != null);
         }
 
-        private void OnDropTargetDragEnter(object sender, SurfaceDragDropEventArgs e)
-        {
-
-        }
-
-        private void OnDropTargetDragLeave(object sender, SurfaceDragDropEventArgs e)
-        {
-            // Reset the effects.
-            e.Effects = e.Cursor.AllowedEffects;
-        }
-
         private void OnTargetChanged(object sender, TargetChangedEventArgs e)
         {
             if (e.Cursor.CurrentTarget != null)
             {
-                DataItem data = e.Cursor.Data as DataItem;
                 e.Cursor.Visual.Tag = "CanDrop";
             }
             else
             {
-                e.Cursor.Visual.Tag = null;
+                e.Cursor.Visual.Tag = null;            
             }
         }
 
+        
         private void OnDropTargetDrop(object sender, SurfaceDragDropEventArgs e)
         {
             TargetItems.Clear();
@@ -234,20 +235,11 @@ namespace ECE_Showcase.Screens
 
         private void OnDragCompleted(object sender, SurfaceDragCompletedEventArgs e)
         {
-            // If the operation is Move, remove the data from drag source.
-            //if (e.Cursor.Effects == DragDropEffects.Move)
-            //{
-            //    SourceItems.Remove(e.Cursor.Data as DataItem);
-            //}
+            if (e.Cursor.Effects == DragDropEffects.Move)
+            {
+                setControl((e.Cursor.Data as DataItem).ItemControl);
+            }
         }
-
-
-        private void DropTargetRichTextBox_Drop(object sender, Microsoft.Surface.Presentation.SurfaceDragDropEventArgs e)
-        {
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead((e.Cursor.Data as DataItem).FilePath));
-        }
-
-
 
         private void Expander_TouchUp(object sender, TouchEventArgs e)
         {
@@ -272,12 +264,12 @@ namespace ECE_Showcase.Screens
                 {
                     
                     exp.IsExpanded = false;
-                    infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
+                    setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
                 }
                 else
                 {
                     exp.IsExpanded = true;
-                    infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/drag_here.xaml"));
+                    setControl(new Controls.FlowDocControl("Resources/docs/drag_here.xaml"));
                 }
                 
                 acc.selectedExpander_Expanded(exp, e);
