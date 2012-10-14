@@ -22,7 +22,7 @@
                                Foreground="#FFFFF0"
                                VerticalAlignment="Center"/>
                     </Expander.Header>
-                    <Label Content="{Binding Info}"
+                    <Label Content="{Binding Mix}"
                            Foreground="#FFFFF0"/>
                 </Expander>
        
