@@ -137,6 +137,7 @@ namespace ECE_Showcase.Screens
         private void setControl(UserControl new_control)
         {
             theGrid.Children.Remove(Current_control);
+            new_control.AllowDrop = true;
             Grid.SetColumn(new_control, 3);
             Grid.SetRow(new_control, 1);
             Current_control = new_control;
@@ -152,6 +153,7 @@ namespace ECE_Showcase.Screens
         {
             ParentWindow.popScreen();
         }
+
         private void OnDragSourcePreviewTouchDown(object sender, InputEventArgs e)
         {
             FrameworkElement findSource = e.OriginalSource as FrameworkElement;
@@ -216,12 +218,14 @@ namespace ECE_Showcase.Screens
         {
             if (e.Cursor.CurrentTarget != null)
             {
-                DataItem data = e.Cursor.Data as DataItem;
+                //DataItem data = e.Cursor.Data as DataItem;
                 e.Cursor.Visual.Tag = "CanDrop";
             }
             else
             {
-                e.Cursor.Visual.Tag = null;
+                //e.Cursor.Visual.Tag = null;
+                e.Cursor.Visual.Tag = "CanDrop";
+            
             }
         }
 
@@ -234,12 +238,13 @@ namespace ECE_Showcase.Screens
 
         private void OnDragCompleted(object sender, SurfaceDragCompletedEventArgs e)
         {
-            // If the operation is Move, remove the data from drag source.
+            setControl((e.Cursor.Data as DataItem).ItemControl);
+            /*
             if (e.Cursor.Effects == DragDropEffects.Move)
             {
-                //SourceItems.Remove(e.Cursor.Data as DataItem);
                 setControl((e.Cursor.Data as DataItem).ItemControl);
             }
+             */
         }
 
         private void Expander_TouchUp(object sender, TouchEventArgs e)

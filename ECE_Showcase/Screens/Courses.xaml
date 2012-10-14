@@ -896,6 +896,7 @@
             </view:Accordion>
         </s:SurfaceScrollViewer>
 
+
         <Label x:Name="Title"
                          Grid.Row="0"
                          Grid.Column="1"
