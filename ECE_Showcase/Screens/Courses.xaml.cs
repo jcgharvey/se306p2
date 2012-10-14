@@ -30,6 +30,7 @@ namespace ECE_Showcase.Screens
         private ObservableCollection<DataItem> p1_items;
 
         private ObservableCollection<DataItem> targetItems;
+        private UserControl Current_control { get; set; }
 
         private MediaElement accordian_fx;
 
@@ -133,11 +134,13 @@ namespace ECE_Showcase.Screens
             setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
         }
 
-        private void setControl(UserControl control)
+        private void setControl(UserControl new_control)
         {
-            Grid.SetColumn(control, 3);
-            Grid.SetRow(control, 1);
-            theGrid.Children.Add(control);
+            theGrid.Children.Remove(Current_control);
+            Grid.SetColumn(new_control, 3);
+            Grid.SetRow(new_control, 1);
+            Current_control = new_control;
+            theGrid.Children.Add(Current_control);
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
@@ -232,10 +235,11 @@ namespace ECE_Showcase.Screens
         private void OnDragCompleted(object sender, SurfaceDragCompletedEventArgs e)
         {
             // If the operation is Move, remove the data from drag source.
-            //if (e.Cursor.Effects == DragDropEffects.Move)
-            //{
-            //    SourceItems.Remove(e.Cursor.Data as DataItem);
-            //}
+            if (e.Cursor.Effects == DragDropEffects.Move)
+            {
+                //SourceItems.Remove(e.Cursor.Data as DataItem);
+                setControl((e.Cursor.Data as DataItem).ItemControl);
+            }
         }
 
         private void Expander_TouchUp(object sender, TouchEventArgs e)
