@@ -143,7 +143,7 @@ namespace ECE_Showcase
 
         public void popAll()
         {
-            sound_fx.Source = new Uri("Resources/sounds/home.mp3", UriKind.Relative);
+            sound_fx.Source = new Uri("Resources/sounds/home.wav", UriKind.Relative);
             sound_fx.Play();
 
             while (screenStack.Count > 1)
