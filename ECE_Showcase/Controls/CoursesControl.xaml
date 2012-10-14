@@ -265,6 +265,9 @@
             </s:SurfaceScrollViewer>
         </StackPanel>
         
+        
+        
+        
         <StackPanel
             Grid.Column="2">
             <Label Content="Part IV"
