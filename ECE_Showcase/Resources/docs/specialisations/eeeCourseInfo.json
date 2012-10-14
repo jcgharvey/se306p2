@@ -1,0 +1,316 @@
+﻿[
+  [
+    {
+      "code": "ELECTENG 202",
+      "name": "Circuits and Systems",
+      "fullName": "Circuits and Systems",
+      "points": 15,
+      "text": "This course aims to provide a good understanding of the way electrical circuits work. It covers DC and AC circuit theorems and analysis; transient analysis, including the Laplace transform; transfer functions; AC power calculations; and time and frequency representation of signals.\nPrerequisite: ELECTENG 101"
+    },
+    {
+      "code": "ELECTENG 204",
+      "name": "Engineering Electromagnetics",
+      "fullName": "Engineering Electromagnetics",
+      "points": 15,
+      "text": "Electrical conduction theories, conducting materials and insulators, magnetic and dielectric properties and materials, electrostatics and magnetostatics, steady electric currents, the magnetic field of steady electric currents, Ampere's law and its applications, electromagnetic induction, Faraday's law and its applications, electromagnetism, simple transmission lines, magnetic circuits, permanent magnets, inductors, transformers, introduction to electrical machines.\nPrerequisite: ELECTENG 101"
+    },
+    {
+      "code": "ELECTENG 208",
+      "name": "Electric Circuit Analysis",
+      "fullName": "Electric Circuit Analysis",
+      "points": 15,
+      "text": "Aims to provide a good understanding of the way electrical circuits work. The course covers DC and AC circuit theorems and analysis. It also introduces some semiconductor devices (diodes, transistors and operational amplifiers) and gives examples of their applications.\nPrerequisite: ELECTENG 101\nRestriction: ELECTENG 202"
+    },
+    {
+      "code": "ELECTENG 209",
+      "name": "Analogue and Digital Design",
+      "fullName": "Analogue and Digital Design",
+      "points": 15,
+      "text": "This project-based course provides an introduction to real-world design of analogue and digital circuits. Practical skills will be gained in electronic circuit analysis, use of CAD tools, PCB design and construction, circuit testing and calibration using laboratory equipment. Appropriate design methodology will be developed in a practical framework.\nPrerequisite: ELECTENG 101, 202, ELECTENG 205 or COMPSYS 201, ELECTENG 207 or 210"
+    },
+    {
+      "code": "ELECTENG 210",
+      "name": "Electronics 1",
+      "fullName": "Electronics 1",
+      "points": 15,
+      "text": "An introduction to semiconductor devices (diodes, bipolar junction transistors, field-effect transistors, operational amplifiers) and their applications. Device operation, device models and terminal characteristics. Biasing, coupling and bypass techniques. Small-signal analysis. Signal amplifiers, oscillators and power amplifiers. Switches and sensors.\nPrerequisite: ELECTENG 101"
+    }
+  ],
+  [
+    {
+      "code": "ELECTENG 303",
+      "name": "Systems and Control",
+      "fullName": "Systems and Control",
+      "points": 15,
+      "text": "Introduction to linear, time-invariant, continuous-time system theory from both a time-domain and frequency domain standpoint. This leads on to the fundamental body of knowledge underlying the control and enhancement of system behaviour, with application to the analysis and control of electrical systems.\nPrerequisite: ELECTENG 202"
+    },
+    {
+      "code": "ELECTENG 305",
+      "name": "Electronics 2",
+      "fullName": "Electronics 2",
+      "points": 15,
+      "text": "The operation, analysis and design of a range of electronic devices and systems will be discussed, taking examples from the full spectrum of electrical engineering. Such analysis will consider non-ideal circuit models and their frequency dependence. Selected applications will be taken from the fields of signal conditioning, amplifiers, communications systems and energy conversion.\nPrerequisite: ELECTENG 202, 207 or 210"
+    },
+    {
+      "code": "ELECTENG 307",
+      "name": "Transmission Lines and Systems",
+      "fullName": "Transmission Lines and Systems",
+      "points": 15,
+      "text": "The basic concepts of electromagnetism are completed with a formal treatment of Maxwell's equations and their applications, including electromagnetic wave propagation, transmission lines, the Smith chart, and an introduction to antennas and radio systems, EMI and RFI.\nPrerequisite: ELECTENG 204"
+    },
+    {
+      "code": "ELECTENG 309",
+      "name": "Power Apparatus and Systems",
+      "fullName": "Power Apparatus and Systems",
+      "points": 15,
+      "text": "This course introduces students to fundamentals of electric machinery and power system components. It covers theory, control and practical aspects of electric machines and apparatus as well as their applications in relation to power electronics.\nPrerequisite: ELECTENG 204"
+    },
+    {
+      "code": "ELECTENG 310",
+      "name": "Electrical Engineering Design 1",
+      "fullName": "Electrical Engineering Design 1",
+      "points": 15,
+      "text": "An appreciation of the design process as applied to various electrical and electronic engineering systems. Design skills are enhanced through a variety of engineering projects which typically introduce students to modelling, simulation and analogue and digital electronic hardware design.\nPrerequisite: ELECTENG 202, ELECTENG 203 or COMPSYS 202, ELECTENG 205 or COMPSYS 201, ELECTENG 206 or 209, ELECTENG 207 or 210"
+    },
+    {
+      "code": "ELECTENG 311",
+      "name": "Electrical Engineering Design 2",
+      "fullName": "Electrical Engineering Design 2",
+      "points": 15,
+      "text": "The formal introduction to the design process is completed by one or more open-ended projects which typically include elements of design from concept to working prototype.\nPrerequisite: ELECTENG 310 or ELECTENG 203, 205, 206, 207"
+    }
+  ],
+  [
+    {
+      "code": "ELECTENG 700A",
+      "name": "Research Project",
+      "fullName": "Research Project",
+      "points": 15,
+      "text": "A student is required to submit a report on project work carried out on a topic assigned by the Head of Department. The work shall be supervised by a member of staff.\nPrerequisite: ELECTENG 303, 305, ELECTENG 301 or 310 and 311\nRestriction: ELECTENG 401\nNote: To complete this course students must enrol in ELECTENG 700 A and B"
+    },
+    {
+      "code": "ELECTENG 700B",
+      "name": "Research Project",
+      "fullName": "Research Project",
+      "points": 15,
+      "text": "A student is required to submit a report on project work carried out on a topic assigned by the Head of Department. The work shall be supervised by a member of staff.\nPrerequisite: ELECTENG 303, 305, ELECTENG 301 or 310 and 311\nRestriction: ELECTENG 401\nNote: To complete this course students must enrol in ELECTENG 700 A and B"
+    },
+    {
+      "code": "ELECTENG 701",
+      "name": "Wireless Communication",
+      "fullName": "Wireless Communication",
+      "points": 15,
+      "text": "Aspects of the design and planning of wireless communication systems. Introduction to cellular system design. Issues related to radio propagation: multipath, path loss prediction, channel characterisation. System aspects: cellular technologies, system planning and reliability estimation. Wireless systems and standards.\nPrerequisite: ELECTENG 421 or 721"
+    },
+    {
+      "code": "ELECTENG 702",
+      "name": "Applied Electromagnetics",
+      "fullName": "Applied Electromagnetics",
+      "points": 15,
+      "text": "Selected topics in electromagnetic theory. Consideration will be given to both analytical and numerical techniques.\nPrerequisite: ELECTENG 302 or 306 or 307"
+    },
+    {
+      "code": "ELECTENG 703",
+      "name": "Advanced Power Systems",
+      "fullName": "Advanced Power Systems",
+      "points": 15,
+      "text": "Electricity markets – structure, pricing, optimisation. Application of power electronics to power systems. Distribution system issues. Integration of DG/renewable sources to bulk power systems.\nPrerequisite: ELECTENG 411 or 731"
+    },
+    {
+      "code": "ELECTENG 704",
+      "name": "Advanced Control Systems",
+      "fullName": "Advanced Control Systems",
+      "points": 15,
+      "text": "Theory of modern control systems with emphasis on optimisation techniques for both deterministic and stochastic processes. State-space modelling of dynamic systems and choice of suitable performance criteria. Adaptive, fuzzy logic and sliding mode control systems.\nPrerequisite: ELECTENG 422 or 722"
+    },
+    {
+      "code": "ELECTENG 705",
+      "name": "Heavy Current Electronics",
+      "fullName": "Heavy Current Electronics",
+      "points": 15,
+      "text": "Selected advanced topics in the design and control of power electronics are presented. Topics include: analysis of power electronic circuits using state space techniques with suitable applications; design and application of switch mode resonant converters; scalar and vector control of AC induction motors; advanced magnetics modelling.\nPrerequisite: ELECTENG 414 or 734"
+    },
+    {
+      "code": "ELECTENG 706",
+      "name": "Digital Signal Processing",
+      "fullName": "Digital Signal Processing",
+      "points": 15,
+      "text": "Advanced digital signal processing concepts and techniques for analysing discrete-time deterministic and random signals and systems. Stochastic signal description and analysis, system response to stochastic signals. Adaptive systems and applications. Multi-rate techniques. Digital Signal Processor (DSP) implementation strategies and real-world issues.\nPrerequisite: ELECTENG 413 or 733"
+    },
+    {
+      "code": "ELECTENG 709",
+      "name": "Image Processing and Computer Vision",
+      "fullName": "Image Processing and Computer Vision",
+      "points": 15,
+      "text": "Two-dimensional signals and systems and methods of analysis. Digital image manipulation, enhancement and restoration techniques. Two-dimensional digital filters and their application. Colour image processing. Computer vision concepts and tools. Quantitative image analysis and information extraction.\nPrerequisite: ELECTENG 413 or 733"
+    },
+    {
+      "code": "ELECTENG 711",
+      "name": "Studies in Electrical and Electronic Engineering 1",
+      "fullName": "Studies in Electrical and Electronic Engineering 1",
+      "points": 15,
+      "text": "Advanced course on topics to be determined each year by the Head of Department."
+    },
+    {
+      "code": "ELECTENG 712",
+      "name": "Studies in Electrical and Electronic Engineering 2",
+      "fullName": "Studies in Electrical and Electronic Engineering 2",
+      "points": 15,
+      "text": "Advanced course on topics to be determined each year by the Head of Department."
+    },
+    {
+      "code": "ELECTENG 713",
+      "name": "Studies in Electrical and Electronic Engineering 3",
+      "fullName": "Studies in Electrical and Electronic Engineering 3",
+      "points": 15,
+      "text": "Advanced course on topics to be determined each year by the Head of Department."
+    },
+    {
+      "code": "ELECTENG 714",
+      "name": "Studies in Electrical and Electronic Engineering 4",
+      "fullName": "Studies in Electrical and Electronic Engineering 4",
+      "points": 15,
+      "text": "Advanced course on topics to be determined each year by the Head of Department."
+    },
+    {
+      "code": "ELECTENG 715",
+      "name": "Studies in Electrical and Electronic Engineering 5",
+      "fullName": "Studies in Electrical and Electronic Engineering 5",
+      "points": 15,
+      "text": "Advanced course on topics to be determined each year by the Head of Department."
+    },
+    {
+      "code": "ELECTENG 716",
+      "name": "Studies in Electrical and Electronic Engineering 6",
+      "fullName": "Studies in Electrical and Electronic Engineering 6",
+      "points": 15,
+      "text": "Advanced course on topics to be determined each year by the Head of Department."
+    },
+    {
+      "code": "ELECTENG 720",
+      "name": "Microwave Engineering",
+      "fullName": "Microwave Engineering",
+      "points": 15,
+      "text": "Microwave systems, waveguides, passive components, resonators and filters. Microwave network theory, waveguide discontinuities. Microwave measurements. Aperture antennas.\nPrerequisite: ELECTENG 421 or 721"
+    },
+    {
+      "code": "ELECTENG 721",
+      "name": "Radio Systems",
+      "fullName": "Radio Systems",
+      "points": 15,
+      "text": "Transmission lines and waveguides, impedance matching, devices. Radio propagation, antennas and arrays. Radio system design – mobile, point-to-point, area coverage.\nPrerequisite: ELECTENG 302 or 306 or 307\nRestriction: ELECTENG 421"
+    },
+    {
+      "code": "ELECTENG 722",
+      "name": "Control Systems",
+      "fullName": "Control Systems",
+      "points": 15,
+      "text": "State space analysis, relationship to transfer function methods, controllability and observability, multivariable plant. Computer simulation. Stability considerations. State variable feedback. Digital control system, design and realisation of digital controllers, adaptive controllers. Nonlinear systems, phase-plane and describing function techniques, Liaponov's method of stability analysis, design of controllers for non-linear systems. Variable structure systems.\nPrerequisite: ELECTENG 303\nRestriction: ELECTENG 422"
+    },
+    {
+      "code": "ELECTENG 724",
+      "name": "Special Topics 2",
+      "fullName": "Special Topics 2",
+      "points": 15,
+      "text": "An advanced course on topics to be determined each year by the Head of Department.\nRestriction: ELECTENG 424 "
+    },
+    {
+      "code": "ELECTENG 726",
+      "name": "Digital Communications",
+      "fullName": "Digital Communications",
+      "points": 15,
+      "text": "Advanced principles and techniques in digital transmission systems: signal and information coding, data compression, digital modulation, digital transmission, error detection and correction. Digital networks. Information theory. Traffic theory.\nPrerequisite: ELECTENG 303, 732\nRestriction: ELECTENG 426"
+    },
+    {
+      "code": "ELECTENG 728",
+      "name": "Sensor Networks",
+      "fullName": "Sensor Networks",
+      "points": 15,
+      "text": "Data acquisition. Sensor classification and characteristics. Physical principles of sensing. Interface electronics. Noise. Application examples. Architecture for sensor networks. Network node structure. Protocols and layers. Positioning and timing. Energy efficient algorithms. Wireless sensor network design, testing and validation. Sample applications. Network software design tools.\nPrerequisite: ELECTENG 305 or COMPSYS 305 or MECHENG 370\nRestriction: ELECTENG 428"
+    },
+    {
+      "code": "ELECTENG 731",
+      "name": "Power Systems",
+      "fullName": "Power Systems",
+      "points": 15,
+      "text": "Power system network modelling; power system analysis – load flow, fault, stability, power quality; control of real and reactive power.\nPrerequisite: ELECTENG 302 or 309\nRestriction: ELECTENG 411"
+    },
+    {
+      "code": "ELECTENG 732",
+      "name": "Communication Systems",
+      "fullName": "Communication Systems",
+      "points": 15,
+      "text": "Analog modulations, AM and FM modulation. Noise. Noise in AM and FM systems. Broadband systems: FDM, TDM, PCM. Information theory, data networks, waveform coding and data compression, baseband data transmission. Introduction to digital systems: Digital modulation.\nPrerequisite: ELECTENG 303\nRestriction: ELECTENG 412"
+    },
+    {
+      "code": "ELECTENG 733",
+      "name": "Signal Processing",
+      "fullName": "Signal Processing",
+      "points": 15,
+      "text": "Analog signals and systems: Signal processing concepts and tools for analysing deterministic and random continuous-time signals and systems. Digital signals and systems: Discrete-time deterministic signal analysis, digital filters and transforms, including the FFT. Digital Signal Processor (DSP) architectures and DSP applications.\nPrerequisite: ELECTENG 303\nRestriction: ELECTENG 413"
+    },
+    {
+      "code": "ELECTENG 734",
+      "name": "Power Electronics",
+      "fullName": "Power Electronics",
+      "points": 15,
+      "text": "This course introduces students to selected building blocks in power electronics by way of a practical design project utilising modern power electronic converters with supporting lectures that include: inductive power transfer, switched mode DC-DC converter design and control, high frequency magnetics design, semiconductor switches, practical design issues, controlled rectifiers and PWM converters with application to conventional and brushless DC motors.\nPrerequisite: ELECTENG 303\nRestriction: ELECTENG 414"
+    },
+    {
+      "code": "ELECTENG 735",
+      "name": "Special Topics 1",
+      "fullName": "Special Topics 1",
+      "points": 15,
+      "text": "An advanced course on topics to be determined each year by the Head of Department."
+    },
+    {
+      "code": "ELECTENG 736",
+      "name": "Analog and Digital Filter Synthesis",
+      "fullName": "Analog and Digital Filter Synthesis",
+      "points": 15,
+      "text": "Filter concepts and network functions, a review of approximation techniques and frequency transformations, leading to a thorough treatment of passive, active and digital filter implementations.\nPrerequisite: ELECTENG 303\nRestriction: ELECTENG 416"
+    },
+    {
+      "code": "ELECTENG 787",
+      "name": "Project X",
+      "fullName": "Project X",
+      "points": 15,
+      "text": "A student is required to submit a report on a topic assigned by the appropriate Head of Department."
+    },
+    {
+      "code": "ELECTENG 788A ",
+      "name": "Project Y",
+      "fullName": "Project Y",
+      "points": 15,
+      "text": "A student is required to submit a report on a topic assigned by the appropriate Head of Department.\nNote: To complete this course students must enrol in ELECTENG 788 A and B"
+    },
+    {
+      "code": "ELECTENG 788B ",
+      "name": "Project Y",
+      "fullName": "Project Y",
+      "points": 15,
+      "text": "A student is required to submit a report on a topic assigned by the appropriate Head of Department.\nNote: To complete this course students must enrol in ELECTENG 788 A and B"
+    },
+    {
+      "code": "ELECTENG 789",
+      "name": "Project Z",
+      "fullName": "Project Z",
+      "points": 30,
+      "text": "A student is required to submit a report on a topic assigned by the appropriate Head of Department."
+    },
+    {
+      "code": "ELECTENG 796A",
+      "name": "ME Thesis (Electrical and Electronic)",
+      "fullName": "ME Thesis (Electrical and Electronic)",
+      "points": 60,
+      "text": "A student is required to submit a thesis on a topic assigned by the appropriate Head of Department.\nNote: To complete this course students must enrol in ELECTENG 796 A and B"
+    },
+    {
+      "code": "ELECTENG 796B",
+      "name": "ME Thesis (Electrical and Electronic)",
+      "fullName": "ME Thesis (Electrical and Electronic)",
+      "points": 60,
+      "text": "A student is required to submit a thesis on a topic assigned by the appropriate Head of Department.\nNote: To complete this course students must enrol in ELECTENG 796 A and B"
+    }
+  ]
+]

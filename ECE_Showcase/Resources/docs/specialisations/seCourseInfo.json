@@ -1,0 +1,204 @@
+[
+  [
+    {
+      "code": "SOFTENG 206",
+      "name": "Software Engineering Design 1",
+      "fullName": "Software Engineering Design 1",
+      "points": 15,
+      "text": "Project work. Skills and tools in systematic development of software, including testing, version control, build systems, working with others.\nPrerequisite: SOFTENG 250, 251"
+    },
+    {
+      "code": "SOFTENG 211",
+      "name": "Software Engineering Theory",
+      "fullName": "Software Engineering Theory",
+      "points": 15,
+      "text": "Sets, languages, operations on languages. Deterministic and nondeterministic automata. Designing automata. Determinisation. Regular expressions. Induction and Recursion. Program correctness. Counting. Elements of graph algorithms.\nPrerequisite: ENGGEN 131 or COMPSCI 101"
+    },
+    {
+      "code": "SOFTENG 250",
+      "name": "Data Structures and Algorithms",
+      "fullName": "Introduction to Data Structures and Algorithms",
+      "points": 15,
+      "text": "Introduction to the analytical and empirical behaviour of basic algorithms and data structures.\nPrerequisite: ENGGEN 131 or COMPSCI 101\nCorequisite: ENGSCI 213"
+    },
+    {
+      "code": "SOFTENG 251",
+      "name": "Object Oriented Software Construction",
+      "fullName": "Object Oriented Software Construction",
+      "points": 15,
+      "text": "An introduction to Object Oriented software development. Programming with classes; objects and polymorphism. Evolutionary and test-driven development. Analysis and design. Modelling with UML. Design patterns. Design for reuse, for testing, and for ease of change.\nPrerequisite: ENGGEN 131 or COMPSCI 101"
+    },
+    {
+      "code": "SOFTENG 254",
+      "name": "Quality Assurance",
+      "fullName": "Quality Assurance",
+      "points": 15,
+      "text": "Software verification and validation. Static and dynamic QA activities as part of the software lifecycle. Unit, integration, system, performance and usability testing. Use of automation and tools to support testing activities. Metrics to quantify strength of testing and complexity of programs.\nPrerequisite: SOFTENG 250, 251"
+    }
+  ],
+  [
+    {
+      "code": "SOFTENG 306",
+      "name": "Software Engineering Design 2",
+      "fullName": "Software Engineering Design 2",
+      "points": 15,
+      "text": "Working in project teams to develop software to meet changing requirements for a large application. Project Planning. Requirements gathering. Estimating, costing and tracking. Acceptance and unit testing. Evolutionary design and development. Collaborative development tools.\nPrerequisite: SOFTENG 206, 254, 350, 351"
+    },
+    {
+      "code": "SOFTENG 325",
+      "name": "Software Architecture",
+      "fullName": "Software Architecture",
+      "points": 15,
+      "text": "Taxonomy of software architecture patterns, including client/server and multi-tier. Understanding quality attributes. Methodologies for design of software architectures. Technologies for architecture level development, including middleware.\nPrerequisite: 15 points from SOFTENG 350, COMPSYS 302"
+    },
+    {
+      "code": "SOFTENG 350",
+      "name": "Human Computer Interaction",
+      "fullName": "Human Computer Interaction",
+      "points": 15,
+      "text": "Human behaviour and expectations. User interface design. User centred design. Usability evaluation techniques for web and standard interfaces. Constructing web and graphical user interfaces.\nPrerequisite: SOFTENG 206"
+    },
+    {
+      "code": "SOFTENG 351",
+      "name": "Fundamentals of Database Systems",
+      "fullName": "Fundamentals of Database Systems",
+      "points": 15,
+      "text": "Relational model, Relational Algebra, Relational Calculus, SQL, SQL and Programming Languages, Entity Relationship Model, Normalisation, Query Processing and Query Optimisation, ACID Transactions, Transaction Isolation Levels, Database Recovery, Database Security, Databases and XML.\nPrerequisite: SOFTENG 211 or COMPSCI 225"
+    },
+    {
+      "code": "SOFTENG 364",
+      "name": "Computer Networks",
+      "fullName": "Computer Networks",
+      "points": 15,
+      "text": "Principles of data communications; representation, transmission. Physical layer, signals in time and frequency domain. Modulation and coding. Data layer and protocols. Layered architecture model of computer networks, OSI and TCP/IP, Flow control, error control. Local area networks and IEEE standards, Ethernet and Wireless LAN. Circuit, message and packet switching. The Internet protocol (IPv4 and IPV6), routing algorithms, design of subnets. TCP and UDP. Network security. Introduction to ATM.\nPrerequisite: 15 points from COMPSYS 201, SOFTENG 252 and 15 points from SOFTENG 206, 211, 250, 251, 254, 325"
+    },
+    {
+      "code": "SOFTENG 370",
+      "name": "Operating Systems",
+      "fullName": "Operating Systems",
+      "points": 15,
+      "text": "History of operating systems. Multi-user systems. Scheduling. Concurrent processes, threads and synchronisation. Memory allocation and virtual memory. Managing files, disks and other peripherals. Security, protection and archiving. Engineering distributed systems; location, migration and replication transparency. Real-time programming and embedded systems.\nPrerequisite: COMPSYS 201 or SOFTENG 252, 250"
+    }
+  ],
+  [
+    {
+      "code": "SOFTENG 700A",
+      "name": "Research Project",
+      "fullName": "Research Project",
+      "points": 15,
+      "text": "A student is required to submit a report on project work carried out on a Software Engineering topic assigned by the Head of Department.\nPrerequisite: SOFTENG 306\nRestriction: SOFTENG 401\nNote: To complete this course students must enrol in SOFTENG 700 A and B."
+    },
+    {
+      "code": "SOFTENG 700B",
+      "name": "Research Project",
+      "fullName": "Research Project",
+      "points": 15,
+      "text": "A student is required to submit a report on project work carried out on a Software Engineering topic assigned by the Head of Department.\nPrerequisite: SOFTENG 306\nRestriction: SOFTENG 401\nNote: To complete this course students must enrol in SOFTENG 700 A and B."
+    },
+    {
+      "code": "SOFTENG 701",
+      "name": "Software Engineering Development Methods",
+      "fullName": "Software Engineering Development Methods",
+      "points": 15,
+      "text": "Advanced studies in methods and techniques for developing complex software systems including topics in component based technologies, software engineering environments, tool construction, software architectures."
+    },
+    {
+      "code": "SOFTENG 702",
+      "name": "Advanced Human Computer Interaction",
+      "fullName": "Advanced Human Computer Interaction",
+      "points": 15,
+      "text": "Current topics in Human-Computer Interaction research, such as: new user-interface technologies, empirical usability studies, pen-based user interaction, form-based user interaction models, advanced layout specification, systematics of human-computer interaction and computer-mediated collaborative work."
+    },
+    {
+      "code": "SOFTENG 710",
+      "name": "Studies in Software Engineering 1",
+      "fullName": "Studies in Software Engineering 1",
+      "points": 15,
+      "text": "Advanced courses on topics to be determined each year by the Head of Department.\nPrerequisite: Permission of the Head of Department"
+    },
+    {
+      "code": "SOFTENG 711",
+      "name": "Studies in Software Engineering 2",
+      "fullName": "Studies in Software Engineering 2",
+      "points": 15,
+      "text": "Advanced courses on topics to be determined each year by the Head of Department.\nPrerequisite: Permission of the Head of Department."
+    },
+    {
+      "code": "SOFTENG 750",
+      "name": "Software Development Methodologies",
+      "fullName": "Software Development Methodologies",
+      "points": 15,
+      "text": "Software lifecycle; software process models; examples of software processes; software process improvement; project management; tool support for software development; issues in software engineering.\nPrerequisite: SOFTENG 306\nRestriction: SOFTENG 450"
+    },
+    {
+      "code": "SOFTENG 751",
+      "name": "High Performance Computing",
+      "fullName": "High Performance Computing",
+      "points": 15,
+      "text": "Project-based hands-on high performance computing and programming. Memory architecture and networks of parallel computing systems. Multicores, hardware acceleration devices such as graphics cards and FPGAs. Shared memory and data parallel programming. Object Oriented and low level parallel programming. Parallelisation process: subtask decomposition, dependence analysis and scheduling.\nPrerequisite: SOFTENG 306 or COMPSYS 302 or MECHENG 313 or 30 points at Stage III in Computer Science.\nRestriction: SOFTENG 461"
+    },
+    {
+      "code": "SOFTENG 752",
+      "name": "Formal Specification and Design",
+      "fullName": "Formal Specification and Design",
+      "points": 15,
+      "text": "Formal specification, design, and (automatic) analysis of software systems. Use of Z, Alloy, OCL, and CSP notations. Comparison of approaches, emphasising their practical application.\nPrerequisite: SOFTENG 306\nRestriction: SOFTENG 462"
+    },
+    {
+      "code": "SOFTENG 761",
+      "name": "Special Topic in Software Engineering 1",
+      "fullName": "Special Topic in Software Engineering 1",
+      "points": 15,
+      "text": "An advanced course on a topic to be determined each year by the Head of Department.\nPrerequisite: Permission of the Head of Department."
+    },
+    {
+      "code": "SOFTENG 762",
+      "name": "Special Topic in Software Engineering 2",
+      "fullName": "Special Topic in Software Engineering 2",
+      "points": 15,
+      "text": "An advanced course on a topic to be determined each year by the Head of Department.\nPrerequisite: Permission of the Head of Department."
+    },
+    {
+      "code": "SOFTENG 787",
+      "name": "Project X",
+      "fullName": "Project X",
+      "points": 15,
+      "text": "A student is required to submit a report on a topic assigned by the Head of Department."
+    },
+    {
+      "code": "SOFTENG 788A",
+      "name": "Project Y",
+      "fullName": "Project Y",
+      "points": 15,
+      "text": "A student is required to submit a report on a topic assigned by the Head of Department.\nNote: To complete this course students must enrol in SOFTENG 788 A and B."
+    },
+    {
+      "code": "SOFTENG 788B",
+      "name": "Project Y",
+      "fullName": "Project Y",
+      "points": 15,
+      "text": "A student is required to submit a report on a topic assigned by the Head of Department.\nNote: To complete this course students must enrol in SOFTENG 788 A and B."
+    },
+    {
+      "code": "SOFTENG 789",
+      "name": "Project Z",
+      "fullName": "Project Z",
+      "points": 30,
+      "text": "A student is required to submit a report on a topic assigned by the Head of Department."
+    },
+    {
+      "code": "SOFTENG 796A",
+      "name": "ME Thesis (Software Engineering)",
+      "fullName": "ME Thesis (Software Engineering)",
+      "points": 60,
+      "text": "A student is required to submit a thesis on a topic assigned by the Head of Department.\nNote: To complete this course students must enrol in SOFTENG 796 A and B."
+    },
+    {
+      "code": "SOFTENG 796B",
+      "name": "ME Thesis (Software Engineering)",
+      "fullName": "ME Thesis (Software Engineering)",
+      "points": 60,
+      "text": "A student is required to submit a thesis on a topic assigned by the Head of Department.\nNote: To complete this course students must enrol in SOFTENG 796 A and B."
+    }
+  ]
+]
