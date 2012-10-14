@@ -1,0 +1,84 @@
+﻿<UserControl x:Class="ECE_Showcase.Controls.CoursesControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:s="http://schemas.microsoft.com/surface/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+	<UserControl.Resources>
+
+		<DataTemplate x:Key="CourseItemTemplate">
+            <Grid>
+                <Expander
+                    BorderThickness="5"
+                    Background="#633678">
+                    <Expander.Header>
+                        <Label Content="{Binding Name}"
+                               Foreground="#FFFFF0"
+                               VerticalAlignment="Center"/>
+                    </Expander.Header>
+                    <Label Content="{Binding Info}"
+                           Foreground="#FFFFF0"/>
+                </Expander>
+       
+            </Grid>
+        </DataTemplate>
+
+        <Style x:Key="CourseListBoxStyle"
+               TargetType="ListBoxItem">
+            <Setter Property="Background" 
+                    Value="#FFFFF0"/>
+        </Style>
+
+
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel
+            Grid.Column="0">
+            <Label Content="Part II"
+                   Foreground="#633678"/>
+            <s:SurfaceScrollViewer>
+                <s:SurfaceListBox
+                    ItemsSource="{Binding PartII}" 
+                    ItemTemplate="{DynamicResource CourseItemTemplate}" 
+                    ItemContainerStyle="{DynamicResource CourseListBoxStyle}">
+                </s:SurfaceListBox>
+            </s:SurfaceScrollViewer>
+        </StackPanel>
+
+        <StackPanel
+            Grid.Column="1">
+            <Label Content="Part III"
+                   Foreground="#633678"/>
+            <s:SurfaceScrollViewer>
+                <s:SurfaceListBox
+                    ItemsSource="{Binding PartIII}"
+                    ItemTemplate="{DynamicResource CourseItemTemplate}"
+                    ItemContainerStyle="{DynamicResource CourseListBoxStyle}">
+                </s:SurfaceListBox>
+            </s:SurfaceScrollViewer>
+        </StackPanel>
+        
+        <StackPanel
+            Grid.Column="2">
+            <Label Content="Part IV"
+                   Foreground="#633678"/>
+            <s:SurfaceScrollViewer>
+                <s:SurfaceListBox
+                    ItemsSource="{Binding PartIV}"
+                    ItemTemplate="{DynamicResource CourseItemTemplate}"
+                    ItemContainerStyle="{DynamicResource CourseListBoxStyle}">
+                </s:SurfaceListBox>
+            </s:SurfaceScrollViewer>
+        </StackPanel>
+
+
+    </Grid>
+</UserControl>

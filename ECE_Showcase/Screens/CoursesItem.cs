@@ -7,11 +7,11 @@ namespace ECE_Showcase.Screens
 {
     public class CourseItem
     {
-        private string Name { get; private set; }
-        private string Number { get; private set; }
-        private string Info { get; private set; }
-        private string Points { get; private set; }
-        private string Prereq { get; private set; }
+        public string Name { get; private set; }
+        public string Number { get; private set; }
+        public string Info { get; private set; }
+        public string Points { get; private set; }
+        public string Prereq { get; private set; }
 
         public CourseItem(string name, string number, string info, string points, string prereq)
         {
