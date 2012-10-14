@@ -66,7 +66,7 @@ namespace ECE_Showcase.Screens
             SourceItems.Add(new DataItem("Power Electronics", "Resources/docs/research/eee_research.xaml", "../Resources/img/electricalResearch.png"));
             SourceItems.Add(new DataItem("Radio Systems", "Resources/docs/research/cse_research.xaml", "../Resources/img/compsysResearch.png"));
 
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/research/se_research.xaml"));
+            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/drag_here.xaml"));
             
         }
 
