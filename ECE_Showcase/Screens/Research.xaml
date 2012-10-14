@@ -605,7 +605,7 @@
                          FontSize="115"
                          FontFamily="Segoe UI Light"
                          VerticalContentAlignment="Top"
-                         VerticalAlignment="Top" Content="programmes"/>
+                         VerticalAlignment="Top" Content="research and development"/>
     </Grid>
 
 </view:Screen>

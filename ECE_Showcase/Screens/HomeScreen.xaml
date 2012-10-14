@@ -184,6 +184,10 @@
                           Grid.ColumnSpan="1"
                           VerticalContentAlignment="Stretch"
                           HorizontalContentAlignment="Stretch"
+                          Stylus.IsPressAndHoldEnabled="False"
+                          PreviewTouchDown="Button_PreviewTouchDown"
+                          PreviewTouchUp="Button_TouchUp"
+                          PreviewTouchMove="Button_PreviewTouchMove"
                           Background="#633678" Padding="0" Margin="0" Width="735" Height="380">
             <StackPanel>
         		<Image Source="/ECE_Showcase;component/Resources/img/rnd_btn.png"

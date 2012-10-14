@@ -32,6 +32,7 @@ namespace ECE_Showcase.Screens
         private bool triggered;
 
         private Courses coursesScreen;
+        private Research researchScreen;
         private FirstLevelScreen contactScreen;
 
         public HomeScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
@@ -96,6 +97,14 @@ namespace ECE_Showcase.Screens
                     default:
                         //This shouldn't ever happen.
                         screenToPush = null;
+                        break;
+
+                    case "RNDButton":
+                        if (researchScreen == null)
+                        {
+                            researchScreen = new Research(ParentWindow);
+                        }
+                        screenToPush = researchScreen;
                         break;
                 }
                 
