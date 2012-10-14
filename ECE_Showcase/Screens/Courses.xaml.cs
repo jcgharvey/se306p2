@@ -128,9 +128,16 @@ namespace ECE_Showcase.Screens
             Eee_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/eee_advisor.xaml")));
             
             P1_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/p1_info.xaml")));
-            P1_items.Add(new DataItem("Courses", new Controls.CoursesControl());
+            P1_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
 
             infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
+        }
+
+        private void setControl(UserControl control)
+        {
+            Grid.SetColumn(control, 3);
+            Grid.SetRow(control, 1);
+            theGrid.Children.Add(control);
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)

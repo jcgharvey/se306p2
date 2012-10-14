@@ -693,7 +693,8 @@
 
     </view:Screen.Resources>
 
-    <Grid Background="#FFFFEC">
+    <Grid Background="#FFFFEC"
+          Name="theGrid">
 
         <Grid.Resources>
             <Style TargetType="{x:Type s:SurfaceButton}">
