@@ -230,7 +230,38 @@
     </UserControl.Resources>
     
     <Grid>
-        <StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+
+        <s:SurfaceScrollViewer x:Name="ScrollViewer"
+                           Grid.Row="0"
+                           HorizontalAlignment="Stretch"
+                           VerticalAlignment="Stretch"
+                           Margin="20 0 0 0"
+                           
+                           >
+            
+                            <!--
+                            Foreground="Black" Style="{DynamicResource SurfaceScrollViewerStyle1}"
+                            -->
+
+
+            <RichTextBox Width="{Binding ViewportWidth, ElementName=ScrollViewer, Mode=Default}"
+                     FontSize="20"
+                     x:Name="infoViewer"
+                     BorderThickness="0"
+                     IsReadOnly="True"
+                     IsDocumentEnabled="False"
+                     Foreground="Purple"
+                     Background="#FFFFEC"/>
+
+        </s:SurfaceScrollViewer>
+
+        <StackPanel
+            Grid.Row="1">
             <Expander
             Background="#633678" 
             ScrollViewer.VerticalScrollBarVisibility="Hidden" 

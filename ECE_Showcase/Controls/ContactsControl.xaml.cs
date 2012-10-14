@@ -44,6 +44,10 @@ namespace ECE_Showcase.Controls
 
             DataContext = this;
 
+            FlowDocument flowDocument = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/hod_welcome.xaml"));
+
+            infoViewer.Document = flowDocument;
+
             locations = new ObservableCollection<DataItem>();
             locations.Add(new DataItem("From the Engineering Building", "Resources/docs/specialisations/cse_info.xaml", "/ECE_Showcase;component/Resources/img/map_from_engineering.png"));
             locations.Add(new DataItem("From the Clocktower", "Resources/docs/specialisations/cse_info.xaml", "/ECE_Showcase;component/Resources/img/map_from_clocktower.png"));
