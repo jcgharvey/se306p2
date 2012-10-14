@@ -26,9 +26,7 @@ namespace ECE_Showcase.Screens
 		public FirstLevelScreen(SurfaceWindow1 parentWindow, String title) : base(parentWindow)
 		{
 			InitializeComponent();
-
             Title.Content = title;
-
 		}
 
         public void setLeft(UIElement control)

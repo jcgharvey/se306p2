@@ -235,13 +235,10 @@ namespace ECE_Showcase.Screens
 
         private void OnDragCompleted(object sender, SurfaceDragCompletedEventArgs e)
         {
-            setControl((e.Cursor.Data as DataItem).ItemControl);
-            /*
             if (e.Cursor.Effects == DragDropEffects.Move)
             {
                 setControl((e.Cursor.Data as DataItem).ItemControl);
             }
-             */
         }
 
         private void Expander_TouchUp(object sender, TouchEventArgs e)

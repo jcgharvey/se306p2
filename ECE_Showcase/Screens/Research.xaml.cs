@@ -62,7 +62,7 @@ namespace ECE_Showcase.Screens
         {
             InitializeComponent();
             DataContext = this;
-            /*
+            /* TODO 
             SourceItems.Add(new DataItem("Agile Software Development", "Resources/docs/research/se_research.xaml", "../Resources/img/softwareResearch.png"));
             SourceItems.Add(new DataItem("Power Electronics", "Resources/docs/research/eee_research.xaml", "../Resources/img/electricalResearch.png"));
             SourceItems.Add(new DataItem("Radio Systems", "Resources/docs/research/cse_research.xaml", "../Resources/img/compsysResearch.png"));
@@ -178,5 +178,17 @@ namespace ECE_Showcase.Screens
             //    SourceItems.Remove(e.Cursor.Data as DataItem);
             //}
         }
+
+
+        private void DropTargetRichTextBox_Drop(object sender, Microsoft.Surface.Presentation.SurfaceDragDropEventArgs e)
+        {
+            /* TODO
+            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead((e.Cursor.Data as DataItem).FilePath));
+            ScrollViewer.ScrollToTop();
+             */
+
+        }
+
+
     }
 }

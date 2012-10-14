@@ -229,8 +229,6 @@
             </Setter>
         </Style>
 
-
-
     </UserControl.Resources>
     <Grid>
         <s:SurfaceListBox
@@ -275,10 +273,5 @@
                 </StackPanel>
             </StackPanel>
         </s:SurfaceListBox>
-
-
-
-
-
     </Grid>
 </UserControl>
