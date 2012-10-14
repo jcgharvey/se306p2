@@ -118,7 +118,7 @@ namespace ECE_Showcase
         }
         public void popScreen()
         {
-            sound_fx.Source = new Uri("Resources/sound/back.mp3", UriKind.Relative);
+            sound_fx.Source = new Uri("Resources/sounds/back.mp3", UriKind.Relative);
             sound_fx.Play();
 
             if (screenStack.Count > 1)
@@ -131,7 +131,7 @@ namespace ECE_Showcase
         }
         public void pushScreen(Screen screen)
         {
-            sound_fx.Source = new Uri("Resources/sound/click.mp3", UriKind.Relative);
+            sound_fx.Source = new Uri("Resources/sounds/click.mp3", UriKind.Relative);
             sound_fx.Play();
 
             screenStack.Push(screen);
@@ -143,7 +143,7 @@ namespace ECE_Showcase
 
         public void popAll()
         {
-            sound_fx.Source = new Uri("Resources/sound/back.mp3", UriKind.Relative);
+            sound_fx.Source = new Uri("Resources/sounds/home.mp3", UriKind.Relative);
             sound_fx.Play();
 
             while (screenStack.Count > 1)
