@@ -64,7 +64,12 @@ namespace ECE_Showcase.Screens
                         break;
                     case "ContactButton":
                             screenToPush = new FirstLevelScreen(ParentWindow, "contact us");
-                            ((FirstLevelScreen)screenToPush).setRight(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/map_with_pin.png"));
+                            UserControl rightControl = new Controls.ImageControl("/ECE_Showcase;component/Resources/img/map_with_pin.png");
+                           Thickness marg = rightControl.Margin;
+                            marg.Left = 10;
+                            marg.Top = 4;
+                            rightControl.Margin = marg;
+                            ((FirstLevelScreen)screenToPush).setRight(rightControl);
                             ((FirstLevelScreen)screenToPush).setLeft(new Controls.ContactsControl());
                         break;
                     default:
