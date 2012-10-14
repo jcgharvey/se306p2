@@ -24,21 +24,48 @@ namespace ECE_Showcase.Screens
     /// </summary>
     public partial class Courses : Screen
     {
-        private ObservableCollection<DataItem> sourceItems;
+        private ObservableCollection<DataItem> se_items;
+        private ObservableCollection<DataItem> eee_items;
+        private ObservableCollection<DataItem> cse_items;
+
         private ObservableCollection<DataItem> targetItems;
-        /// <summary>
-        /// Items that bind with the drag source list box.
-        /// </summary>
-        public ObservableCollection<DataItem> SourceItems
+
+        public ObservableCollection<DataItem> Cse_items
         {
             get
             {
-                if (sourceItems == null)
+                if (cse_items == null)
                 {
-                    sourceItems = new ObservableCollection<DataItem>();
+                    cse_items = new ObservableCollection<DataItem>();
+                }
+                return cse_items;
+            }
+        }
+        public ObservableCollection<DataItem> Se_items
+        {
+            get
+            {
+                if (se_items == null)
+                {
+                    se_items = new ObservableCollection<DataItem>();
+                }
+                return se_items;
+            }
+        }
+        /// <summary>
+        /// Items that bind with the drag source list box.
+        /// </summary>
+        public ObservableCollection<DataItem> Eee_items
+        {
+            get
+            {
+                if (eee_items == null)
+                {
+                   
+                    eee_items = new ObservableCollection<DataItem>();
                 }
 
-                return sourceItems;
+                return eee_items;
             }
         }
 
@@ -62,12 +89,23 @@ namespace ECE_Showcase.Screens
         {
             InitializeComponent();
             DataContext = this;
-            SourceItems.Add(new DataItem("Software Engineering", "Resources/docs/specialisations/se.xaml", "../Resources/img/software.png"));
-            SourceItems.Add(new DataItem("Electrical and Electronic Engineering", "Resources/docs/specialisations/eee.xaml", "../Resources/img/electrical.png"));
-            SourceItems.Add(new DataItem("Computer Systems Engineering", "Resources/docs/specialisations/cse.xaml", "../Resources/img/compsys.png"));
 
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/specialisations/se.xaml"));
+            Cse_items.Add(new DataItem("Description", "Resources/docs/specialisations/cse_info.xaml", "../Resources/img/software.png"));
+            Cse_items.Add(new DataItem("Careers", "Resources/docs/specialisations/cse_careers.xaml", "../Resources/img/software.png"));
+            Cse_items.Add(new DataItem("Courses", "Resources/docs/specialisations/cse_courses.xaml", "../Resources/img/software.png"));
+            Cse_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/cse_advisor.xaml", "../Resources/img/software.png"));
             
+            Se_items.Add(new DataItem("Description", "Resources/docs/specialisations/se_info.xaml", "../Resources/img/software.png"));
+            Se_items.Add(new DataItem("Careers", "Resources/docs/specialisations/se_careers.xaml", "../Resources/img/software.png"));
+            Se_items.Add(new DataItem("Courses", "Resources/docs/specialisations/se_courses.xaml", "../Resources/img/software.png"));
+            Se_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/se_advisor.xaml", "../Resources/img/software.png"));
+
+            Eee_items.Add(new DataItem("Description", "Resources/docs/specialisations/eee_info.xaml", "../Resources/img/software.png"));
+            Eee_items.Add(new DataItem("Careers", "Resources/docs/specialisations/eee_careers.xaml", "../Resources/img/software.png"));
+            Eee_items.Add(new DataItem("Courses", "Resources/docs/specialisations/eee_courses.xaml", "../Resources/img/software.png"));
+            Eee_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/eee_advisor.xaml", "../Resources/img/software.png"));
+
+            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
         }
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
@@ -141,7 +179,7 @@ namespace ECE_Showcase.Screens
 
         private void OnDropTargetDragEnter(object sender, SurfaceDragDropEventArgs e)
         {
-            
+
         }
 
         private void OnDropTargetDragLeave(object sender, SurfaceDragDropEventArgs e)
@@ -182,6 +220,58 @@ namespace ECE_Showcase.Screens
         private void DropTargetRichTextBox_Drop(object sender, Microsoft.Surface.Presentation.SurfaceDragDropEventArgs e)
         {
             infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead((e.Cursor.Data as DataItem).FilePath));
+        }
+
+
+
+        private void Expander_TouchUp(object sender, TouchEventArgs e)
+        {
+
+            Expander exp = sender as Expander;
+
+            if (exp == null)
+
+                return;
+
+            TouchPoint tp = e.GetTouchPoint(exp);
+
+            Rect bounds = new Rect(new Point(0, 0), exp.RenderSize);
+
+           
+
+            if (bounds.Contains(tp.Position))
+            {
+                if (exp.IsExpanded)
+                {
+                    
+                    exp.IsExpanded = false;
+                    infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
+                }
+                else
+                {
+                    exp.IsExpanded = true;
+                    infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/drag_here.xaml"));
+                }
+                
+                acc.selectedExpander_Expanded(exp, e);
+            }
+            exp.ReleaseTouchCapture(e.TouchDevice);
+            e.Handled = true;
+
+        }
+
+        private void Expander_TouchDown(object sender, TouchEventArgs e)
+        {
+
+            Console.WriteLine("touch down");
+            Expander exp = sender as Expander;
+
+            if (exp == null)
+
+                return;
+
+            exp.CaptureTouch(e.TouchDevice);
+            e.Handled = true;
         }
 
 
