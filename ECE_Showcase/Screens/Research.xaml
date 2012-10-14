@@ -7,7 +7,8 @@
              xmlns:view="clr-namespace:ECE_Showcase"
              xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="ECE_Showcase.Screens.Research"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="1000">
+             d:DesignHeight="1080"
+             d:DesignWidth="1920">
     
     <view:Screen.Resources>
         <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
@@ -485,6 +486,12 @@
     		</Setter>
     	</Style>
 
+        <Style
+            x:Key="listBoxStyle"
+            TargetType="ListBoxItem">
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
     </view:Screen.Resources>
     
     <Grid Background="#FFFFEC">
@@ -499,7 +506,7 @@
                 <Setter Property="FontSize" Value="25" />
                 <Setter Property="FontWeight" Value="Bold" />
                 <Setter Property="Foreground"
-                        Value="White" />
+                        Value="Black" />
             </Style>
            
 
@@ -546,7 +553,7 @@
                          VerticalContentAlignment="Bottom"
                          Width="200px"
                          Height="100px"
-                         Click="BackButton_Click" Background="#633678" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                         Click="BackButton_Click" Background="#633678" HorizontalAlignment="Left" VerticalAlignment="Bottom" DataContext="{Binding}">
             <Image Source="/ECE_Showcase;component/Resources/img/back_btn.png" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
         </s:SurfaceButton>
         
@@ -554,11 +561,13 @@
                           Grid.Row="1"
                           Grid.Column="1"
                           BorderBrush="{DynamicResource {x:Static s:SurfaceColors.ListBoxItemBackgroundBrushKey}}"
+                          ItemContainerStyle="{DynamicResource listBoxStyle}"
             ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
             ItemsSource="{Binding SourceItems}"
+
             PreviewTouchDown="OnDragSourcePreviewTouchDown"
             PreviewMouseDown="OnDragSourcePreviewTouchDown"
-            s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+            s:SurfaceDragDrop.DragCompleted="OnDragCompleted" Foreground="#00000000" BorderThickness="0" />
         
         <!--<FlowDocumentScrollViewer
             Name="DropTargetFlowocumentViewer"
