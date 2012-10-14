@@ -2,7 +2,12 @@
   xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
   xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
 
-    <Paragraph>
-        Tap on one of the courses to view more options.
+    <Paragraph TextAlignment="Center" FontSize="25">
+        <LineBreak/>
+        <LineBreak/>
+        <LineBreak/>
+        <LineBreak/>
+        Tap on one of the courses
+        <LineBreak/> to view more options.
     </Paragraph>
 </FlowDocument>
