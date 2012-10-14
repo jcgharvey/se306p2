@@ -17,5 +17,6 @@
     <BitmapImage x:Key="compsys">/Resources/img/compsys.png</BitmapImage>
     <BitmapImage x:Key="electrical">/Resources/img/electrical.png</BitmapImage>
     <BitmapImage x:Key="software">/Resources/img/software.png</BitmapImage>
+    <BitmapImage x:Key="part1">/Resources/img/part1.png</BitmapImage>
 
 </ResourceDictionary>

@@ -27,6 +27,7 @@ namespace ECE_Showcase.Screens
         private ObservableCollection<DataItem> se_items;
         private ObservableCollection<DataItem> eee_items;
         private ObservableCollection<DataItem> cse_items;
+        private ObservableCollection<DataItem> p1_items;
 
         private ObservableCollection<DataItem> targetItems;
 
@@ -68,7 +69,19 @@ namespace ECE_Showcase.Screens
                 return eee_items;
             }
         }
+        public ObservableCollection<DataItem> P1_items
+        {
+            get
+            {
+                if (p1_items == null)
+                {
 
+                    p1_items = new ObservableCollection<DataItem>();
+                }
+
+                return p1_items;
+            }
+        }
         /// <summary>
         /// Items that bind with the drop target list box.
         /// </summary>
@@ -104,6 +117,9 @@ namespace ECE_Showcase.Screens
             Eee_items.Add(new DataItem("Careers", "Resources/docs/specialisations/eee_careers.xaml", "../Resources/img/software.png"));
             Eee_items.Add(new DataItem("Courses", "Resources/docs/specialisations/eee_courses.xaml", "../Resources/img/software.png"));
             Eee_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/eee_advisor.xaml", "../Resources/img/software.png"));
+
+            P1_items.Add(new DataItem("Description", "Resources/docs/specialisations/p1_info.xaml", "../Resources/img/part1.png"));
+            P1_items.Add(new DataItem("Courses", "Resources/docs/specialisations/p1_courses.xaml", "../Resources/img/part1.png"));
 
             infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
         }

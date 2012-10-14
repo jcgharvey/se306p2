@@ -1,0 +1,14 @@
+<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+	<Paragraph FontFamily="Calibri" FontSize="30">
+		Part 1 - Engineering
+	</Paragraph>
+
+	<Paragraph>
+	    The introductory first year of the Bachelor of Engineering (BE) degree aims to expose students who just graduated from high school to all the different specializations offered while teaching them about core engineering principles.
+        </Paragraph>
+
+
+</FlowDocument>
+
