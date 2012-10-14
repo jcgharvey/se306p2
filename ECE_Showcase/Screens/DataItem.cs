@@ -8,8 +8,8 @@ namespace ECE_Showcase.Screens
 {
     public class DataItem
     {
-        private string Name { public get; set; }
-        private UserControl ItemControl { public get; set;}
+        public string Name { get; private set; }
+        public UserControl ItemControl { get; private set;}
 
         public DataItem(string name, UserControl control)
         {

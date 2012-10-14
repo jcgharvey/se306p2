@@ -130,7 +130,7 @@ namespace ECE_Showcase.Screens
             P1_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/p1_info.xaml")));
             P1_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
 
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
+            setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
         }
 
         private void setControl(UserControl control)
@@ -209,17 +209,6 @@ namespace ECE_Showcase.Screens
             e.Handled = (startDragOkay != null);
         }
 
-        private void OnDropTargetDragEnter(object sender, SurfaceDragDropEventArgs e)
-        {
-
-        }
-
-        private void OnDropTargetDragLeave(object sender, SurfaceDragDropEventArgs e)
-        {
-            // Reset the effects.
-            e.Effects = e.Cursor.AllowedEffects;
-        }
-
         private void OnTargetChanged(object sender, TargetChangedEventArgs e)
         {
             if (e.Cursor.CurrentTarget != null)
@@ -233,6 +222,7 @@ namespace ECE_Showcase.Screens
             }
         }
 
+        
         private void OnDropTargetDrop(object sender, SurfaceDragDropEventArgs e)
         {
             TargetItems.Clear();
@@ -247,14 +237,6 @@ namespace ECE_Showcase.Screens
             //    SourceItems.Remove(e.Cursor.Data as DataItem);
             //}
         }
-
-
-        private void DropTargetRichTextBox_Drop(object sender, Microsoft.Surface.Presentation.SurfaceDragDropEventArgs e)
-        {
-            infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead((e.Cursor.Data as DataItem).FilePath));
-        }
-
-
 
         private void Expander_TouchUp(object sender, TouchEventArgs e)
         {
@@ -279,12 +261,12 @@ namespace ECE_Showcase.Screens
                 {
                     
                     exp.IsExpanded = false;
-                    infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
+                    setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
                 }
                 else
                 {
                     exp.IsExpanded = true;
-                    infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/drag_here.xaml"));
+                    setControl(new Controls.FlowDocControl("Resources/docs/drag_here.xaml"));
                 }
                 
                 acc.selectedExpander_Expanded(exp, e);

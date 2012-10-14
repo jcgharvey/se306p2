@@ -590,7 +590,7 @@
                     
                     s:SurfaceDragDrop.DragEnter="OnDropTargetDragEnter"
                     s:SurfaceDragDrop.DragLeave="OnDropTargetDragLeave"
-                    s:SurfaceDragDrop.Drop="DropTargetRichTextBox_Drop"
+
                     />
 
         </s:SurfaceScrollViewer>

@@ -866,20 +866,20 @@
                     
                 </Expander>
 
-                <Expander
-                Background="#633678" 
-                ScrollViewer.VerticalScrollBarVisibility="Hidden" 
-                UseLayoutRounding="False" 
-                Style="{DynamicResource ArrowlessExpanderTemplate}" 
-                BorderThickness="0"
-                TouchDown="Expander_TouchDown"
-                TouchUp="Expander_TouchUp"
-                >
+                <Expander Background="#633678"
+                          ScrollViewer.VerticalScrollBarVisibility="Hidden" 
+                          UseLayoutRounding="False" 
+                          Style="{DynamicResource ArrowlessExpanderTemplate}" 
+                          BorderThickness="0"
+                          TouchDown="Expander_TouchDown"
+                          TouchUp="Expander_TouchUp">
+                    
                     <Expander.Header>
                         <Image Source="{StaticResource compsys}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
                     </Expander.Header>
+                    
                     <s:SurfaceListBox 
                         Grid.Row="1"
                         Grid.Column="1"
@@ -890,10 +890,7 @@
                         PreviewTouchDown="OnDragSourcePreviewTouchDown"
                         PreviewMouseDown="OnDragSourcePreviewTouchDown"
                         s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
-                       
-                        
                     </s:SurfaceListBox>
-                    
                 </Expander>
 
             </view:Accordion>
