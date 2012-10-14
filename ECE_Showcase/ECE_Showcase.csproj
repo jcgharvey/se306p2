@@ -79,6 +79,11 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Resources\img\directions.png" />
+    <Resource Include="Resources\img\map_from_38princes.png" />
+    <Resource Include="Resources\img\map_from_clocktower.png" />
+    <Resource Include="Resources\img\map_from_engineering.png" />
+    <Resource Include="Resources\img\map_with_pin.png" />
     <Resource Include="Resources\img\info.jpg" />
     <Resource Include="Resources\img\salcic.jpg" />
     <Resource Include="Resources\img\contact_us_btn.png" />
@@ -177,6 +182,10 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Page Include="Controls\ContactsControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\ImageDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -201,6 +210,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="Controls\ContactsControl.xaml.cs">
+      <DependentUpon>ContactsControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Accordion.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>

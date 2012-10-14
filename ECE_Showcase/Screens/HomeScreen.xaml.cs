@@ -63,8 +63,8 @@ namespace ECE_Showcase.Screens
                         break;
                     case "ContactButton":
                             screenToPush = new FirstLevelScreen(ParentWindow, "contact us");
-                            ((FirstLevelScreen)screenToPush).setLeft(new Controls.FlowDocControl("Resources/docs/contact_us.xaml"));
-                            ((FirstLevelScreen)screenToPush).setRight(new Controls.MapControl());
+                            ((FirstLevelScreen)screenToPush).setRight(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/map_with_pin.png"));
+                            ((FirstLevelScreen)screenToPush).setLeft(new Controls.ContactsControl());
                         break;
                     default:
                         //This shouldn't ever happen.
