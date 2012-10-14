@@ -899,33 +899,6 @@
             </view:Accordion>
         </s:SurfaceScrollViewer>
 
-        <s:SurfaceScrollViewer
-            x:Name="ScrollViewer"
-            HorizontalAlignment="Stretch"
-            VerticalAlignment="Stretch"
-            Grid.Column="3"
-            Grid.Row="1"
-            Foreground="Black" 
-            BorderBrush="#633678" 
-            Style="{DynamicResource SurfaceScrollViewerStyle1}">
-            
-            <RichTextBox
-                    Width="{Binding ViewportWidth, ElementName=ScrollViewer, Mode=Default}"
-                    FontSize="20"
-                    x:Name="infoViewer"
-                    BorderThickness="0"
-                    Background="#FFFFEC"
-                    IsReadOnly="True"
-                    IsDocumentEnabled="False"
-                    Foreground="#633678"
-                    
-                    s:SurfaceDragDrop.DragEnter="OnDropTargetDragEnter"
-                    s:SurfaceDragDrop.DragLeave="OnDropTargetDragLeave"
-                    s:SurfaceDragDrop.Drop="DropTargetRichTextBox_Drop"
-                    />
-
-        </s:SurfaceScrollViewer>
-
         <Label x:Name="Title"
                          Grid.Row="0"
                          Grid.Column="1"
