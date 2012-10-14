@@ -57,7 +57,15 @@ namespace ECE_Showcase.Controls
 
         private void Expander_TouchUp(object sender, TouchEventArgs e)
         {
-            
+            if (TopDef.Height != new GridLength(320))
+            {
+                TopDef.Height = new GridLength(320);
+            }
+            else
+            {
+                TopDef.Height = new GridLength(160);
+            }
+
 
             Expander exp = sender as Expander;
 

@@ -231,13 +231,13 @@
     
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
+            <RowDefinition Name="TopDef" Height="160" />
             <RowDefinition />
         </Grid.RowDefinitions>
 
 
         <s:SurfaceScrollViewer x:Name="ScrollViewer"
-                           Grid.Row="0"
+                           Grid.Row="1"
                            HorizontalAlignment="Stretch"
                            VerticalAlignment="Stretch"
                            Margin="20 0 0 0"
@@ -261,7 +261,7 @@
         </s:SurfaceScrollViewer>
 
         <StackPanel
-            Grid.Row="1">
+            Grid.Row="0">
             <Expander
             Background="#633678" 
             ScrollViewer.VerticalScrollBarVisibility="Hidden" 
