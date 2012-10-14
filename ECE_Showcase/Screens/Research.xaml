@@ -5,38 +5,39 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:view="clr-namespace:ECE_Showcase"
-             xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="ECE_Showcase.Screens.Research"
+             xmlns:System="clr-namespace:System;assembly=mscorlib" 
+             x:Class="ECE_Showcase.Screens.Research"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="1000">
 
     <view:Screen.Resources>
-        <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
 
+        <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
             <s:SurfaceButton
-                         VerticalContentAlignment="Stretch"
-                         HorizontalContentAlignment="Stretch"
-                         Background="#633678" Margin="0" Padding="0" Width="450" Height="150" BorderThickness="0" ClipToBounds="True">
-                <StackPanel>
-                    <Image Source="{Binding ImagePath}"
-        			    VerticalAlignment="Center"
-        			    HorizontalAlignment="Center" Width="450" Height="150" />
-                    <Label 
+                Background="#633678">
+                <Label
                         Content="{Binding Name}" 
-                        HorizontalAlignment="Right" 
-                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Center"
                         Foreground="#FFFFFF"
-                        Margin= "0 -32 5 0"
+                    Background="Transparent"
                         FontSize="20"
-                        FontFamily="Segoe UI Light"/>
-                </StackPanel>
+                        FontFamily="Segoe UI Light">
+                </Label>
+
             </s:SurfaceButton>
+
+
+
         </DataTemplate>
 
         <Style
-            x:Key="ListBoxStyle"
+            x:Key="LBStyle"
             TargetType="ListBoxItem">
-            <Setter Property="Background" Value="#FFFFEC"/>
+            <Setter Property="Background" Value="#633678"/>
         </Style>
+
+
 
 
         <Style x:Key="CursorStyle" TargetType="{x:Type ContentControl}">
@@ -491,10 +492,209 @@
             </Setter>
         </Style>
 
+
+        <Style x:Key="ExpanderHeaderFocusVisual">
+            <Setter Property="Control.Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border>
+                            <Rectangle SnapsToDevicePixels="true"
+                           Margin="0"
+                           Stroke="Black"
+                           StrokeDashArray="1 2"
+                           StrokeThickness="1" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ExpanderDownHeaderStyle"
+       TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Padding="{TemplateBinding Padding}">
+                            <Grid SnapsToDevicePixels="False"
+                          Background="Transparent">
+                                <ContentPresenter SnapsToDevicePixels="True"
+                                          HorizontalAlignment="Left"
+                                          VerticalAlignment="Center"
+                                          RecognizesAccessKey="True" />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ExpanderRightHeaderStyle"
+       TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Padding="{TemplateBinding Padding}">
+                            <Grid SnapsToDevicePixels="False"
+                          Background="Transparent">
+                                <ContentPresenter SnapsToDevicePixels="True"
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Top"
+                                          RecognizesAccessKey="True" />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ExpanderUpHeaderStyle"
+       TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Padding="{TemplateBinding Padding}">
+                            <Grid SnapsToDevicePixels="False"
+                          Background="Transparent">
+                                <ContentPresenter SnapsToDevicePixels="True"
+                                          HorizontalAlignment="Left"
+                                          VerticalAlignment="Center"
+                                          RecognizesAccessKey="True" />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ExpanderLeftHeaderStyle"
+       TargetType="{x:Type ToggleButton}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border Padding="{TemplateBinding Padding}">
+                            <Grid SnapsToDevicePixels="False"
+                          Background="Transparent">
+                                <ContentPresenter SnapsToDevicePixels="True"
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Top"
+                                          RecognizesAccessKey="True" />
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="ArrowlessExpanderTemplate"
+       TargetType="{x:Type Expander}">
+            <Setter Property="Foreground"
+            Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}" />
+            <Setter Property="Background"
+            Value="Transparent" />
+            <Setter Property="HorizontalContentAlignment"
+            Value="Stretch" />
+            <Setter Property="VerticalContentAlignment"
+            Value="Stretch" />
+            <Setter Property="BorderBrush"
+            Value="Transparent" />
+            <Setter Property="BorderThickness"
+            Value="1" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Expander}">
+                        <Border SnapsToDevicePixels="true"
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        Margin="5"
+                        BorderThickness="0"
+                        CornerRadius="0">
+                            <DockPanel>
+                                <ToggleButton FontFamily="{TemplateBinding FontFamily}"
+                                      FontSize="{TemplateBinding FontSize}"
+                                      FontStretch="{TemplateBinding FontStretch}"
+                                      FontStyle="{TemplateBinding FontStyle}"
+                                      FontWeight="{TemplateBinding FontWeight}"
+                                      Foreground="{TemplateBinding Foreground}"
+                                      HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      Padding="{TemplateBinding Padding}"
+                                      VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      FocusVisualStyle="{StaticResource ExpanderHeaderFocusVisual}"
+                                      Margin="0"
+                                      MinHeight="0"
+                                      MinWidth="0"
+                                      x:Name="HeaderSite"
+                                      Style="{StaticResource ExpanderDownHeaderStyle}"
+                                      Content="{TemplateBinding Header}"
+                                      ContentTemplate="{TemplateBinding HeaderTemplate}"
+                                      ContentTemplateSelector="{TemplateBinding HeaderTemplateSelector}"
+                                      DockPanel.Dock="Top"
+                                      IsChecked="{Binding Path=IsExpanded, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
+                                <ContentPresenter Focusable="false"
+                                          Visibility="Collapsed"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          Margin="{TemplateBinding Padding}"
+                                          x:Name="ExpandSite"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          DockPanel.Dock="Bottom" />
+                            </DockPanel>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsExpanded"
+                             Value="true">
+                                <Setter Property="Visibility"
+                                TargetName="ExpandSite"
+                                Value="Visible" />
+                            </Trigger>
+                            <Trigger Property="ExpandDirection"
+                             Value="Right">
+                                <Setter Property="DockPanel.Dock"
+                                TargetName="ExpandSite"
+                                Value="Right" />
+                                <Setter Property="DockPanel.Dock"
+                                TargetName="HeaderSite"
+                                Value="Left" />
+                                <Setter Property="Style"
+                                TargetName="HeaderSite"
+                                Value="{StaticResource ExpanderRightHeaderStyle}" />
+                            </Trigger>
+                            <Trigger Property="ExpandDirection"
+                             Value="Up">
+                                <Setter Property="DockPanel.Dock"
+                                TargetName="ExpandSite"
+                                Value="Top" />
+                                <Setter Property="DockPanel.Dock"
+                                TargetName="HeaderSite"
+                                Value="Bottom" />
+                                <Setter Property="Style"
+                                TargetName="HeaderSite"
+                                Value="{StaticResource ExpanderUpHeaderStyle}" />
+                            </Trigger>
+                            <Trigger Property="ExpandDirection"
+                             Value="Left">
+                                <Setter Property="DockPanel.Dock"
+                                TargetName="ExpandSite"
+                                Value="Left" />
+                                <Setter Property="DockPanel.Dock"
+                                TargetName="HeaderSite"
+                                Value="Right" />
+                                <Setter Property="Style"
+                                TargetName="HeaderSite"
+                                Value="{StaticResource ExpanderLeftHeaderStyle}" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled"
+                             Value="false">
+                                <Setter Property="Foreground"
+                                Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+
+
     </view:Screen.Resources>
 
     <Grid Background="#FFFFEC"
-          Name="theGrid">
+          Name="researchGrid">
 
         <Grid.Resources>
             <Style TargetType="{x:Type s:SurfaceButton}">
@@ -528,12 +728,13 @@
             <ColumnDefinition Width="200" />
         </Grid.ColumnDefinitions>
 
-        <Image Source="/ECE_Showcase;component/Resources/img/bg.png"
-        		         Grid.Row="0"
-                         Grid.RowSpan="3"
-                         Grid.Column="0"
-                         Grid.ColumnSpan="4"
-                         Margin="-647,-239,-633,-241" />
+        <Image Source="{StaticResource bg}"
+               Grid.Row="0"
+               Grid.RowSpan="3"
+               Grid.Column="0"
+               Grid.ColumnSpan="5"
+               Margin="-633.667,-229.667,-446.333,-250.333" 
+               d:LayoutOverrides="GridBox" />
 
         <s:SurfaceButton x:Name="HomeButton" 
                          Grid.Row="0" 
@@ -542,8 +743,13 @@
                          VerticalContentAlignment="Top"
                          Width="200px"
                          Height="100px"
-                         Click="HomeButton_Click" Background="#633678" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Image Source="/ECE_Showcase;component/Resources/img/home_btn.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                         Click="HomeButton_Click" 
+                         Background="#633678" 
+                         HorizontalAlignment="Left" 
+                         VerticalAlignment="Top">
+            <Image Source="{StaticResource home_btn}" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top"/>
         </s:SurfaceButton>
 
         <s:SurfaceButton x:Name="BackButton"
@@ -553,20 +759,115 @@
                          VerticalContentAlignment="Bottom"
                          Width="200px"
                          Height="100px"
-                         Click="BackButton_Click" Background="#633678" HorizontalAlignment="Left" VerticalAlignment="Bottom">
-            <Image Source="/ECE_Showcase;component/Resources/img/back_btn.png" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                         Click="BackButton_Click" 
+                         Background="#633678" 
+                         HorizontalAlignment="Left" 
+                         VerticalAlignment="Bottom">
+            <Image Source="{StaticResource back_btn}" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Bottom"/>
         </s:SurfaceButton>
 
-        <s:SurfaceListBox x:Name="CoursesListBox"
+        <s:SurfaceScrollViewer
+            Grid.Row="1"
+            Grid.Column="1"
+            Foreground="Black" 
+            BorderBrush="#633678" 
+            Style="{DynamicResource SurfaceScrollViewerStyle1}"
+            >
+            <view:Accordion
+            
+            x:Name="acc"
+            Width="450"
+            HorizontalAlignment="Left">
+               
+                <Expander
+                Background="#633678"
+                ScrollViewer.VerticalScrollBarVisibility="Hidden" 
+                UseLayoutRounding="False" 
+                Style="{DynamicResource ArrowlessExpanderTemplate}"
+                BorderThickness="0"
+                TouchDown="Expander_TouchDown"
+                TouchUp="Expander_TouchUp"
+                >
+                    <Expander.Header>
+                        <Image Source="{StaticResource se_research}" 
+                               Stretch="Fill" 
+                               d:LayoutOverrides="HorizontalMargin"/>
+                    </Expander.Header>
+                    <s:SurfaceListBox
                           Grid.Row="1"
                           Grid.Column="1"
-                          BorderBrush="{DynamicResource {x:Static s:SurfaceColors.ListBoxItemBackgroundBrushKey}}"
+                          Background="#633678"
+                          ItemContainerStyle="{StaticResource LBStyle}"
                           ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
-                          ItemContainerStyle="{DynamicResource ListBoxStyle}"
-                          ItemsSource="{Binding SourceItems}"
+                          ItemsSource="{Binding SeResearchItems}"
                           PreviewTouchDown="OnDragSourcePreviewTouchDown"
                           PreviewMouseDown="OnDragSourcePreviewTouchDown"
-                          s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+                          s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
+
+                    </s:SurfaceListBox>
+                </Expander>
+
+                <Expander
+                Background="#633678" 
+                ScrollViewer.VerticalScrollBarVisibility="Hidden" 
+                UseLayoutRounding="False" 
+                Style="{DynamicResource ArrowlessExpanderTemplate}" 
+                BorderThickness="0"
+                TouchDown="Expander_TouchDown"
+                TouchUp="Expander_TouchUp"
+                >
+                    <Expander.Header>
+                        <Image Source="{StaticResource eee_research}" 
+                               Stretch="Fill" 
+                               d:LayoutOverrides="HorizontalMargin"/>
+                    </Expander.Header>
+                    <s:SurfaceListBox
+                          Grid.Row="1"
+                          Grid.Column="1"
+                          Background="#633678"
+                          ItemContainerStyle="{StaticResource LBStyle}"
+                          ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
+                          ItemsSource="{Binding EeeResearchItems}"
+                          PreviewTouchDown="OnDragSourcePreviewTouchDown"
+                          PreviewMouseDown="OnDragSourcePreviewTouchDown"
+                          s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
+
+                    </s:SurfaceListBox>
+
+                </Expander>
+
+                <Expander Background="#633678"
+                          ScrollViewer.VerticalScrollBarVisibility="Hidden" 
+                          UseLayoutRounding="False" 
+                          Style="{DynamicResource ArrowlessExpanderTemplate}" 
+                          BorderThickness="0"
+                          TouchDown="Expander_TouchDown"
+                          TouchUp="Expander_TouchUp">
+
+                    <Expander.Header>
+                        <Image Source="{StaticResource cse_research}" 
+                               Stretch="Fill" 
+                               d:LayoutOverrides="HorizontalMargin"/>
+                    </Expander.Header>
+
+                    <s:SurfaceListBox 
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Background="#633678"
+                        ItemContainerStyle="{StaticResource LBStyle}"
+                        ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
+                        ItemsSource="{Binding CseResearchItems}"
+                        PreviewTouchDown="OnDragSourcePreviewTouchDown"
+                        PreviewMouseDown="OnDragSourcePreviewTouchDown"
+                        s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
+                    </s:SurfaceListBox>
+                </Expander>
+
+            </view:Accordion>
+        </s:SurfaceScrollViewer>
+
 
         <Label x:Name="Title"
                          Grid.Row="0"
@@ -578,7 +879,6 @@
                          FontSize="115"
                          FontFamily="Segoe UI Light"
                          VerticalContentAlignment="Top"
-                         VerticalAlignment="Top" Content="research and development"/>
+                         VerticalAlignment="Top" Content="programmes"/>
     </Grid>
-
 </view:Screen>
