@@ -112,23 +112,23 @@ namespace ECE_Showcase.Screens
             accordian_fx.Volume = 1.0;
             accordian_fx.IsMuted = false;
 
-            Cse_items.Add(new DataItem("Description", "Resources/docs/specialisations/cse_info.xaml", "../Resources/img/software.png"));
-            Cse_items.Add(new DataItem("Careers", "Resources/docs/specialisations/cse_careers.xaml", "../Resources/img/software.png"));
-            Cse_items.Add(new DataItem("Courses", "Resources/docs/specialisations/cse_courses.xaml", "../Resources/img/software.png"));
-            Cse_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/cse_advisor.xaml", "../Resources/img/software.png"));
+            Cse_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/cse_info.xaml")));
+            Cse_items.Add(new DataItem("Careers", new Controls.FlowDocControl("Resources/docs/specialisations/cse_careers.xaml")));
+            Cse_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
+            Cse_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/cse_advisor.xaml")));
+
+            Se_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/se_info.xaml")));
+            Se_items.Add(new DataItem("Careers", new Controls.FlowDocControl("Resources/docs/specialisations/se_careers.xaml")));
+            Se_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
+            Se_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/se_advisor.xaml")));
+
+            Eee_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/eee_info.xaml")));
+            Eee_items.Add(new DataItem("Careers", new Controls.FlowDocControl("Resources/docs/specialisations/eee_careers.xaml")));
+            Eee_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
+            Eee_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/eee_advisor.xaml")));
             
-            Se_items.Add(new DataItem("Description", "Resources/docs/specialisations/se_info.xaml", "../Resources/img/software.png"));
-            Se_items.Add(new DataItem("Careers", "Resources/docs/specialisations/se_careers.xaml", "../Resources/img/software.png"));
-            Se_items.Add(new DataItem("Courses", "Resources/docs/specialisations/se_courses.xaml", "../Resources/img/software.png"));
-            Se_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/se_advisor.xaml", "../Resources/img/software.png"));
-
-            Eee_items.Add(new DataItem("Description", "Resources/docs/specialisations/eee_info.xaml", "../Resources/img/software.png"));
-            Eee_items.Add(new DataItem("Careers", "Resources/docs/specialisations/eee_careers.xaml", "../Resources/img/software.png"));
-            Eee_items.Add(new DataItem("Courses", "Resources/docs/specialisations/eee_courses.xaml", "../Resources/img/software.png"));
-            Eee_items.Add(new DataItem("Programme Advisor", "Resources/docs/specialisations/eee_advisor.xaml", "../Resources/img/software.png"));
-
-            P1_items.Add(new DataItem("Description", "Resources/docs/specialisations/p1_info.xaml", "../Resources/img/part1.png"));
-            P1_items.Add(new DataItem("Courses", "Resources/docs/specialisations/p1_courses.xaml", "../Resources/img/part1.png"));
+            P1_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/p1_info.xaml")));
+            P1_items.Add(new DataItem("Courses", new Controls.CoursesControl());
 
             infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/tap_course.xaml"));
         }
