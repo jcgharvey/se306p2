@@ -1,0 +1,46 @@
+<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+	<Paragraph FontFamily="Calibri" FontSize="30">
+		Radio Systems
+	</Paragraph>
+
+	<Paragraph>
+        The major focus of the research in this area is mobile radio systems, and a core activity has been the characterisation of the radio channel in a broad range of physical environments. In general, the radiowave propagation process is complicated as propagation characteristics are both environment and frequency dependent. The team has undertaken extensive experimental investigation, analysis and modelling of a range of typical New Zealand environments including outdoor propagation at frequencies used for mobile radio, cellular radio and personal communications systems (PCS), and the penetration of radio signals into and within buildings.
+    </Paragraph>
+
+	<Paragraph>
+        This propagation research, while valuable in itself, is also used to underpin a range of additional activities including systems planning and reliability/capacity estimation research. Accurate propagation data is needed in order to permit, for example, reliable coverage assessments and interference calculations in cellular radio and PCS systems. With the widespread introduction of such systems and the need to achieve a high level of spectrum utilisation by frequency reuse, there is considerable outside interest in research in these and related topics. An example of this is the research in outage probability assessment which has been recognised internationally.
+	</Paragraph>
+
+    <Paragraph>
+        Current research is largely focused on the engineering of personal communications systems (PCS) operating at frequencies at 2GHz and above. Examples of current topics include:
+    </Paragraph>
+        
+    <List>
+        <ListItem>
+            <Paragraph>
+                Improved propagation models (particularly for micro-cellular and pico-cellular/indoor environments).
+            </Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>
+                Development of planning tools for estimating interference and reliability (including the extension of earlier work for narrowband analogue systems to broadband digital systems).
+            </Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>
+                Development of planning tools for estimating interference and reliability (including the extension of earlier work for narrowband analogue systems to broadband digital systems).
+            </Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>
+                Development of planning tools for estimating interference and reliability (including the extension of earlier work for narrowband analogue systems to broadband digital systems).
+            </Paragraph>
+        </ListItem>
+       
+    </List>
+    
+   
+
+</FlowDocument>
