@@ -182,6 +182,8 @@ namespace ECE_Showcase.Screens
         private void DropTargetRichTextBox_Drop(object sender, Microsoft.Surface.Presentation.SurfaceDragDropEventArgs e)
         {
             infoViewer.Document = (FlowDocument)XamlReader.Load(File.OpenRead((e.Cursor.Data as DataItem).FilePath));
+            ScrollViewer.ScrollToTop();
+
         }
 
 
