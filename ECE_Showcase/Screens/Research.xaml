@@ -32,6 +32,12 @@
             </s:SurfaceButton>
         </DataTemplate>
 
+        <Style
+            x:Key="ListBoxStyle"
+            TargetType="ListBoxItem">
+            <Setter Property="Background" Value="#FFFFEC"/>
+        </Style>
+
 
         <Style x:Key="CursorStyle" TargetType="{x:Type ContentControl}">
             <Setter Property="ContentTemplate" Value="{StaticResource SurfaceListBoxItemDataTemplate}" />
@@ -555,11 +561,12 @@
                           Grid.Row="1"
                           Grid.Column="1"
                           BorderBrush="{DynamicResource {x:Static s:SurfaceColors.ListBoxItemBackgroundBrushKey}}"
-            ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
-            ItemsSource="{Binding SourceItems}"
-            PreviewTouchDown="OnDragSourcePreviewTouchDown"
-            PreviewMouseDown="OnDragSourcePreviewTouchDown"
-            s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
+                          ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
+                          ItemContainerStyle="{DynamicResource ListBoxStyle}"
+                          ItemsSource="{Binding SourceItems}"
+                          PreviewTouchDown="OnDragSourcePreviewTouchDown"
+                          PreviewMouseDown="OnDragSourcePreviewTouchDown"
+                          s:SurfaceDragDrop.DragCompleted="OnDragCompleted"/>
 
         <Label x:Name="Title"
                          Grid.Row="0"
