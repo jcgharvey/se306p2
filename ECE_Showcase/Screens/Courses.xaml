@@ -8,7 +8,8 @@
              xmlns:System="clr-namespace:System;assembly=mscorlib" 
              x:Class="ECE_Showcase.Screens.Courses"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="1000">
+             d:DesignHeight="1080"
+             d:DesignWidth="1920">
 
     <view:Screen.Resources>
         

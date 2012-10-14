@@ -5,7 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:ece="clr-namespace:ECE_Showcase"
              mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="1080"
+             d:DesignWidth="1920">
     <Grid>
             
     </Grid>
