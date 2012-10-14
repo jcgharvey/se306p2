@@ -2,7 +2,11 @@
   xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
   xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
 
-    <Paragraph>
-       Drop items here to view information. 
+    <Paragraph TextAlignment="Center" FontSize="25">
+        <LineBreak/>
+        <LineBreak/>
+        <LineBreak/>
+        <LineBreak/>
+        Drop items here to view information. 
     </Paragraph>
 </FlowDocument>
