@@ -55,7 +55,7 @@ namespace ECE_Showcase.Screens
                         break;
                     case "HODButton":
                             screenToPush = new FirstLevelScreen(ParentWindow, "hod welcome");
-                            ((FirstLevelScreen)screenToPush).setLeft(new Controls.CoursesControl());
+                            ((FirstLevelScreen)screenToPush).setLeft(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/salcic.jpg"));
                             ((FirstLevelScreen)screenToPush).setRight(new Controls.FlowDocControl("Resources/docs/hod_welcome.xaml"));
                         break;
                     case "ProgrammesButton":
