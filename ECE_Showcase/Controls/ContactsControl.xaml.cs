@@ -44,7 +44,7 @@ namespace ECE_Showcase.Controls
 
             DataContext = this;
 
-            FlowDocument flowDocument = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/hod_welcome.xaml"));
+            FlowDocument flowDocument = (FlowDocument)XamlReader.Load(File.OpenRead("Resources/docs/contact_us.xaml"));
 
             infoViewer.Document = flowDocument;
 

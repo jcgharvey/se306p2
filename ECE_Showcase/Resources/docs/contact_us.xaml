@@ -44,39 +44,4 @@
         New Zealand
     </Paragraph>
 
-    <Paragraph FontFamily="Calibri" FontWeight="Bold" FontSize="22">
-        How to get here:
-    </Paragraph>
-    
-    <Paragraph>
-        <Bold>From the main Engineering Building</Bold>
-        <LineBreak />
-        <LineBreak />
-        Cross Symonds Street at the traffic lights outside of the Engineering building.
-        <LineBreak />
-        <LineBreak />
-        Turn right towards Kate Edgar and go up the stairs outside level two entrance to the Kate Edgar building.
-        <LineBreak />
-        <LineBreak />
-        At the top of the steps turn left and walk towards the main set of buildings ahead.
-        <LineBreak />
-        <LineBreak />
-        Go in the second set of doors to the right and up the stairs to the Department of Electrical and Computer Engineering.
-    </Paragraph>
-
-    <Paragraph>
-        <Bold>From the Clocktower</Bold>
-        <LineBreak />
-        <LineBreak />
-        Walk down Princes St and turn down left down Alfred St
-        <LineBreak />
-        <LineBreak />
-        Turn right and walk up the steps into the Quad next to the Maidement Theatre
-        <LineBreak />
-        <LineBreak />
-        Continue walking straight through the quad, past Shadows to the main set of buildings ahead.
-        <LineBreak />
-        <LineBreak />
-        Go in the second set of doors to the right and up the stairs to the Department of Electrical and Computer Engineering.
-    </Paragraph> 
 </FlowDocument>
