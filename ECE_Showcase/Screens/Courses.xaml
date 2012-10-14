@@ -790,9 +790,18 @@
                 TouchUp="Expander_TouchUp"
                 >
                     <Expander.Header>
+                        <StackPanel>
                         <Image Source="{StaticResource part1}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
+                            <TextBlock 
+                                Foreground="White"
+                                TextWrapping="Wrap" 
+                                Margin="0,-30,30,0" 
+                                FontSize="20" 
+                                Text="Part I" 
+                                HorizontalAlignment="Right"/>
+                        </StackPanel>
                     </Expander.Header>
                     <s:SurfaceListBox 
                         Grid.Row="1"
@@ -819,9 +828,18 @@
                 TouchUp="Expander_TouchUp"
                 >
                     <Expander.Header>
+                        <StackPanel>
                         <Image Source="{StaticResource software}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
+                        <TextBlock 
+                                Foreground="White"
+                                TextWrapping="Wrap" 
+                                Margin="0,-30,30,0" 
+                                FontSize="20" 
+                                Text="Software Engineering" 
+                                HorizontalAlignment="Right"/>
+                        </StackPanel>
                     </Expander.Header>
                     <s:SurfaceListBox
                           Grid.Row="1"
@@ -847,9 +865,18 @@
                 TouchUp="Expander_TouchUp"
                 >
                     <Expander.Header>
+                        <StackPanel>
                         <Image Source="{StaticResource electrical}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
+                        <TextBlock 
+                                Foreground="White"
+                                TextWrapping="Wrap" 
+                                Margin="0,-30,30,0" 
+                                FontSize="20" 
+                                Text="Electrical and Electronic Engineering" 
+                                HorizontalAlignment="Right"/>
+                        </StackPanel>
                     </Expander.Header>
                     <s:SurfaceListBox
                           Grid.Row="1"
@@ -875,9 +902,18 @@
                           TouchUp="Expander_TouchUp">
                     
                     <Expander.Header>
+                        <StackPanel>
                         <Image Source="{StaticResource compsys}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
+                        <TextBlock 
+                                Foreground="White"
+                                TextWrapping="Wrap" 
+                                Margin="0,-30,30,0" 
+                                FontSize="20" 
+                                Text="Computer Systems Engineering" 
+                                HorizontalAlignment="Right"/>
+                        </StackPanel>
                     </Expander.Header>
                     
                     <s:SurfaceListBox 
