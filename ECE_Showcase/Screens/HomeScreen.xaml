@@ -197,7 +197,16 @@
         	</StackPanel>
         </s:SurfaceButton>
         
-        <s:SurfaceButton 
+        <Image 
+                Grid.Row="3"
+                Grid.RowSpan="2"
+                Grid.Column="3"
+                Grid.ColumnSpan="1" 
+                Source="{StaticResource ece_logo}"
+        		VerticalAlignment="Center"
+        		HorizontalAlignment="Center" 
+                Height="380" Width="735" />
+        <!--<s:SurfaceButton 
                          Grid.Row="3"
                          Grid.RowSpan="2"
                          Grid.Column="3"
@@ -208,7 +217,7 @@
                          HorizontalContentAlignment="Stretch"
                          Background="#633678">
             News Feed
-        </s:SurfaceButton>
+        </s:SurfaceButton>-->
         
         <Border BorderBrush="Silver"
                 BorderThickness="1"
