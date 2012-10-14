@@ -124,6 +124,10 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Page Include="Controls\CoursesControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Controls\FlowDocControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -262,8 +266,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+
     <Compile Include="Controls\ContactsControl.xaml.cs">
       <DependentUpon>ContactsControl.xaml</DependentUpon>
+    </Compile>
+
+    <Compile Include="Controls\CoursesControl.xaml.cs">
+      <DependentUpon>CoursesControl.xaml</DependentUpon>
+
     </Compile>
     <Compile Include="Screens\Accordion.cs" />
     <Compile Include="App.xaml.cs">
@@ -284,6 +294,7 @@
     <Compile Include="Screens\Courses.xaml.cs">
       <DependentUpon>Courses.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Screens\CoursesItem.cs" />
     <Compile Include="Screens\DataItem.cs" />
     <Compile Include="Screens\HomeScreen.xaml.cs">
       <DependentUpon>HomeScreen.xaml</DependentUpon>
