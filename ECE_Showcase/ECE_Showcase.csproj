@@ -110,21 +110,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Resources\docs\research\se_research.xaml">
+    <Content Include="Resources\docs\research\se_research.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Page>
-    <Page Include="Resources\docs\research\eee_research.xaml">
+    </Content>
+    <Content Include="Resources\docs\research\eee_research.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Page>
-    <Page Include="Resources\docs\research\cse_research.xaml">
+    </Content>
+    <Content Include="Resources\docs\research\cse_research.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Page>
+    </Content>
     <Content Include="Resources\docs\specialisations\se_advisor.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
