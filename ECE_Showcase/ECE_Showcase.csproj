@@ -220,6 +220,7 @@
     <Compile Include="Screens\Courses.xaml.cs">
       <DependentUpon>Courses.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Screens\CoursesItem.cs" />
     <Compile Include="Screens\DataItem.cs" />
     <Compile Include="Screens\HomeScreen.xaml.cs">
       <DependentUpon>HomeScreen.xaml</DependentUpon>
