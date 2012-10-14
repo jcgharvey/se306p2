@@ -218,14 +218,11 @@ namespace ECE_Showcase.Screens
         {
             if (e.Cursor.CurrentTarget != null)
             {
-                //DataItem data = e.Cursor.Data as DataItem;
                 e.Cursor.Visual.Tag = "CanDrop";
             }
             else
             {
-                //e.Cursor.Visual.Tag = null;
-                e.Cursor.Visual.Tag = "CanDrop";
-            
+                e.Cursor.Visual.Tag = null;            
             }
         }
 
