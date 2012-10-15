@@ -836,9 +836,19 @@
                 TouchUp="Expander_TouchUp"
                 >
                     <Expander.Header>
-                        <Image Source="{StaticResource eee_research}" 
-                               Stretch="Fill" 
-                               d:LayoutOverrides="HorizontalMargin"/>
+                        <StackPanel>
+                            <Image Source="{StaticResource eee_research}" 
+                                   Stretch="Fill" 
+                                   d:LayoutOverrides="HorizontalMargin"/>
+                            <TextBlock 
+                                    Foreground="White"
+                                    TextWrapping="Wrap" 
+                                    Margin="0,-30,30,0" 
+                                    FontSize="20" 
+                                    Text="power systems" 
+                                    HorizontalAlignment="Right"
+                                    FontFamily="Segoe UI Light"/>
+                        </StackPanel>
                     </Expander.Header>
                     <s:SurfaceListBox
                           Grid.Row="1"
@@ -864,9 +874,19 @@
                           TouchUp="Expander_TouchUp">
 
                     <Expander.Header>
-                        <Image Source="{StaticResource cse_research}" 
-                               Stretch="Fill" 
-                               d:LayoutOverrides="HorizontalMargin"/>
+                        <StackPanel>
+                            <Image Source="{StaticResource cse_research}" 
+                                   Stretch="Fill" 
+                                   d:LayoutOverrides="HorizontalMargin"/>
+                            <TextBlock 
+                                        Foreground="White"
+                                        TextWrapping="Wrap" 
+                                        Margin="0,-30,30,0" 
+                                        FontSize="20" 
+                                        Text="power systems" 
+                                        HorizontalAlignment="Right"
+                                        FontFamily="Segoe UI Light"/>
+                        </StackPanel>
                     </Expander.Header>
 
                     <s:SurfaceListBox 
