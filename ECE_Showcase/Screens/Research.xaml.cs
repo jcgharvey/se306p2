@@ -81,8 +81,8 @@ namespace ECE_Showcase.Screens
             EeeResearchItems.Add(new DataItem("Systems & Control", new Controls.FlowDocControl("Resources/docs/research/control.xaml")));
             CseResearchItems.Add(new DataItem("Radio Systems", new Controls.FlowDocControl("Resources/docs/research/radio.xaml")));
             CseResearchItems.Add(new DataItem("Microwave Engineering", new Controls.FlowDocControl("Resources/docs/research/microwave.xaml")));
-            
-            setControl(new Controls.FlowDocControl("Resources/docs/drag_here.xaml"));
+
+            setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
             
         }
 
