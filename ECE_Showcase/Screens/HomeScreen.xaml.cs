@@ -27,7 +27,6 @@ namespace ECE_Showcase.Screens
         private double initialDist;
         private bool triggered;
 
-        private Research researchScreen;
         public HomeScreen(SurfaceWindow1 parentWindow) : base(parentWindow)
         {
             InitializeComponent();

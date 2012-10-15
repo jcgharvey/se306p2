@@ -79,12 +79,44 @@ namespace ECE_Showcase.Controls
 
         private void Expander_TouchDown(object sender, TouchEventArgs e)
         {
+            Expander exp = sender as Expander;
 
+            if (exp == null)
+
+                return;
+
+            exp.CaptureTouch(e.TouchDevice);
+            e.Handled = true;
         }
 
         private void Expander_TouchUp(object sender, TouchEventArgs e)
         {
+            Expander exp = sender as Expander;
 
+            if (exp == null)
+
+                return;
+
+            TouchPoint tp = e.GetTouchPoint(exp);
+
+            Rect bounds = new Rect(new Point(0, 0), exp.RenderSize);
+
+            if (bounds.Contains(tp.Position))
+            {
+                if (exp.IsExpanded)
+                {
+
+                    exp.IsExpanded = false;
+                    
+                }
+                else
+                {
+                    exp.IsExpanded = true;
+                    
+                }
+            }
+            exp.ReleaseTouchCapture(e.TouchDevice);
+            e.Handled = true;
         }
     }
 }
