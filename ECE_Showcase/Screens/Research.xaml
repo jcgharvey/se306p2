@@ -845,7 +845,7 @@
                                     TextWrapping="Wrap" 
                                     Margin="0,-30,30,0" 
                                     FontSize="20" 
-                                    Text="power systems" 
+                                    Text="power electronics" 
                                     HorizontalAlignment="Right"
                                     FontFamily="Segoe UI Light"/>
                         </StackPanel>
@@ -883,7 +883,7 @@
                                         TextWrapping="Wrap" 
                                         Margin="0,-30,30,0" 
                                         FontSize="20" 
-                                        Text="power systems" 
+                                        Text="radio systems" 
                                         HorizontalAlignment="Right"
                                         FontFamily="Segoe UI Light"/>
                         </StackPanel>
