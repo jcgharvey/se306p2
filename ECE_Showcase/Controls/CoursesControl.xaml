@@ -10,14 +10,11 @@
 
         <DataTemplate x:Key="CourseItemTemplate">
 
-                <Expander
-                    Margin="1"
-                    
-                UseLayoutRounding="False" 
-                Style="{DynamicResource ArrowlessExpanderTemplate}" 
-                
-                TouchDown="Expander_TouchDown"
-                TouchUp="Expander_TouchUp">
+                <Expander Margin="1"
+                          UseLayoutRounding="False" 
+                          Style="{DynamicResource ArrowlessExpanderTemplate}" 
+                          TouchDown="Expander_TouchDown"
+                          TouchUp="Expander_TouchUp">
 
                     <Expander.Header>
                         <Label Content="{Binding Name}"
@@ -245,14 +242,14 @@
 
     </UserControl.Resources>
     <Grid Background="#FFFFEC">
-        <ListBox
-            Background="#FFFFEC"
-            BorderThickness="0"
-            VerticalAlignment="Stretch"
-            HorizontalAlignment="Stretch"
-            HorizontalContentAlignment="Stretch"
-            ItemContainerStyle="{DynamicResource ContainerListBoxStyle}"
-            >
+        <ItemsControl Background="#FFFFEC"
+                 Focusable="False"
+                 BorderThickness="0"
+                 VerticalAlignment="Stretch"
+                 HorizontalAlignment="Stretch"
+                 HorizontalContentAlignment="Stretch">
+                 
+            
             <Grid Background="#FFFFEC">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -261,40 +258,46 @@
                 </Grid.ColumnDefinitions>
 
                 <StackPanel Grid.Column="0"
-                            HorizontalAlignment="Stretch">
+                            HorizontalAlignment="Stretch"
+                            Background="#FFFFEC">
                     <Label Content="Part II"
                            Foreground="#633678"/>
                     <s:SurfaceScrollViewer>
                         <ListBox ItemsSource="{Binding PartII}" 
                                  ItemTemplate="{DynamicResource CourseItemTemplate}" 
                                  ItemContainerStyle="{DynamicResource CourseListBoxStyle}"
-                                 BorderThickness="0">
+                                 BorderThickness="0"
+                                 Background="#FFFFEC">
                         </ListBox>
                     </s:SurfaceScrollViewer>
                 </StackPanel>
 
                 <StackPanel Grid.Column="1"
-                            HorizontalAlignment="Stretch">
+                            HorizontalAlignment="Stretch"
+                            Background="#FFFFEC">
                     <Label Content="Part III"
                            Foreground="#633678"/>
                     <s:SurfaceScrollViewer>
                         <ListBox ItemsSource="{Binding PartIII}"
                                  ItemTemplate="{DynamicResource CourseItemTemplate}"
                                  ItemContainerStyle="{DynamicResource CourseListBoxStyle}"
-                                 BorderThickness="0">
+                                 BorderThickness="0"
+                                 Background="#FFFFEC">
                         </ListBox>
                     </s:SurfaceScrollViewer>
                 </StackPanel>
 
                 <StackPanel Grid.Column="2"
-                            HorizontalAlignment="Stretch">
+                            HorizontalAlignment="Stretch"
+                            Background="#FFFFEC">
                     <Label Content="Part IV"
                            Foreground="#633678"/>
                     <s:SurfaceScrollViewer>
                         <ListBox ItemsSource="{Binding PartIV}"
                                  ItemTemplate="{DynamicResource CourseItemTemplate}"
                                  ItemContainerStyle="{DynamicResource CourseListBoxStyle}"
-                                 BorderThickness="0">
+                                 BorderThickness="0"
+                                 Background="#FFFFEC">
                         </ListBox>
                     </s:SurfaceScrollViewer>
                 </StackPanel>
@@ -302,6 +305,6 @@
 
 
 
-        </ListBox>
+        </ItemsControl>
     </Grid>
 </UserControl>

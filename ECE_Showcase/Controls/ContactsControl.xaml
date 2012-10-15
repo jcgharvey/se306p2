@@ -283,16 +283,11 @@
                             
                     </StackPanel>
                 </Expander.Header>
-                <s:SurfaceListBox 
-                        Grid.Row="1"
-                        Grid.Column="1"
-                        Background="#633678"
-                        ItemContainerStyle="{StaticResource LBStyle}"
-                        
-                        >
-                    <s:SurfaceButton
-                        PreviewTouchDown="EngineeringPath"
-                        Background="#633678">
+                <ItemsControl Grid.Row="1"
+                              Grid.Column="1"
+                              Background="#633678">
+                    <s:SurfaceButton PreviewTouchDown="EngineeringPath"
+                                     Background="#633678">
                         <Label
                             Content="from the engineering building" 
                             HorizontalAlignment="Left" 
@@ -331,7 +326,7 @@
                         </Label>
                     </s:SurfaceButton>
                     
-                </s:SurfaceListBox>
+                </ItemsControl>
 
             </Expander>
 
