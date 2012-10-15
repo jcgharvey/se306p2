@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<programs>
+  <program name="Common">
+    <course code="CHEMMAT 121"
+            year="1"
+            name="Materials Science"
+            type="Prescribed"
+            prereq=""
+            info="Introduction to materials science starting with the fundamentals of atomic structure and bonding and how this builds up a microstructure to create a solid. Metals, polymers, ceramics, composite and biomaterials will be covered and the properties, advantages and disadvantages of each discussed. Considerations such as corrosion, degradation and failure will be studied with a focus on improving design and creating new materials for our future world.">
+    </course>
+    <course code="ELECTENG 101"
+            year="1"
+            name="Electrical and Digital Systems"
+            type="Prescribed"
+            prereq=""
+            info="An introduction to electrical, computer and electronic systems and technology. Digital circuits and analysis techniques, computer organisation. Analog circuits and analysis techniques. Inductive power transfer, power systems and electric machines. Communication systems.">
+    </course>
+    <course code="ENGGEN 115"
+            year="1"
+            name="Introduction to Engineering Design"
+            type="Prescribed"
+            prereq=""
+            info="The aim of the course is to develop an appreciation of design as a key aspect of professional engineering. Course elements: sketching and interpretation of engineering drawings; preparation of drawings using computer-aided design (CAD) software; design projects, some of which will require teamwork and cover design-build-test activities; an introduction to the engineering design process.">
+    </course>
+    <course code="ENGGEN 121"
+            year="1"
+            name="Engineering Mechanics"
+            type="Prescribed"
+            prereq=""
+            info="An introduction to planar mechanics including: free body diagrams, planar equilibrium of rigid bodies, friction, distributed forces, internal forces, shear force and bending moment diagrams, kinematics and kinetics of particles, work and energy, relative motion, kinematics and kinetics of rigid bodies.">
+    </course>
+    <course code="ENGGEN 131"
+            year="1"
+            name="Engineering Computation and Software Development"
+            type="Prescribed"
+            prereq=""
+            info="Introduction to problem solving in engineering through the use of the software package MATLAB, and the high level programming language C.">
+    </course>
+    <course code="ENGGEN 140"
+            year="1"
+            name="Engineering Biology and Chemistry"
+            type="Prescribed"
+            prereq=""
+            info="Introduction to chemical and biological systems. The application of engineering analysis and design techniques to facilitate understanding the multiscale structure, function and interactions of such systems. The use of case studies to illustrate systems approaches to chemistry and biology.">
+    </course>
+    <course code="ENGSCI 111"
+            year="1"
+            name="Mathematical Modelling 1"
+            type="Prescribed"
+            prereq=""
+            info="Introduction to mathematical modelling. Differentiation and integration (polynomials, trigonometric, exponential, logarithmic, and rational functions). Integration by parts, substitution and partial fractions. Differential equations and their solutions (including Euler's method). Vector and matrix algebra, transformations, solving systems of linear equations. Modelling using probability.">
+    </course>
+  </program>
+
+  <program name="CSE">
+    <course code="COMPSYS 201"
+            year="2"
+            name="Fundamentals of Computer Engineering"
+            type="Prescribed"
+            prereq="ELECTENG 101"
+            info="The hardware/software interface: processors, registers, memory, basic I/O. Representation of data, number systems, and computer arithmetic; assembly language programming and debugging; support for high-level languages; exceptions and multithreading; combinational and sequential circuits (traditional design and standard circuits); instruction sets; communication principles.">
+    </course>
+    <course code="ELECTENG 202"
+            year="2"
+            name="Circuits and Systems"
+            type="Prescribed"
+            prereq="ELECTENG 101"
+            info="This course aims to provide a good understanding of the way electrical circuits work. It covers DC and AC circuit theorems and analysis; transient analysis, including the Laplace transform; transfer functions; AC power calculations; and time and frequency representation of signals.">
+    </course>
+    <course code="ELECTENG 210"
+            year="2"
+            name="Electronics 1"
+            type="Prescribed"
+            prereq="ELECTENG 101"
+            info="An introduction to semiconductor devices (diodes, bipolar junction transistors, field-effect transistors, operational amplifiers) and their applications. Device operation, device models and terminal characteristics. Biasing, coupling and bypass techniques. Small-signal analysis. Signal amplifiers, oscillators and power amplifiers. Switches and sensors.">
+    </course>
+    <course code="ENGSCI 211"
+            year="2"
+            name="Mathematical Modelling 2"
+            type="Prescribed"
+            prereq="ENGSCI 111 or ENGGEN 150 or MATHS 108 or MATHS 150 or MATHS 153"
+            info="First and second order ordinary differential equations and solutions. Laplace transforms. Taylor series and series in general. Multivariable and vector calculus including divergence, gradient and curl. Further linear algebra. Eigenvalues and eigenvectors. Fourier series. Application of the techniques through appropriate modelling examples. Introductory data analysis and statistics.">
+    </course>
+    <course code="COMPSYS 202"
+            year="2"
+            name="Object Oriented Design and Programming"
+            type="Prescribed"
+            prereq="ENGGEN 131 or ENGSCI 131"
+            info="A project-based course with extensive hands-on programming experience. Includes: an introduction to object oriented design including UML, sequence diagrams, use-case analysis; an introduction to object oriented programming in a modern high level language, algorithms, data abstraction and elementary data structures.">
+    </course>
+    <course code="ELECTENG 204"
+            year="2"
+            name="Engineering Electromagnetics"
+            type="Prescribed"
+            prereq="ELECTENG 101"
+            info="Electrical conduction theories, conducting materials and insulators, magnetic and dielectric properties and materials, electrostatics and magnetostatics, steady electric currents, the magnetic field of steady electric currents, Ampere's law and its applications, electromagnetic induction, Faraday's law and its applications, electromagnetism, simple transmission lines, magnetic circuits, permanent magnets, inductors, transformers, introduction to electrical machines.">
+    </course>
+    <course code="ELECTENG 209"
+            year="2"
+            name="Analogue and Digital Design"
+            type="Prescribed"
+            prereq="ELECTENG 101, 202, ELECTENG 205 or COMPSYS 201, ELECTENG 207 or 210"
+            info="This project-based course provides an introduction to real-world design of analogue and digital circuits. Practical skills will be gained in electronic circuit analysis, use of CAD tools, PCB design and construction, circuit testing and calibration using laboratory equipment. Appropriate design methodology will be developed in a practical framework.">
+    </course>
+    <course code="ENGGEN 204"
+            year="2"
+            name="Technical Communication for Engineers"
+            type="Prescribed"
+            prereq="ENGGEN 199"
+            info="The communication of complex engineering material will be emphasised in the following ways: the use of appropriate engineering graphical software at an advanced level; the use of appropriate multi-media; visual and spoken presentation, in styles appropriate to seminars, conferences, and presentations to technological industries; the construction of industrial displays; and the preparation of engineering reports.">
+    </course>
+    <course code="COMPSYS 302"
+            year="3"
+            name="Design: Software Practice"
+            type="Prescribed"
+            prereq="COMPSYS 202 or ELECTENG 203"
+            info="A project-based course with extensive hands-on programming experience emphasising problem-solving techniques and applications in computer systems engineering. Topics include: algorithms and data structures, parsing and translation, concurrent programming, scripting languages, systems programming.">
+    </course>
+    <course code="COMPSYS 305"
+            year="3"
+            name="Digital Systems Design 1"
+            type="Prescribed"
+            prereq="COMPSYS 201"
+            info="Digital Systems implementation technologies; abstraction levels; hardware description languages; structural, architectural and behavioural modelling; register-transfer level design; datapath and control units; fixed and microprogrammed control units; ASM charts; synthesis from ASM charts, digital computation; verification; design flow. Design of a simple processor. FPGAs as prototyping technology.">
+    </course>
+    <course code="ENGGEN 303"
+            year="3"
+            name="Management for Engineers"
+            type="Prescribed"
+            prereq="ENGGEN 104 or 199"
+            info="An introduction to modern theory and practice of management, including project, quality and financial management appropriate to the engineering profession.">
+    </course>
+    <course code="ENGSCI 313"
+            year="3"
+            name="Mathematical Modelling 3ECE"
+            type="Prescribed"
+            prereq="ENGSCI 211"
+            info="Complex Analysis, including complex numbers, analytic functions, complex integration, Cauchy's theorem, Laurent series, residue theory; Laplace transforms; Modelling with partial differential equations, including electronic and electrical applications; Fourier Analysis, Fourier transform, Fast Fourier transform; Optimisation, including unconstrained and constrained models, linear programming and nonlinear optimisation.">
+    </course>
+    <course code="COMPSYS 301"
+            year="3"
+            name="Design: Hardware Software Systems"
+            type="Prescribed"
+            prereq="COMPSYS 302, and COMPSYS 305 or ELECTENG 304, and ELECTENG 206 or 209"
+            info="An appreciation of the engineering design process as applied to computer systems. Design skills are enhanced through engineering projects which typically include elements of: computer hardware design, computer software design, system design and control, sensing, actuation and interfacing.">
+    </course>
+    <course code="ELECTENG 303"
+            year="3"
+            name="Systems and Control"
+            type="Elective"
+            prereq="ELECTENG 202"
+            info="Introduction to linear, time-invariant, continuous-time system theory from both a time-domain and frequency domain standpoint. This leads on to the fundamental body of knowledge underlying the control and enhancement of system behaviour, with application to the analysis and control of electrical systems.">
+    </course>
+    <course code="COMPSYS 303"
+            year="3"
+            name="Microcomputers and Embedded Systems"
+            type="Elective"
+            prereq="COMPSYS 202 or SOFTENG 251, and COMPSYS 201"
+            info="Embedded applications. Microprocessors, microcontrollers, architecture, organisation, programming memories, I/O interfacing. Sensors, actuators, analog interfaces. Hardware/Software partitioning and interfacing. Concurrency. Implementing data transformations and reactivity. Case studies.">
+    </course>
+    <course code="COMPSYS 304"
+            year="3"
+            name="Computer Architecture 1"
+            type="Elective"
+            prereq="15 points from COMPSYS 201, ELECTENG 205"
+            info="Modern processor architectures. Principles of modern processor design; pipelining; memory hierarchies; I/O and network interfacing; compiler and OS support; embedded processors; performance; multiprocessing.">
+    </course>
+    <course code="SOFTENG 325"
+        year="3"
+        name="Software Architecture"
+        type="Prescribed"
+        prereq="15 points from SOFTENG 350, COMPSYS 302"
+        info="Taxonomy of software architecture patterns, including client/server and multi-tier. Understanding quality attributes. Methodologies for design of software architectures. Technologies for architecture level development, including middleware.">
+    </course>
+
+    <course code="COMPSYS 700"
+              year="4"
+              name="Research Project"
+              type="Prescribed"
+              prereq="COMPSYS 301, and 45 points from COMPSCI 313, COMPSYS 302, 303, 304, 305, ELECTENG 303, 304"
+              info="A student is required to submit a report on project work carried out on a Computer Systems Engineering topic assigned by the Head of Department. The work shall be supervised by a member of staff.">
+    </course>
+    <course code="ENGGEN 403"
+              year="4"
+              name="Professional and Sustainability Issues"
+              type="Prescribed"
+              prereq=""
+              info="Issues of particular relevance to the engineering profession including those relating to the law, ethics, culture and sustainability.">
+    </course>
+    <course code="COMPSYS 701"
+              year="4"
+              name="Advanced Digital Systems Design"
+              type="Elective"
+              prereq="15 points from COMPSYS 305, ELECTENG 304"
+              info="Register-transfer, behavioural and system-level design and synthesis; resource sharing; scheduling; the use of hardware-description languages; algorithms to logic; hardware/software partitioning; systems-on-chip; component re-usability; reconfigurable systems, low-power systems; case studies (DSP, speech, image and video algorithms implementation).">
+    </course>
+    <course code="COMPSYS 703"
+              year="4"
+              name="Advanced Intelligent Systems"
+              type="Elective"
+              prereq="COMPSYS 406 or 726 or ELECTENG 707"
+              info="Selected topics from current research in robotics and intelligent systems, such as: navigation, human-robot interaction, control, programming, path planning, problem solving, pattern recognition, artificial neural networks, fuzzy systems, genetic algorithms.">
+    </course>
+    <course code="COMPSYS 704"
+              year="4"
+              name="Advanced Embedded Systems"
+              type="Elective"
+              prereq="15 points from COMPSYS 402-404, 701, 723, 724 or ELECTENG 423"
+              info="Selected topics from current research in embedded systems, such as: models of computation, architectures, distributed embedded systems, systems-on-chip, real-time operating systems, heterogeneous models of computation, architectures and technologies, formal verification, model-checking.">
+    </course>
+    <course code="COMPSYS 705"
+              year="4"
+              name="Formal Methods for Engineers"
+              type="Elective"
+              prereq="COMPSYS 302 and COMPSYS 305 or ELECTENG 304"
+              info="Validation versus Verification, Formal models, Formal Specification: Process Algebraic, Logic Based, Temporal Logic, Methods of Verification: Bisimulation, Model Checking, Theorem Proving. State Space explosion problem and solutions: BDDs, Symbolic Model Checking, Modular Verification. Verification of HDL designs, Tools: STeP, VIS, NuSMV.">
+    </course>
+    <course code="COMPSYS 706"
+              year="4"
+              name="Speech and Language Processing"
+              type="Elective"
+              prereq="ELECTENG 413 or 733"
+              info="Introduction to the fundamentals of speech and language processing. Concepts, methods and applications of speech signal processing. Principles of speech analysis, coding, modelling, recognition, synthesis and language processing.">
+    </course>
+    <course code="COMPSYS 707"
+              year="4"
+              name="Advanced Microcomputer Architecture"
+              type="Elective"
+              prereq="15 points from COMPSYS 304, ELECTENG 304"
+              info="Hardware and software approaches for instruction-level parallel processing, multiprocessors and multithreading, embedded multiprocessing and memory systems, architectures for embedded multiple processors and networks on chip, dynamic reconfigurable architectures.">
+    </course>
+    <course code="COMPSYS 721"
+              year="4"
+              name="Special Topics 1"
+              type="Elective"
+              prereq=""
+              info="An advanced course on topics to be determined each year by the Head of Department.">
+    </course>
+    <course code="COMPSYS 722"
+              year="4"
+              name="Special Topics 2"
+              type="Elective"
+              prereq=""
+              info="An advanced course on topics to be determined each year by the Head of Department.">
+    </course>
+    <course code="COMPSYS 723"
+              year="4"
+              name="Embedded Systems Design"
+              type="Elective"
+              prereq="15 points from COMPSYS 303, ELECTENG 304"
+              info="Principles of embedded systems modelling. Models of computation. Languages for embedded systems design. Hardware/Software partitioning and co-design. Hardware/Software partitioning and co-design. Technologies. Energy-aware systems. Rapid prototyping. Distributed embedded systems. Case studies.">
+    </course>
+    <course code="COMPSYS 724"
+              year="4"
+              name="Real-time Systems"
+              type="Elective"
+              prereq="15 points from COMPSYS 303, ELECTENG 304"
+              info="Real-time concepts. Data- versus control-dominated systems. Hardware versus software tradeoffs. DSP algorithms. Architectures. Real-time operating systems. Reliability. Fault-tolerant computing systems. Internet-based and mobile systems.">
+    </course>
+    <course code="COMPSYS 725"
+              year="4"
+              name="Computer Networks and Distributed Applications"
+              type="Elective"
+              prereq="COMPSYS 201 or ELECTENG 205, and COMPSYS 202 or ELECTENG 203"
+              info="Network layers and protocols. Packet switching. Broadband network principles. Low versus high bandwidth services. Network interfaces and instrumentation. Wireless networks in embedded applications. Industrial networking.">
+    </course>
+    <course code="COMPSYS 726"
+              year="4"
+              name="Robotics and Intelligent Systems"
+              type="Elective"
+              prereq="15 points from COMPSYS 302, MECHENG 313, SOFTENG 306"
+              info="Introduction to robotics and intelligent systems, including: robot manipulators and mobile robots, navigation techniques, planning and programming of robot actions, sensors and actuators, artificial intelligence, artificial neural nets, fuzzy systems, genetic algorithms.">
+    </course>
+    <course code="ELECTENG 704"
+              year="4"
+              name="Advanced Control Systems"
+              type="Elective"
+              prereq="ELECTENG 422 or 722"
+              info="Theory of modern control systems with emphasis on optimisation techniques for both deterministic and stochastic processes. State-space modelling of dynamic systems and choice of suitable performance criteria. Adaptive, fuzzy logic and sliding mode control systems.">
+    </course>
+    <course code="ELECTENG 706"
+              year="4"
+              name="Digital Signal Processing"
+              type="Elective"
+              prereq="ELECTENG 413 or 733"
+              info="Advanced digital signal processing concepts and techniques for analysing discrete-time deterministic and random signals and systems. Stochastic signal description and analysis, system response to stochastic signals. Adaptive systems and applications. Multi-rate techniques. Digital Signal Processor (DSP) implementation strategies and real-world issues.">
+    </course>
+    <course code="ELECTENG 722"
+              year="4"
+              name="Control Systems"
+              type="Elective"
+              prereq="ELECTENG 303"
+              info="State space analysis, relationship to transfer function methods, controllability and observability, multivariable plant. Computer simulation. Stability considerations. State variable feedback. Digital control system, design and realisation of digital controllers, adaptive controllers. Nonlinear systems, phase-plane and describing function techniques, Liaponov's method of stability analysis, design of controllers for non-linear systems. Variable structure systems.">
+    </course>
+    <course code="ELECTENG 728"
+              year="4"
+              name="Sensor Networks"
+              type="Elective"
+              prereq="ELECTENG 305 or COMPSYS 305 or MECHENG 370"
+              info="Data acquisition. Sensor classification and characteristics. Physical principles of sensing. Interface electronics. Noise. Application examples. Architecture for sensor networks. Network node structure. Protocols and layers. Positioning and timing. Energy efficient algorithms. Wireless sensor network design, testing and validation. Sample applications. Network software design tools.">
+    </course>
+    <course code="ELECTENG 732"
+              year="4"
+              name="Communications Systems"
+              type="Elective"
+              prereq="ELECTENG 303"
+              info="Analog modulations, AM and FM modulation. Noise. Noise in AM and FM systems. Broadband systems: FDM, TDM, PCM. Information theory, data networks, waveform coding and data compression, baseband data transmission. Introduction to digital systems: Digital modulation.">
+    </course>
+    <course code="ELECTENG 733"
+              year="4"
+              name="Signal Processing"
+              type="Elective"
+              prereq="ELECTENG 303"
+              info="Analog signals and systems: Signal processing concepts and tools for analysing deterministic and random continuous-time signals and systems. Digital signals and systems: Discrete-time deterministic signal analysis, digital filters and transforms, including the FFT. Digital Signal Processor (DSP) architectures and DSP applications.">
+    </course>
+
+
+
+  </program>
+
+
+  <program name="EEE">
+
+    <course code="COMPSYS 201"
+              year="2"
+              name="Fundamentals of Computer Engineering"
+              type="Prescribed"
+              prereq="ELECTENG 101"
+              info="The hardware/software interface: processors, registers, memory, basic I/O. Representation of data, number systems, and computer arithmetic; assembly language programming and debugging; support for high-level languages; exceptions and multithreading; combinational and sequential circuits (traditional design and standard circuits); instruction sets; communication principles.">
+    </course>
+    <course code="COMPSYS 202"
+              year="2"
+              name="Object Oriented Design and Programming"
+              type="Prescribed"
+              prereq="ENGGEN 131 or ENGSCI 131"
+              info="A project-based course with extensive hands-on programming experience. Includes: an introduction to object oriented design including UML, sequence diagrams, use-case analysis; an introduction to object oriented programming in a modern high level language, algorithms, data abstraction and elementary data structures.">
+    </course>
+    <course code="ELECTENG 202"
+              year="2"
+              name="Circuits and Systems"
+              type="Prescribed"
+              prereq="ELECTENG 101"
+              info="This course aims to provide a good understanding of the way electrical circuits work. It covers DC and AC circuit theorems and analysis; transient analysis, including the Laplace transform; transfer functions; AC power calculations; and time and frequency representation of signals.">
+    </course>
+    <course code="ELECTENG 204"
+              year="2"
+              name="Engineering Electromagnetics"
+              type="Prescribed"
+              prereq="ELECTENG 101"
+              info="Electrical conduction theories, conducting materials and insulators, magnetic and dielectric properties and materials, electrostatics and magnetostatics, steady electric currents, the magnetic field of steady electric currents, Ampere's law and its applications, electromagnetic induction, Faraday's law and its applications, electromagnetism, simple transmission lines, magnetic circuits, permanent magnets, inductors, transformers, introduction to electrical machines.">
+    </course>
+    <course code="ELECTENG 209"
+              year="2"
+              name="Analogue and Digital Design"
+              type="Prescribed"
+              prereq="ELECTENG 101, 202, ELECTENG 205 or COMPSYS 201, ELECTENG 207 or 210"
+              info="This project-based course provides an introduction to real-world design of analogue and digital circuits. Practical skills will be gained in electronic circuit analysis, use of CAD tools, PCB design and construction, circuit testing and calibration using laboratory equipment. Appropriate design methodology will be developed in a practical framework.">
+    </course>
+    <course code="ELECTENG 210"
+              year="2"
+              name="Electronics 1"
+              type="Prescribed"
+              prereq="ELECTENG 101"
+              info="An introduction to semiconductor devices (diodes, bipolar junction transistors, field-effect transistors, operational amplifiers) and their applications. Device operation, device models and terminal characteristics. Biasing, coupling and bypass techniques. Small-signal analysis. Signal amplifiers, oscillators and power amplifiers. Switches and sensors.">
+    </course>
+    <course code="ENGSCI 211"
+              year="2"
+              name="Mathematical Modelling 2"
+              type="Prescribed"
+              prereq="ENGSCI 111 or ENGGEN 150 or MATHS 108 or MATHS 150 or MATHS 153"
+              info="First and second order ordinary differential equations and solutions. Laplace transforms. Taylor series and series in general. Multivariable and vector calculus including divergence, gradient and curl. Further linear algebra. Eigenvalues and eigenvectors. Fourier series. Application of the techniques through appropriate modelling examples. Introductory data analysis and statistics.">
+    </course>
+    <course code="ENGGEN 204"
+              year="2"
+              name="Technical Communication for Engineers"
+              type="Prescribed"
+              prereq="ENGGEN 199"
+              info="The communication of complex engineering material will be emphasised in the following ways: the use of appropriate engineering graphical software at an advanced level; the use of appropriate multi-media; visual and spoken presentation, in styles appropriate to seminars, conferences, and presentations to technological industries; the construction of industrial displays; and the preparation of engineering reports.">
+    </course>
+    <course code="ELECTENG 310"
+              year="3"
+              name="Electrical Engineering Design 1"
+              type="Prescribed"
+              prereq="ELECTENG 202, ELECTENG 203 or COMPSYS 202, ELECTENG 205 or COMPSYS 201, ELECTENG 206 or 209, ELECTENG 207 or 210"
+              info="An appreciation of the design process as applied to various electrical and electronic engineering systems. Design skills are enhanced through a variety of engineering projects which typically introduce students to modelling, simulation and analogue and digital electronic hardware design.">
+    </course>
+    <course code="ELECTENG 303"
+              year="3"
+              name="Systems and Control"
+              type="Prescribed"
+              prereq="ELECTENG 202"
+              info="Introduction to linear, time-invariant, continuous-time system theory from both a time-domain and frequency domain standpoint. This leads on to the fundamental body of knowledge underlying the control and enhancement of system behaviour, with application to the analysis and control of electrical systems.">
+    </course>
+    <course code="ENGGEN 303"
+              year="3"
+              name="Management for Engineers"
+              type="Prescribed"
+              prereq="ENGGEN 104 or 199"
+              info="An introduction to modern theory and practice of management, including project, quality and financial management appropriate to the engineering profession.">
+    </course>
+    <course code="ELECTENG 305"
+              year="3"
+              name="Electronics 2"
+              type="Prescribed"
+              prereq="ELECTENG 202, 207 or 210"
+              info="The operation, analysis and design of a range of electronic devices and systems will be discussed, taking examples from the full spectrum of electrical engineering. Such analysis will consider non-ideal circuit models and their frequency dependence. Selected applications will be taken from the fields of signal conditioning, amplifiers, communications systems and energy conversion.">
+    </course>
+    <course code="ENGSCI 313"
+              year="3"
+              name="Mathematical Modelling 3ECE"
+              type="Prescribed"
+              prereq="ENGSCI 211"
+              info="Complex Analysis, including complex numbers, analytic functions, complex integration, Cauchy's theorem, Laurent series, residue theory; Laplace transforms; Modelling with partial differential equations, including electronic and electrical applications; Fourier Analysis, Fourier transform, Fast Fourier transform; Optimisation, including unconstrained and constrained models, linear programming and nonlinear optimisation.">
+    </course>
+
+    <course code="ELECTENG 311"
+              year="3"
+              name="Electrical Engineering Design 2"
+              type="Prescribed"
+              prereq="ELECTENG 310 or ELECTENG 203, 205, 206, 207"
+              info="The formal introduction to the design process is completed by one or more open-ended projects which typically include elements of design from concept to working prototype.">
+    </course>
+    <course code="COMPSYS 302"
+              year="3"
+              name="Design: Software Practice"
+              type="Elective"
+              prereq="COMPSYS 202 or ELECTENG 203"
+              info="A project-based course with extensive hands-on programming experience emphasising problem-solving techniques and applications in computer systems engineering. Topics include: algorithms and data structures, parsing and translation, concurrent programming, scripting languages, systems programming.">
+    </course>
+    <course code="COMPSYS 303"
+              year="3"
+              name="Microcomputers and Embedded Systems"
+              type="Elective"
+              prereq="COMPSYS 202 or SOFTENG 251, and COMPSYS 201"
+              info="Embedded applications. Microprocessors, microcontrollers, architecture, organisation, programming memories, I/O interfacing. Sensors, actuators, analog interfaces. Hardware/Software partitioning and interfacing. Concurrency. Implementing data transformations and reactivity. Case studies.">
+    </course>
+    <course code="COMPSYS 305"
+              year="3"
+              name="Digital Systems Design 1"
+              type="Elective"
+              prereq="COMPSYS 201"
+              info="Digital Systems implementation technologies; abstraction levels; hardware description languages; structural, architectural and behavioural modelling; register-transfer level design; datapath and control units; fixed and microprogrammed control units; ASM charts; synthesis from ASM charts, digital computation; verification; design flow. Design of a simple processor. FPGAs as prototyping technology.">
+    </course>
+    <course code="COMPSYS 304"
+              year="3"
+              name="Computer Architecture 1"
+              type="Elective"
+              prereq="15 points from COMPSYS 201, ELECTENG 205"
+              info="Modern processor architectures. Principles of modern processor design; pipelining; memory hierarchies; I/O and network interfacing; compiler and OS support; embedded processors; performance; multiprocessing.">
+    </course>
+    <course code="ELECTENG 307"
+              year="3"
+              name="Transmission Lines and Systems"
+              type="Elective"
+              prereq="ELECTENG 204"
+              info="The basic concepts of electromagnetism are completed with a formal treatment of Maxwell's equations and their applications, including electromagnetic wave propagation, transmission lines, the Smith chart, and an introduction to antennas and radio systems, EMI and RFI.">
+    </course>
+    <course code="ELECTENG 309"
+              year="3"
+              name="Power Apparatus and Systems"
+              type="Elective"
+              prereq="ELECTENG 204"
+              info="This course introduces students to fundamentals of electric machinery and power system components. It covers theory, control and practical aspects of electric machines and apparatus as well as their applications in relation to power electronics.">
+    </course>
+    <course code="SOFTENG 325"
+              year="3"
+              name="Software Architecture"
+              type="Elective"
+              prereq="15 points from SOFTENG 350, COMPSYS 302"
+              info="Taxonomy of software architecture patterns, including client/server and multi-tier. Understanding quality attributes. Methodologies for design of software architectures. Technologies for architecture level development, including middleware.">
+    </course>
+
+    <course code="ENGGEN 403"
+              year="4"
+              name="Professional and Sustainability Issues"
+              type="Prescribed"
+              prereq=""
+              info="Issues of particular relevance to the engineering profession including those relating to the law, ethics, culture and sustainability.">
+    </course>
+    <course code="COMPSYS 723"
+              year="4"
+              name="Embedded Systems Design"
+              type="Elective"
+              prereq="15 points from COMPSYS 303, ELECTENG 304"
+              info="Principles of embedded systems modelling. Models of computation. Languages for embedded systems design. Hardware/Software partitioning and co-design. Hardware/Software partitioning and co-design. Technologies. Energy-aware systems. Rapid prototyping. Distributed embedded systems. Case studies.">
+    </course>
+    <course code="COMPSYS 724"
+              year="4"
+              name="Real-time Systems"
+              type="Elective"
+              prereq="15 points from COMPSYS 303, ELECTENG 304"
+              info="Real-time concepts. Data- versus control-dominated systems. Hardware versus software tradeoffs. DSP algorithms. Architectures. Real-time operating systems. Reliability. Fault-tolerant computing systems. Internet-based and mobile systems.">
+    </course>
+    <course code="COMPSYS 725"
+              year="4"
+              name="Computer Networks and Distributed Applications"
+              type="Elective"
+              prereq="COMPSYS 201 or ELECTENG 205, and COMPSYS 202 or ELECTENG 203"
+              info="Network layers and protocols. Packet switching. Broadband network principles. Low versus high bandwidth services. Network interfaces and instrumentation. Wireless networks in embedded applications. Industrial networking.">
+    </course>
+    <course code="COMPSYS 726"
+              year="4"
+              name="Robotics and Intelligent Systems"
+              type="Elective"
+              prereq="15 points from COMPSYS 302, MECHENG 313, SOFTENG 306"
+              info="Introduction to robotics and intelligent systems, including: robot manipulators and mobile robots, navigation techniques, planning and programming of robot actions, sensors and actuators, artificial intelligence, artificial neural nets, fuzzy systems, genetic algorithms.">
+    </course>
+    <course code="ELECTENG 724"
+              year="4"
+              name="Special Topics 2"
+              type="Elective"
+              prereq="ELECTENG 424"
+              info="An advanced course on topics to be determined each year by the Head of Department.">
+    </course>
+    <course code="ELECTENG 726"
+              year="4"
+              name="Digital Communications"
+              type="Elective"
+              prereq="ELECTENG 303, 732"
+              info="Advanced principles and techniques in digital transmission systems: signal and information coding, data compression, digital modulation, digital transmission, error detection and correction. Digital networks. Information theory. Traffic theory.">
+    </course>
+    <course code="ELECTENG 728"
+              year="4"
+              name="Sensor Networks"
+              type="Elective"
+              prereq="ELECTENG 305 or COMPSYS 305 or MECHENG 370"
+              info="Data acquisition. Sensor classification and characteristics. Physical principles of sensing. Interface electronics. Noise. Application examples. Architecture for sensor networks. Network node structure. Protocols and layers. Positioning and timing. Energy efficient algorithms. Wireless sensor network design, testing and validation. Sample applications. Network software design tools.">
+    </course>
+    <course code="ELECTENG 736"
+              year="4"
+              name="Analog and Digital Filter Synthesis"
+              type="Elective"
+              prereq="ELECTENG 303"
+              info="Filter concepts and network functions, a review of approximation techniques and frequency transformations, leading to a thorough treatment of passive, active and digital filter implementations.">
+    </course>
+    <course code="ELECTENG 721"
+              year="4"
+              name="Radio Systems"
+              type="Elective"
+              prereq="ELECTENG 302 or 306 or 307"
+              info="Transmission lines and waveguides, impedance matching, devices. Radio propagation, antennas and arrays. Radio system design - mobile, point-to-point, area coverage.">
+    </course>
+    <course code="ELECTENG 722"
+              year="4"
+              name="Control Systems"
+              type="Elective"
+              prereq="ELECTENG 303"
+              info="State space analysis, relationship to transfer function methods, controllability and observability, multivariable plant. Computer simulation. Stability considerations. State variable feedback. Digital control system, design and realisation of digital controllers, adaptive controllers. Nonlinear systems, phase-plane and describing function techniques, Liaponov's method of stability analysis, design of controllers for non-linear systems. Variable structure systems.">
+    </course>
+    <course code="ELECTENG 731"
+              year="4"
+              name="Power Systems"
+              type="Elective"
+              prereq="ELECTENG 302 or 309"
+              info="Power system network modelling; power system analysis - load flow, fault, stability, power quality; control of real and reactive power.">
+    </course>
+    <course code="ELECTENG 732"
+              year="4"
+              name="Communication Systems"
+              type="Elective"
+              prereq="ELECTENG 303"
+              info="Analog modulations, AM and FM modulation. Noise. Noise in AM and FM systems. Broadband systems: FDM, TDM, PCM. Information theory, data networks, waveform coding and data compression, baseband data transmission. Introduction to digital systems: Digital modulation.">
+    </course>
+    <course code="ELECTENG 733"
+              year="4"
+              name="Signal Processing"
+              type="Elective"
+              prereq="ELECTENG 303"
+              info="Analog signals and systems: Signal processing concepts and tools for analysing deterministic and random continuous-time signals and systems. Digital signals and systems: Discrete-time deterministic signal analysis, digital filters and transforms, including the FFT. Digital Signal Processor (DSP) architectures and DSP applications.">
+    </course>
+    <course code="ELECTENG 734"
+              year="4"
+              name="Power Electronics"
+              type="Elective"
+              prereq="ELECTENG 303"
+              info="This course introduces students to selected building blocks in power electronics by way of a practical design project utilising modern power electronic converters with supporting lectures that include: inductive power transfer, switched mode DC-DC converter design and control, high frequency magnetics design, semiconductor switches, practical design issues, controlled rectifiers and PWM converters with application to conventional and brushless DC motors.">
+    </course>
+    <course code="ELECTENG 735"
+              year="4"
+              name="Special Topics 1"
+              type="Elective"
+              prereq=""
+              info="An advanced course on topics to be determined each year by the Head of Department.">
+    </course>
+
+  </program>
+
+
+  <program name="SE">
+    <course code="ENGSCI 213"
+        year="2"
+        name="Mathematical Modelling 2SE"
+        type="Prescribed"
+        prereq=""
+        info="Probability theory, random variables and distributions, statistics, linear algebra, discrete mathematics possibly including graph theory, trees and networks, optimisation.">
+    </course>
+    <course code="SOFTENG 206"
+        year="2"
+        name="Software Engineering Design I"
+        type="Prescribed"
+        prereq="SOFTENG 250, 251"
+        info="Project work. Skills and tools in systematic development of software, including testing, version control, build systems, working with others.">
+    </course>
+    <course code="COMPSYS 201"
+        year="2"
+        name="Fundamentals of Computer Engineering"
+        type="Prescribed"
+        prereq="ELECTENG 101"
+        info="The hardware/software interface: processors, registers, memory, basic I/O. Representation of data, number systems and computer arithmetic; assembly language programming and debugging; support for high-level languages; exceptions and multithreading; combinational and sequential circuits (traditional design and standard circuits); instruction sets; communication principles.">
+    </course>
+    <course code="SOFTENG 211"
+        year="2"
+        name="Software Engineering Theory"
+        type="Prescribed"
+        prereq="ENGGEN 131 or COMPSCI 101"
+        info="Sets, languages, operations on languages. Deterministic and nondeterministic automata. Designing automata. Determinisation. Regular expressions. Induction and Recursion. Program correctness. Counting. Elements of graph algorithms.">
+    </course>
+    <course code="SOFTENG 250"
+        year="2"
+        name="Introduction to Data Structures and Algorithms"
+        type="Prescribed"
+        prereq="ENGGEN 131 or COMPSCI 101"
+        info="Introduction to the analytical and empirical behaviour of basic algorithms and data structures.">
+    </course>
+    <course code="SOFTENG 254"
+        year="2"
+        name="Quality Assurance"
+        type="Prescribed"
+        prereq="SOFTENG 250, 251"
+        info="Software verification and validation. Static and dynamic QA activities as part of the software lifecycle. Unit, integration, system, performance and usability testing. Use of automation and tools to support testing activities. Metrics to quantify strength of testing and complexity of programs.">
+    </course>
+    <course code="SOFTENG 251"
+        year="2"
+        name="Object Oriented Software Construction"
+        type="Prescribed"
+        prereq="ENGGEN 131 or COMPSCI 101"
+        info="An introduction to Object Oriented software development. Programming with classes; objects and polymorphism. Evolutionary and test-driven development. Analysis and design. Modelling with UML. Design patterns. Design for reuse, for testing and for ease of change.">
+    </course>
+    <course code="ENGGEN 204"
+        year="2"
+        name="Technical Communication for Engineers"
+        type="Prescribed"
+        prereq="ENGGEN 199"
+        info="The communication of complex engineering material will be emphasised in the following ways: the use of appropriate engineering graphical software at an advanced level; the use of appropriate multi-media; visual and spoken presentation, in styles appropriate to seminars, conferences and presentations to technological industries; the construction of industrial displays; and the preparation of engineering reports.">
+    </course>
+
+    <course code="ENGGEN 303"
+        year="3"
+        name="Management for Engineers"
+        type="Prescribed"
+        prereq="ENGGEN 104 or ENGGEN 199"
+        info="An introduction to modern theory and practice of management, including project, quality and financial management appropriate to the engineering profession.">
+    </course>
+    <course code="SOFTENG 306"
+        year="3"
+        name="Software Engineering Design II"
+        type="Prescribed"
+        prereq="SOFTENG 206, 254, 350, 351"
+        info="Working in project teams to develop software to meet changing requirements for a large application. Project Planning. Requirements gathering. Estimating, costing and tracking. Acceptance and unit testing. Evolutionary design and development. Collaborative development tools.">
+    </course>
+    <course code="SOFTENG 325"
+        year="3"
+        name="Software Architecture"
+        type="Prescribed"
+        prereq="15 points from SOFTENG 350, COMPSYS 302"
+        info="Taxonomy of software architecture patterns, including client/server and multi-tier. Understanding quality attributes. Methodologies for design of software architectures. Technologies for architecture level development, including middleware.">
+    </course>
+    <course code="SOFTENG 350"
+       year="3"
+       name="Human Computer Interaction"
+       type="Prescribed"
+       prereq="SOFTENG 206"
+       info="Human behaviour and expectations. User interface design. User centred design. Usability evaluation techniques for web and standard interfaces. Constructing web and graphical user interfaces.">
+    </course>
+    <course code="SOFTENG 351"
+       year="3"
+       name="Fundamentals of Database Systems"
+       type="Prescribed"
+       prereq="SOFTENG 211 or COMPSCI 225"
+       info="Relational model, Relational Algebra, Relational Calculus, SQL, SQL and Programming Languages, Entity Relationship Model, Normalisation, Query Processing and Query Optimisation, ACID Transactions, Transaction Isolation Levels, Database Recovery, Database Security, Databases and XML.">
+    </course>
+    <course code="SOFTENG 370"
+       year="3"
+       name="Operating Systems"
+       type="Prescribed"
+       prereq="COMPSYS 201 or SOFTENG 252, 250"
+       info="History of operating systems. Multi-user systems. Scheduling. Concurrent processes, threads and synchronisation. Memory allocation and virtual memory. Managing files, disks and other peripherals. Security, protection and archiving. Engineering distributed systems; location, migration and replication transparency. Real-time programming and embedded systems.">
+    </course>
+    <course code="COMPSCI 373"
+       year="3"
+       name="Computer Graphics and Image Processing"
+       type="Elective"
+       prereq="COMPSCI 210, 230"
+       info="Basic geometric processes including transformations; viewing and projection; back projection and ray tracing. Graphics modeling concepts: primitives, surfaces, and scene graphs, lighting and shading, texture mapping, and curve and surface design. Graphics and image processing fundamentals: image definition and representation, perception and colour models, grey level and colour enhancement, neighbourhood operations and filtering. Use of the OpenGL graphics pipeline.">
+    </course>
+    <course code="COMPSCI 367"
+       year="3"
+       name="Artificial Intelligence"
+       type="Elective"
+       prereq="COMPSCI 220, 225"
+       info="The cornerstones of AI: representation, utilisation, and acquisition of knowledge. Taking a real world problem and representing it in a computer so that the computer can do inference. Utilising this knowledge and acquiring new knowledge is done by search which is the main technique behind planning and machine learning.">
+    </course>
+    <course code="COMPSYS 305"
+       year="3"
+       name="Digital Systems Design 1"
+       type="Elective"
+       prereq="COMPSYS201"
+       info="Digital Systems implementation technologies; abstraction levels; hardware description languages; structural, architectural and behavioural modelling; register-transfer level design; datapath and control units; fixed and microprogrammed control units; ASM charts; synthesis from ASM charts, digital computation; verification; design flow. Design of a simple processor. FPGAs as prototyping technology.">
+    </course>
+    <course code="COMPSYS 303"
+       year="3"
+       name="Microcomputers and Embedded Systems"
+       type="Elective"
+       prereq="COMPSYS 202 or SOFTENG 251, and COMPSYS 201"
+       info="Embedded applications. Microprocessors, microcontrollers, architecture, organisation, programming memories, I/O interfacing. Sensors, actuators, analog interfaces. Hardware/Software partitioning and interfacing. Concurrency. Implementing data transformations and reactivity. Case studies.">
+    </course>
+    <course code="SOFTENG 364"
+       year="3"
+       name="Computer Networks"
+       type="Elective"
+       prereq="15 points from COMPSYS 201, SOFTENG 252 and 15 points from SOFTENG 206, 211, 250, 251, 254, 325"
+       info="Principles of data communications; representation, transmission. Physical layer, signals in time and frequency domain. Modulation and coding. Data layer and protocols. Layered architecture model of computer networks, OSI &amp; TCP/IP, Flow control, error control. Local area networks and IEEE standards, Ethernet and Wireless LAN. Circuit, message and packet switching. The Internet protocol (IPv4 and IPV6), routing algorithms, design of subnets. TCP and UDP. Network security. Introduction to ATM.">
+    </course>
+    <course code="COMPSYS 304"
+       year="3"
+       name="Computer Architecture 1"
+       type="Elective"
+       prereq="COMPSYS 201, ELECTENG 205"
+       info="Modern processor architectures. Principles of modern processor design; pipelining; memory hierarchies; I/O and network interfacing; compiler and OS support; embedded processors; performance; multiprocessing.">
+    </course>
+
+    <course code="SOFTENG 750"
+       year="4"
+       name="Software Development Methodologies"
+       type="Prescribed"
+       prereq="SOFTENG 306"
+       info="Software lifecycle; software process models; examples of software processes; software process improvement; project management; tool support for software development; issues in software engineering.">
+    </course>
+    <course code="ENGGEN 403"
+       year="4"
+       name="Professional and Sustainability Issues"
+       type="Prescribed"
+       prereq=""
+       info="Issues of particular relevance to the engineering profession including those relating to the law, ethics, culture and sustainability.">
+    </course>
+    <course code="COMPSYS 707"
+       year="4"
+       name="Advanced Microcomputer Architecture"
+       type="Elective"
+       prereq="15 points from COMPSYS 304, ELECTENG 304"
+       info="Hardware and software approaches for instruction-level parallel processing, multiprocessors and multithreading, embedded multiprocessing and memory systems, architectures for embedded multiple processors and networks on chip, dynamic reconfigurable architectures.">
+    </course>
+    <course code="COMPSYS 705"
+       year="4"
+       name="Formal Methods for Engineers"
+       type="Elective"
+       prereq="COMPSYS 302 and COMPSYS 305 or ELECTENG 304"
+       info="Validation versus Verification, Formal models, Formal Specification: Process Algebraic, Logic Based, Temporal Logic, Methods of Verification: Bisimulation, Model Checking, Theorem Proving. State Space explosion problem and solutions: BDDs, Symbolic Model Checking, Modular Verification. Verification of HDL designs, Tools: STeP, VIS, NuSMV.">
+    </course>
+    <course code="COMPSYS 712"
+       year="4"
+       name="Studies in Computer Systems Engineering 3"
+       type="Elective"
+       prereq=""
+       info="Advanced courses on topics to be determined each year by the Head of Department.">
+    </course>
+    <course code="COMPSYS 723"
+       year="4"
+       name="Embedded Systems Design"
+       type="Elective"
+       prereq="15 points from COMPSYS 303, ELECTENG 304"
+       info="Principles of embedded systems modelling. Models of computation. Languages for embedded systems design. Hardware/Software partitioning and co-design. Hardware/Software partitioning and co-design. Technologies. Energy-aware systems. Rapid prototyping. Distributed embedded systems. Case studies.">
+    </course>
+    <course code="COMPSYS 726"
+       year="4"
+       name="Robotics and Intelligent Systems"
+       type="Elective"
+       prereq="15 points from COMPSYS 302, MECHENG 313, SOFTENG 306"
+       info="Introduction to robotics and intelligent systems, including: robot manipulators and mobile robots, navigation techniques, planning and programming of robot actions, sensors and actuators, artificial intelligence, artificial neural nets, fuzzy systems, genetic algorithms.">
+    </course>
+    <course code="SOFTENG 710"
+       year="4"
+       name="Studies in Software Engineering 1"
+       type="Elective"
+       prereq="Permission of the Head of Department"
+       info="Advanced courses on topics to be determined each year by the Head of Department.">
+    </course>
+    <course code="SOFTENG 711"
+       year="4"
+       name="Studies in Software Engineering 2"
+       type="Elective"
+       prereq="Permission of the Head of Department"
+       info="Advanced courses on topics to be determined each year by the Head of Department.">
+    </course>
+    <course code="SOFTENG 752"
+       year="4"
+       name="Formal Specifications and Design"
+       type="Elective"
+       prereq="SOFTENG 306"
+       info="Formal specification, design, and (automatic) analysis of software systems. Use of Z, Alloy, OCL, and CSP notations. Comparison of approaches, emphasising their practical application.">
+    </course>
+    <course code="SOFTENG 702"
+       year="4"
+       name="Advanced Human Computer Interaction"
+       type="Elective"
+       prereq=""
+       info="Current topics in Human-Computer Interaction research, such as: new user-interface technologies, empirical usability studies, pen-based user interaction, form-based user interaction models, advanced layout specification, systematics of human-computer interaction and computer-mediated collaborative work.">
+    </course>
+    <course code="SOFTENG 751"
+       year="4"
+       name="High Performance Computing"
+       type="Elective"
+       prereq="SOFTENG 306 or COMPSYS 302 or MECHENG 313 or 30 points at Stage III in Computer Science"
+       info="Project-based hands-on high performance computing and programming. Memory architecture and networks of parallel computing systems. Multicores, hardware acceleration devices such as graphics cards and FPGAs. Shared memory and data parallel programming. Object Oriented and low level parallel programming. Parallelisation process: subtask decomposition, dependence analysis and scheduling.">
+    </course>
+    <course code="ENGSCI 760"
+       year="4"
+       name="Algorithms for Optimisation"
+       type="Elective"
+       prereq="ENGSCI 450, 451, 460"
+       info="Meta-heuristics and local search techniques such as Genetic Algorithms, Simulated Annealing, Tabu Search and Ant Colony Optimisation for practical optimisation. Introduction to optimisation under uncertainty, including discrete event simulation, decision analysis, Markov chains and Markov decision processes and dynamic programming.">
+    </course>
+
+  </program>
+
+</programs>
