@@ -68,13 +68,42 @@ namespace ECE_Showcase.Controls
             InitializeComponent();
             DataContext = this;
 
-            PartII.Add(new CourseItem("Course Name", "201", "this course rocks", "15", "304, 405"));
+            /*PartII.Add(new CourseItem("Course Name", "201", "this course rocks", "15", "304, 405"));
             PartII.Add(new CourseItem("Course Name", "250", "this course rocks", "15", "304, 405"));
             PartII.Add(new CourseItem("Course Name", "254", "this course rocks", "15", "304, 405"));
             PartII.Add(new CourseItem("Course Name", "206", "this course rocks", "15", "304, 405"));
 
             PartIII.Add(new CourseItem("Course Name", "301", "this course rocks", "15", "304, 405"));
-            PartIV.Add(new CourseItem("Course Name", "401", "this course rocks", "15", "304, 405"));
+            PartIV.Add(new CourseItem("Course Name", "401", "this course rocks", "15", "304, 405"));*/
+
+            if (course.Equals("cse"))
+            {
+                fillLists("cse");
+            }
+            else if (course.Equals("se"))
+            {
+                fillLists("se");
+            }
+            else if (course.Equals("eee"))
+            {
+                fillLists("eee");
+            }
+            else if (course.Equals("first"))
+            {
+                fillLists("first");
+            }
+            else
+            {
+                //Throw exception of some sort
+                // Just going to let it do nothing :) 
+                // If stuff goes wrong with loading courses then look here
+            }
+
+        }
+
+        private void fillLists(String course)
+        {
+
         }
 
         private void Expander_TouchDown(object sender, TouchEventArgs e)
