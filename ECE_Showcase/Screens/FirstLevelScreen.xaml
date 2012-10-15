@@ -6,8 +6,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:view="clr-namespace:ECE_Showcase"
              mc:Ignorable="d"
-             d:DesignWidth="640"
-             d:DesignHeight="480">
+             d:DesignHeight="1080"
+             d:DesignWidth="1920">
 
     <Grid Name="theGrid" 
         Background="White">

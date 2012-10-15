@@ -8,8 +8,9 @@
              xmlns:System="clr-namespace:System;assembly=mscorlib" 
              x:Class="ECE_Showcase.Screens.Research"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="1000">
-
+             d:DesignHeight="1080"
+             d:DesignWidth="1920">
+    
     <view:Screen.Resources>
 
         <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
@@ -691,6 +692,12 @@
 
 
 
+        <Style
+            x:Key="listBoxStyle"
+            TargetType="ListBoxItem">
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
     </view:Screen.Resources>
 
     <Grid Background="#FFFFEC"
@@ -706,7 +713,7 @@
                 <Setter Property="FontSize" Value="25" />
                 <Setter Property="FontWeight" Value="Bold" />
                 <Setter Property="Foreground"
-                        Value="White" />
+                        Value="Black" />
             </Style>
 
 
