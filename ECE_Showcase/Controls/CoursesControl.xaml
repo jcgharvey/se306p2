@@ -16,9 +16,13 @@
                     VerticalAlignment="Stretch"
                     UseLayoutRounding="False"
                     Background="#633678"
-                    Style="{DynamicResource ArrowlessExpanderTemplate}">
+                    Style="{DynamicResource ArrowlessExpanderTemplate}"
+                    TouchDown="Expander_TouchDown"
+                    TouchUp="Expander_TouchUp">
+                    
                     <Expander.Header>
                         <Label Content="{Binding Name}"
+                               Background="#633678"
                                Foreground="#FFFFF0"
                                VerticalAlignment="Center"/>
                     </Expander.Header>
@@ -33,6 +37,12 @@
                TargetType="ListBoxItem">
             <Setter Property="Background" 
                     Value="#633678"/>
+        </Style>
+
+        <Style x:Key="ContainerListBoxStyle"
+               TargetType="ListBoxItem">
+            <Setter Property="Background" 
+                    Value="#FFFFEC"/>
         </Style>
 
         <Style x:Key="ExpanderHeaderFocusVisual">
@@ -230,17 +240,28 @@
         </Style>
 
     </UserControl.Resources>
-    <Grid>
+    <Grid Background="#FFFFEC">
         <s:SurfaceListBox
             VerticalAlignment="Stretch"
-            HorizontalAlignment="Stretch">
-            <StackPanel Orientation="Horizontal">
+            HorizontalAlignment="Stretch"
+            HorizontalContentAlignment="Stretch"
+            ItemContainerStyle="{DynamicResource ContainerListBoxStyle}"
+            >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
 
-                <StackPanel Grid.Column="0">
+                <StackPanel Grid.Column="0"
+                            Margin="1"
+                            HorizontalAlignment="Stretch">
                     <Label Content="Part II"
-                   Foreground="#633678"/>
+                           Foreground="#633678"/>
                     <s:SurfaceScrollViewer>
                         <s:SurfaceListBox
+                            BorderThickness="1"
                     ItemsSource="{Binding PartII}" 
                     ItemTemplate="{DynamicResource CourseItemTemplate}" 
                     ItemContainerStyle="{DynamicResource CourseListBoxStyle}">
@@ -248,11 +269,14 @@
                     </s:SurfaceScrollViewer>
                 </StackPanel>
 
-                <StackPanel Grid.Column="1">
+                <StackPanel Grid.Column="1"
+                            Margin="1"
+                            HorizontalAlignment="Stretch">
                     <Label Content="Part III"
-                   Foreground="#633678"/>
+                           Foreground="#633678"/>
                     <s:SurfaceScrollViewer>
                         <s:SurfaceListBox
+                            BorderThickness="1"
                     ItemsSource="{Binding PartIII}"
                     ItemTemplate="{DynamicResource CourseItemTemplate}"
                     ItemContainerStyle="{DynamicResource CourseListBoxStyle}">
@@ -260,18 +284,24 @@
                     </s:SurfaceScrollViewer>
                 </StackPanel>
 
-                <StackPanel Grid.Column="2">
+                <StackPanel Grid.Column="2"
+                            Margin="1"
+                            HorizontalAlignment="Stretch">
                     <Label Content="Part IV"
                    Foreground="#633678"/>
                     <s:SurfaceScrollViewer>
                         <s:SurfaceListBox
+                            BorderThickness="1"
                     ItemsSource="{Binding PartIV}"
                     ItemTemplate="{DynamicResource CourseItemTemplate}"
                     ItemContainerStyle="{DynamicResource CourseListBoxStyle}">
                         </s:SurfaceListBox>
                     </s:SurfaceScrollViewer>
                 </StackPanel>
-            </StackPanel>
+            </Grid>
+
+                
+
         </s:SurfaceListBox>
     </Grid>
 </UserControl>

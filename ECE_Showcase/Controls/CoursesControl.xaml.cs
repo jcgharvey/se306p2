@@ -76,5 +76,15 @@ namespace ECE_Showcase.Controls
             PartIII.Add(new CourseItem("Course Name", "301", "this course rocks", "15", "304, 405"));
             PartIV.Add(new CourseItem("Course Name", "401", "this course rocks", "15", "304, 405"));
         }
+
+        private void Expander_TouchDown(object sender, TouchEventArgs e)
+        {
+
+        }
+
+        private void Expander_TouchUp(object sender, TouchEventArgs e)
+        {
+
+        }
     }
 }
