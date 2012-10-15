@@ -67,17 +67,12 @@ namespace ECE_Showcase.Screens
                             ((FirstLevelScreen)screenToPush).setRight(new Controls.ImageControl("/ECE_Showcase;component/Resources/img/map_with_pin.png"));
                             ((FirstLevelScreen)screenToPush).setLeft(new Controls.ContactsControl());
                         break;
+                    case "RNDButton":
+                            screenToPush = new Research(ParentWindow);
+                        break;
                     default:
                         //This shouldn't ever happen.
                         screenToPush = null;
-                        break;
-
-                    case "RNDButton":
-                        if (researchScreen == null)
-                        {
-                            researchScreen = new Research(ParentWindow);
-                        }
-                        screenToPush = researchScreen;
                         break;
                 }
                 
