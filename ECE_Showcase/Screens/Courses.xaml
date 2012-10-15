@@ -21,7 +21,7 @@
                         HorizontalAlignment="Left" 
                         VerticalAlignment="Center"
                         Foreground="#FFFFFF"
-                    Background="Transparent"
+                        Background="Transparent"
                         FontSize="20"
                         FontFamily="Segoe UI Light">
                 </Label>
@@ -800,8 +800,9 @@
                                 TextWrapping="Wrap" 
                                 Margin="0,-30,30,0" 
                                 FontSize="20" 
-                                Text="Part I" 
-                                HorizontalAlignment="Right"/>
+                                Text="part I" 
+                                HorizontalAlignment="Right"
+                                FontFamily="Segoe UI Light"/>
                         </StackPanel>
                     </Expander.Header>
                     <s:SurfaceListBox 
@@ -838,8 +839,9 @@
                                 TextWrapping="Wrap" 
                                 Margin="0,-30,30,0" 
                                 FontSize="20" 
-                                Text="Software Engineering" 
-                                HorizontalAlignment="Right"/>
+                                Text="software engineering" 
+                                HorizontalAlignment="Right"
+                                FontFamily="Segoe UI Light"/>
                         </StackPanel>
                     </Expander.Header>
                     <s:SurfaceListBox
@@ -875,8 +877,9 @@
                                 TextWrapping="Wrap" 
                                 Margin="0,-30,30,0" 
                                 FontSize="20" 
-                                Text="Electrical and Electronic Engineering" 
-                                HorizontalAlignment="Right"/>
+                                Text="electrical and electronic engineering" 
+                                HorizontalAlignment="Right"
+                                FontFamily="Segoe UI Light"/>
                         </StackPanel>
                     </Expander.Header>
                     <s:SurfaceListBox
@@ -912,8 +915,9 @@
                                 TextWrapping="Wrap" 
                                 Margin="0,-30,30,0" 
                                 FontSize="20" 
-                                Text="Computer Systems Engineering" 
-                                HorizontalAlignment="Right"/>
+                                Text="computer systems engineering" 
+                                HorizontalAlignment="Right"
+                                FontFamily="Segoe UI Light"/>
                         </StackPanel>
                     </Expander.Header>
                     
