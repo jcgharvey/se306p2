@@ -21,7 +21,7 @@
                     TouchUp="Expander_TouchUp">
                     
                     <Expander.Header>
-                        <Label Content="{Binding Name}"
+                        <Label Content="{Binding Code}"
                                Background="#633678"
                                Foreground="#FFFFF0"
                                VerticalAlignment="Center"/>
