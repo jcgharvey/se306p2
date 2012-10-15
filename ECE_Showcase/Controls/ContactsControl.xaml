@@ -294,7 +294,7 @@
                         PreviewTouchDown="EngineeringPath"
                         Background="#633678">
                         <Label
-                            Content="From the Engineering Building" 
+                            Content="from the engineering building" 
                             HorizontalAlignment="Left" 
                             VerticalAlignment="Center"
                             Foreground="#FFFFFF"
@@ -308,7 +308,7 @@
                         PreviewTouchDown="ClocktowerPath"
                         Background="#633678">
                         <Label
-                            Content="From the Clocktower" 
+                            Content="from the clocktower" 
                             HorizontalAlignment="Left" 
                             VerticalAlignment="Center"
                             Foreground="#FFFFFF"
@@ -321,7 +321,7 @@
                         PreviewTouchDown="PrincesPath"
                         Background="#633678">
                         <Label
-                            Content="From the 38 Princes St" 
+                            Content="from the 38 princes st" 
                             HorizontalAlignment="Left" 
                             VerticalAlignment="Center"
                             Foreground="#FFFFFF"
