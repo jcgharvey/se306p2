@@ -13,6 +13,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 using ECE_Showcase.Screens;
+using System.Xml;
 
 namespace ECE_Showcase.Controls
 {
@@ -24,6 +25,7 @@ namespace ECE_Showcase.Controls
         private ObservableCollection<CourseItem> partII;
         private ObservableCollection<CourseItem> partIII;
         private ObservableCollection<CourseItem> partIV;
+        XmlDocument xd;
 
         public ObservableCollection<CourseItem> PartII
         {
@@ -76,21 +78,27 @@ namespace ECE_Showcase.Controls
             PartIII.Add(new CourseItem("Course Name", "301", "this course rocks", "15", "304, 405"));
             PartIV.Add(new CourseItem("Course Name", "401", "this course rocks", "15", "304, 405"));*/
 
+            // Load the XML document
+            xd = new XmlDocument();
+            xd.Load("Resources/docs/specialisations/Courses.xml");
+
+            // Fill the lists based on the course
             if (course.Equals("cse"))
             {
-                fillLists("cse");
+                fillLists("CSE");
             }
             else if (course.Equals("se"))
             {
-                fillLists("se");
+                fillLists("CSE");
             }
             else if (course.Equals("eee"))
             {
-                fillLists("eee");
+                fillLists("EEE");
             }
             else if (course.Equals("first"))
             {
-                fillLists("first");
+                // Needs to be fixed
+                fillLists("Common");
             }
             else
             {
@@ -101,9 +109,37 @@ namespace ECE_Showcase.Controls
 
         }
 
-        private void fillLists(String course)
+        private void fillLists(String program)
         {
+            XmlNodeList nodelist = xd.SelectNodes("/programs/" + program + "/course"); // get all <course> nodes that are part of that program
 
+            foreach (XmlNode course in nodelist)
+            {
+                CourseItem ci = new CourseItem();
+
+                ci.Code = course.Attributes.GetNamedItem("code").Value;
+                ci.Name = course.Attributes.GetNamedItem("name").Value;
+                ci.Type = course.Attributes.GetNamedItem("type").Value;
+                ci.Prereq = course.Attributes.GetNamedItem("prereq").Value;
+                ci.Information = course.Attributes.GetNamedItem("info").Value;
+                
+                //Set the list that we are going to add the course to
+                ObservableCollection<CourseItem> yearLevel;
+                if ((course.Attributes.GetNamedItem("year").Value).Equals("2") || (course.Attributes.GetNamedItem("year").Value).Equals("1"))
+                {
+                    yearLevel = partII;
+                }
+                else if ((course.Attributes.GetNamedItem("year").Value).Equals("3"))
+                {
+                    yearLevel = partIII;
+                }
+                else
+                {
+                    yearLevel = partIV;
+                }
+
+                yearLevel.Add(ci);
+            }
         }
 
         private void Expander_TouchDown(object sender, TouchEventArgs e)
