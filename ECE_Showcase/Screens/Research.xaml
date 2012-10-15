@@ -791,7 +791,7 @@
                 TouchUp="Expander_TouchUp"
                 >
                     <Expander.Header>
-                        <Image Source="{StaticResource se_research}" 
+                        <Image Source="{StaticResource software}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
                     </Expander.Header>
@@ -819,7 +819,7 @@
                 TouchUp="Expander_TouchUp"
                 >
                     <Expander.Header>
-                        <Image Source="{StaticResource eee_research}" 
+                        <Image Source="{StaticResource electrical}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
                     </Expander.Header>
@@ -847,7 +847,7 @@
                           TouchUp="Expander_TouchUp">
 
                     <Expander.Header>
-                        <Image Source="{StaticResource cse_research}" 
+                        <Image Source="{StaticResource compsys}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
                     </Expander.Header>
