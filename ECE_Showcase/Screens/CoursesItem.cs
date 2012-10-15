@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ECE_Showcase.Screens
 {
-    public class CourseItem
+    public class CourseItem : IComparable
     {
         public string Code { get; set; }
         public string Name { get; set; }
@@ -24,6 +24,19 @@ namespace ECE_Showcase.Screens
 
         public CourseItem()
         {
+
+        }
+
+        public int CompareTo(Object obj)
+        {
+            if (obj == null)
+            {
+                return 1;
+            }
+            CourseItem otherCourse = obj as CourseItem;
+
+            return String.Compare(Name, otherCourse.Name, true);
+
 
         }
     }

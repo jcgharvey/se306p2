@@ -115,7 +115,7 @@ namespace ECE_Showcase.Controls
 
             foreach (XmlNode course in nodelist)
             {
-                
+
 
                 if ((course.ParentNode.Attributes.GetNamedItem("name").Value).Equals(program))
                 {
@@ -152,6 +152,25 @@ namespace ECE_Showcase.Controls
 
                     yearLevel.Add(ci);
                 }
+            }
+
+            sort(partII);
+            sort(partIII);
+            sort(partIV);
+            
+        }
+
+        private void sort(ObservableCollection<CourseItem> oc)
+        {
+            int l = oc.Count;
+            CourseItem[] copy = new CourseItem[l];
+            oc.CopyTo(copy, 0);
+            Array.Sort(copy);
+            oc.Clear();
+
+            foreach (CourseItem ci in copy)
+            {
+                oc.Add(ci);
             }
         }
 
