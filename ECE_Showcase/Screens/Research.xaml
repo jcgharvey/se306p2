@@ -798,9 +798,19 @@
                 TouchUp="Expander_TouchUp"
                 >
                     <Expander.Header>
+                        <StackPanel>
                         <Image Source="{StaticResource se_research}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
+                        <TextBlock 
+                                Foreground="White"
+                                TextWrapping="Wrap" 
+                                Margin="0,-30,30,0" 
+                                FontSize="20" 
+                                Text="agile software development" 
+                                HorizontalAlignment="Right"
+                                FontFamily="Segoe UI Light"/>
+                        </StackPanel>
                     </Expander.Header>
                     <s:SurfaceListBox
                           Grid.Row="1"
