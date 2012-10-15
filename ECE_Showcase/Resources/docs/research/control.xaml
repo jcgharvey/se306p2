@@ -1,0 +1,49 @@
+<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+    
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        Systems and control
+    </Paragraph>
+
+    <Paragraph>
+        We also has extensive international links with universities and companies in USA, UK, Germany, Australia, Japan, China, Singapore and Korea. The research achievements are reflected by a large amount of publications in prestigious journals, invited lectures in international conferences and other scholarship activities.
+    </Paragraph>
+
+    <Paragraph FontFamily="Calibri" FontSize="22">
+        Processes optimisation
+    </Paragraph>
+
+    <Paragraph>
+        The issue of sustainable development has recently drawn considerable attention worldwide, and has stimulated researchers and engineers to make greater effort to reduce the cost/benefit-ratio for development and manufacture of bio-industrial processes both economically and environmentally. We have developed an extended recurrent neural network model for a fed-batch fermentation of Saccharomyces cerevisiae. The aim of building this neural network model is to maximise the quantity of biomass by optimising the feed rate profiles.
+    </Paragraph>
+
+    <Paragraph FontFamily="Calibri" FontSize="22">
+        Synthesis and analysis of hybrid systems
+    </Paragraph>
+
+    <Paragraph>
+        Hybrid systems typically consist of signals that take values from a continuous set, and also variables that take values from a discrete, typically finite set. Some signals could be time-driven while others could be event-drive in an asynchronous manner. The objective of this research is to conduct a general investigation on synthesis and analysis of hybrid systems using hybrid automata.
+    </Paragraph>
+
+    <Paragraph FontFamily="Calibri" FontSize="22">
+        Control design of nonlinear dynamical systems with multiple time scales
+    </Paragraph>
+
+    <Paragraph>
+        Dynamical systems with multiple time scales are also called singularly perturbed systems or slow-fast systems. The aim of this research is to conduct a general investigation on
+    </Paragraph>
+
+    <Paragraph>
+        How to approximate a nonlinear dynamical system with multiple time scales using a fuzzy linear dynamical system with multiple time scales.
+    </Paragraph>
+
+    <Paragraph>
+        How to design a controller for a nonlinear dynamical system with multiple time scales.
+    </Paragraph>
+
+    <Paragraph>
+        This proposal is motivated by the need to have singular perturbation analysis tools for nonlinear dynamical systems with multiple time scales.
+    </Paragraph>
+
+</FlowDocument>

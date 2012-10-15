@@ -75,9 +75,10 @@ namespace ECE_Showcase.Screens
         {
             InitializeComponent();
             DataContext = this;
-            SeResearchItems.Add(new DataItem("Agile Software Development", new Controls.FlowDocControl("Resources/docs/research/se_research.xaml")));
-            EeeResearchItems.Add(new DataItem("Power Electronics", new Controls.FlowDocControl("Resources/docs/research/eee_research.xaml")));
-            CseResearchItems.Add(new DataItem("Radio Systems", new Controls.FlowDocControl("Resources/docs/research/cse_research.xaml")));
+            SeResearchItems.Add(new DataItem("Agile Software Development", new Controls.FlowDocControl("Resources/docs/research/agile.xaml")));
+            EeeResearchItems.Add(new DataItem("Power Electronics", new Controls.FlowDocControl("Resources/docs/research/IPT.xaml")));
+            EeeResearchItems.Add(new DataItem("Control crap", new Controls.FlowDocControl("Resources/docs/research/control.xaml")));
+            CseResearchItems.Add(new DataItem("Radio Systems", new Controls.FlowDocControl("Resources/docs/research/radio.xaml")));
             
             setControl(new Controls.FlowDocControl("Resources/docs/drag_here.xaml"));
             
