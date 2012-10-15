@@ -805,9 +805,9 @@
                         <TextBlock 
                                 Foreground="White"
                                 TextWrapping="Wrap" 
-                                Margin="0,-30,30,0" 
+                                Margin="0,-28,30,0" 
                                 FontSize="20" 
-                                Text="agile software development" 
+                                Text="software research" 
                                 HorizontalAlignment="Right"
                                 FontFamily="Segoe UI Light"/>
                         </StackPanel>
@@ -843,9 +843,9 @@
                             <TextBlock 
                                     Foreground="White"
                                     TextWrapping="Wrap" 
-                                    Margin="0,-30,30,0" 
+                                    Margin="0,-28,30,0" 
                                     FontSize="20" 
-                                    Text="power electronics" 
+                                    Text="electronics research" 
                                     HorizontalAlignment="Right"
                                     FontFamily="Segoe UI Light"/>
                         </StackPanel>
@@ -881,9 +881,9 @@
                             <TextBlock 
                                         Foreground="White"
                                         TextWrapping="Wrap" 
-                                        Margin="0,-30,30,0" 
+                                        Margin="0,-28,30,0" 
                                         FontSize="20" 
-                                        Text="radio systems" 
+                                        Text="computer systems research" 
                                         HorizontalAlignment="Right"
                                         FontFamily="Segoe UI Light"/>
                         </StackPanel>
