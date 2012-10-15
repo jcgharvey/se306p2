@@ -277,7 +277,7 @@
                         <Image Source="/ECE_Showcase;component/Resources/img/directions.png" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
-                        <TextBlock Foreground="White" FontFamily="Segoe UI Light" Margin="0, -35, 5, 0" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                        <TextBlock Foreground="White" FontFamily="Segoe UI Light" Margin="0, -35, 34, 0" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Bottom">
                             directions
                         </TextBlock>
                             
