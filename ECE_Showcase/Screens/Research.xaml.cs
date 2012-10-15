@@ -75,13 +75,14 @@ namespace ECE_Showcase.Screens
         {
             InitializeComponent();
             DataContext = this;
-            SeResearchItems.Add(new DataItem("Agile Software Development", new Controls.FlowDocControl("Resources/docs/research/agile.xaml")));
-            SeResearchItems.Add(new DataItem("Robotics", new Controls.FlowDocControl("Resources/docs/research/robotics.xaml")));
-            EeeResearchItems.Add(new DataItem("Power Electronics", new Controls.FlowDocControl("Resources/docs/research/IPT.xaml")));
-            EeeResearchItems.Add(new DataItem("Systems & Control", new Controls.FlowDocControl("Resources/docs/research/control.xaml")));
-            CseResearchItems.Add(new DataItem("Radio Systems", new Controls.FlowDocControl("Resources/docs/research/radio.xaml")));
-            CseResearchItems.Add(new DataItem("Microwave Engineering", new Controls.FlowDocControl("Resources/docs/research/microwave.xaml")));
 
+            SeResearchItems.Add(new DataItem("agile software development", new Controls.FlowDocControl("Resources/docs/research/agile.xaml")));
+            SeResearchItems.Add(new DataItem("robotics", new Controls.FlowDocControl("Resources/docs/research/robotics.xaml")));
+            EeeResearchItems.Add(new DataItem("power electronics", new Controls.FlowDocControl("Resources/docs/research/IPT.xaml")));
+            EeeResearchItems.Add(new DataItem("systems & control", new Controls.FlowDocControl("Resources/docs/research/control.xaml")));
+            CseResearchItems.Add(new DataItem("radio systems", new Controls.FlowDocControl("Resources/docs/research/radio.xaml")));
+            CseResearchItems.Add(new DataItem("microwave engineering", new Controls.FlowDocControl("Resources/docs/research/microwave.xaml")));
+            
             setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
             
         }
