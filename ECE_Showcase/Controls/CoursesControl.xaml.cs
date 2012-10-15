@@ -74,16 +74,6 @@ namespace ECE_Showcase.Controls
             partII = new ObservableCollection<CourseItem>();
             partIII = new ObservableCollection<CourseItem>();
             partIV = new ObservableCollection<CourseItem>();
-            /*
-            PartII.Add(new CourseItem("Electeng254", "201", "this course rocks", "15", "304, 405"));
-            PartII.Add(new CourseItem("Course Name", "250", "this course rocks", "15", "304, 405"));
-            PartII.Add(new CourseItem("Course Name", "254", "this course rocks", "15", "304, 405"));
-            PartII.Add(new CourseItem("Course Name", "206", "this course rocks", "15", "304, 405"));
-
-            PartIII.Add(new CourseItem("Course Name", "301", "this course rocks", "15", "304, 405"));
-            PartIV.Add(new CourseItem("Course Name", "401", "this course rocks", "15", "304, 405"));
-            */
-
             
             // Load the XML document
             xd = new XmlDocument();
