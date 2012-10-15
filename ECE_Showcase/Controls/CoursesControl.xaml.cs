@@ -63,7 +63,7 @@ namespace ECE_Showcase.Controls
                 return partIV;
             }
         }
-        public CoursesControl()
+        public CoursesControl(String course)
         {
             InitializeComponent();
             DataContext = this;

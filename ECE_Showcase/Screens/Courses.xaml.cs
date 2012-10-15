@@ -115,21 +115,21 @@ namespace ECE_Showcase.Screens
 
             Cse_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/cse_info.xaml")));
             Cse_items.Add(new DataItem("Careers", new Controls.FlowDocControl("Resources/docs/specialisations/cse_careers.xaml")));
-            Cse_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
+            Cse_items.Add(new DataItem("Courses", new Controls.CoursesControl("cse")));
             Cse_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/cse_advisor.xaml")));
 
             Se_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/se_info.xaml")));
             Se_items.Add(new DataItem("Careers", new Controls.FlowDocControl("Resources/docs/specialisations/se_careers.xaml")));
-            Se_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
+            Se_items.Add(new DataItem("Courses", new Controls.CoursesControl("se")));
             Se_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/se_advisor.xaml")));
 
             Eee_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/eee_info.xaml")));
             Eee_items.Add(new DataItem("Careers", new Controls.FlowDocControl("Resources/docs/specialisations/eee_careers.xaml")));
-            Eee_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
+            Eee_items.Add(new DataItem("Courses", new Controls.CoursesControl("eee")));
             Eee_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/eee_advisor.xaml")));
             
             P1_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/p1_info.xaml")));
-            P1_items.Add(new DataItem("Courses", new Controls.CoursesControl()));
+            P1_items.Add(new DataItem("Courses", new Controls.CoursesControl("first")));
 
             setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
         }
