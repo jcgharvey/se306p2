@@ -115,35 +115,43 @@ namespace ECE_Showcase.Controls
 
             foreach (XmlNode course in nodelist)
             {
-                Debug.WriteLine("in de loopz");
-
-                CourseItem ci = new CourseItem();
-
-                Debug.WriteLine(course.Attributes.GetNamedItem("code").Value);
-                Debug.WriteLine(course.Attributes.GetNamedItem("year").Value);
-
-                ci.Code = course.Attributes.GetNamedItem("code").Value;
-                ci.Name = course.Attributes.GetNamedItem("name").Value;
-                ci.Type = course.Attributes.GetNamedItem("type").Value;
-                ci.Prereq = course.Attributes.GetNamedItem("prereq").Value;
-                ci.Information = course.Attributes.GetNamedItem("info").Value;
                 
-                //Set the list that we are going to add the course to
-                ObservableCollection<CourseItem> yearLevel;
-                if ((course.Attributes.GetNamedItem("year").Value).Equals("2") || (course.Attributes.GetNamedItem("year").Value).Equals("1"))
-                {
-                    yearLevel = partII;
-                }
-                else if ((course.Attributes.GetNamedItem("year").Value).Equals("3"))
-                {
-                    yearLevel = partIII;
-                }
-                else
-                {
-                    yearLevel = partIV;
-                }
 
-                yearLevel.Add(ci);
+                if ((course.ParentNode.Attributes.GetNamedItem("name").Value).Equals(program))
+                {
+                    Debug.WriteLine("in de loopz");
+
+                    CourseItem ci = new CourseItem();
+
+
+                    Debug.WriteLine(course.ParentNode.Attributes.GetNamedItem("name").Value + " " + course.Attributes.GetNamedItem("code").Value);
+
+                    //Debug.WriteLine(course.Attributes.GetNamedItem("code").Value);
+                    //Debug.WriteLine(course.Attributes.GetNamedItem("year").Value);
+
+                    ci.Code = course.Attributes.GetNamedItem("code").Value;
+                    ci.Name = course.Attributes.GetNamedItem("name").Value;
+                    ci.Type = course.Attributes.GetNamedItem("type").Value;
+                    ci.Prereq = course.Attributes.GetNamedItem("prereq").Value;
+                    ci.Information = course.Attributes.GetNamedItem("info").Value;
+
+                    //Set the list that we are going to add the course to
+                    ObservableCollection<CourseItem> yearLevel;
+                    if ((course.Attributes.GetNamedItem("year").Value).Equals("2") || (course.Attributes.GetNamedItem("year").Value).Equals("1"))
+                    {
+                        yearLevel = partII;
+                    }
+                    else if ((course.Attributes.GetNamedItem("year").Value).Equals("3"))
+                    {
+                        yearLevel = partIII;
+                    }
+                    else
+                    {
+                        yearLevel = partIV;
+                    }
+
+                    yearLevel.Add(ci);
+                }
             }
         }
 
