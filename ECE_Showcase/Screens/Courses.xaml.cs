@@ -129,7 +129,7 @@ namespace ECE_Showcase.Screens
             Eee_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/eee_advisor.xaml")));
             
             P1_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/p1_info.xaml")));
-            P1_items.Add(new DataItem("Courses", new Controls.CoursesControl("first")));
+            //P1_items.Add(new DataItem("Courses", new Controls.CoursesControl("first")));
 
             setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
         }

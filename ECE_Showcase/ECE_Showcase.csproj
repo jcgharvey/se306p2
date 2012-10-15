@@ -74,7 +74,9 @@
     <Resource Include="Resources\img\bg.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Resources\docs\specialisations\Courses.xml" />
+    <Content Include="Resources\docs\specialisations\Courses.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\sounds\back.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

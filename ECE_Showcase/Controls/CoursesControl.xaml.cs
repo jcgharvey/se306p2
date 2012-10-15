@@ -14,6 +14,7 @@ using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 using ECE_Showcase.Screens;
 using System.Xml;
+using System.Diagnostics;
 
 namespace ECE_Showcase.Controls
 {
@@ -70,14 +71,20 @@ namespace ECE_Showcase.Controls
             InitializeComponent();
             DataContext = this;
 
-            /*PartII.Add(new CourseItem("Course Name", "201", "this course rocks", "15", "304, 405"));
+            partII = new ObservableCollection<CourseItem>();
+            partIII = new ObservableCollection<CourseItem>();
+            partIV = new ObservableCollection<CourseItem>();
+            /*
+            PartII.Add(new CourseItem("Electeng254", "201", "this course rocks", "15", "304, 405"));
             PartII.Add(new CourseItem("Course Name", "250", "this course rocks", "15", "304, 405"));
             PartII.Add(new CourseItem("Course Name", "254", "this course rocks", "15", "304, 405"));
             PartII.Add(new CourseItem("Course Name", "206", "this course rocks", "15", "304, 405"));
 
             PartIII.Add(new CourseItem("Course Name", "301", "this course rocks", "15", "304, 405"));
-            PartIV.Add(new CourseItem("Course Name", "401", "this course rocks", "15", "304, 405"));*/
+            PartIV.Add(new CourseItem("Course Name", "401", "this course rocks", "15", "304, 405"));
+            */
 
+            
             // Load the XML document
             xd = new XmlDocument();
             xd.Load("Resources/docs/specialisations/Courses.xml");
@@ -85,11 +92,12 @@ namespace ECE_Showcase.Controls
             // Fill the lists based on the course
             if (course.Equals("cse"))
             {
+                Debug.WriteLine("reading CSE");
                 fillLists("CSE");
             }
             else if (course.Equals("se"))
             {
-                fillLists("CSE");
+                fillLists("SE");
             }
             else if (course.Equals("eee"))
             {
@@ -106,16 +114,23 @@ namespace ECE_Showcase.Controls
                 // Just going to let it do nothing :) 
                 // If stuff goes wrong with loading courses then look here
             }
-
+            
         }
 
         private void fillLists(String program)
         {
-            XmlNodeList nodelist = xd.SelectNodes("/programs/" + program + "/course"); // get all <course> nodes that are part of that program
+            Debug.Write("XML READING " + program);
+
+            XmlNodeList nodelist = xd.SelectNodes("/programs/program/course"); // get all <course> nodes that are part of that program
 
             foreach (XmlNode course in nodelist)
             {
+                Debug.WriteLine("in de loopz");
+
                 CourseItem ci = new CourseItem();
+
+                Debug.WriteLine(course.Attributes.GetNamedItem("code").Value);
+                Debug.WriteLine(course.Attributes.GetNamedItem("year").Value);
 
                 ci.Code = course.Attributes.GetNamedItem("code").Value;
                 ci.Name = course.Attributes.GetNamedItem("name").Value;
