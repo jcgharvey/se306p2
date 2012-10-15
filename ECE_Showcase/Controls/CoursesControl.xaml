@@ -16,19 +16,36 @@
                           UseLayoutRounding="False" 
                           Style="{DynamicResource ArrowlessExpanderTemplate}" 
                           TouchDown="Expander_TouchDown"
-                          TouchUp="Expander_TouchUp">
+                          TouchUp="Expander_TouchUp"
+                          VerticalContentAlignment="Center"
+                          HorizontalContentAlignment="Stretch">
 
                     <Expander.Header>
                         <Label Content="{Binding Name}"
-                               Background="#633678"
-                               Foreground="#FFFFF0"
-                               VerticalAlignment="Stretch"
-                               HorizontalAlignment="Stretch"/>
-                    </Expander.Header>
+                               FontFamily="Segoe UI Light"
+                               Foreground="#FFFFEC"/>
+                </Expander.Header>
+                    
+                <StackPanel>
+                    <Separator/>
+                    <TextBlock Width="300"
+                               Foreground="#FFFFEC"
+                               TextWrapping="Wrap"
+                               FontFamily="Segoe UI"
+                               Text="{Binding Code}"/>
                     <TextBlock Width="300"
                                TextWrapping="Wrap"
-                               Foreground="White"
+                               Foreground="#FFFFEC"
+                               FontFamily="Segoe UI"
                                Text="{Binding Information}"/>
+                    <TextBlock Width="300"
+                               TextWrapping="Wrap"
+                               Foreground="#FFFFEC"
+                               FontFamily="Segoe UI"
+                               Text="{Binding Path=Prereq, StringFormat='Prerequisite: \{0\} '}"
+                               />
+                </StackPanel>
+                    
                 </Expander>
             
         </DataTemplate>
@@ -729,24 +746,24 @@
 								HorizontalAlignment="Stretch"
 								Foreground="{x:Null}"/>
                             <s:SurfaceScrollBar Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}"
-								x:Name="PART_VerticalScrollBar"                           
-								Grid.Column="1"
-								Grid.Row="0"
-								Orientation="Vertical"
-								Maximum="{TemplateBinding ScrollableHeight}"
-								Minimum="0"
-								Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}"
-								AutomationProperties.AutomationId="VerticalScrollBar"
-								Width="Auto"
-								Style="{StaticResource SurfaceScrollBarStyle}"
-								LargeChange="1"
-								ViewportSize="{TemplateBinding ViewportHeight}"
-								ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-								HorizontalContentAlignment="Stretch"
-								VerticalContentAlignment="Stretch"
-								HorizontalAlignment="Stretch"
-								Foreground="{x:Null}"
-								IsEnabled="True"/>
+                                                x:Name="PART_VerticalScrollBar"
+                                                Grid.Column="1"
+                                                Grid.Row="0"
+                                                Orientation="Vertical"
+                                                Maximum="{TemplateBinding ScrollableHeight}"
+                                                Minimum="0"
+                                                Value="{Binding VerticalOffset, Mode=OneWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                                AutomationProperties.AutomationId="VerticalScrollBar"
+                                                Width="Auto"
+                                                Style="{StaticResource SurfaceScrollBarStyle}"
+                                                LargeChange="1"
+                                                ViewportSize="{TemplateBinding ViewportHeight}"
+                                                ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                                                HorizontalContentAlignment="Stretch"
+                                                VerticalContentAlignment="Stretch"
+                                                HorizontalAlignment="Stretch"
+                                                Foreground="{x:Null}"
+                                                IsEnabled="True"/>
                         </Grid>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsEnabled"
@@ -769,12 +786,11 @@
         <s:SurfaceScrollViewer Background="#FFFFEC"
                                Style="{DynamicResource SurfaceScrollViewerStyle10}"
                                HorizontalScrollBarVisibility="Disabled"
-                               
-                 Focusable="False"
-                 BorderThickness="0"
-                 VerticalAlignment="Stretch"
-                 HorizontalAlignment="Stretch"
-                 HorizontalContentAlignment="Stretch">
+                               Focusable="False"
+                               BorderThickness="0"
+                               VerticalAlignment="Stretch"
+                               HorizontalAlignment="Stretch"
+                               HorizontalContentAlignment="Stretch">
                  
             
             <Grid Background="#FFFFEC">

@@ -11,7 +11,7 @@ namespace ECE_Showcase.Screens
         public string Name { get; set; }
         public string Type { get; set; }
         public string Information { get; set; }
-        public string Prereq { get; set; }
+        public string Prereq { get;  set; }
 
         public CourseItem(string code, string name, string type, string information, string prereq)
         {
@@ -26,6 +26,7 @@ namespace ECE_Showcase.Screens
         {
 
         }
+
 
         public int CompareTo(Object obj)
         {
