@@ -8,8 +8,9 @@
              xmlns:System="clr-namespace:System;assembly=mscorlib" 
              x:Class="ECE_Showcase.Screens.Research"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="1000">
-
+             d:DesignHeight="1080"
+             d:DesignWidth="1920">
+    
     <view:Screen.Resources>
 
         <DataTemplate x:Key="SurfaceListBoxItemDataTemplate">
@@ -691,6 +692,12 @@
 
 
 
+        <Style
+            x:Key="listBoxStyle"
+            TargetType="ListBoxItem">
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+
     </view:Screen.Resources>
 
     <Grid Background="#FFFFEC"
@@ -706,7 +713,7 @@
                 <Setter Property="FontSize" Value="25" />
                 <Setter Property="FontWeight" Value="Bold" />
                 <Setter Property="Foreground"
-                        Value="White" />
+                        Value="Black" />
             </Style>
 
 
@@ -791,7 +798,7 @@
                 TouchUp="Expander_TouchUp"
                 >
                     <Expander.Header>
-                        <Image Source="{StaticResource se_research}" 
+                        <Image Source="{StaticResource software}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
                     </Expander.Header>
@@ -819,7 +826,7 @@
                 TouchUp="Expander_TouchUp"
                 >
                     <Expander.Header>
-                        <Image Source="{StaticResource eee_research}" 
+                        <Image Source="{StaticResource electrical}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
                     </Expander.Header>
@@ -847,7 +854,7 @@
                           TouchUp="Expander_TouchUp">
 
                     <Expander.Header>
-                        <Image Source="{StaticResource cse_research}" 
+                        <Image Source="{StaticResource compsys}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
                     </Expander.Header>
@@ -879,6 +886,6 @@
                          FontSize="115"
                          FontFamily="Segoe UI Light"
                          VerticalContentAlignment="Top"
-                         VerticalAlignment="Top" Content="programmes"/>
+                         VerticalAlignment="Top" Content="research"/>
     </Grid>
 </view:Screen>

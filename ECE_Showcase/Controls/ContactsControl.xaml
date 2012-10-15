@@ -277,24 +277,19 @@
                         <Image Source="/ECE_Showcase;component/Resources/img/directions.png" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
-                        <TextBlock Foreground="White" FontFamily="Segoe UI Light" Margin="0, -35, 5, 0" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                        <TextBlock Foreground="White" FontFamily="Segoe UI Light" Margin="0, -35, 34, 0" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Bottom">
                             directions
                         </TextBlock>
                             
                     </StackPanel>
                 </Expander.Header>
-                <s:SurfaceListBox 
-                        Grid.Row="1"
-                        Grid.Column="1"
-                        Background="#633678"
-                        ItemContainerStyle="{StaticResource LBStyle}"
-                        
-                        >
-                    <s:SurfaceButton
-                        PreviewTouchDown="EngineeringPath"
-                        Background="#633678">
+                <ItemsControl Grid.Row="1"
+                              Grid.Column="1"
+                              Background="#633678">
+                    <s:SurfaceButton PreviewTouchDown="EngineeringPath"
+                                     Background="#633678">
                         <Label
-                            Content="From the Engineering Building" 
+                            Content="from the engineering building" 
                             HorizontalAlignment="Left" 
                             VerticalAlignment="Center"
                             Foreground="#FFFFFF"
@@ -308,7 +303,7 @@
                         PreviewTouchDown="ClocktowerPath"
                         Background="#633678">
                         <Label
-                            Content="From the Clocktower" 
+                            Content="from the clocktower" 
                             HorizontalAlignment="Left" 
                             VerticalAlignment="Center"
                             Foreground="#FFFFFF"
@@ -321,7 +316,7 @@
                         PreviewTouchDown="PrincesPath"
                         Background="#633678">
                         <Label
-                            Content="From the 38 Princes St" 
+                            Content="from the 38 princes st" 
                             HorizontalAlignment="Left" 
                             VerticalAlignment="Center"
                             Foreground="#FFFFFF"
@@ -331,7 +326,7 @@
                         </Label>
                     </s:SurfaceButton>
                     
-                </s:SurfaceListBox>
+                </ItemsControl>
 
             </Expander>
 
