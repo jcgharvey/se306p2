@@ -1,0 +1,17 @@
+<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+    
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        Microwave engineering and electromagnetics
+    </Paragraph>
+
+    <Paragraph>
+        A major focus of research by this team has been the analysis and modelling of complex excitation and coupling structures in rectangular and radial waveguides. This has included the analysis and modelling of coaxial line /waveguide junctions, probe couplers, and various waveguide post-mounting structures used in solid-state amplifiers, oscillator and switching elements. This work has application in the design of various subsystems, and is a continuation of a theme of work for which we have established an international reputation. Recent work has included the theoretical analysis, characterisation and modelling, and experimental study of dielectrically sheathed junctions.
+    </Paragraph>
+
+    <Paragraph>
+        Attention is also being directed at the electromagnetic modelling of propagation. This work was originally concerned with modelling propagation over multiple rows of buildings (as might be encountered in cellular environments) and has recently been extended to consider propagation through steel reinforced concrete structures. This recent work has application in the deployment of broadband indoor communication services, and illustrates one of the valuable linkages between the research activities of the two teams in the Telecommunications Research Group. An exciting new development in this area is the design of frequency selective surfaces which are expected to find applications controlling interference in high density wireless systems. Some attention is also being directed at the analysis of bioelectromagnetic effects, especially in the beneficial uses of electromagnetic energy in, for example, hyperthermia and bone union therapy.
+    </Paragraph>
+
+</FlowDocument>

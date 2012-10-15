@@ -1,0 +1,25 @@
+<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+    
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        Robotics
+    </Paragraph>
+
+    <Paragraph>
+        Our long term goal is to create robot assistants that will interact with and help humans. Robots need to be able to learn tasks from their human instructors, and carry out these tasks when the human requires it.
+    </Paragraph>
+
+    <Paragraph>
+        We are building research prototypes for a task planner, subtask learners, an instruction understander, navigation, speech recognition, mobile robot, robot arm with gripper and wrist, a mobile robot operating system, robot navigation, vision based robot localisation, vacuuming robot application, soccer robots, teleoperated robots across the network, a robot guide, a virtual robot world for experimentation, and a number of other robotics techniques and applications.
+    </Paragraph>
+
+    <Paragraph>
+        Our current work is focused on our mobile robot project, which is developing mobile robot research prototypes for new and better methods for human operators to have their tasks automated. Applications for such a system include robot assembly, autonomous mobile systems (eg. foraging, office delivery, domestic duties, engineering field assistant, mining assistant), trainable inspection systems for factories, pipe systems, etc. In the long term mobile autonomous systems have applications in areas such as forestry, farming, security, inspection and manipulation in difficult environments such as power transmission lines.
+    </Paragraph>
+
+    <Paragraph>
+        A key component of our work is to provide a comprehensive robot programming environment to enable people to describe the desired robot behaviour. This work includes the design of an improved robot programming language, and the design of better techniques for humans and robot to interact, in combinations of real and virtual worlds. Jointly with Julainne Sumich in Fine Arts in Intermedia, Elam School of Fine Arts, we have interests in Robots in the Arts.
+    </Paragraph>
+
+</FlowDocument>
