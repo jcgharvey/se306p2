@@ -62,8 +62,9 @@ namespace ECE_Showcase.Screens
             InitializeComponent();
             DataContext = this;
 
-            StudentLifeItems.Add(new DataItem("agile software development", new Controls.FlowDocControl("Resources/docs/research/agile.xaml")));
-            StudentLifeItems.Add(new DataItem("robotics", new Controls.FlowDocControl("Resources/docs/research/robotics.xaml")));
+            StudentLifeItems.Add(new DataItem("sport", new Controls.FlowDocControl("Resources/docs/clubs/sport.xaml")));
+            StudentLifeItems.Add(new DataItem("stein", new Controls.FlowDocControl("Resources/docs/clubs/stein.xaml")));
+            StudentLifeItems.Add(new DataItem("lan", new Controls.FlowDocControl("Resources/docs/clubs/lan.xaml")));
 
             ClubsItems.Add(new DataItem("aues", new Controls.FlowDocControl("Resources/docs/clubs/aues.xaml")));
             ClubsItems.Add(new DataItem("spies", new Controls.FlowDocControl("Resources/docs/clubs/spies.xaml")));

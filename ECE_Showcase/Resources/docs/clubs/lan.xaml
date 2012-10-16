@@ -1,0 +1,18 @@
+﻿<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph FontFamily="Segoe UI Light" FontSize="30">
+        lan
+    </Paragraph>
+
+    <Paragraph>
+        The Software Engineering Student Association holds a LAN each semester which is organised by the students. At the LAN, students come together with their computers and video game consoles and connect to a local area network where they are able to play games co-operatively and competitively.
+    </Paragraph>
+
+    <Paragraph>
+        Members of SESA will be able to attend at a reduced cost, however students or patrons interested in joining in the event will still be able to attend, at a slightly higher cost.
+    </Paragraph>
+
+
+</FlowDocument>
