@@ -120,6 +120,11 @@ namespace ECE_Showcase.Screens
                     touch2 = newTouch;
                 }
 
+                if (newImage != null && !(sender as SurfaceButton).Name.Equals(newImage.Name))
+                {
+                    resetScreens(sender, e);
+                    triggered = false;
+                }
 
                 if (touchDist(touch1, touch2) - initialDist > 75 && !triggered)
                 {
