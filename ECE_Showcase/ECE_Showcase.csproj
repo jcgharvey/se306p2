@@ -78,6 +78,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
+    <Resource Include="Resources\img\clubs.png" />
     <Content Include="Resources\sounds\back.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -261,6 +262,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Screens\ClubsScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Screens\Courses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -307,6 +312,9 @@
     </Compile>
     <Compile Include="GridLengthAnimation.cs" />
     <Compile Include="Screen.cs" />
+    <Compile Include="Screens\ClubsScreen.xaml.cs">
+      <DependentUpon>ClubsScreen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Courses.xaml.cs">
       <DependentUpon>Courses.xaml</DependentUpon>
     </Compile>
