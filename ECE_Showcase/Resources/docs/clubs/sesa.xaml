@@ -1,0 +1,22 @@
+﻿<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph FontFamily="Segoe UI Light" FontSize="30">
+        sesa
+    </Paragraph>
+
+    <Paragraph>
+        SESA is a faculty club which aims to organise social and professional events for all Software Engineering (SE) students such as industry seminars, LAN parties, movie nights, etc.
+    </Paragraph>
+
+    <Paragraph>
+        Where necessary we also act as a liaison between the department and the SE students, raising any relevant issues (course content, difficulties in learning).
+    </Paragraph>
+
+    <Paragraph>
+        We inform students about their employment opportunities through bi-semesterly newsletters and ensure they have a good grounding and any assistance required before they step out in the industry.
+    </Paragraph>
+
+
+</FlowDocument>
