@@ -323,7 +323,7 @@
         		<Image Source="{StaticResource rnd_btn}"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="380" Width="735" />
-        		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="projects and research" HorizontalAlignment="Right" Width="290"/>
+        		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="" HorizontalAlignment="Right" Width="290"/>
         	</StackPanel>
         </s:SurfaceButton>
         <s:SurfaceButton  Name="ClubsButton"
@@ -342,7 +342,7 @@
                 <Image Source="{StaticResource clubs_btn}"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="380" Width="735" />
-                <TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="clubs and student life" HorizontalAlignment="Right" Width="290"/>
+                <TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="" HorizontalAlignment="Right" Width="290"/>
             </StackPanel>
         </s:SurfaceButton>
         
