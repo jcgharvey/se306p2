@@ -281,21 +281,21 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Page Include="Resources\docs\clubs\lan.xaml">
+    <Content Include="Resources\docs\clubs\lan.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Page>
-    <Page Include="Resources\docs\clubs\stein.xaml">
+    </Content>
+    <Content Include="Resources\docs\clubs\stein.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Page>
-    <Page Include="Resources\docs\clubs\sport.xaml">
+    </Content>
+    <Content Include="Resources\docs\clubs\sport.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Page>
+    </Content>
     <Page Include="Resources\ImageDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
