@@ -323,10 +323,30 @@
         		<Image Source="{StaticResource rnd_btn}"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="380" Width="735" />
-        		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="projects and research" HorizontalAlignment="Right" Width="290"/>
+        		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="" HorizontalAlignment="Right" Width="290"/>
         	</StackPanel>
         </s:SurfaceButton>
+        <s:SurfaceButton  Name="ClubsButton"
+                          Grid.Row="3"
+                          Grid.RowSpan="2"
+                          Grid.Column="3"
+                          Grid.ColumnSpan="1"
+                          VerticalContentAlignment="Stretch"
+                          HorizontalContentAlignment="Stretch"
+                          Stylus.IsPressAndHoldEnabled="False"
+                          PreviewTouchDown="Button_PreviewTouchDown"
+                          PreviewTouchUp="Button_TouchUp"
+                          PreviewTouchMove="Button_PreviewTouchMove"
+                          Background="#633678" Padding="0" Margin="0" Width="735" Height="380">
+            <StackPanel>
+                <Image Source="{StaticResource clubs_btn}"
+        			VerticalAlignment="Center"
+        			HorizontalAlignment="Center" Height="380" Width="735" />
+                <TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="" HorizontalAlignment="Right" Width="290"/>
+            </StackPanel>
+        </s:SurfaceButton>
         
+        <!--
         <Image 
                 Grid.Row="3"
                 Grid.RowSpan="2"
@@ -336,7 +356,7 @@
         		VerticalAlignment="Center"
         		HorizontalAlignment="Center" 
                 Height="380" Width="735" />
-   
+        -->
        
         <Border BorderBrush="Silver"
                 BorderThickness="1"

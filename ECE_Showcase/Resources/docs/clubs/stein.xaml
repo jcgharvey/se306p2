@@ -1,0 +1,18 @@
+﻿<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph FontFamily="Segoe UI Light" FontSize="30">
+        stein
+    </Paragraph>
+
+    <Paragraph>
+        The Engineering society hosts a party for its members and their friends each term. This is a great opportunity for students to socialise in an informal atmosphere. The steins are held at differents bars throughout the Auckland and usually host approximately 1000 guests.
+    </Paragraph>
+
+    <Paragraph>
+        A stein is held in a large venue to accommodate the large quantity of people who attend, and follow a theme which is decided by student representatives. By becoming a member of the Auckland Univesity Engineering Students association (AUES)
+    </Paragraph>
+
+
+</FlowDocument>
