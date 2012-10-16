@@ -24,6 +24,13 @@
     <BitmapImage x:Key="se_research">/Resources/img/softwareResearch.png</BitmapImage>
     <BitmapImage x:Key="cse_research">/Resources/img/compsysResearch.png</BitmapImage>
     <BitmapImage x:Key="eee_research">/Resources/img/electricalResearch.png</BitmapImage>
+
+    <!-- research images -->
+    <BitmapImage x:Key="clubs_btn">/Resources/img/clubs.png</BitmapImage>
     
+    <!-- clubs and student life -->
+    <BitmapImage x:Key="clubs_img">/Resources/img/aues.png</BitmapImage>
+    <BitmapImage x:Key="student_life_img">/Resources/img/studentLife.png</BitmapImage>
+
 
 </ResourceDictionary>

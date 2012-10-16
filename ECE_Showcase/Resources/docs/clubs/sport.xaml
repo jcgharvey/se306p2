@@ -1,0 +1,18 @@
+﻿<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph FontFamily="Segoe UI Light" FontSize="30">
+        sport
+    </Paragraph>
+
+    <Paragraph>
+        There are plenty of opportunities to participate in sport whilst studying ECE. There is an annual indoor soccer tournament between the various specialisations and year groups of the Engineering department. Students can also compete in interfaculty competitions in basketball, cricket, netball, rugby and soccer. There is a tournament for each sport annually in which a team represents each faculty from the University.
+    </Paragraph>
+
+    <Paragraph>
+        University Games are held each year. The event is hosted by a different New Zealand University each year. The list of sports is not fixed but always consists of a diverse range of sports, from rugby and cricket through to ultimate frisbee.
+    </Paragraph>
+
+
+</FlowDocument>
