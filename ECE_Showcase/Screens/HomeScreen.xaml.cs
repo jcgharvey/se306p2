@@ -172,7 +172,7 @@ namespace ECE_Showcase.Screens
                     Image myImage3 = new Image();
                     BitmapImage bi3 = new BitmapImage();
 
-                     if((sender as SurfaceButton).Name.Equals("InfoButton"))
+                     if(newImage.Name.Equals("InfoButton"))
                    {
                          sb = this.FindResource("gridout") as Storyboard;
                          sb.Begin(this);
@@ -185,7 +185,7 @@ namespace ECE_Showcase.Screens
                          myImage3.Source = bi3;
                        
                    }
-                   else if ((sender as SurfaceButton).Name.Equals("HodButton"))
+                   else if (newImage.Name.Equals("HodButton"))
                    {
                          sb = this.FindResource("gridout1") as Storyboard;
                          sb.Begin(this);
@@ -199,7 +199,7 @@ namespace ECE_Showcase.Screens
 
                        
                    }
-                     else if ((sender as SurfaceButton).Name.Equals("ProgrammesButton"))
+                     else if (newImage.Name.Equals("ProgrammesButton"))
                      {
                          sb = this.FindResource("gridout2") as Storyboard;
                          sb.Begin(this);
@@ -211,7 +211,7 @@ namespace ECE_Showcase.Screens
 
                      }
 
-                     else if ((sender as SurfaceButton).Name.Equals("ContactButton"))
+                     else if (newImage.Name.Equals("ContactButton"))
                      {
                          sb = this.FindResource("gridout3") as Storyboard;
                          sb.Begin(this);
@@ -231,7 +231,7 @@ namespace ECE_Showcase.Screens
 
                      myImage3.Source = bi3;
 
-                     (sender as SurfaceButton).Content = myImage3;
+                     newImage.Content = myImage3;
 
                 }
 
