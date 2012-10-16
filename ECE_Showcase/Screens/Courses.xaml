@@ -723,7 +723,7 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200" />
-            <ColumnDefinition Width="495"/>
+            <ColumnDefinition Width="450"/>
             <ColumnDefinition Width="5"/>
             <ColumnDefinition />
             <ColumnDefinition Width="200" />
@@ -769,12 +769,10 @@
                    VerticalAlignment="Bottom"/>
         </s:SurfaceButton>
 
-        <s:SurfaceScrollViewer
+        <ItemsControl
             Grid.Row="1"
             Grid.Column="1"
             Foreground="Black" 
-            BorderBrush="#633678" 
-            Style="{DynamicResource SurfaceScrollViewerStyle1}"
             >
             <view:Accordion
             
@@ -897,7 +895,7 @@
                 </Expander>
 
             </view:Accordion>
-        </s:SurfaceScrollViewer>
+        </ItemsControl>
 
 
         <Label x:Name="Title"
