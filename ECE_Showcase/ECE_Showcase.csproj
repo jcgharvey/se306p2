@@ -79,6 +79,8 @@
       <SubType>Designer</SubType>
     </Content>
     <Resource Include="Resources\img\clubs.png" />
+    <Resource Include="Resources\img\aues.png" />
+    <Resource Include="Resources\img\studentLife.png" />
     <Content Include="Resources\sounds\back.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

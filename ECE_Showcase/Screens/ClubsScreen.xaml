@@ -799,7 +799,7 @@
                 >
                     <Expander.Header>
                         <StackPanel>
-                            <Image Source="{StaticResource se_research}" 
+                            <Image Source="{StaticResource clubs_img}" 
                                Stretch="Fill" 
                                d:LayoutOverrides="HorizontalMargin"/>
                             <TextBlock 
@@ -807,7 +807,7 @@
                                 TextWrapping="Wrap" 
                                 Margin="0,-28,30,0" 
                                 FontSize="20" 
-                                Text="software research" 
+                                Text="clubs" 
                                 HorizontalAlignment="Right"
                                 FontFamily="Segoe UI Light"/>
                         </StackPanel>
@@ -818,51 +818,12 @@
                           Background="#633678"
                           ItemContainerStyle="{StaticResource LBStyle}"
                           ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
-                          ItemsSource="{Binding SeResearchItems}"
+                          ItemsSource="{Binding ClubsItems}"
                           PreviewTouchDown="OnDragSourcePreviewTouchDown"
                           PreviewMouseDown="OnDragSourcePreviewTouchDown"
                           s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
 
                     </s:SurfaceListBox>
-                </Expander>
-
-                <Expander
-                Background="#633678" 
-                ScrollViewer.VerticalScrollBarVisibility="Hidden" 
-                UseLayoutRounding="False" 
-                Style="{DynamicResource ArrowlessExpanderTemplate}" 
-                BorderThickness="0"
-                TouchDown="Expander_TouchDown"
-                TouchUp="Expander_TouchUp"
-                >
-                    <Expander.Header>
-                        <StackPanel>
-                            <Image Source="{StaticResource eee_research}" 
-                                   Stretch="Fill" 
-                                   d:LayoutOverrides="HorizontalMargin"/>
-                            <TextBlock 
-                                    Foreground="White"
-                                    TextWrapping="Wrap" 
-                                    Margin="0,-28,30,0" 
-                                    FontSize="20" 
-                                    Text="electronics research" 
-                                    HorizontalAlignment="Right"
-                                    FontFamily="Segoe UI Light"/>
-                        </StackPanel>
-                    </Expander.Header>
-                    <s:SurfaceListBox
-                          Grid.Row="1"
-                          Grid.Column="1"
-                          Background="#633678"
-                          ItemContainerStyle="{StaticResource LBStyle}"
-                          ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
-                          ItemsSource="{Binding EeeResearchItems}"
-                          PreviewTouchDown="OnDragSourcePreviewTouchDown"
-                          PreviewMouseDown="OnDragSourcePreviewTouchDown"
-                          s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
-
-                    </s:SurfaceListBox>
-
                 </Expander>
 
                 <Expander Background="#633678"
@@ -875,7 +836,7 @@
 
                     <Expander.Header>
                         <StackPanel>
-                            <Image Source="{StaticResource cse_research}" 
+                            <Image Source="{StaticResource student_life_img}" 
                                    Stretch="Fill" 
                                    d:LayoutOverrides="HorizontalMargin"/>
                             <TextBlock 
@@ -883,7 +844,7 @@
                                         TextWrapping="Wrap" 
                                         Margin="0,-28,30,0" 
                                         FontSize="20" 
-                                        Text="computer systems research" 
+                                        Text="student life" 
                                         HorizontalAlignment="Right"
                                         FontFamily="Segoe UI Light"/>
                         </StackPanel>
@@ -895,7 +856,7 @@
                         Background="#633678"
                         ItemContainerStyle="{StaticResource LBStyle}"
                         ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
-                        ItemsSource="{Binding CseResearchItems}"
+                        ItemsSource="{Binding StudentLifeItems}"
                         PreviewTouchDown="OnDragSourcePreviewTouchDown"
                         PreviewMouseDown="OnDragSourcePreviewTouchDown"
                         s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
@@ -916,6 +877,6 @@
                          FontSize="115"
                          FontFamily="Segoe UI Light"
                          VerticalContentAlignment="Top"
-                         VerticalAlignment="Top" Content="research"/>
+                         VerticalAlignment="Top" Content="clubs and student life"/>
     </Grid>
 </view:Screen>

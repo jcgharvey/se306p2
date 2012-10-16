@@ -25,47 +25,33 @@ namespace ECE_Showcase.Screens
     public partial class Clubs : Screen
     {
         private UserControl Current_control { get; set; }
-        public ObservableCollection<DataItem> cseResearchItems;
-        public ObservableCollection<DataItem> seResearchItems;
-        public ObservableCollection<DataItem> eeeResearchItems;
+        public ObservableCollection<DataItem> clubsItems;
+        public ObservableCollection<DataItem> studentLifeItems;
 
-        public ObservableCollection<DataItem> EeeResearchItems
+        public ObservableCollection<DataItem> StudentLifeItems
         {
             get
             {
-                if (eeeResearchItems == null)
+                if (studentLifeItems == null)
                 {
 
-                    eeeResearchItems = new ObservableCollection<DataItem>();
+                    studentLifeItems = new ObservableCollection<DataItem>();
                 }
 
-                return eeeResearchItems;
-            }
-        }
-        public ObservableCollection<DataItem> SeResearchItems
-        {
-            get
-            {
-                if (seResearchItems == null)
-                {
-
-                    seResearchItems = new ObservableCollection<DataItem>();
-                }
-
-                return seResearchItems;
+                return studentLifeItems;
             }
         }
 
-        public ObservableCollection<DataItem> CseResearchItems
+        public ObservableCollection<DataItem> ClubsItems
         {
             get
             {
-                if (cseResearchItems == null)
+                if (clubsItems == null)
                 {
-                    cseResearchItems = new ObservableCollection<DataItem>();
+                    clubsItems = new ObservableCollection<DataItem>();
                 }
 
-                return cseResearchItems;
+                return clubsItems;
             }
         }
 
@@ -76,12 +62,13 @@ namespace ECE_Showcase.Screens
             InitializeComponent();
             DataContext = this;
 
-            SeResearchItems.Add(new DataItem("agile software development", new Controls.FlowDocControl("Resources/docs/research/agile.xaml")));
-            SeResearchItems.Add(new DataItem("robotics", new Controls.FlowDocControl("Resources/docs/research/robotics.xaml")));
-            EeeResearchItems.Add(new DataItem("power electronics", new Controls.FlowDocControl("Resources/docs/research/IPT.xaml")));
-            EeeResearchItems.Add(new DataItem("systems & control", new Controls.FlowDocControl("Resources/docs/research/control.xaml")));
-            CseResearchItems.Add(new DataItem("radio systems", new Controls.FlowDocControl("Resources/docs/research/radio.xaml")));
-            CseResearchItems.Add(new DataItem("microwave engineering", new Controls.FlowDocControl("Resources/docs/research/microwave.xaml")));
+            StudentLifeItems.Add(new DataItem("agile software development", new Controls.FlowDocControl("Resources/docs/research/agile.xaml")));
+            StudentLifeItems.Add(new DataItem("robotics", new Controls.FlowDocControl("Resources/docs/research/robotics.xaml")));
+
+            ClubsItems.Add(new DataItem("aues", new Controls.FlowDocControl("Resources/docs/research/radio.xaml")));
+            ClubsItems.Add(new DataItem("spies", new Controls.FlowDocControl("Resources/docs/research/microwave.xaml")));
+            ClubsItems.Add(new DataItem("sesa", new Controls.FlowDocControl("Resources/docs/research/microwave.xaml")));
+            ClubsItems.Add(new DataItem("hkesa", new Controls.FlowDocControl("Resources/docs/research/microwave.xaml")));
 
             setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
 

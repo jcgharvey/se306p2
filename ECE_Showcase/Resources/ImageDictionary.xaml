@@ -27,6 +27,10 @@
 
     <!-- research images -->
     <BitmapImage x:Key="clubs_btn">/Resources/img/clubs.png</BitmapImage>
+    
+    <!-- clubs and student life -->
+    <BitmapImage x:Key="clubs_img">/Resources/img/aues.png</BitmapImage>
+    <BitmapImage x:Key="student_life_img">/Resources/img/studentLife.png</BitmapImage>
 
 
 </ResourceDictionary>
