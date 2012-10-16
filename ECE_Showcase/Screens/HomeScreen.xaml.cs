@@ -85,6 +85,9 @@ namespace ECE_Showcase.Screens
                     case "RNDButton":
                             screenToPush = new Research(ParentWindow);
                         break;
+					case "ClubsButton":
+                        screenToPush = new Clubs(ParentWindow);
+                        break;
                     default:
                         //This shouldn't ever happen.
                         screenToPush = null;
