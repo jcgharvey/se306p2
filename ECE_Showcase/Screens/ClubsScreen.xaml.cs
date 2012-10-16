@@ -65,10 +65,10 @@ namespace ECE_Showcase.Screens
             StudentLifeItems.Add(new DataItem("agile software development", new Controls.FlowDocControl("Resources/docs/research/agile.xaml")));
             StudentLifeItems.Add(new DataItem("robotics", new Controls.FlowDocControl("Resources/docs/research/robotics.xaml")));
 
-            ClubsItems.Add(new DataItem("aues", new Controls.FlowDocControl("Resources/docs/research/radio.xaml")));
-            ClubsItems.Add(new DataItem("spies", new Controls.FlowDocControl("Resources/docs/research/microwave.xaml")));
-            ClubsItems.Add(new DataItem("sesa", new Controls.FlowDocControl("Resources/docs/research/microwave.xaml")));
-            ClubsItems.Add(new DataItem("hkesa", new Controls.FlowDocControl("Resources/docs/research/microwave.xaml")));
+            ClubsItems.Add(new DataItem("aues", new Controls.FlowDocControl("Resources/docs/clubs/aues.xaml")));
+            ClubsItems.Add(new DataItem("spies", new Controls.FlowDocControl("Resources/docs/clubs/spies.xaml")));
+            ClubsItems.Add(new DataItem("sesa", new Controls.FlowDocControl("Resources/docs/clubs/sesa.xaml")));
+            ClubsItems.Add(new DataItem("hkesa", new Controls.FlowDocControl("Resources/docs/clubs/hkesa.xaml")));
 
             setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
 
