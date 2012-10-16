@@ -1,0 +1,17 @@
+﻿<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph FontFamily="Calibri" FontSize="30">
+        aues
+    </Paragraph>
+
+    <Paragraph>
+        Auckland University Engineers Society (AUES) provides an important link between Engineering students and our professional body, the Institution of Professional Engineers New Zealand (IPENZ).
+    </Paragraph>
+
+    <Paragraph>
+        AUES is largely a social body, organising events throughout the year to build student networks and friendships that exist far beyond university. We also act as the student voice within the faculty, liasing with staff on issues brought up by students.
+    </Paragraph>
+
+</FlowDocument>

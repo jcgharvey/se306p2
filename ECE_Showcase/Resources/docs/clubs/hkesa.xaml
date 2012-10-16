@@ -1,0 +1,18 @@
+﻿<FlowDocument 
+  xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation'
+  xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'>
+
+    <Paragraph FontFamily="Segoe UI Light" FontSize="30">
+        hkesa
+    </Paragraph>
+
+    <Paragraph>
+        HKESA stands for Hong Kong Engineering Student Association. Wiht HKESA, you can experience an enjoyable and memorable time at university. 
+    </Paragraph>
+
+    <Paragraph>
+        HKESA has many sponsors which have the added benefits for members with discounts and many events throughout the year, such as Karaoke nights and access to the Hong Kong Food Festival.
+    </Paragraph>
+
+
+</FlowDocument>
