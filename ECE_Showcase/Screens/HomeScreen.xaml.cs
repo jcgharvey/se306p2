@@ -30,7 +30,6 @@ namespace ECE_Showcase.Screens
         private double initialDist;
         private bool triggered;
         private bool down;
-
        
         private SurfaceButton newImage;
 
@@ -43,6 +42,7 @@ namespace ECE_Showcase.Screens
             initialDist = Double.MaxValue;
             triggered = false;
             down = false;
+            newImage = null;
         }
 
 
@@ -162,8 +162,7 @@ namespace ECE_Showcase.Screens
                        ContactButton.Height = 390;
 
                        newImage = (sender as SurfaceButton);
-                   }
-                   
+                   }   
                 }
                 else if ((touchDist(touch1, touch2) - initialDist < -75 && triggered) && (!down))
                 {
@@ -177,22 +176,20 @@ namespace ECE_Showcase.Screens
                    {
                          sb = this.FindResource("gridout") as Storyboard;
                          sb.Begin(this);
-                         InfoButton.Height = 195;
+                         InfoButton.Height = 185;
                          
                          bi3.BeginInit();
                          bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/info_btn.png", UriKind.Relative);
                          bi3.EndInit();
                          myImage3.Stretch = Stretch.Uniform;
                          myImage3.Source = bi3;
-                         myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
-
                        
                    }
                    else if ((sender as SurfaceButton).Name.Equals("HodButton"))
                    {
                          sb = this.FindResource("gridout1") as Storyboard;
                          sb.Begin(this);
-                         HodButton.Height = 195;
+                         HodButton.Height = 185;
 
                          bi3.BeginInit();
                          bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/HOD_btn.png", UriKind.Relative);
@@ -200,20 +197,17 @@ namespace ECE_Showcase.Screens
                          myImage3.Stretch = Stretch.UniformToFill;
                          myImage3.Source = bi3;
 
-                         myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
                        
                    }
                      else if ((sender as SurfaceButton).Name.Equals("ProgrammesButton"))
                      {
                          sb = this.FindResource("gridout2") as Storyboard;
                          sb.Begin(this);
-                         ProgrammesButton.Height = 195;
+                         ProgrammesButton.Height = 185;
 
                          bi3.BeginInit();
                          bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/Programmes_btn.png", UriKind.Relative);
                          bi3.EndInit();
-
-                         myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
 
                      }
 
@@ -221,21 +215,21 @@ namespace ECE_Showcase.Screens
                      {
                          sb = this.FindResource("gridout3") as Storyboard;
                          sb.Begin(this);
-                         ContactButton.Height = 195;
+                         ContactButton.Height = 185;
 
                          bi3.BeginInit();
                          bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/Contact_us_btn.png", UriKind.Relative);
                          bi3.EndInit();
 
-                         myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
-
                      }
+
                      myImage3.Stretch = Stretch.UniformToFill;
+                     myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
+                     myImage3.VerticalAlignment = System.Windows.VerticalAlignment.Stretch;
+                     myImage3.Height = 185;
+                     myImage3.Width = 735;
 
                      myImage3.Source = bi3;
-                     Thickness thick = new Thickness(1);
-                     myImage3.Margin = thick;
-                     (sender as SurfaceButton).Margin = thick;
 
                      (sender as SurfaceButton).Content = myImage3;
 
@@ -269,7 +263,6 @@ namespace ECE_Showcase.Screens
         {
             Storyboard sb;
 
-            newImage.Content = "there are going to be lots of words here";
             
             if (newImage.Name.Equals("InfoButton"))
             {
@@ -352,51 +345,53 @@ namespace ECE_Showcase.Screens
             triggered = false;
             Image myImage3 = new Image();
             BitmapImage bi3 = new BitmapImage();
-
-
-            if(newImage.Name.ToString().Equals("InfoButton"))
+            if (newImage != null)
             {
-                InfoButton.Height = 195;
-                bi3.BeginInit();
-                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/info_btn.png", UriKind.Relative);
-                bi3.EndInit();
+
+
+                if (newImage.Name.ToString().Equals("InfoButton"))
+                {
+                    InfoButton.Height = 185;
+                    bi3.BeginInit();
+                    bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/info_btn.png", UriKind.Relative);
+                    bi3.EndInit();
+                }
+                else if (newImage.Name.ToString().Equals("HodButton"))
+                {
+                    HodButton.Height = 185;
+                    bi3.BeginInit();
+                    bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/hod_btn.png", UriKind.Relative);
+                    bi3.EndInit();
+                }
+                else if (newImage.Name.ToString().Equals("ProgrammesButton"))
+                {
+                    ProgrammesButton.Height = 185;
+                    bi3.BeginInit();
+                    bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/programmes_btn.png", UriKind.Relative);
+                    bi3.EndInit();
+                }
+                else if (newImage.Name.ToString().Equals("ContactButton"))
+                {
+                    ContactButton.Height = 185;
+                    bi3.BeginInit();
+                    bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/contact_us_btn.png", UriKind.Relative);
+                    bi3.EndInit();
+                }
+
+
+                myImage3.Stretch = Stretch.Uniform;
+                myImage3.Source = bi3;
+                myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch;
+                myImage3.VerticalAlignment = System.Windows.VerticalAlignment.Stretch;
+                myImage3.Height = 185;
+                myImage3.Width = 735;
+
+                myImage3.Stretch = Stretch.UniformToFill;
+
+                myImage3.Source = bi3;
+
+                newImage.Content = myImage3;
             }
-            else if (newImage.Name.ToString().Equals("HodButton")) 
-            {
-                HodButton.Height = 195;
-                bi3.BeginInit();
-                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/hod_btn.png", UriKind.Relative);
-                bi3.EndInit();
-            }
-            else if (newImage.Name.ToString().Equals("ProgrammesButton")) 
-            {
-                ProgrammesButton.Height = 195;
-                bi3.BeginInit();
-                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/programmes_btn.png", UriKind.Relative);
-                bi3.EndInit();
-            }
-            else if (newImage.Name.ToString().Equals("ContactButton")) 
-            {
-                ContactButton.Height = 195;
-                bi3.BeginInit();
-                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/contact_us_btn.png", UriKind.Relative);
-                bi3.EndInit();
-            }
-
-            
-            myImage3.Stretch = Stretch.Uniform;
-            myImage3.Source = bi3;
-            myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
-
-            myImage3.Stretch = Stretch.UniformToFill;
-
-            myImage3.Source = bi3;
-            Thickness thick = new Thickness(1);
-            myImage3.Margin = thick;
-            newImage.Margin = thick;
-
-            newImage.Content = myImage3;
-
             
         }
 

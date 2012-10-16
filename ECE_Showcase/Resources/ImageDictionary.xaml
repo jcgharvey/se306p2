@@ -13,6 +13,10 @@
     <BitmapImage x:Key="programmes_btn">/Resources/img/programmes_btn.png</BitmapImage>
     <BitmapImage x:Key="rnd_btn">/Resources/img/rnd_btn.png</BitmapImage>
     <BitmapImage x:Key="ece_logo">/Resources/img/ece_logo.png</BitmapImage>
+    <BitmapImage x:Key="hod_exp">/Resources/img/HOD_exp.png</BitmapImage>
+    <BitmapImage x:Key="info_exp">/Resources/img/info_exp.png</BitmapImage>
+    <BitmapImage x:Key="contact_exp">/Resources/img/contact_exp.png</BitmapImage>
+    <BitmapImage x:Key="programmes_exp">/Resources/img/programmes_exp.png</BitmapImage>
     
     <!-- programmes' images-->
     <BitmapImage x:Key="compsys">/Resources/img/compsys.png</BitmapImage>
