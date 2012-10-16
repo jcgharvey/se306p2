@@ -29,6 +29,7 @@ namespace ECE_Showcase.Screens
         private TouchPoint touch2;
         private double initialDist;
         private bool triggered;
+        private bool down;
 
        
         private SurfaceButton newImage;
@@ -37,21 +38,23 @@ namespace ECE_Showcase.Screens
         {
             InitializeComponent();
 
-     
-
             touch1 = null;
             touch2 = null;
             initialDist = Double.MaxValue;
             triggered = false;
-
+            down = false;
         }
 
 
         private void Button_TouchUp(object sender, TouchEventArgs e)
         {
+            down = false;
+            
             if (touch1 == null ^ touch2 == null)
             {
-                
+                Storyboard sb = this.FindResource("newScreen") as Storyboard;
+                sb.Begin(this);
+
                 Screen screenToPush;
                 switch ((sender as SurfaceButton).Name)
                 {
@@ -82,9 +85,6 @@ namespace ECE_Showcase.Screens
                     case "RNDButton":
                             screenToPush = new Research(ParentWindow);
                         break;
-                    case "ClubsButton":
-                        screenToPush = new Clubs(ParentWindow);
-                        break;
                     default:
                         //This shouldn't ever happen.
                         screenToPush = null;
@@ -104,6 +104,7 @@ namespace ECE_Showcase.Screens
         {
             if (touch1 != null && touch2 != null)
             {
+                
                 //Debug.WriteLine((sender as SurfaceButton).Name);
                 TouchPoint newTouch = e.GetTouchPoint(sender as SurfaceButton);
                 
@@ -120,6 +121,7 @@ namespace ECE_Showcase.Screens
                 if (touchDist(touch1, touch2) - initialDist > 75 && !triggered)
                 {
                     triggered = true;
+                    down = true;
 
                     Debug.Print((sender as SurfaceButton).Name);
                    //Animate the grid control
@@ -160,7 +162,7 @@ namespace ECE_Showcase.Screens
                    }
                    
                 }
-                else if (touchDist(touch1, touch2) - initialDist < 75 && triggered)
+                else if ((touchDist(touch1, touch2) - initialDist < -75 && triggered) && (!down))
                 {
                     triggered = false;
 
@@ -275,7 +277,25 @@ namespace ECE_Showcase.Screens
                 BitmapImage bi3 = new BitmapImage();
 
                 bi3.BeginInit();
-                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/forthelolz.png", UriKind.Relative);
+                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/info_exp.png", UriKind.Relative);
+                bi3.EndInit();
+                myImage3.Stretch = Stretch.UniformToFill;
+                myImage3.Source = bi3;
+
+              //  myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
+
+                newImage.Content = myImage3;
+            }
+            else if (newImage.Name.Equals("HodButton"))
+            {
+                sb = this.FindResource("fadein1") as Storyboard;
+                sb.Begin(this);
+
+                Image myImage3 = new Image();
+                BitmapImage bi3 = new BitmapImage();
+
+                bi3.BeginInit();
+                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/HOD_exp.png", UriKind.Relative);
                 bi3.EndInit();
                 myImage3.Stretch = Stretch.UniformToFill;
                 myImage3.Source = bi3;
@@ -284,28 +304,97 @@ namespace ECE_Showcase.Screens
 
                 newImage.Content = myImage3;
             }
-            else if (newImage.Name.Equals("HodButton"))
-            {
-                sb = this.FindResource("fadein1") as Storyboard;
-                sb.Begin(this);
-            }
             else if (newImage.Name.Equals("ProgrammesButton"))
             {
                 sb = this.FindResource("fadein2") as Storyboard;
                 sb.Begin(this);
+
+                Image myImage3 = new Image();
+                BitmapImage bi3 = new BitmapImage();
+
+                bi3.BeginInit();
+                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/programmes_exp.png", UriKind.Relative);
+                bi3.EndInit();
+                myImage3.Stretch = Stretch.UniformToFill;
+                myImage3.Source = bi3;
+
+                myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
+
+                newImage.Content = myImage3;
             }
             else if (newImage.Name.Equals("ContactButton"))
             {
                 sb = this.FindResource("fadein3") as Storyboard;
                 sb.Begin(this);
+
+                Image myImage3 = new Image();
+                BitmapImage bi3 = new BitmapImage();
+
+                bi3.BeginInit();
+                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/contact_exp.png", UriKind.Relative);
+                bi3.EndInit();
+                myImage3.Stretch = Stretch.UniformToFill;
+                myImage3.Source = bi3;
+
+                myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
+
+                newImage.Content = myImage3;
             }
 
         }
 
-        private void Storyboard_Completed_1(object sender, EventArgs e)
+        private void resetScreens(object sender, EventArgs e)
         {
 
+            triggered = false;
+            Image myImage3 = new Image();
+            BitmapImage bi3 = new BitmapImage();
 
+
+            if(newImage.Name.ToString().Equals("InfoButton"))
+            {
+                InfoButton.Height = 195;
+                bi3.BeginInit();
+                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/info_btn.png", UriKind.Relative);
+                bi3.EndInit();
+            }
+            else if (newImage.Name.ToString().Equals("HodButton")) 
+            {
+                HodButton.Height = 195;
+                bi3.BeginInit();
+                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/hod_btn.png", UriKind.Relative);
+                bi3.EndInit();
+            }
+            else if (newImage.Name.ToString().Equals("ProgrammesButton")) 
+            {
+                ProgrammesButton.Height = 195;
+                bi3.BeginInit();
+                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/programmes_btn.png", UriKind.Relative);
+                bi3.EndInit();
+            }
+            else if (newImage.Name.ToString().Equals("ContactButton")) 
+            {
+                ContactButton.Height = 195;
+                bi3.BeginInit();
+                bi3.UriSource = new Uri("/ECE_Showcase;component/Resources/img/contact_us_btn.png", UriKind.Relative);
+                bi3.EndInit();
+            }
+
+            
+            myImage3.Stretch = Stretch.Uniform;
+            myImage3.Source = bi3;
+            myImage3.HorizontalAlignment = System.Windows.HorizontalAlignment.Center;
+
+            myImage3.Stretch = Stretch.UniformToFill;
+
+            myImage3.Source = bi3;
+            Thickness thick = new Thickness(1);
+            myImage3.Margin = thick;
+            newImage.Margin = thick;
+
+            newImage.Content = myImage3;
+
+            
         }
 
     }

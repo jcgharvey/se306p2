@@ -17,41 +17,42 @@
             <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowb" From="195" To="130" />
             <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowc" From="195" To="130" />
             <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowd" From="195" To="130" />
-            <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="InfoButton" From="1" To="0" />
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="InfoText">
-           	<DiscreteObjectKeyFrame KeyTime="0:0:0.75" Value="{x:Static Visibility.Hidden}"/>
-            </ObjectAnimationUsingKeyFrames> 
-  
+            <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="InfoButton" From="1" To="0" />  
         </Storyboard>
+
+        <Storyboard x:Key="newScreen" Completed="resetScreens">
+
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:1" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowa" From="195" To="195" />
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:1" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowb" From="195" To="195" />
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:1" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowc" From="195" To="195" />
+            <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:1" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowd" From="195" To="195" />
+        </Storyboard>
+
         <Storyboard x:Key="fadein">
-            <DoubleAnimation BeginTime="0:0:0" Duration="0:0:20" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="InfoButton" From="0" To="1" />
+            <DoubleAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="InfoButton" From="0" To="1" />
         </Storyboard>
         
         
         <Storyboard x:Key="fadein1">
-            <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="HodButton" From="0.25" To="1" />
+            <DoubleAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="HodButton" From="0" To="1" />
         </Storyboard>
     
         
         <Storyboard x:Key="fadein2">
-            <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="ProgrammesButton" From="0.25" To="1" />
+            <DoubleAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="ProgrammesButton" From="0" To="1" />
         </Storyboard>
     
        
         <Storyboard x:Key="fadein3">
-            <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="ContactButton" From="0.25" To="1" />
+            <DoubleAnimation BeginTime="0:0:0" Duration="0:0:2" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="ContactButton" From="0" To="1" />
         </Storyboard>
 
-        <Storyboard x:Key="gridout" Completed="Storyboard_Completed_1">
+        <Storyboard x:Key="gridout">
             <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowa" From="390" To="195" />
             <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowb" From="130" To="195" />
             <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowc" From="130" To="195" />
             <view:GridLengthAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Height" Storyboard.TargetName="Rowd" From="130" To="195" />
             <DoubleAnimation BeginTime="0:0:0" Duration="0:0:0.75" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="InfoButton" From="0" To="1" />
-            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="InfoText">
-            	<DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
-            	<DiscreteObjectKeyFrame KeyTime="0:0:0.8" Value="{x:Static Visibility.Visible}"/>
-            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
 
         <Storyboard x:Key="gridin1" Completed="Storyboard_Completed">
@@ -226,7 +227,7 @@
                     <Image Name="info_pic" Source="/ECE_Showcase;component/Resources/img/info_btn.png"
         			VerticalAlignment="Stretch"
         			HorizontalAlignment="Stretch" Width="735" Height="185" />
-                    <TextBlock Name="InfoText" TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-45,0,0" FontSize="32" Text="" HorizontalAlignment="Right" Width="165"> </TextBlock>
+                    
                 </StackPanel>
                 
             </s:SurfaceButton>
@@ -249,7 +250,6 @@
         		<Image Name="HodImage" Source="/ECE_Showcase;component/Resources/img/hod_btn.png"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Width="735" Height="185" />
-        		<TextBlock Name="HodText" TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="313,-45,0,0" FontSize="32"><Run Language="en-nz" Text=""/></TextBlock>
         	</StackPanel>
         </s:SurfaceButton>
 
@@ -275,7 +275,7 @@
 
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="185" Width="735" />
-                <TextBlock Name="ProgrammesText"  TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-45,0,0" FontSize="32" Text="" HorizontalAlignment="Right" Width="177"/>
+                
             </StackPanel>
         </s:SurfaceButton>
         
@@ -302,7 +302,7 @@
 
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="185" Width="735" />
-                <TextBlock Name="ContactText" TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="" HorizontalAlignment="Right" Width="141.5"/>
+                
             </StackPanel>
         </s:SurfaceButton>
 
@@ -323,30 +323,10 @@
         		<Image Source="{StaticResource rnd_btn}"
         			VerticalAlignment="Center"
         			HorizontalAlignment="Center" Height="380" Width="735" />
-        		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="" HorizontalAlignment="Right" Width="290"/>
+        		<TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="projects and research" HorizontalAlignment="Right" Width="290"/>
         	</StackPanel>
         </s:SurfaceButton>
-        <s:SurfaceButton  Name="ClubsButton"
-                          Grid.Row="3"
-                          Grid.RowSpan="2"
-                          Grid.Column="3"
-                          Grid.ColumnSpan="1"
-                          VerticalContentAlignment="Stretch"
-                          HorizontalContentAlignment="Stretch"
-                          Stylus.IsPressAndHoldEnabled="False"
-                          PreviewTouchDown="Button_PreviewTouchDown"
-                          PreviewTouchUp="Button_TouchUp"
-                          PreviewTouchMove="Button_PreviewTouchMove"
-                          Background="#633678" Padding="0" Margin="0" Width="735" Height="380">
-            <StackPanel>
-                <Image Source="{StaticResource clubs_btn}"
-        			VerticalAlignment="Center"
-        			HorizontalAlignment="Center" Height="380" Width="735" />
-                <TextBlock TextWrapping="Wrap" Height="45" RenderTransformOrigin="0.5,0.5" Margin="0,-43,0,0" FontSize="32" Text="" HorizontalAlignment="Right" Width="290"/>
-            </StackPanel>
-        </s:SurfaceButton>
         
-        <!--
         <Image 
                 Grid.Row="3"
                 Grid.RowSpan="2"
@@ -356,7 +336,7 @@
         		VerticalAlignment="Center"
         		HorizontalAlignment="Center" 
                 Height="380" Width="735" />
-        -->
+   
        
         <Border BorderBrush="Silver"
                 BorderThickness="1"
