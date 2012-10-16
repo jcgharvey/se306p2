@@ -781,45 +781,7 @@
             x:Name="acc"
             Width="450"
             HorizontalAlignment="Left">
-                <Expander
-                Background="#633678" 
-                ScrollViewer.VerticalScrollBarVisibility="Hidden" 
-                UseLayoutRounding="False" 
-                Style="{DynamicResource ArrowlessExpanderTemplate}" 
-                BorderThickness="0"
-                TouchDown="Expander_TouchDown"
-                TouchUp="Expander_TouchUp"
-                >
-                    <Expander.Header>
-                        <StackPanel>
-                        <Image Source="{StaticResource part1}" 
-                               Stretch="Fill" 
-                               d:LayoutOverrides="HorizontalMargin"/>
-                            <TextBlock 
-                                Foreground="White"
-                                TextWrapping="Wrap" 
-                                Margin="0,-30,30,0" 
-                                FontSize="20" 
-                                Text="part I" 
-                                HorizontalAlignment="Right"
-                                FontFamily="Segoe UI Light"/>
-                        </StackPanel>
-                    </Expander.Header>
-                    <s:SurfaceListBox 
-                        Grid.Row="1"
-                        Grid.Column="1"
-                        Background="#633678"
-                        ItemContainerStyle="{StaticResource LBStyle}"
-                        ItemTemplate="{StaticResource SurfaceListBoxItemDataTemplate}"
-                        ItemsSource="{Binding P1_items}"
-                        PreviewTouchDown="OnDragSourcePreviewTouchDown"
-                        PreviewMouseDown="OnDragSourcePreviewTouchDown"
-                        s:SurfaceDragDrop.DragCompleted="OnDragCompleted">
-
-
-                    </s:SurfaceListBox>
-
-                </Expander>
+                
                 <Expander
                 Background="#633678"
                 ScrollViewer.VerticalScrollBarVisibility="Hidden" 

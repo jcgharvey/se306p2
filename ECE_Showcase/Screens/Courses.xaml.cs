@@ -27,7 +27,7 @@ namespace ECE_Showcase.Screens
         private ObservableCollection<DataItem> se_items;
         private ObservableCollection<DataItem> eee_items;
         private ObservableCollection<DataItem> cse_items;
-        private ObservableCollection<DataItem> p1_items;
+        
 
         private ObservableCollection<DataItem> targetItems;
         private UserControl Current_control { get; set; }
@@ -72,19 +72,7 @@ namespace ECE_Showcase.Screens
                 return eee_items;
             }
         }
-        public ObservableCollection<DataItem> P1_items
-        {
-            get
-            {
-                if (p1_items == null)
-                {
-
-                    p1_items = new ObservableCollection<DataItem>();
-                }
-
-                return p1_items;
-            }
-        }
+        
         /// <summary>
         /// Items that bind with the drop target list box.
         /// </summary>
@@ -128,9 +116,7 @@ namespace ECE_Showcase.Screens
             Eee_items.Add(new DataItem("Courses", new Controls.CoursesControl("eee")));
             Eee_items.Add(new DataItem("Programme Advisor", new Controls.FlowDocControl("Resources/docs/specialisations/eee_advisor.xaml")));
             
-            P1_items.Add(new DataItem("Description", new Controls.FlowDocControl("Resources/docs/specialisations/p1_info.xaml")));
-            //P1_items.Add(new DataItem("Courses", new Controls.CoursesControl("first")));
-
+            
             setControl(new Controls.FlowDocControl("Resources/docs/tap_course.xaml"));
         }
 
